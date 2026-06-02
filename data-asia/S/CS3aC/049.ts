@@ -1,0 +1,23 @@
+import { Card } from "../../../interfaces"
+import Set from "../CS3aC"
+
+const card: Card = {
+	set: Set,
+
+	name: {
+		en: 'Meowstic',
+		ja: 'Meowstic',
+	},
+
+	category: 'Pokemon',
+	rarity: 'Holo Rare',
+
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 349548
+		}
+	}],
+}
+
+export default card

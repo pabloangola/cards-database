@@ -4,6 +4,7 @@ import serie from '../SM'
 const set: Set = {
 	id: 'SM6',
 	name: {
+		en: 'Forbidden Light',
 		ja: '禁断の光',
 		ko: '금단의 빛'
 	},
@@ -11,7 +12,7 @@ const set: Set = {
 	serie: serie,
 
 	cardCount: {
-		official: 94
+		official: 161
 	},
 	releaseDate: '2018-03-02'
 }

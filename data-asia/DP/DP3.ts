@@ -4,6 +4,7 @@ import serie from '../DPt'
 const set: Set = {
 	id: 'DP3',
 	name: {
+		en: 'Shining Darkness',
 		ja: 'ひかる闇'
 	},
 

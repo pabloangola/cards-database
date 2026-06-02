@@ -4,6 +4,7 @@ import serie from '../SM'
 const set: Set = {
 	id: 'SM5M',
 	name: {
+		en: 'Ultra Moon',
 		ja: 'ウルトラムーン',
 		ko: '울트라문'
 	},
@@ -11,7 +12,7 @@ const set: Set = {
 	serie: serie,
 
 	cardCount: {
-		official: 66
+		official: 81
 	},
 	releaseDate: '2017-12-08'
 }

@@ -4,6 +4,7 @@ import serie from '../SV'
 const set: Set = {
 	id: 'SV6',
 	name: {
+		en: 'Mask of Change',
 		ja: '変幻の仮面',
 		'zh-tw': '變幻假面',
 		th: 'หน้ากากจอมลวงตา',

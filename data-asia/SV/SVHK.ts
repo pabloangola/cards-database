@@ -4,6 +4,7 @@ import serie from '../SV'
 const set: Set = {
 	id: 'SVHK',
 	name: {
+		en: 'Ancient Koraidon ex Starter Deck & Build Set',
 		'zh-tw': '未來密勒頓ex',
 		id: 'Koraidon ex Purba',
 		th: 'โคไรดอนex โบราณ'

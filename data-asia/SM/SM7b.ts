@@ -4,6 +4,7 @@ import serie from '../SM'
 const set: Set = {
 	id: 'SM7b',
 	name: {
+		en: 'Fairy Rise',
 		ja: 'フェアリーライズ',
 		ko: '페어리라이즈'
 	},
@@ -11,7 +12,7 @@ const set: Set = {
 	serie: serie,
 
 	cardCount: {
-		official: 50
+		official: 63
 	},
 	releaseDate: '2018-08-03'
 }

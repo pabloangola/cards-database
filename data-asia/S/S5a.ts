@@ -4,6 +4,7 @@ import serie from '../S'
 const set: Set = {
 	id: 'S5a',
 	name: {
+		en: 'Matchless Fighters',
 		ja: '双璧のファイター',
 		ko: '쌍벽의 파이터',
 		'zh-tw': '雙璧戰士',

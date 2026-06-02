@@ -4,6 +4,7 @@ import serie from '../SM'
 const set: Set = {
 	id: 'SM7a',
 	name: {
+		en: 'Thunderclap Spark',
 		ja: '迅雷スパーク',
 		ko: '플라스마 스파크'
 	},
@@ -11,7 +12,7 @@ const set: Set = {
 	serie: serie,
 
 	cardCount: {
-		official: 50
+		official: 73
 	},
 	releaseDate: '2018-08-03'
 }

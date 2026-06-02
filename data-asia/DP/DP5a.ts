@@ -4,6 +4,7 @@ import serie from '../DPt'
 const set: Set = {
 	id: 'DP5a',
 	name: {
+		en: 'Cry from the Mysterious',
 		ja: '秘境の叫び'
 	},
 

@@ -4,15 +4,21 @@ import serie from '../S'
 const set: Set = {
 	id: 'CS3aC',
 	name: {
-		'zh-cn': '洪荒演武 茂',
+		en: 'CS3a: Primordial Martial Arts - Overgrowth',
+		ja: 'CS3a: Primordial Martial Arts - Overgrowth',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 125
+		official: 186
 	},
-	releaseDate: '2023-11-17',
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 4007
+	}
 }
 
 export default set

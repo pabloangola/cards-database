@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-05-31T23:08:58.217Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": true
+  },
+  "imports": [
+    {
+      "importedAt": "2026-05-31T23:08:58.216Z",
+      "cardtrader": {
+        "id": 4014,
+        "code": "csm2c",
+        "name": "CSM2c: Shining Synergy - Summon"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SM",
+        "setId": "CSM2c",
+        "setFile": "data-asia\\SM\\CSM2c.ts",
+        "cardsDir": "data-asia\\SM\\CSM2c"
+      },
+      "stats": {
+        "blueprints": 194,
+        "cardsWritten": 194,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

@@ -4,6 +4,7 @@ import serie from '../SV'
 const set: Set = {
 	id: 'SVC',
 	name: {
+		en: 'ex Starter Set Pikachu ex & Pawmot',
 		'zh-tw': '皮卡丘特別組合'
 	},
 

@@ -4,6 +4,7 @@ import serie from '../SV'
 const set: Set = {
 	id: 'SVF',
 	name: {
+		en: 'Deck Build Box Ruler of the Black Flame',
 		'zh-tw': '黯焰支配者'
 	},
 

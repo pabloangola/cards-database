@@ -1,6 +1,6 @@
 /* eslint-disable sort-keys */
 import pathLib from 'node:path'
-import { Card, Set, SupportedLanguages, Types, variant_detailed, VariantStamps, VariantType } from '../../../interfaces'
+import type { Card, Set, SupportedLanguages, Types, variant_detailed, VariantStamps, VariantType } from '../../../interfaces.d.ts'
 import { CardResume, Card as CardSingle, variant_detailed as ApiVariantDetailed } from '../../../meta/definitions/api'
 import { getSet, setToSetSimple } from './setUtil'
 import translate from './translationUtil'

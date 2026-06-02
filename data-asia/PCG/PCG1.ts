@@ -4,13 +4,14 @@ import serie from '../PCG'
 const set: Set = {
 	id: 'PCG1',
 	name: {
+		en: 'Flight of Legends',
 		ja: '伝説の飛翔'
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 82
+		official: 84
 	},
 	releaseDate: '2004-04-09'
 }

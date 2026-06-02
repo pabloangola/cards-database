@@ -4,16 +4,21 @@ import serie from '../SM'
 const set: Set = {
 	id: 'SM6b',
 	name: {
-		ja: 'チャンピオンロード',
-		ko: '챔피언로드'
+		en: 'Champion Road',
+		ja: 'Champion Road',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 66
+		official: 86
 	},
-	releaseDate: '2018-05-30'
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 3445
+	}
 }
 
 export default set

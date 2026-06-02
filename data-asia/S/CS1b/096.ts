@@ -1,0 +1,23 @@
+import { Card } from "../../../interfaces"
+import Set from "../CS1b"
+
+const card: Card = {
+	set: Set,
+
+	name: {
+		en: 'Corviknight',
+		ja: 'Corviknight',
+	},
+
+	category: 'Pokemon',
+	rarity: 'Uncommon',
+
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 369278
+		}
+	}],
+}
+
+export default card

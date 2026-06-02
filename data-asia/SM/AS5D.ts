@@ -4,6 +4,7 @@ import serie from '../SM'
 const set: Set = {
 	id: 'AS5D',
 	name: {
+		en: 'Double Burst',
 		'zh-tw': '雙倍爆擊'
 	},
 

@@ -4,15 +4,21 @@ import serie from '../S'
 const set: Set = {
 	id: 'CS5.5C',
 	name: {
-		'zh-cn': '暗影夺辉',
+		en: 'CS5.5: Shadow of Glory',
+		ja: 'CS5.5: Shadow of Glory',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 66
+		official: 90
 	},
-	releaseDate: '2024-08-02',
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 4030
+	}
 }
 
 export default set

@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-05-31T23:10:06.997Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": true
+  },
+  "imports": [
+    {
+      "importedAt": "2026-05-31T23:10:06.996Z",
+      "cardtrader": {
+        "id": 2059,
+        "code": "sm3h",
+        "name": "To Have Seen the Battle Rainbow"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SM",
+        "setId": "SM3H",
+        "setFile": "data-asia\\SM\\SM3H.ts",
+        "cardsDir": "data-asia\\SM\\SM3H"
+      },
+      "stats": {
+        "blueprints": 64,
+        "cardsWritten": 64,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-05-31T23:08:59.790Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": true
+  },
+  "imports": [
+    {
+      "importedAt": "2026-05-31T23:08:59.789Z",
+      "cardtrader": {
+        "id": 4052,
+        "code": "csm15",
+        "name": "CSM1.5: Battle Elite"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SM",
+        "setId": "CSM1.5C",
+        "setFile": "data-asia\\SM\\CSM1.5C.ts",
+        "cardsDir": "data-asia\\SM\\CSM1.5C"
+      },
+      "stats": {
+        "blueprints": 71,
+        "cardsWritten": 71,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

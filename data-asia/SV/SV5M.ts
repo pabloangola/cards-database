@@ -5,6 +5,7 @@ const set: Set = {
 	id: 'SV5M',
 
 	name: {
+		en: 'Cyber Judge',
 		ja: 'サイバージャッジ',
 		ko: '사이버저지',
 		'zh-tw': '異度審判',

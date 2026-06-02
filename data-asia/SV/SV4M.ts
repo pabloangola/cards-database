@@ -5,6 +5,7 @@ const set: Set = {
 	id: 'SV4M',
 
 	name: {
+		en: 'Future Flash',
 		ja: '未来の一閃',
 		ko: '미래의 일섬',
 		'zh-tw': '未來閃光',

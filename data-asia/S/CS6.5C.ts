@@ -4,15 +4,21 @@ import serie from '../S'
 const set: Set = {
 	id: 'CS6.5C',
 	name: {
-		'zh-cn': '胜象星引',
+		en: 'CS6.5: Victory Star Guide',
+		ja: 'CS6.5: Victory Star Guide',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 72
+		official: 96
 	},
-	releaseDate: '2024-11-15',
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 4025
+	}
 }
 
 export default set

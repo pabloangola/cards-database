@@ -4,15 +4,21 @@ import serie from '../SV'
 const set: Set = {
 	id: 'CSV7C',
 	name: {
-		'zh-cn': '利刃猛醒',
+		en: 'CSV7: Blade Awakening',
+		ja: 'CSV7: Blade Awakening',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 204
+		official: 354
 	},
-	releaseDate: '2026-01-16',
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 4434
+	}
 }
 
 export default set

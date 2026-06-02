@@ -1,0 +1,23 @@
+import { Card } from "../../../interfaces"
+import Set from "../XY10"
+
+const card: Card = {
+	set: Set,
+
+	name: {
+		en: 'Fennekin',
+		ja: 'Fennekin',
+	},
+
+	category: 'Pokemon',
+	rarity: 'Common',
+
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 135576
+		}
+	}],
+}
+
+export default card

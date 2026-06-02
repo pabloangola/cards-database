@@ -4,15 +4,21 @@ import serie from '../SM'
 const set: Set = {
 	id: 'CSM1.5C',
 	name: {
-		'zh-cn': '对战精英',
+		en: 'CSM1.5: Battle Elite',
+		ja: 'CSM1.5: Battle Elite',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 60
+		official: 71
 	},
-	releaseDate: '2022-12-16'
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 4052
+	}
 }
 
 export default set

@@ -4,15 +4,21 @@ import serie from '../SV'
 const set: Set = {
 	id: 'CSV4C',
 	name: {
-		'zh-cn': '嘉奖回合',
+		en: 'CSV4: Bonus Round',
+		ja: 'CSV4: Bonus Round',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 129
+		official: 169
 	},
-	releaseDate: '2025-07-18',
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 4267
+	}
 }
 
 export default set

@@ -1,0 +1,23 @@
+import { Card } from "../../../interfaces"
+import Set from "../CS5.5C"
+
+const card: Card = {
+	set: Set,
+
+	name: {
+		en: 'Poliwrath',
+		ja: 'Poliwrath',
+	},
+
+	category: 'Pokemon',
+	rarity: 'Uncommon',
+
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 349401
+		}
+	}],
+}
+
+export default card

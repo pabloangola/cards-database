@@ -4,6 +4,7 @@ import serie from '../SM'
 const set: Set = {
 	id: 'SM4S',
 	name: {
+		en: 'Awakened Heroes',
 		ja: '覚醒の勇者',
 		ko: '각성의 용사'
 	},
@@ -11,7 +12,7 @@ const set: Set = {
 	serie: serie,
 
 	cardCount: {
-		official: 50
+		official: 62
 	},
 	releaseDate: '2017-09-15'
 }

@@ -1,0 +1,149 @@
+{
+  "generatedAt": "2026-05-31T23:02:47.492Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": true
+  },
+  "imports": [
+    {
+      "importedAt": "2026-05-31T23:02:27.642Z",
+      "cardtrader": {
+        "id": 2070,
+        "code": "sm10",
+        "name": "Double Blaze"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SM",
+        "setId": "SM10",
+        "setFile": "data-asia\\SM\\SM10.ts",
+        "cardsDir": "data-asia\\SM\\SM10"
+      },
+      "stats": {
+        "blueprints": 117,
+        "cardsWritten": 117,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T23:02:31.503Z",
+      "cardtrader": {
+        "id": 3451,
+        "code": "sm10b",
+        "name": "Sky Legend"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SM",
+        "setId": "SM10b",
+        "setFile": "data-asia\\SM\\SM10b.ts",
+        "cardsDir": "data-asia\\SM\\SM10b"
+      },
+      "stats": {
+        "blueprints": 70,
+        "cardsWritten": 70,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T23:02:35.476Z",
+      "cardtrader": {
+        "id": 3308,
+        "code": "sm11a",
+        "name": "Remix Bout"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SM",
+        "setId": "SM11a",
+        "setFile": "data-asia\\SM\\SM11a.ts",
+        "cardsDir": "data-asia\\SM\\SM11a"
+      },
+      "stats": {
+        "blueprints": 83,
+        "cardsWritten": 83,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T23:02:39.346Z",
+      "cardtrader": {
+        "id": 3449,
+        "code": "sm11b",
+        "name": "Dream League"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SM",
+        "setId": "SM11b",
+        "setFile": "data-asia\\SM\\SM11b.ts",
+        "cardsDir": "data-asia\\SM\\SM11b"
+      },
+      "stats": {
+        "blueprints": 77,
+        "cardsWritten": 77,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T23:02:43.370Z",
+      "cardtrader": {
+        "id": 2073,
+        "code": "sm12",
+        "name": "Alter Genesis"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SM",
+        "setId": "SM12",
+        "setFile": "data-asia\\SM\\SM12.ts",
+        "cardsDir": "data-asia\\SM\\SM12"
+      },
+      "stats": {
+        "blueprints": 119,
+        "cardsWritten": 119,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T23:02:47.492Z",
+      "cardtrader": {
+        "id": 3444,
+        "code": "sm12a",
+        "name": "Tag Team GX: Tag All Stars"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SM",
+        "setId": "SM12a",
+        "setFile": "data-asia\\SM\\SM12a.ts",
+        "cardsDir": "data-asia\\SM\\SM12a"
+      },
+      "stats": {
+        "blueprints": 235,
+        "cardsWritten": 235,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

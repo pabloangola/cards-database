@@ -1,6 +1,7 @@
 import * as OfficialTCGPlayer from './official'
 import * as Fallback from './fallback'
 import type RFC7807 from '../../RFCs/RFC7807'
+import { isVerboseStartup } from '../../startupUi'
 
 let source: (typeof OfficialTCGPlayer) | (typeof Fallback) = Fallback
 if (
@@ -8,10 +9,14 @@ if (
 	&& process.env.TCGPLAYER_CLIENT_SECRET
 	&& process.env.TCGPLAYER_CLIENT_NAME
 ) {
-	console.log('loading official TCGPlayer backend')
+	if (isVerboseStartup()) {
+		console.log('loading official TCGPlayer backend')
+	}
 	source = OfficialTCGPlayer
 } else {
-	console.log('loading fallback TCGPlayer backend')
+	if (isVerboseStartup()) {
+		console.log('loading fallback TCGPlayer backend')
+	}
 }
 
 

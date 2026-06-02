@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-05-31T23:08:53.370Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": true
+  },
+  "imports": [
+    {
+      "importedAt": "2026-05-31T23:08:53.369Z",
+      "cardtrader": {
+        "id": 4011,
+        "code": "csm25",
+        "name": "CSM2.5: Striking Competition"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SM",
+        "setId": "CSM2.5",
+        "setFile": "data-asia\\SM\\CSM2.5.ts",
+        "cardsDir": "data-asia\\SM\\CSM2.5"
+      },
+      "stats": {
+        "blueprints": 100,
+        "cardsWritten": 100,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

@@ -4,6 +4,7 @@ import serie from '../S'
 const set: Set = {
 	id: 'SPD',
 	name: {
+		en: 'VSTAR&VMAX High-Class Deck Deoxys',
 		'zh-tw': 'VSTAR&VMAX 高級牌組 代歐奇希斯'
 	},
 

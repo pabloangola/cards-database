@@ -1,0 +1,23 @@
+import { Card } from "../../../interfaces"
+import Set from "../ADV5"
+
+const card: Card = {
+	set: Set,
+
+	name: {
+		en: 'Milotic',
+		ja: 'Milotic',
+	},
+
+	category: 'Pokemon',
+	rarity: 'Holo Rare',
+
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 144109
+		}
+	}],
+}
+
+export default card

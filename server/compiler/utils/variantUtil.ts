@@ -1,5 +1,5 @@
 
-import { SupportedLanguages, variant_detailed } from "../../../interfaces";
+import type { SupportedLanguages, variant_detailed } from "../../../interfaces.d.ts";
 import translate from "./translationUtil";
 
 // Adding new keys to this array will break existing identifiers, so be cautious when modifying it. Only include keys that are essential for identifying a variant uniquely.

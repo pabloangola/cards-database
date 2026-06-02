@@ -4,16 +4,21 @@ import serie from '../SM'
 const set: Set = {
 	id: 'SM3H',
 	name: {
-		ja: '闘う虹を見たか',
-		ko: '어둠을 밝힌 무지개'
+		en: 'To Have Seen the Battle Rainbow',
+		ja: 'To Have Seen the Battle Rainbow',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 51
+		official: 64
 	},
-	releaseDate: '2017-06-16'
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 2059
+	}
 }
 
 export default set

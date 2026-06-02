@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-05-31T23:10:32.479Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": true
+  },
+  "imports": [
+    {
+      "importedAt": "2026-05-31T23:10:32.477Z",
+      "cardtrader": {
+        "id": 4279,
+        "code": "csv5",
+        "name": "CSV5: Dark Crystal Blaze"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SV",
+        "setId": "CSV5C",
+        "setFile": "data-asia\\SV\\CSV5C.ts",
+        "cardsDir": "data-asia\\SV\\CSV5C"
+      },
+      "stats": {
+        "blueprints": 283,
+        "cardsWritten": 283,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

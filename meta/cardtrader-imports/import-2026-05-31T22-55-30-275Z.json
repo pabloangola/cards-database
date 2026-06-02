@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-05-31T22:55:30.275Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": true
+  },
+  "imports": [
+    {
+      "importedAt": "2026-05-31T22:55:30.273Z",
+      "cardtrader": {
+        "id": 2035,
+        "code": "bw8",
+        "name": "Thunder Knuckle"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "BW",
+        "setId": "BW8b",
+        "setFile": "data-asia\\BW\\BW8b.ts",
+        "cardsDir": "data-asia\\BW\\BW8b"
+      },
+      "stats": {
+        "blueprints": 58,
+        "cardsWritten": 58,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

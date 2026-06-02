@@ -4,6 +4,7 @@ import serie from '../SM'
 const set: Set = {
 	id: 'AS3D',
 	name: {
+		en: 'Hidden Shadows',
 		id: 'Starter Deck GX Bayangan Tersembunyi'
 	},
 

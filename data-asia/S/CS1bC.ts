@@ -4,15 +4,21 @@ import serie from '../S'
 const set: Set = {
 	id: 'CS1bC',
 	name: {
-		'zh-cn': '极巨争锋 焰',
+		en: 'CS1b: Dynamax Clash - Flame',
+		ja: 'CS1b: Dynamax Clash - Flame',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 136
+		official: 201
 	},
-	releaseDate: '2023-05-19',
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 4044
+	}
 }
 
 export default set

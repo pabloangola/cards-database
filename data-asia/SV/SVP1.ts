@@ -4,6 +4,7 @@ import serie from '../SV'
 const set: Set = {
 	id: 'SVP1',
 	name: {
+		en: 'ex Special Set',
 		'zh-tw': 'ex特別組合'
 	},
 

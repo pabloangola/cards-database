@@ -5,6 +5,7 @@ const set: Set = {
 	id: 'SV5a',
 
 	name: {
+		en: 'Crimson Haze',
 		ja: 'クリムゾンヘイズ',
 		'zh-tw': '緋紅薄霧',
 		th: 'หมอกสีชาด',

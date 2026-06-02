@@ -4,6 +4,7 @@ import serie from '../XY'
 const set: Set = {
 	id: 'XY5a',
 	name: {
+		en: 'Gaia Volcano',
 		ja: 'タイダルストーム',
 		ko: '타이달스톰'
 	},

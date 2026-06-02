@@ -4,6 +4,7 @@ import serie from '../S'
 const set: Set = {
 	id: 'SI',
 	name: {
+		en: 'Starter Decks 100',
 		'zh-tw': '初階牌組100'
 	},
 

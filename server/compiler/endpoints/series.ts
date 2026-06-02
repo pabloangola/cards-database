@@ -1,4 +1,4 @@
-import { SupportedLanguages } from '../../../interfaces'
+import type { SupportedLanguages } from '../../../interfaces.d.ts'
 import { FileFunction } from '../compilerInterfaces'
 import { getSeries, serieToSerieSingle } from '../utils/serieUtil'
 

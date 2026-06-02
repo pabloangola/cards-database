@@ -5,6 +5,7 @@ const set: Set = {
 	id: 'S10b',
 
 	name: {
+		en: 'Pokémon GO Enhanced Expansion Pack',
 		ja: 'Pokémon GO',
 		ko: 'Pokémon GO',
 		'zh-tw': 'Pokémon GO',

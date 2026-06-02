@@ -5,6 +5,7 @@ const set: Set = {
 	id: 'S10D',
 
 	name: {
+		en: 'Time Gazer',
 		ja: 'タイムゲイザー',
 		ko: '타임게이저',
 		'zh-tw': '時間觀察者',

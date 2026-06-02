@@ -4,15 +4,21 @@ import serie from '../SV'
 const set: Set = {
 	id: 'CSV5C',
 	name: {
-		'zh-cn': '黑晶炽诚',
+		en: 'CSV5: Dark Crystal Blaze',
+		ja: 'CSV5: Dark Crystal Blaze',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 129
+		official: 283
 	},
-	releaseDate: '2025-09-12',
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 4279
+	}
 }
 
 export default set

@@ -4,6 +4,7 @@ import serie from '../DPt'
 const set: Set = {
 	id: 'Pt1',
 	name: {
+		en: 'Galactic\'s Conquest',
 		ja: 'ギンガの覇道'
 	},
 

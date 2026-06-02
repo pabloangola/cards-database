@@ -4,6 +4,7 @@ import serie from '../S'
 const set: Set = {
 	id: 'SC3a',
 	name: {
+		en: 'Shiny VMAX Collection SET A',
 		id: 'Koleksi VMAX Berkilau Set A',
 		th: 'ชนี VMAX คอลเลกชัน ชุด A'
 	},

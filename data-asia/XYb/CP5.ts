@@ -4,16 +4,21 @@ import serie from '../XYb'
 const set: Set = {
 	id: 'CP5',
 	name: {
-		ja: '冷酷の反逆者',
-		ko: '냉혹한 반역자'
+		en: 'Mythical & Legendary Dream Shine Collection',
+		ja: 'Mythical & Legendary Dream Shine Collection',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 36
+		official: 38
 	},
-	releaseDate: '2016-07-16'
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 2174
+	}
 }
 
 export default set

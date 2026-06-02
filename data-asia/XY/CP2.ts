@@ -4,16 +4,21 @@ import serie from '../XY'
 const set: Set = {
 	id: 'CP2',
 	name: {
-		ja: '伝説キラコレクション',
-		ko: '레전드 컬렉션'
+		en: 'Legendary Shine Collection',
+		ja: 'Legendary Shine Collection',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 27
+		official: 29
 	},
-	releaseDate: '2015-07-18'
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 2782
+	}
 }
 
 export default set

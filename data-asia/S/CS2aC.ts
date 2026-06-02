@@ -4,15 +4,21 @@ import serie from '../S'
 const set: Set = {
 	id: 'CS2aC',
 	name: {
-		'zh-cn': '浓墨重彩 黎',
+		en: 'CS2a: Vivid Portrayals - Obsidian',
+		ja: 'CS2a: Vivid Portrayals - Obsidian',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 115
+		official: 142
 	},
-	releaseDate: '2023-08-18',
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 4045
+	}
 }
 
 export default set

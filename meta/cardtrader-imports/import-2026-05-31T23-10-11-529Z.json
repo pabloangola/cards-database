@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-05-31T23:10:11.529Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": true
+  },
+  "imports": [
+    {
+      "importedAt": "2026-05-31T23:10:11.528Z",
+      "cardtrader": {
+        "id": 2782,
+        "code": "cp2",
+        "name": "Legendary Shine Collection"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "XY",
+        "setId": "CP2",
+        "setFile": "data-asia\\XY\\CP2.ts",
+        "cardsDir": "data-asia\\XY\\CP2"
+      },
+      "stats": {
+        "blueprints": 29,
+        "cardsWritten": 29,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

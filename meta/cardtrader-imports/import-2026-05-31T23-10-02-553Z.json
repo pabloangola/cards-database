@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-05-31T23:10:02.553Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": true
+  },
+  "imports": [
+    {
+      "importedAt": "2026-05-31T23:10:02.552Z",
+      "cardtrader": {
+        "id": 3665,
+        "code": "xy",
+        "name": "The Best of XY"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "XYb",
+        "setId": "XY",
+        "setFile": "data-asia\\XYb\\XY.ts",
+        "cardsDir": "data-asia\\XYb\\XY"
+      },
+      "stats": {
+        "blueprints": 188,
+        "cardsWritten": 188,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

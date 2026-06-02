@@ -71,9 +71,11 @@ export async function findOneSet(lang: SupportedLanguages, query: Query<SDKSet>)
 }
 
 export function setToBrief(set: SDKSet): SetResume {
+	const englishName = (set as SDKSet & { englishName?: string }).englishName
 	return {
 		id: set.id,
 		name: set.name,
+		...(englishName ? { englishName } : {}),
 		logo: set.logo,
 		symbol: set.symbol,
 		cardCount: {

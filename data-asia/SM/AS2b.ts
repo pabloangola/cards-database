@@ -4,6 +4,7 @@ import serie from '../SM'
 const set: Set = {
 	id: 'AS2b',
 	name: {
+		en: 'Legendary Awakening SET B',
 		id: 'Booster Pack Kebangkitan Legenda Set B'
 	},
 

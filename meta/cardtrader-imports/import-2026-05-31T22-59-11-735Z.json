@@ -1,0 +1,149 @@
+{
+  "generatedAt": "2026-05-31T22:59:11.736Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": true
+  },
+  "imports": [
+    {
+      "importedAt": "2026-05-31T22:58:50.451Z",
+      "cardtrader": {
+        "id": 2003,
+        "code": "mic",
+        "name": "Miracle Crystal"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "PCG",
+        "setId": "PCG8",
+        "setFile": "data-asia\\PCG\\PCG8.ts",
+        "cardsDir": "data-asia\\PCG\\PCG8"
+      },
+      "stats": {
+        "blueprints": 76,
+        "cardsWritten": 1,
+        "cardsSkipped": 75,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:58:54.294Z",
+      "cardtrader": {
+        "id": 2004,
+        "code": "odffe",
+        "name": "Offense and Defense of the Furthest Ends"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "PCG",
+        "setId": "PCG9",
+        "setFile": "data-asia\\PCG\\PCG9.ts",
+        "cardsDir": "data-asia\\PCG\\PCG9"
+      },
+      "stats": {
+        "blueprints": 68,
+        "cardsWritten": 0,
+        "cardsSkipped": 68,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:58:58.465Z",
+      "cardtrader": {
+        "id": 2005,
+        "code": "wcp",
+        "name": "World Champions Pack"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "PCG",
+        "setId": "PCG10",
+        "setFile": "data-asia\\PCG\\PCG10.ts",
+        "cardsDir": "data-asia\\PCG\\PCG10"
+      },
+      "stats": {
+        "blueprints": 108,
+        "cardsWritten": 108,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:59:02.714Z",
+      "cardtrader": {
+        "id": 2038,
+        "code": "xy1",
+        "name": "Collection X"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "XY",
+        "setId": "XY1a",
+        "setFile": "data-asia\\XY\\XY1a.ts",
+        "cardsDir": "data-asia\\XY\\XY1a"
+      },
+      "stats": {
+        "blueprints": 65,
+        "cardsWritten": 65,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:59:07.332Z",
+      "cardtrader": {
+        "id": 2039,
+        "code": "xy1y",
+        "name": "Collection Y"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "XY",
+        "setId": "XY1b",
+        "setFile": "data-asia\\XY\\XY1b.ts",
+        "cardsDir": "data-asia\\XY\\XY1b"
+      },
+      "stats": {
+        "blueprints": 63,
+        "cardsWritten": 63,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:59:11.734Z",
+      "cardtrader": {
+        "id": 2040,
+        "code": "xy2w",
+        "name": "Wild Blaze"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "XY",
+        "setId": "XY2",
+        "setFile": "data-asia\\XY\\XY2.ts",
+        "cardsDir": "data-asia\\XY\\XY2"
+      },
+      "stats": {
+        "blueprints": 90,
+        "cardsWritten": 90,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

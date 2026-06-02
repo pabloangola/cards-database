@@ -5,6 +5,7 @@ const set: Set = {
 	id: 'SV7a',
 
 	name: {
+		en: 'Paradise Dragona',
 		ja: '楽園ドラゴーナ',
 		'zh-tw': '樂園騰龍',
 		'zh-cn': '樂園騰龍'

@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-05-31T22:55:24.751Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": true
+  },
+  "imports": [
+    {
+      "importedAt": "2026-05-31T22:55:24.748Z",
+      "cardtrader": {
+        "id": 2034,
+        "code": "bw8b",
+        "name": "Spiral Force"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "BW",
+        "setId": "BW8a",
+        "setFile": "data-asia\\BW\\BW8a.ts",
+        "cardsDir": "data-asia\\BW\\BW8a"
+      },
+      "stats": {
+        "blueprints": 60,
+        "cardsWritten": 60,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

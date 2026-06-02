@@ -4,6 +4,7 @@ import serie from '../S'
 const set: Set = {
 	id: 'SN',
 	name: {
+		en: 'Starter Deck 100 CoroCoro ver.',
 		'zh-tw': '初階牌組100 特別版'
 	},
 

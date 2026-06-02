@@ -5,6 +5,7 @@ const set: Set = {
 	id: 'S11a',
 
 	name: {
+		en: 'Incandescent Arcana',
 		ja: '白熱のアルカナ',
 		ko: '백열의 아르카나',
 		'zh-tw': '白熱奧祕',

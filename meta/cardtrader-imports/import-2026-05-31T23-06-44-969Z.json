@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-05-31T23:06:44.969Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": true
+  },
+  "imports": [
+    {
+      "importedAt": "2026-05-31T23:06:44.967Z",
+      "cardtrader": {
+        "id": 4026,
+        "code": "cs15",
+        "name": "CS1.5: Dynamax Tactics"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "S",
+        "setId": "CS1.5C",
+        "setFile": "data-asia\\S\\CS1.5C.ts",
+        "cardsDir": "data-asia\\S\\CS1.5C"
+      },
+      "stats": {
+        "blueprints": 97,
+        "cardsWritten": 97,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

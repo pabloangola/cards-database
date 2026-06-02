@@ -4,15 +4,21 @@ import serie from '../S'
 const set: Set = {
 	id: 'CS2.5C',
 	name: {
-		'zh-cn': '璀璨反击',
+		en: 'CS2.5: Brilliant Counterattack',
+		ja: 'CS2.5: Brilliant Counterattack',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 59
+		official: 80
 	},
-	releaseDate: '2023-09-29',
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 4027
+	}
 }
 
 export default set

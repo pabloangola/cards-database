@@ -1,0 +1,17 @@
+{
+  "updatedAt": "2026-06-01T01:11:55.695Z",
+  "phase": "initial",
+  "options": {
+    "rate": 18,
+    "outDir": "D:\\TcgDex images",
+    "maxRetries": 3,
+    "force": false
+  },
+  "stats": {
+    "downloaded": 9776,
+    "skipped": 7372,
+    "failed": 0
+  },
+  "failures": [],
+  "totalJobs": 17148
+}

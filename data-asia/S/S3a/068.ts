@@ -1,0 +1,23 @@
+import { Card } from "../../../interfaces"
+import Set from "../S3a"
+
+const card: Card = {
+	set: Set,
+
+	name: {
+		en: 'Hero\'s Medal',
+		ja: 'Hero\'s Medal',
+	},
+
+	category: 'Pokemon',
+	rarity: 'Uncommon',
+
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 224806
+		}
+	}],
+}
+
+export default card

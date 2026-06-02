@@ -1,0 +1,149 @@
+{
+  "generatedAt": "2026-05-31T22:47:09.266Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": true
+  },
+  "imports": [
+    {
+      "importedAt": "2026-05-31T22:46:49.718Z",
+      "cardtrader": {
+        "id": 2019,
+        "code": "l1",
+        "name": "HeartGold Collection"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "L",
+        "setId": "L1a",
+        "setFile": "data-asia\\L\\L1a.ts",
+        "cardsDir": "data-asia\\L\\L1a"
+      },
+      "stats": {
+        "blueprints": 80,
+        "cardsWritten": 80,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:46:53.578Z",
+      "cardtrader": {
+        "id": 2020,
+        "code": "l1ss",
+        "name": "SoulSilver Collection"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "L",
+        "setId": "L1b",
+        "setFile": "data-asia\\L\\L1b.ts",
+        "cardsDir": "data-asia\\L\\L1b"
+      },
+      "stats": {
+        "blueprints": 71,
+        "cardsWritten": 71,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:46:57.441Z",
+      "cardtrader": {
+        "id": 1991,
+        "code": "exp",
+        "name": "ADV Expansion Pack"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "ADV",
+        "setId": "ADV1",
+        "setFile": "data-asia\\ADV\\ADV1.ts",
+        "cardsDir": "data-asia\\ADV\\ADV1"
+      },
+      "stats": {
+        "blueprints": 56,
+        "cardsWritten": 56,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:47:01.283Z",
+      "cardtrader": {
+        "id": 2023,
+        "code": "bw1b",
+        "name": "Black Collection"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "BW",
+        "setId": "BW1a",
+        "setFile": "data-asia\\BW\\BW1a.ts",
+        "cardsDir": "data-asia\\BW\\BW1a"
+      },
+      "stats": {
+        "blueprints": 56,
+        "cardsWritten": 56,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:47:05.169Z",
+      "cardtrader": {
+        "id": 2025,
+        "code": "bw2",
+        "name": "Red Collection"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "BW",
+        "setId": "BW2",
+        "setFile": "data-asia\\BW\\BW2.ts",
+        "cardsDir": "data-asia\\BW\\BW2"
+      },
+      "stats": {
+        "blueprints": 72,
+        "cardsWritten": 72,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:47:09.266Z",
+      "cardtrader": {
+        "id": 2015,
+        "code": "pt1",
+        "name": "Galactic's Conquest"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "DPt",
+        "setId": "Pt1",
+        "setFile": "data-asia\\DPt\\Pt1.ts",
+        "cardsDir": "data-asia\\DPt\\Pt1"
+      },
+      "stats": {
+        "blueprints": 96,
+        "cardsWritten": 96,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

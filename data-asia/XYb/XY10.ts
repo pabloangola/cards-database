@@ -4,16 +4,21 @@ import serie from '../XYb'
 const set: Set = {
 	id: 'XY10',
 	name: {
-		ja: 'めざめる超王',
-		ko: '초능력의 제왕'
+		en: 'Awakening Psychic King',
+		ja: 'Awakening Psychic King',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 78
+		official: 90
 	},
-	releaseDate: '2016-03-18'
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 2051
+	}
 }
 
 export default set

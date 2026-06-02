@@ -1,0 +1,149 @@
+{
+  "generatedAt": "2026-05-31T23:00:38.567Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": true
+  },
+  "imports": [
+    {
+      "importedAt": "2026-05-31T23:00:17.448Z",
+      "cardtrader": {
+        "id": 2055,
+        "code": "sm1s",
+        "name": "Collection Sun"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SM",
+        "setId": "SM1S",
+        "setFile": "data-asia\\SM\\SM1S.ts",
+        "cardsDir": "data-asia\\SM\\SM1S"
+      },
+      "stats": {
+        "blueprints": 80,
+        "cardsWritten": 80,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T23:00:21.701Z",
+      "cardtrader": {
+        "id": 2056,
+        "code": "sm1m",
+        "name": "Collection Moon"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SM",
+        "setId": "SM1M",
+        "setFile": "data-asia\\SM\\SM1M.ts",
+        "cardsDir": "data-asia\\SM\\SM1M"
+      },
+      "stats": {
+        "blueprints": 73,
+        "cardsWritten": 73,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T23:00:26.189Z",
+      "cardtrader": {
+        "id": 2057,
+        "code": "sm2k",
+        "name": "Islands Await You"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SM",
+        "setId": "SM2K",
+        "setFile": "data-asia\\SM\\SM2K.ts",
+        "cardsDir": "data-asia\\SM\\SM2K"
+      },
+      "stats": {
+        "blueprints": 62,
+        "cardsWritten": 62,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T23:00:30.181Z",
+      "cardtrader": {
+        "id": 2058,
+        "code": "sm2l",
+        "name": "Alolan Moonlight"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SM",
+        "setId": "SM2L",
+        "setFile": "data-asia\\SM\\SM2L.ts",
+        "cardsDir": "data-asia\\SM\\SM2L"
+      },
+      "stats": {
+        "blueprints": 62,
+        "cardsWritten": 62,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T23:00:34.387Z",
+      "cardtrader": {
+        "id": 2068,
+        "code": "sm8",
+        "name": "Super-Burst Impact"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SM",
+        "setId": "SM8",
+        "setFile": "data-asia\\SM\\SM8.ts",
+        "cardsDir": "data-asia\\SM\\SM8"
+      },
+      "stats": {
+        "blueprints": 111,
+        "cardsWritten": 111,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T23:00:38.566Z",
+      "cardtrader": {
+        "id": 2069,
+        "code": "sm9",
+        "name": "Tag Bolt"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SM",
+        "setId": "SM9",
+        "setFile": "data-asia\\SM\\SM9.ts",
+        "cardsDir": "data-asia\\SM\\SM9"
+      },
+      "stats": {
+        "blueprints": 118,
+        "cardsWritten": 118,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

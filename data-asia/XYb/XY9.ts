@@ -4,6 +4,7 @@ import serie from '../XYb'
 const set: Set = {
 	id: 'XY9',
 	name: {
+		en: 'Rage of the Broken Heaven',
 		ja: '破天の怒り',
 		ko: '천공의 분노'
 	},
@@ -11,7 +12,7 @@ const set: Set = {
 	serie: serie,
 
 	cardCount: {
-		official: 80
+		official: 89
 	},
 	releaseDate: '2015-12-11'
 }

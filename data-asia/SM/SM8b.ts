@@ -4,6 +4,7 @@ import serie from '../SM'
 const set: Set = {
 	id: 'SM8b',
 	name: {
+		en: 'GX Ultra Shiny',
 		ja: 'GXウルトラシャイニ',
 		ko: 'GX 울트라샤이니 ULTIMATE'
 	},
@@ -11,11 +12,12 @@ const set: Set = {
 	serie: serie,
 
 	cardCount: {
-		official: 150
+		official: 259
 	},
 	releaseDate: '2018-10-05',
 
 	thirdParty: {
+		cardtrader: 0,
 		cardmarket: 3856
 	}
 }

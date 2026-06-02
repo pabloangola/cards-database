@@ -1,0 +1,149 @@
+{
+  "generatedAt": "2026-05-31T22:58:42.924Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": true
+  },
+  "imports": [
+    {
+      "importedAt": "2026-05-31T22:58:22.316Z",
+      "cardtrader": {
+        "id": 1996,
+        "code": "fol",
+        "name": "Flight of Legends"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "PCG",
+        "setId": "PCG1",
+        "setFile": "data-asia\\PCG\\PCG1.ts",
+        "cardsDir": "data-asia\\PCG\\PCG1"
+      },
+      "stats": {
+        "blueprints": 84,
+        "cardsWritten": 2,
+        "cardsSkipped": 82,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:58:26.178Z",
+      "cardtrader": {
+        "id": 1998,
+        "code": "cbs",
+        "name": "Clash of the Blue Sky"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "PCG",
+        "setId": "PCG2",
+        "setFile": "data-asia\\PCG\\PCG2.ts",
+        "cardsDir": "data-asia\\PCG\\PCG2"
+      },
+      "stats": {
+        "blueprints": 82,
+        "cardsWritten": 1,
+        "cardsSkipped": 81,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:58:30.020Z",
+      "cardtrader": {
+        "id": 1974,
+        "code": "rog",
+        "name": "Rocket Gang"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "PCG",
+        "setId": "PCG3",
+        "setFile": "data-asia\\PCG\\PCG3.ts",
+        "cardsDir": "data-asia\\PCG\\PCG3"
+      },
+      "stats": {
+        "blueprints": 67,
+        "cardsWritten": 0,
+        "cardsSkipped": 67,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:58:34.378Z",
+      "cardtrader": {
+        "id": 1999,
+        "code": "gsso",
+        "name": "Golden Sky, Silvery Ocean"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "PCG",
+        "setId": "PCG4",
+        "setFile": "data-asia\\PCG\\PCG4.ts",
+        "cardsDir": "data-asia\\PCG\\PCG4"
+      },
+      "stats": {
+        "blueprints": 106,
+        "cardsWritten": 103,
+        "cardsSkipped": 3,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:58:38.692Z",
+      "cardtrader": {
+        "id": 2000,
+        "code": "hrt",
+        "name": "Holon Research Tower"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "PCG",
+        "setId": "PCG6",
+        "setFile": "data-asia\\PCG\\PCG6.ts",
+        "cardsDir": "data-asia\\PCG\\PCG6"
+      },
+      "stats": {
+        "blueprints": 87,
+        "cardsWritten": 1,
+        "cardsSkipped": 86,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:58:42.920Z",
+      "cardtrader": {
+        "id": 2001,
+        "code": "mif",
+        "name": "Mirage Forest"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "PCG",
+        "setId": "PCG5",
+        "setFile": "data-asia\\PCG\\PCG5.ts",
+        "cardsDir": "data-asia\\PCG\\PCG5"
+      },
+      "stats": {
+        "blueprints": 86,
+        "cardsWritten": 82,
+        "cardsSkipped": 4,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

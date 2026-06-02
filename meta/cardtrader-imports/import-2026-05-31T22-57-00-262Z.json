@@ -1,0 +1,103 @@
+{
+  "generatedAt": "2026-05-31T22:57:00.262Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": true
+  },
+  "imports": [
+    {
+      "importedAt": "2026-05-31T22:56:48.490Z",
+      "cardtrader": {
+        "id": 2029,
+        "code": "bw5b",
+        "name": "Dragon Blast"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "BW",
+        "setId": "BW5a",
+        "setFile": "data-asia\\BW\\BW5a.ts",
+        "cardsDir": "data-asia\\BW\\BW5a"
+      },
+      "stats": {
+        "blueprints": 57,
+        "cardsWritten": 57,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:56:52.386Z",
+      "cardtrader": {
+        "id": 2030,
+        "code": "bw5",
+        "name": "Dragon Blade"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "BW",
+        "setId": "BW5b",
+        "setFile": "data-asia\\BW\\BW5b.ts",
+        "cardsDir": "data-asia\\BW\\BW5b"
+      },
+      "stats": {
+        "blueprints": 57,
+        "cardsWritten": 57,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:56:56.228Z",
+      "cardtrader": {
+        "id": 2095,
+        "code": "ll",
+        "name": "Lost Link"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "L",
+        "setId": "LL",
+        "setFile": "data-asia\\L\\LL.ts",
+        "cardsDir": "data-asia\\L\\LL"
+      },
+      "stats": {
+        "blueprints": 38,
+        "cardsWritten": 38,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:57:00.261Z",
+      "cardtrader": {
+        "id": 2018,
+        "code": "aoa",
+        "name": "Advent of Arceus"
+      },
+      "tcgdex": {
+        "locale": "en",
+        "serieFolder": "CT",
+        "setId": "pl4",
+        "setFile": "data\\CT\\pl4.ts",
+        "cardsDir": "data\\CT\\pl4"
+      },
+      "stats": {
+        "blueprints": 98,
+        "cardsWritten": 98,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

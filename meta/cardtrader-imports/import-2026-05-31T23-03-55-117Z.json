@@ -1,0 +1,264 @@
+{
+  "generatedAt": "2026-05-31T23:03:55.117Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": true
+  },
+  "imports": [
+    {
+      "importedAt": "2026-05-31T23:03:15.971Z",
+      "cardtrader": {
+        "id": 1600,
+        "code": "fli",
+        "name": "Forbidden Light"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SM",
+        "setId": "SM6",
+        "setFile": "data-asia\\SM\\SM6.ts",
+        "cardsDir": "data-asia\\SM\\SM6"
+      },
+      "stats": {
+        "blueprints": 161,
+        "cardsWritten": 161,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T23:03:19.828Z",
+      "cardtrader": {
+        "id": 2781,
+        "code": "sm6a",
+        "name": "Dragon Storm"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SM",
+        "setId": "SM6a",
+        "setFile": "data-asia\\SM\\SM6a.ts",
+        "cardsDir": "data-asia\\SM\\SM6a"
+      },
+      "stats": {
+        "blueprints": 67,
+        "cardsWritten": 67,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T23:03:23.698Z",
+      "cardtrader": {
+        "id": 3796,
+        "code": "sm7a",
+        "name": "Thunderclap Spark"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SM",
+        "setId": "SM7a",
+        "setFile": "data-asia\\SM\\SM7a.ts",
+        "cardsDir": "data-asia\\SM\\SM7a"
+      },
+      "stats": {
+        "blueprints": 73,
+        "cardsWritten": 73,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T23:03:27.559Z",
+      "cardtrader": {
+        "id": 3437,
+        "code": "sm7b",
+        "name": "Fairy Rise"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SM",
+        "setId": "SM7b",
+        "setFile": "data-asia\\SM\\SM7b.ts",
+        "cardsDir": "data-asia\\SM\\SM7b"
+      },
+      "stats": {
+        "blueprints": 63,
+        "cardsWritten": 63,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T23:03:31.416Z",
+      "cardtrader": {
+        "id": 3448,
+        "code": "sm8a",
+        "name": "Dark Order"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SM",
+        "setId": "SM8a",
+        "setFile": "data-asia\\SM\\SM8a.ts",
+        "cardsDir": "data-asia\\SM\\SM8a"
+      },
+      "stats": {
+        "blueprints": 65,
+        "cardsWritten": 65,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T23:03:35.605Z",
+      "cardtrader": {
+        "id": 2072,
+        "code": "sm8b",
+        "name": "High Class Pack GX Ultra Shiny"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SM",
+        "setId": "SM8b",
+        "setFile": "data-asia\\SM\\SM8b.ts",
+        "cardsDir": "data-asia\\SM\\SM8b"
+      },
+      "stats": {
+        "blueprints": 259,
+        "cardsWritten": 259,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T23:03:39.599Z",
+      "cardtrader": {
+        "id": 3342,
+        "code": "sm9a",
+        "name": "Night Unison"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SM",
+        "setId": "SM9a",
+        "setFile": "data-asia\\SM\\SM9a.ts",
+        "cardsDir": "data-asia\\SM\\SM9a"
+      },
+      "stats": {
+        "blueprints": 71,
+        "cardsWritten": 71,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T23:03:43.465Z",
+      "cardtrader": {
+        "id": 3609,
+        "code": "sm9b",
+        "name": "Full Metal Wall"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SM",
+        "setId": "SM9b",
+        "setFile": "data-asia\\SM\\SM9b.ts",
+        "cardsDir": "data-asia\\SM\\SM9b"
+      },
+      "stats": {
+        "blueprints": 71,
+        "cardsWritten": 71,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T23:03:47.286Z",
+      "cardtrader": {
+        "id": 3438,
+        "code": "smp2",
+        "name": "Great Detective Pikachu"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SM",
+        "setId": "SMP2",
+        "setFile": "data-asia\\SM\\SMP2.ts",
+        "cardsDir": "data-asia\\SM\\SMP2"
+      },
+      "stats": {
+        "blueprints": 27,
+        "cardsWritten": 27,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T23:03:51.115Z",
+      "cardtrader": {
+        "id": 3578,
+        "code": "cp3",
+        "name": "PokéKyun Collection"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "XYb",
+        "setId": "CP3",
+        "setFile": "data-asia\\XYb\\CP3.ts",
+        "cardsDir": "data-asia\\XYb\\CP3"
+      },
+      "stats": {
+        "blueprints": 32,
+        "cardsWritten": 32,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T23:03:55.117Z",
+      "cardtrader": {
+        "id": 2049,
+        "code": "xy9",
+        "name": "Rage of the Broken Heavens"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "XYb",
+        "setId": "XY9",
+        "setFile": "data-asia\\XYb\\XY9.ts",
+        "cardsDir": "data-asia\\XYb\\XY9"
+      },
+      "stats": {
+        "blueprints": 89,
+        "cardsWritten": 89,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

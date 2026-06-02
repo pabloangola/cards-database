@@ -4,6 +4,7 @@ import serie from '../SM'
 const set: Set = {
 	id: 'SM2L',
 	name: {
+		en: 'Alolan Moonlight',
 		ja: 'アローラの月光',
 		ko: '알로라의 달빛'
 	},
@@ -11,7 +12,7 @@ const set: Set = {
 	serie: serie,
 
 	cardCount: {
-		official: 50
+		official: 62
 	},
 	releaseDate: '2017-03-17'
 }

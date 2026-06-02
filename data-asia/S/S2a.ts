@@ -4,6 +4,7 @@ import serie from '../S'
 const set: Set = {
 	id: 'S2a',
 	name: {
+		en: 'Explosive Flame Walker',
 		ja: '爆炎ウォーカー',
 		ko: '폭염워커'
 	},
@@ -11,13 +12,14 @@ const set: Set = {
 	serie: serie,
 
 	cardCount: {
-		official: 70
+		official: 86
 	},
 	releaseDate: {
 		ja: '2020-04-24'
 	},
 
 	thirdParty: {
+		cardtrader: 0,
 		cardmarket: 3219
 	}
 }

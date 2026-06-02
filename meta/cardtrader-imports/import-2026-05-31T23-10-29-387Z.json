@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-05-31T23:10:29.387Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": true
+  },
+  "imports": [
+    {
+      "importedAt": "2026-05-31T23:10:29.386Z",
+      "cardtrader": {
+        "id": 4163,
+        "code": "csv3",
+        "name": "CSV3: Fearless Terastal"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SV",
+        "setId": "CSV3C",
+        "setFile": "data-asia\\SV\\CSV3C.ts",
+        "cardsDir": "data-asia\\SV\\CSV3C"
+      },
+      "stats": {
+        "blueprints": 169,
+        "cardsWritten": 169,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

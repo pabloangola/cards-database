@@ -4,6 +4,7 @@ import serie from '../S'
 const set: Set = {
 	id: 'SLD',
 	name: {
+		en: 'Starter Set Darkrai VSTAR',
 		'zh-tw': '起始組合VSTAR 達克萊伊'
 	},
 

@@ -2,23 +2,23 @@ import { Set } from '../../interfaces'
 import serie from '../S'
 
 const set: Set = {
-	id: 'sv1a',
+	id: 'CS4a',
 	name: {
-		ja: 'トリプレットビート',
-		ko: '트리플렛비트',
-		'zh-tw': '三連音爆',
-		id: 'Hantaman Triplet',
-		th: 'ทริปเปิลบีต'
+		en: 'CS4a: Nine Colors Gathering - Friends',
+		ja: 'CS4a: Nine Colors Gathering - Friends',
 	},
 
 	serie: serie,
 
-	// TODO: fill the rest
-
 	cardCount: {
-		official: 101
+		official: 189
 	},
-	releaseDate: '2024-04-26'
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 4041
+	}
 }
 
 export default set

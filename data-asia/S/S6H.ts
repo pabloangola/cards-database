@@ -5,6 +5,7 @@ const set: Set = {
 	id: 'S6H',
 
 	name: {
+		en: 'Silver Lance & Jet Black Spirit Jumbo Pack Set',
 		ja: '白銀のランス',
 		ko: '백은의 랜스',
 		'zh-tw': '銀白戰槍',

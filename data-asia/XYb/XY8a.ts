@@ -4,16 +4,21 @@ import serie from '../XYb'
 const set: Set = {
 	id: 'XY8a',
 	name: {
-		ja: '青い衝撃',
-		ko: '푸른 충격'
+		en: 'Blue Shock',
+		ja: 'Blue Shock',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 59
+		official: 65
 	},
-	releaseDate: '2015-09-26'
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 2047
+	}
 }
 
 export default set

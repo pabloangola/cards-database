@@ -9,7 +9,11 @@
 		"dex:audit:report": "bun scripts/pokedexIdFixer/audit-dex-ids.ts --report",
 		"dex:fix:dry-run": "bun scripts/pokedexIdFixer/fix-dex-ids.ts --dry-run",
 		"dex:fix:apply": "bun scripts/pokedexIdFixer/fix-dex-ids.ts --apply",
-		"dex:lint": "bun scripts/pokedexIdFixer/lint-dex-ids.ts"
+		"dex:lint": "bun scripts/pokedexIdFixer/lint-dex-ids.ts",
+		"sets:english-labels": "node scripts/generate-set-english-labels.mjs",
+		"sets:english-names:apply": "node scripts/apply-set-english-names.mjs",
+		"import:cardtrader": "node scripts/import-cardtrader-expansion.mjs",
+		"images:cardtrader": "node scripts/download-cardtrader-images.mjs"
 	},
 	"devDependencies": {
 		"@dzeio/object-util": "^1.9.2",

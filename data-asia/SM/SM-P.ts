@@ -4,6 +4,7 @@ import serie from '../SM'
 const set: Set = {
 	id: 'SM-P',
 	name: {
+		en: 'Sun & Moon Promos',
 		'zh-tw': '特典卡 太陽&月亮'
 	},
 

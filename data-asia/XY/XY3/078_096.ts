@@ -1,0 +1,23 @@
+import { Card } from "../../../interfaces"
+import Set from "../XY3"
+
+const card: Card = {
+	set: Set,
+
+	name: {
+		en: 'Slaking',
+		ja: 'Slaking',
+	},
+
+	category: 'Pokemon',
+	rarity: 'Holo Rare',
+
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 141846
+		}
+	}],
+}
+
+export default card

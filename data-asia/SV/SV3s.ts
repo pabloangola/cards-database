@@ -4,6 +4,7 @@ import serie from '../SV'
 const set: Set = {
 	id: 'SV3s',
 	name: {
+		en: 'Ruler of the Black Flame',
 		id: 'Kilau Hitam'
 	},
 

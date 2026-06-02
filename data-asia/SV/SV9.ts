@@ -5,6 +5,7 @@ const set: Set = {
 	id: 'SV9',
 
 	name: {
+		en: 'Battle Partners',
 		ja: 'バトルパートナーズ',
 		"zh-cn": '對戰搭檔',
 		"zh-tw": '對戰搭檔'

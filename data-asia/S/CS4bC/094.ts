@@ -1,0 +1,23 @@
+import { Card } from "../../../interfaces"
+import Set from "../CS4bC"
+
+const card: Card = {
+	set: Set,
+
+	name: {
+		en: 'Salamence',
+		ja: 'Salamence',
+	},
+
+	category: 'Pokemon',
+	rarity: 'Holo Rare',
+
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 337704
+		}
+	}],
+}
+
+export default card

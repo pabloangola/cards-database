@@ -4,6 +4,7 @@ import serie from '../DPt'
 const set: Set = {
 	id: 'DP1b',
 	name: {
+		en: 'Pearl Collection',
 		ja: '時空の創造: パールコレクション'
 	},
 

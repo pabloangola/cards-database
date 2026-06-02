@@ -1,0 +1,149 @@
+{
+  "generatedAt": "2026-05-31T23:00:10.354Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": true
+  },
+  "imports": [
+    {
+      "importedAt": "2026-05-31T22:59:48.661Z",
+      "cardtrader": {
+        "id": 2075,
+        "code": "s1h",
+        "name": "Shield"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "S",
+        "setId": "S1H",
+        "setFile": "data-asia\\S\\S1H.ts",
+        "cardsDir": "data-asia\\S\\S1H"
+      },
+      "stats": {
+        "blueprints": 76,
+        "cardsWritten": 76,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:59:53.091Z",
+      "cardtrader": {
+        "id": 2076,
+        "code": "s2",
+        "name": "Rebellion Crash"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "S",
+        "setId": "S2",
+        "setFile": "data-asia\\S\\S2.ts",
+        "cardsDir": "data-asia\\S\\S2"
+      },
+      "stats": {
+        "blueprints": 117,
+        "cardsWritten": 117,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:59:57.592Z",
+      "cardtrader": {
+        "id": 3608,
+        "code": "s2a",
+        "name": "Explosive Flame Walker"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "S",
+        "setId": "S2a",
+        "setFile": "data-asia\\S\\S2a.ts",
+        "cardsDir": "data-asia\\S\\S2a"
+      },
+      "stats": {
+        "blueprints": 86,
+        "cardsWritten": 86,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T23:00:01.811Z",
+      "cardtrader": {
+        "id": 2077,
+        "code": "s3",
+        "name": "Infinity Zone"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "S",
+        "setId": "S3",
+        "setFile": "data-asia\\S\\S3.ts",
+        "cardsDir": "data-asia\\S\\S3"
+      },
+      "stats": {
+        "blueprints": 120,
+        "cardsWritten": 120,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T23:00:05.984Z",
+      "cardtrader": {
+        "id": 2113,
+        "code": "ls3",
+        "name": "Legendary Heartbeat"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "S",
+        "setId": "S3a",
+        "setFile": "data-asia\\S\\S3a.ts",
+        "cardsDir": "data-asia\\S\\S3a"
+      },
+      "stats": {
+        "blueprints": 96,
+        "cardsWritten": 96,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T23:00:10.353Z",
+      "cardtrader": {
+        "id": 3446,
+        "code": "s1a",
+        "name": "VMAX Rising"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "S",
+        "setId": "S1a",
+        "setFile": "data-asia\\S\\S1a.ts",
+        "cardsDir": "data-asia\\S\\S1a"
+      },
+      "stats": {
+        "blueprints": 95,
+        "cardsWritten": 95,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

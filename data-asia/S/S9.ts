@@ -5,6 +5,7 @@ const set: Set = {
 	id: 'S9',
 
 	name: {
+		en: 'Star Birth',
 		ja: 'スターバース',
 		ko: '스타버스',
 		'zh-tw': '星星誕生',

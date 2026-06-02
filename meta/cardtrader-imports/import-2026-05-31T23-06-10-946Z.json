@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-05-31T23:06:10.946Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": true
+  },
+  "imports": [
+    {
+      "importedAt": "2026-05-31T23:06:10.945Z",
+      "cardtrader": {
+        "id": 4047,
+        "code": "cs3b",
+        "name": "CS3b: Primordial Martial Arts - Torrent"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "S",
+        "setId": "CS3b",
+        "setFile": "data-asia\\S\\CS3b.ts",
+        "cardsDir": "data-asia\\S\\CS3b"
+      },
+      "stats": {
+        "blueprints": 181,
+        "cardsWritten": 181,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

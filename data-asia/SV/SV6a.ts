@@ -5,6 +5,7 @@ const set: Set = {
 	id: 'SV6a',
 
 	name: {
+		en: 'Night Wanderer',
 		ja: 'ナイトワンダラー',
 		'zh-tw': '黑夜漫遊者',
 	},

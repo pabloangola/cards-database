@@ -2,16 +2,17 @@ import { Set } from '../../interfaces'
 import serie from '../BW'
 
 const set: Set = {
-	id: 'BW3a',
+	id: 'BW3b',
 	name: {
-		ja: 'ヘイルブリザード',
-		ko: '헤일 블리자드'
+		en: 'Psycho Drive',
+		ja: 'サイコドライブ',
+		ko: '사이코 드라이브'
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 52
+		official: 58
 	},
 	releaseDate: '2011-09-16'
 }

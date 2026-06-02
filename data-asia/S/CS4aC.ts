@@ -4,15 +4,21 @@ import serie from '../S'
 const set: Set = {
 	id: 'CS4aC',
 	name: {
-		'zh-cn': '九彩汇聚 朋',
+		en: 'CS4a: Nine Colors Gathering - Friends',
+		ja: 'CS4a: Nine Colors Gathering - Friends',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 132
+		official: 189
 	},
-	releaseDate: '2024-03-01',
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 4041
+	}
 }
 
 export default set

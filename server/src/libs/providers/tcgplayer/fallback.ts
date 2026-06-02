@@ -1,5 +1,6 @@
 import { objectOmit } from '@dzeio/object-util'
 import { sets } from '../../../V2/Components/Set'
+import { warnStartup } from '../../startupUi'
 import TCGPlayer from './TCGPlayer'
 
 export interface Root {
@@ -26,7 +27,7 @@ let lastUpdate: Date | undefined = undefined
 export async function updateTCGPlayerDatas(): Promise<boolean> {
 
 	if (!userAgent) {
-		console.warn('TCGCSV_USER_AGENT is not set, skipping TCGPlayer pricing update')
+		warnStartup('TCGCSV_USER_AGENT is not set, skipping TCGPlayer pricing update')
 		return false
 	}
 

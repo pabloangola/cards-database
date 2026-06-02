@@ -4,6 +4,7 @@ import serie from '../S'
 const set: Set = {
 	id: 'SDL',
 	name: {
+		en: 'Charizard',
 		'zh-tw': '噴火龍'
 	},
 

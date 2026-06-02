@@ -1,0 +1,23 @@
+import { Card } from "../../../interfaces"
+import Set from "../PCG10"
+
+const card: Card = {
+	set: Set,
+
+	name: {
+		en: 'Aron',
+		ja: 'Aron',
+	},
+
+	category: 'Pokemon',
+	rarity: 'Common',
+
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 144474
+		}
+	}],
+}
+
+export default card

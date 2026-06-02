@@ -4,15 +4,21 @@ import serie from '../SM'
 const set: Set = {
 	id: 'CSM1bC',
 	name: {
-		'zh-cn': '横空出世 苍',
+		en: 'CSM1b: Storming Emergence - Verdant',
+		ja: 'CSM1b: Storming Emergence - Verdant',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 151
+		official: 206
 	},
-	releaseDate: '2020-10-28'
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 4016
+	}
 }
 
 export default set

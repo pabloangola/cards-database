@@ -4,6 +4,7 @@ import serie from '../S'
 const set: Set = {
 	id: 'SCA',
 	name: {
+		en: 'V Starter Deck Buddy',
 		'zh-tw': '搭檔',
 		id: 'V Starter Deck Teman',
 		th: 'V Starter Deck บัดดี้'

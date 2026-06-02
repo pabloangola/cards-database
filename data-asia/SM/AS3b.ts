@@ -4,6 +4,7 @@ import serie from '../SM'
 const set: Set = {
 	id: 'AS3b',
 	name: {
+		en: 'Hidden Shadows SET B',
 		id: 'Booster Pack Bayangan Tersembunyi Set B'
 	},
 

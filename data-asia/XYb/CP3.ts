@@ -4,6 +4,7 @@ import serie from '../XYb'
 const set: Set = {
 	id: 'CP3',
 	name: {
+		en: 'Pokekyun Collection',
 		ja: 'ポケキュンコレクション',
 		ko: '포켓심쿵 컬렉션'
 	},

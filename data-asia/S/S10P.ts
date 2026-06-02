@@ -5,6 +5,7 @@ const set: Set = {
 	id: 'S10P',
 
 	name: {
+		en: 'Space Juggler',
 		ja: 'スペースジャグラー',
 		ko: '스페이스저글러',
 		'zh-tw': '空間魔術師',

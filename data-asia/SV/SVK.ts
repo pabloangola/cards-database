@@ -4,6 +4,7 @@ import serie from '../SV'
 const set: Set = {
 	id: 'SVK',
 	name: {
+		en: 'Stellar Miracle Deck Build Box',
 		ja: 'デッキビルドBOX ステラミラクル'
 	},
 

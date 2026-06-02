@@ -4,6 +4,7 @@ import serie from '../XY'
 const set: Set = {
 	id: 'XY2',
 	name: {
+		en: 'Wild Blaze',
 		ja: 'ワイルドブレイズ',
 		ko: '와일드 블레이즈'
 	},
@@ -11,7 +12,7 @@ const set: Set = {
 	serie: serie,
 
 	cardCount: {
-		official: 80
+		official: 90
 	},
 	releaseDate: '2014-03-15'
 }

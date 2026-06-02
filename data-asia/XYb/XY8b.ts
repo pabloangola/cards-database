@@ -4,16 +4,21 @@ import serie from '../XYb'
 const set: Set = {
 	id: 'XY8b',
 	name: {
-		ja: '赤い閃光',
-		ko: '붉은 섬광 충격'
+		en: 'Red Flash',
+		ja: 'Red Flash',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 59
+		official: 65
 	},
-	releaseDate: '2015-09-26'
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 2048
+	}
 }
 
 export default set

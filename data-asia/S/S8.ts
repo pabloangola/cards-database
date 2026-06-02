@@ -5,6 +5,7 @@ const set: Set = {
 	id: 'S8',
 
 	name: {
+		en: 'Fusion Arts',
 		ja: 'フュージョンアーツ',
 		ko: '퓨전아츠',
 		'zh-tw': '匯流藝術',

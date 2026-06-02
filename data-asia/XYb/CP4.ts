@@ -4,16 +4,21 @@ import serie from '../XYb'
 const set: Set = {
 	id: 'CP4',
 	name: {
-		ja: 'プレミアムチャンピオンパック EX×M×BREAK',
-		ko: '프리미엄 챔피언팩'
+		en: 'Premium Champion Pack',
+		ja: 'Premium Champion Pack',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 131
+		official: 142
 	},
-	releaseDate: '2016-04-16'
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 3579
+	}
 }
 
 export default set

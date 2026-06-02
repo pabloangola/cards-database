@@ -1,0 +1,23 @@
+import { Card } from "../../../interfaces"
+import Set from "../L1a"
+
+const card: Card = {
+	set: Set,
+
+	name: {
+		en: 'Metal Energy',
+		ja: 'Metal Energy',
+	},
+
+	category: 'Energy',
+	rarity: 'No Rarity',
+
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 139590
+		}
+	}],
+}
+
+export default card

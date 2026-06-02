@@ -9,6 +9,12 @@ import status from './status'
 import * as Sentry from "@sentry/node"
 import { updateDatas } from './libs/providers/cardmarket'
 import { updateTCGPlayerDatas } from './libs/providers/tcgplayer'
+import {
+	finishStartup,
+	isVerboseStartup,
+	renderStartupProgress,
+	startupDetail,
+} from './libs/startupUi'
 
 // Glitchtip will only start if the DSN is set :D
 Sentry.init({
@@ -17,48 +23,96 @@ Sentry.init({
 })
 
 if (cluster.isPrimary) {
-	console.log(`Primary ${process.pid} is running`)
-
-	// get maximum number of workers available for the software
 	let maxWorkers = availableParallelism()
 
-	// allow to override max worker count
 	if (process.env.MAX_WORKERS) {
 		maxWorkers = Math.min(maxWorkers, parseInt(process.env.MAX_WORKERS))
 	}
 
-	// create the workers
-	console.log(`creating ${maxWorkers} workers...`)
+	const port = parseInt(process.env.PORT ?? '3000', 10)
+	let readyWorkers = 0
+	let startupFinished = false
+
+	const markReady = () => {
+		if (startupFinished) {
+			return
+		}
+		startupFinished = true
+		finishStartup(`Servidor listo en http://localhost:${port}`)
+	}
+
+	renderStartupProgress('Cargando servidor', 0, maxWorkers)
+
 	for (let i = 0; i < maxWorkers; i++) {
 		cluster.fork()
 	}
 
-	cluster.on('online', (worker) => {
-		console.log('Worker', worker.id, 'online')
+	cluster.on('message', (worker, message: unknown) => {
+		if (
+			typeof message !== 'object' ||
+			message === null ||
+			(message as { type?: string }).type !== 'worker-ready'
+		) {
+			return
+		}
+
+		readyWorkers++
+		renderStartupProgress('Cargando servidor', readyWorkers, maxWorkers)
+
+		if (readyWorkers >= maxWorkers) {
+			markReady()
+		}
 	})
 
-	cluster.on("exit", (worker, code, signal) => {
-		console.log(`Worker ${worker.id} exited with code ${code} and signal ${signal}`);
+	setTimeout(() => {
+		if (!startupFinished) {
+			markReady()
+		}
+	}, 60_000)
+
+	cluster.on('exit', (worker, code, signal) => {
+		if (isVerboseStartup()) {
+			console.warn(`Worker ${worker.id} exited with code ${code} and signal ${signal}`)
+		}
 		cluster.fork()
 	})
-	console.log('🚀 Server ready at localhost:3000');
 } else {
 
 	// Current API version
 	const VERSION = 2
 
-	const fn = () => {
-		void updateDatas()
-			.then(() => console.log('loaded cardmarket datas'))
-			.catch((err) => console.error('error loading cardmarket', err))
-		void updateTCGPlayerDatas()
-			.then(() => console.log('loaded TCGPlayer datas'))
-			.catch((err) => console.error('error loading TCGPlayer', err))
+	const loadProviders = async () => {
+		await Promise.all([
+			updateDatas().catch((err) => {
+				if (isVerboseStartup()) {
+					console.error('error loading cardmarket', err)
+				}
+			}),
+			updateTCGPlayerDatas().catch((err) => {
+				if (isVerboseStartup()) {
+					console.error('error loading TCGPlayer', err)
+				}
+			}),
+		])
 	}
 
-	// auto update each hour the datasets
-	fn()
-	setInterval(fn, 3_600_000)
+	const notifyReady = () => {
+		if (process.send) {
+			process.send({ type: 'worker-ready' })
+		}
+	}
+
+	void loadProviders()
+		.then(() => {
+			startupDetail('loaded cardmarket datas')
+			startupDetail('loaded TCGPlayer datas')
+			notifyReady()
+		})
+		.catch(() => {
+			notifyReady()
+		})
+
+	setInterval(loadProviders, 3_600_000)
 
 	// Init Express server
 	const server = express()
@@ -157,5 +211,6 @@ if (cluster.isPrimary) {
 	})
 
 	// Start server
-	server.listen(3000)
+	const port = parseInt(process.env.PORT ?? '3000', 10)
+	server.listen(port)
 }

@@ -1,0 +1,172 @@
+{
+  "generatedAt": "2026-05-31T23:05:47.677Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": true
+  },
+  "imports": [
+    {
+      "importedAt": "2026-05-31T23:05:23.241Z",
+      "cardtrader": {
+        "id": 4026,
+        "code": "cs15",
+        "name": "CS1.5: Dynamax Tactics"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "CT",
+        "setId": "CS1.5",
+        "setFile": "data-asia\\CT\\CS1.5.ts",
+        "cardsDir": "data-asia\\CT\\CS1.5"
+      },
+      "stats": {
+        "blueprints": 97,
+        "cardsWritten": 97,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T23:05:27.378Z",
+      "cardtrader": {
+        "id": 4043,
+        "code": "cs1a",
+        "name": "CS1a: Dynamax Clash - Thunder"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "S",
+        "setId": "CS1a",
+        "setFile": "data-asia\\S\\CS1a.ts",
+        "cardsDir": "data-asia\\S\\CS1a"
+      },
+      "stats": {
+        "blueprints": 219,
+        "cardsWritten": 219,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T23:05:31.480Z",
+      "cardtrader": {
+        "id": 4044,
+        "code": "cs1b",
+        "name": "CS1b: Dynamax Clash - Flame"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "CT",
+        "setId": "CS1b",
+        "setFile": "data-asia\\CT\\CS1b.ts",
+        "cardsDir": "data-asia\\CT\\CS1b"
+      },
+      "stats": {
+        "blueprints": 201,
+        "cardsWritten": 201,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T23:05:35.500Z",
+      "cardtrader": {
+        "id": 4027,
+        "code": "cs25",
+        "name": "CS2.5: Brilliant Counterattack"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "CT",
+        "setId": "CS2.5",
+        "setFile": "data-asia\\CT\\CS2.5.ts",
+        "cardsDir": "data-asia\\CT\\CS2.5"
+      },
+      "stats": {
+        "blueprints": 80,
+        "cardsWritten": 80,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T23:05:39.571Z",
+      "cardtrader": {
+        "id": 4045,
+        "code": "cs2a",
+        "name": "CS2a: Vivid Portrayals - Obsidian"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "CT",
+        "setId": "CS2a",
+        "setFile": "data-asia\\CT\\CS2a.ts",
+        "cardsDir": "data-asia\\CT\\CS2a"
+      },
+      "stats": {
+        "blueprints": 142,
+        "cardsWritten": 142,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T23:05:43.683Z",
+      "cardtrader": {
+        "id": 4046,
+        "code": "cs2b",
+        "name": "CS2b: Vivid Portrayals - Indigo"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "CT",
+        "setId": "CS2b",
+        "setFile": "data-asia\\CT\\CS2b.ts",
+        "cardsDir": "data-asia\\CT\\CS2b"
+      },
+      "stats": {
+        "blueprints": 145,
+        "cardsWritten": 145,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T23:05:47.676Z",
+      "cardtrader": {
+        "id": 4028,
+        "code": "cs35",
+        "name": "CS3.5: Scorching Skies"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "CT",
+        "setId": "CS3.5",
+        "setFile": "data-asia\\CT\\CS3.5.ts",
+        "cardsDir": "data-asia\\CT\\CS3.5"
+      },
+      "stats": {
+        "blueprints": 91,
+        "cardsWritten": 91,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

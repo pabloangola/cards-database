@@ -1,5 +1,5 @@
 import { objectKeys, objectMap } from '@dzeio/object-util'
-import { Card, Set, SupportedLanguages } from '../../../interfaces'
+import type { Card, Set, SupportedLanguages } from '../../../interfaces.d.ts'
 import { SetResume, Set as SetSingle } from '../../../meta/definitions/api'
 import { cardToCardSimple, getCards } from './cardUtil'
 import { DB_PATH, fetchRemoteFile, getDataFolder, resolveText, setIsLegal, smartGlob } from './util'
@@ -65,9 +65,17 @@ export async function getSetPictures(set: Set, lang: SupportedLanguages): Promis
 	}
 }
 
+function resolveEnglishName(set: Set, lang: SupportedLanguages): string | undefined {
+	if (lang === 'en') {
+		return undefined
+	}
+	return resolveText(set.name, 'en')
+}
+
 export async function setToSetSimple(set: Set, lang: SupportedLanguages): Promise<SetResume> {
 	const cards = await getCards(lang, set)
 	const pics = await getSetPictures(set, lang)
+	const englishName = resolveEnglishName(set, lang)
 	return {
 		cardCount: {
 			official: set.cardCount.official,
@@ -76,6 +84,7 @@ export async function setToSetSimple(set: Set, lang: SupportedLanguages): Promis
 		id: set.id,
 		logo: pics[0],
 		name: resolveText(set.name, lang),
+		...(englishName ? { englishName } : {}),
 		symbol: pics[1]
 	}
 }
@@ -101,6 +110,7 @@ function getVariantCountForType(card: Card, type: 'normal' | 'reverse' | 'holo' 
 export async function setToSetSingle(set: Set, lang: SupportedLanguages): Promise<SetSingle> {
 	const cards = await getCards(lang, set)
 	const pics = await getSetPictures(set, lang)
+	const englishName = resolveEnglishName(set, lang)
 	return {
 		cardCount: {
 			firstEd: cards.reduce((count, card) => count + getVariantCountForType(card[1],"firstEdition"), 0),
@@ -118,6 +128,7 @@ export async function setToSetSingle(set: Set, lang: SupportedLanguages): Promis
 		},
 		logo: pics[0],
 		name: resolveText(set.name, lang),
+		...(englishName ? { englishName } : {}),
 		releaseDate: typeof set.releaseDate === 'object' ? set.releaseDate[lang] ?? set.releaseDate[objectKeys(set.releaseDate)[0]]! : set.releaseDate,
 		serie: {
 			id: set.serie.id,

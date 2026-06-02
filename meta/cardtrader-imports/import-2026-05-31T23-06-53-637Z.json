@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-05-31T23:06:53.637Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": true
+  },
+  "imports": [
+    {
+      "importedAt": "2026-05-31T23:06:53.635Z",
+      "cardtrader": {
+        "id": 4046,
+        "code": "cs2b",
+        "name": "CS2b: Vivid Portrayals - Indigo"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "S",
+        "setId": "CS2bC",
+        "setFile": "data-asia\\S\\CS2bC.ts",
+        "cardsDir": "data-asia\\S\\CS2bC"
+      },
+      "stats": {
+        "blueprints": 145,
+        "cardsWritten": 145,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

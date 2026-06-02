@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-05-31T23:08:48.260Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": true
+  },
+  "imports": [
+    {
+      "importedAt": "2026-05-31T23:08:48.258Z",
+      "cardtrader": {
+        "id": 4015,
+        "code": "csm1a",
+        "name": "CSM1a: Storming Emergence - Radiant"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SM",
+        "setId": "CSM1a",
+        "setFile": "data-asia\\SM\\CSM1a.ts",
+        "cardsDir": "data-asia\\SM\\CSM1a"
+      },
+      "stats": {
+        "blueprints": 213,
+        "cardsWritten": 213,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

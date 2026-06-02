@@ -3,7 +3,7 @@ import Queue from '@dzeio/queue'
 import { glob } from 'glob'
 import { exec, spawn } from 'node:child_process'
 import { writeFileSync } from 'node:fs'
-import { Card, Languages, Set, SupportedLanguages } from '../../../interfaces'
+import type { Card, Languages, Set, SupportedLanguages } from '../../../interfaces.d.ts'
 import * as legals from '../../../meta/legals'
 interface fileCacheInterface {
 	[key: string]: any
@@ -130,6 +130,37 @@ function runCommand(command: string, useSpawn = true): Promise<string> {
 }
 
 const lastEditsCache: Record<string, string> = {}
+
+export async function loadLastEditsForPaths(relativePaths: string[]): Promise<void> {
+	const uniquePaths = [...new Set(relativePaths.map((p) => p.replace(/\\/g, '/')))]
+	if (uniquePaths.length === 0) {
+		return
+	}
+
+	console.log(`Loading Git last-edit for ${uniquePaths.length} changed files...`)
+	let processed = 0
+	const concurrent = process.platform === 'win32' ? 10 : 100
+	const queue = new Queue(concurrent, 10)
+	queue.start()
+
+	for (const file of uniquePaths) {
+		if (lastEditsCache[file]) {
+			continue
+		}
+		await queue.add(runCommand(`git log -1 --pretty="format:%cd" --date=iso-strict "${file}"`, false).then((res) => {
+			lastEditsCache[file] = res
+		}).catch(() => {
+			// fall back to "now" in getLastEdit
+		}).finally(() => {
+			processed++
+			if (processed % 250 === 0 || processed === uniquePaths.length) {
+				console.log('loaded', processed, 'out of', uniquePaths.length, 'files')
+			}
+		}))
+	}
+	await queue.waitEnd()
+}
+
 export async function loadLastEdits() {
 	console.log('Loading Git File Tree...')
 	const firstCommand = 'git ls-tree -r --name-only HEAD ../data'

@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-05-31T23:06:55.022Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": true
+  },
+  "imports": [
+    {
+      "importedAt": "2026-05-31T23:06:55.018Z",
+      "cardtrader": {
+        "id": 4028,
+        "code": "cs35",
+        "name": "CS3.5: Scorching Skies"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "S",
+        "setId": "CS3.5C",
+        "setFile": "data-asia\\S\\CS3.5C.ts",
+        "cardsDir": "data-asia\\S\\CS3.5C"
+      },
+      "stats": {
+        "blueprints": 91,
+        "cardsWritten": 91,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

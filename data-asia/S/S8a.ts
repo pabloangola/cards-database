@@ -5,6 +5,7 @@ const set: Set = {
 	id: 'S8a',
 
 	name: {
+		en: '25th Anniversary Collection',
 		ja: '25th アニバーサリーコレクション',
 		ko: '25th Anniversary',
 		'zh-tw': '25週年收藏款',

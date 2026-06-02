@@ -4,6 +4,7 @@ import serie from '../SM'
 const set: Set = {
 	id: 'SM8a',
 	name: {
+		en: 'Dark Order',
 		ja: 'ダークオーダー',
 		ko: '다크오더'
 	},
@@ -11,11 +12,12 @@ const set: Set = {
 	serie: serie,
 
 	cardCount: {
-		official: 52
+		official: 65
 	},
 	releaseDate: '2018-10-05',
 
 	thirdParty: {
+		cardtrader: 0,
 		cardmarket: 3861
 	}
 }

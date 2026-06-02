@@ -4,6 +4,7 @@ import serie from '../SM'
 const set: Set = {
 	id: 'AS2D',
 	name: {
+		en: 'Legendary Awakening',
 		id: 'Starter Deck GX Kebangkitan Legenda'
 	},
 

@@ -4,6 +4,7 @@ import serie from '../S'
 const set: Set = {
 	id: 'SH',
 	name: {
+		en: 'Family Pokémon Card Game',
 		th: 'โปเกมอนเทรดดิ้งการ์ดเกม ชุดแฟมิลีแฮปปี้',
 		'zh-tw': '寶可夢卡牌家庭組合'
 	},

@@ -5,6 +5,7 @@ const set: Set = {
 	id: 'SV4K',
 
 	name: {
+		en: 'Ancient Roar',
 		ja: '古代の咆哮',
 		ko: '고대의 포효',
 		'zh-tw': '古代咆哮',

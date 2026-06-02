@@ -4,15 +4,21 @@ import serie from '../S'
 const set: Set = {
 	id: 'CS6aC',
 	name: {
-		'zh-cn': '碧海暗影 啸',
+		en: 'CS6a: Azure Shadow - Roar',
+		ja: 'CS6a: Azure Shadow - Roar',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 131
+		official: 174
 	},
-	releaseDate: '2024-09-20',
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 4050
+	}
 }
 
 export default set

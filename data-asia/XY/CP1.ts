@@ -4,6 +4,7 @@ import serie from '../XY'
 const set: Set = {
 	id: 'CP1',
 	name: {
+		en: 'Team Magma VS Team Aqua Double Crisis',
 		ja: 'マグマ団VSアクア団 ダブルクライシス',
 		ko: '마그마단vs아쿠아단 더블크라이시스'
 	},

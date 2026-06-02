@@ -4,6 +4,7 @@ import serie from '../S'
 const set: Set = {
 	id: 'SCE',
 	name: {
+		en: 'Great Power',
 		th: 'เกรทพาวเวอร์',
 		id: 'Kebangkitan'
 	},

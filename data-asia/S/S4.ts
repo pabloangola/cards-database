@@ -4,6 +4,7 @@ import serie from '../S'
 const set: Set = {
 	id: 'S4',
 	name: {
+		en: 'Shocking Volt Tackle',
 		ja: '仰天のボルテッカー',
 		ko: '앙천의 볼트태클',
 		'zh-tw': '驚天伏特攻擊',

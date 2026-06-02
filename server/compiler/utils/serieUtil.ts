@@ -1,4 +1,4 @@
-import { Serie, Set, SupportedLanguages } from '../../../interfaces'
+import type { Serie, Set, SupportedLanguages } from '../../../interfaces.d.ts'
 import { SerieResume, Serie as SerieSingle } from '../../../meta/definitions/api'
 import { getSets, setToSetSimple } from './setUtil'
 import { DB_PATH, getDataFolder, resolveText, smartGlob } from './util'

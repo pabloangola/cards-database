@@ -4,6 +4,7 @@ import serie from '../SV'
 const set: Set = {
 	id: 'SVB',
 	name: {
+		en: 'Premium Trainer Box ex',
 		'zh-tw': '頂級訓練家收藏箱ex'
 	},
 

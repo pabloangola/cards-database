@@ -4,6 +4,7 @@ import serie from '../BW'
 const set: Set = {
 	id: 'EBB',
 	name: {
+		en: 'EX Battle Boost',
 		ja: 'EXバトルブースト',
 		ko: 'EX 배틀 부스트'
 	},
@@ -11,7 +12,7 @@ const set: Set = {
 	serie: serie,
 
 	cardCount: {
-		official: 96
+		official: 99
 	},
 	releaseDate: '2013-07-13'
 }

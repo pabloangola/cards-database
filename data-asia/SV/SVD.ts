@@ -4,6 +4,7 @@ import serie from '../SV'
 const set: Set = {
 	id: 'SVD',
 	name: {
+		en: 'ex Starter Decks',
 		'zh-tw': 'ex初階牌組'
 	},
 

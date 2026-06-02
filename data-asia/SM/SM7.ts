@@ -4,16 +4,21 @@ import serie from '../SM'
 const set: Set = {
 	id: 'SM7',
 	name: {
-		ja: '裂空のカリスマ',
-		ko: '창공의 카리스마'
+		en: 'Sky-Splitting Charisma',
+		ja: 'Sky-Splitting Charisma',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 96
+		official: 114
 	},
-	releaseDate: '2018-06-01'
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 2066
+	}
 }
 
 export default set

@@ -4,6 +4,7 @@ import serie from '../S'
 const set: Set = {
 	id: 'SP5',
 	name: {
+		en: 'V-UNION Special Card Sets',
 		'zh-tw': '強大' // TODO: find the correct name
 	},
 

@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-05-31T23:08:50.009Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": true
+  },
+  "imports": [
+    {
+      "importedAt": "2026-05-31T23:08:50.008Z",
+      "cardtrader": {
+        "id": 4016,
+        "code": "csm1b",
+        "name": "CSM1b: Storming Emergence - Verdant"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SM",
+        "setId": "CSM1b",
+        "setFile": "data-asia\\SM\\CSM1b.ts",
+        "cardsDir": "data-asia\\SM\\CSM1b"
+      },
+      "stats": {
+        "blueprints": 206,
+        "cardsWritten": 206,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

@@ -1,0 +1,23 @@
+import { Card } from "../../../interfaces"
+import Set from "../CS4b"
+
+const card: Card = {
+	set: Set,
+
+	name: {
+		en: 'Stormy Mountains',
+		ja: 'Stormy Mountains',
+	},
+
+	category: 'Pokemon',
+	rarity: 'Secret Rare',
+
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 337746
+		}
+	}],
+}
+
+export default card

@@ -4,15 +4,21 @@ import serie from '../SV'
 const set: Set = {
 	id: 'CSV1C',
 	name: {
-		'zh-cn': '亘古开来',
+		en: 'CSV1: Eternal Birth',
+		ja: 'CSV1: Eternal Birth',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 127
+		official: 171
 	},
-	releaseDate: '2025-01-17',
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 4035
+	}
 }
 
 export default set

@@ -5,6 +5,7 @@ const set: Set = {
 	id: 'SV8',
 
 	name: {
+		en: 'Super Electric Breaker',
 		ja: '超電ブレイカー',
 		'zh-cn': '超電突圍',
 		'zh-tw': '超電突圍'

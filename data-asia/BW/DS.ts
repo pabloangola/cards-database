@@ -4,6 +4,7 @@ import serie from '../BW'
 const set: Set = {
 	id: 'DS',
 	name: {
+		en: 'Dragon Selection',
 		ja: 'ドラゴンセレクション',
 		ko: '드래곤 컬렉션'
 	},

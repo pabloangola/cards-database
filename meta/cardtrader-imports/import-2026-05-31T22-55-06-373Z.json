@@ -1,0 +1,149 @@
+{
+  "generatedAt": "2026-05-31T22:55:06.373Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": true
+  },
+  "imports": [
+    {
+      "importedAt": "2026-05-31T22:54:46.796Z",
+      "cardtrader": {
+        "id": 2031,
+        "code": "bw6",
+        "name": "Freeze Bolt"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "BW",
+        "setId": "BW6a",
+        "setFile": "data-asia\\BW\\BW6a.ts",
+        "cardsDir": "data-asia\\BW\\BW6a"
+      },
+      "stats": {
+        "blueprints": 65,
+        "cardsWritten": 65,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:54:50.684Z",
+      "cardtrader": {
+        "id": 2032,
+        "code": "bw6b",
+        "name": "Cold Flare"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "BW",
+        "setId": "BW6b",
+        "setFile": "data-asia\\BW\\BW6b.ts",
+        "cardsDir": "data-asia\\BW\\BW6b"
+      },
+      "stats": {
+        "blueprints": 65,
+        "cardsWritten": 65,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:54:54.587Z",
+      "cardtrader": {
+        "id": 2033,
+        "code": "bw7",
+        "name": "Plasma Gale"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "BW",
+        "setId": "BW7",
+        "setFile": "data-asia\\BW\\BW7.ts",
+        "cardsDir": "data-asia\\BW\\BW7"
+      },
+      "stats": {
+        "blueprints": 79,
+        "cardsWritten": 79,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:54:58.447Z",
+      "cardtrader": {
+        "id": 2034,
+        "code": "bw8b",
+        "name": "Spiral Force"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "BW",
+        "setId": "BW8b",
+        "setFile": "data-asia\\BW\\BW8b.ts",
+        "cardsDir": "data-asia\\BW\\BW8b"
+      },
+      "stats": {
+        "blueprints": 60,
+        "cardsWritten": 60,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:55:02.350Z",
+      "cardtrader": {
+        "id": 2036,
+        "code": "bw9",
+        "name": "Megalo Cannon"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "BW",
+        "setId": "BW9",
+        "setFile": "data-asia\\BW\\BW9.ts",
+        "cardsDir": "data-asia\\BW\\BW9"
+      },
+      "stats": {
+        "blueprints": 86,
+        "cardsWritten": 86,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:55:06.373Z",
+      "cardtrader": {
+        "id": 2037,
+        "code": "ebb",
+        "name": "EX Battle Boost"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "BW",
+        "setId": "EBB",
+        "setFile": "data-asia\\BW\\EBB.ts",
+        "cardsDir": "data-asia\\BW\\EBB"
+      },
+      "stats": {
+        "blueprints": 99,
+        "cardsWritten": 99,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

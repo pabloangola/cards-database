@@ -4,15 +4,21 @@ import serie from '../S'
 const set: Set = {
 	id: 'CS6bC',
 	name: {
-		'zh-cn': '碧海暗影 逐',
+		en: 'CS6b: Azure Shadow - Pursuit',
+		ja: 'CS6b: Azure Shadow - Pursuit',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 131
+		official: 177
 	},
-	releaseDate: '2024-09-20',
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 4051
+	}
 }
 
 export default set

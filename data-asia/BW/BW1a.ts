@@ -4,6 +4,7 @@ import serie from '../BW'
 const set: Set = {
 	id: 'BW1a',
 	name: {
+		en: 'Black Collection',
 		ja: 'ブラックコレクション',
 		ko: '블랙 컬렉션'
 	},
@@ -11,7 +12,7 @@ const set: Set = {
 	serie: serie,
 
 	cardCount: {
-		official: 53
+		official: 56
 	},
 	releaseDate: '2010-12-17'
 }

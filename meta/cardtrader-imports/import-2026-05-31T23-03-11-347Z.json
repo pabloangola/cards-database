@@ -1,0 +1,149 @@
+{
+  "generatedAt": "2026-05-31T23:03:11.347Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": true
+  },
+  "imports": [
+    {
+      "importedAt": "2026-05-31T23:02:51.782Z",
+      "cardtrader": {
+        "id": 1915,
+        "code": "slg",
+        "name": "Shining Legends"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SM",
+        "setId": "SM3+",
+        "setFile": "data-asia\\SM\\SM3+.ts",
+        "cardsDir": "data-asia\\SM\\SM3+"
+      },
+      "stats": {
+        "blueprints": 97,
+        "cardsWritten": 97,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T23:02:55.850Z",
+      "cardtrader": {
+        "id": 3752,
+        "code": "sm4",
+        "name": "GX Battle Boost"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SM",
+        "setId": "SM4+",
+        "setFile": "data-asia\\SM\\SM4+.ts",
+        "cardsDir": "data-asia\\SM\\SM4+"
+      },
+      "stats": {
+        "blueprints": 125,
+        "cardsWritten": 125,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T23:02:59.715Z",
+      "cardtrader": {
+        "id": 2062,
+        "code": "sm4s",
+        "name": "Awakened Heroes"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SM",
+        "setId": "SM4S",
+        "setFile": "data-asia\\SM\\SM4S.ts",
+        "cardsDir": "data-asia\\SM\\SM4S"
+      },
+      "stats": {
+        "blueprints": 62,
+        "cardsWritten": 62,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T23:03:03.559Z",
+      "cardtrader": {
+        "id": 3976,
+        "code": "sm5plus",
+        "name": "Ultra Force"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SM",
+        "setId": "SM5+",
+        "setFile": "data-asia\\SM\\SM5+.ts",
+        "cardsDir": "data-asia\\SM\\SM5+"
+      },
+      "stats": {
+        "blueprints": 63,
+        "cardsWritten": 63,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T23:03:07.456Z",
+      "cardtrader": {
+        "id": 2065,
+        "code": "sm5m",
+        "name": "Ultra Moon"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SM",
+        "setId": "SM5M",
+        "setFile": "data-asia\\SM\\SM5M.ts",
+        "cardsDir": "data-asia\\SM\\SM5M"
+      },
+      "stats": {
+        "blueprints": 81,
+        "cardsWritten": 81,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T23:03:11.346Z",
+      "cardtrader": {
+        "id": 2064,
+        "code": "sm5s",
+        "name": "Ultra Sun"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SM",
+        "setId": "SM5S",
+        "setFile": "data-asia\\SM\\SM5S.ts",
+        "cardsDir": "data-asia\\SM\\SM5S"
+      },
+      "stats": {
+        "blueprints": 82,
+        "cardsWritten": 82,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

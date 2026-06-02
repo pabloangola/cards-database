@@ -1,0 +1,149 @@
+{
+  "generatedAt": "2026-05-31T22:55:55.548Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": true
+  },
+  "imports": [
+    {
+      "importedAt": "2026-05-31T22:55:35.962Z",
+      "cardtrader": {
+        "id": 2008,
+        "code": "dp2-sol",
+        "name": "Secret of the Lakes"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "DP",
+        "setId": "DP2",
+        "setFile": "data-asia\\DP\\DP2.ts",
+        "cardsDir": "data-asia\\DP\\DP2"
+      },
+      "stats": {
+        "blueprints": 125,
+        "cardsWritten": 125,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:55:40.010Z",
+      "cardtrader": {
+        "id": 2009,
+        "code": "dp3",
+        "name": "Shining Darkness"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "DP",
+        "setId": "DP3",
+        "setFile": "data-asia\\DP\\DP3.ts",
+        "cardsDir": "data-asia\\DP\\DP3"
+      },
+      "stats": {
+        "blueprints": 119,
+        "cardsWritten": 119,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:55:43.910Z",
+      "cardtrader": {
+        "id": 2010,
+        "code": "dp4",
+        "name": "Moonlit Pursuit"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "DP",
+        "setId": "DP4a",
+        "setFile": "data-asia\\DP\\DP4a.ts",
+        "cardsDir": "data-asia\\DP\\DP4a"
+      },
+      "stats": {
+        "blueprints": 72,
+        "cardsWritten": 72,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:55:47.782Z",
+      "cardtrader": {
+        "id": 2011,
+        "code": "dad",
+        "name": "Dawn Dash"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "DP",
+        "setId": "DP4b",
+        "setFile": "data-asia\\DP\\DP4b.ts",
+        "cardsDir": "data-asia\\DP\\DP4b"
+      },
+      "stats": {
+        "blueprints": 72,
+        "cardsWritten": 72,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:55:51.687Z",
+      "cardtrader": {
+        "id": 2012,
+        "code": "cfm",
+        "name": "Cry from the Mysterious"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "DP",
+        "setId": "DP5a",
+        "setFile": "data-asia\\DP\\DP5a.ts",
+        "cardsDir": "data-asia\\DP\\DP5a"
+      },
+      "stats": {
+        "blueprints": 65,
+        "cardsWritten": 65,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:55:55.547Z",
+      "cardtrader": {
+        "id": 2013,
+        "code": "dp5",
+        "name": "Temple of Anger"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "DP",
+        "setId": "DP5b",
+        "setFile": "data-asia\\DP\\DP5b.ts",
+        "cardsDir": "data-asia\\DP\\DP5b"
+      },
+      "stats": {
+        "blueprints": 65,
+        "cardsWritten": 65,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

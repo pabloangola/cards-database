@@ -4,16 +4,21 @@ import serie from '../XYb'
 const set: Set = {
 	id: 'XY11a',
 	name: {
-		ja: '爆熱の闘士',
-		ko: '타오르는 투사'
+		en: 'Fever-Burst Fighter',
+		ja: 'Fever-Burst Fighter',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 54
+		official: 61
 	},
-	releaseDate: '2016-06-17'
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 2052
+	}
 }
 
 export default set

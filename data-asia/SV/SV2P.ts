@@ -5,6 +5,7 @@ const set: Set = {
 	id: 'SV2P',
 
 	name: {
+		en: 'Snow Hazard',
 		ja: 'スノーハザード',
 		ko: '스노해저드',
 		'zh-tw': '冰雪險境',

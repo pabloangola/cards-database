@@ -1,0 +1,23 @@
+import { Card } from "../../../interfaces"
+import Set from "../SM7"
+
+const card: Card = {
+	set: Set,
+
+	name: {
+		en: 'Manectric',
+		ja: 'Manectric',
+	},
+
+	category: 'Pokemon',
+	rarity: 'Uncommon',
+
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 142517
+		}
+	}],
+}
+
+export default card

@@ -5,6 +5,7 @@ const set: Set = {
 	id: 'S8b',
 
 	name: {
+		en: 'VMAX Climax',
 		ja: 'VMAXクライマックス',
 		ko: 'VMAX 클라이맥스',
 		'zh-tw': 'VMAX絕群壓軸',

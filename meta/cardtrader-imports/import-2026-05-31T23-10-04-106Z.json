@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-05-31T23:10:04.106Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": true
+  },
+  "imports": [
+    {
+      "importedAt": "2026-05-31T23:10:04.105Z",
+      "cardtrader": {
+        "id": 2066,
+        "code": "sm7",
+        "name": "Sky-Splitting Charisma"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SM",
+        "setId": "SM7",
+        "setFile": "data-asia\\SM\\SM7.ts",
+        "cardsDir": "data-asia\\SM\\SM7"
+      },
+      "stats": {
+        "blueprints": 114,
+        "cardsWritten": 114,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

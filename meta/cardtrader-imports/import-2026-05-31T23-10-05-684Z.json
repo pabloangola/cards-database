@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-05-31T23:10:05.684Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": true
+  },
+  "imports": [
+    {
+      "importedAt": "2026-05-31T23:10:05.683Z",
+      "cardtrader": {
+        "id": 3445,
+        "code": "sm6b",
+        "name": "Champion Road"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SM",
+        "setId": "SM6b",
+        "setFile": "data-asia\\SM\\SM6b.ts",
+        "cardsDir": "data-asia\\SM\\SM6b"
+      },
+      "stats": {
+        "blueprints": 86,
+        "cardsWritten": 86,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

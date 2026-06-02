@@ -1,0 +1,23 @@
+import { Card } from "../../../interfaces"
+import Set from "../CSM2cC"
+
+const card: Card = {
+	set: Set,
+
+	name: {
+		en: 'Reshiram & Charizard GX',
+		ja: 'Reshiram & Charizard GX',
+	},
+
+	category: 'Pokemon',
+	rarity: 'Ultra Rare',
+
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 353130
+		}
+	}],
+}
+
+export default card

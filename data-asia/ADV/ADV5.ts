@@ -4,13 +4,14 @@ import serie from '../ADV'
 const set: Set = {
 	id: 'ADV5',
 	name: {
+		en: 'Undone Seal',
 		ja: 'とかれた封印'
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 83
+		official: 85
 	},
 	releaseDate: '2004-01-16'
 }

@@ -1,0 +1,23 @@
+import { Card } from "../../../interfaces"
+import Set from "../CS3b"
+
+const card: Card = {
+	set: Set,
+
+	name: {
+		en: 'Galarian Articuno V',
+		ja: 'Galarian Articuno V',
+	},
+
+	category: 'Pokemon',
+	rarity: 'Special Illustration Rare',
+
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 368854
+		}
+	}],
+}
+
+export default card

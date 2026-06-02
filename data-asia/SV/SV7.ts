@@ -5,6 +5,7 @@ const set: Set = {
 	id: 'SV7',
 
 	name: {
+		en: 'Stellar Miracle',
 		ja: 'ステラミラクル',
 		'zh-tw': '星晶奇跡',
 		'zh-cn': '星晶奇跡'

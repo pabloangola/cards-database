@@ -4,6 +4,7 @@ import serie from '../SM'
 const set: Set = {
 	id: 'SM6a',
 	name: {
+		en: 'Dragon Storm',
 		ja: 'ドラゴンストーム',
 		ko: '드래곤스톰'
 	},
@@ -11,7 +12,7 @@ const set: Set = {
 	serie: serie,
 
 	cardCount: {
-		official: 53
+		official: 67
 	},
 	releaseDate: '2018-04-06'
 }

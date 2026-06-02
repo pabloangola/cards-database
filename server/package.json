@@ -3,10 +3,12 @@
 	"private": true,
 	"main": "dist/index.js",
 	"scripts": {
-		"compile": "bun compiler/index.ts",
-		"dev": "bun --watch src/index.ts",
+		"compile": "node run-bun.mjs compiler/index.ts",
+		"compile:force": "node run-bun.mjs compiler/index.ts --force",
+		"dev": "node run-bun.mjs --watch src/index.ts",
+		"daemon": "node dev-daemon.mjs",
 		"validate": "tsgo --noEmit --project ./tsconfig.json",
-		"start": "bun src/index.ts"
+		"start": "node run-bun.mjs src/index.ts"
 	},
 	"license": "MIT",
 	"dependencies": {

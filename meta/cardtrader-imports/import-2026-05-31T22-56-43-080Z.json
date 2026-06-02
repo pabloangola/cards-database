@@ -1,0 +1,149 @@
+{
+  "generatedAt": "2026-05-31T22:56:43.080Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": true
+  },
+  "imports": [
+    {
+      "importedAt": "2026-05-31T22:56:23.280Z",
+      "cardtrader": {
+        "id": 1992,
+        "code": "mod",
+        "name": "Miracle of the Desert"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "ADV",
+        "setId": "ADV2",
+        "setFile": "data-asia\\ADV\\ADV2.ts",
+        "cardsDir": "data-asia\\ADV\\ADV2"
+      },
+      "stats": {
+        "blueprints": 55,
+        "cardsWritten": 55,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:56:27.125Z",
+      "cardtrader": {
+        "id": 1993,
+        "code": "roh",
+        "name": "Rulers of the Heavens"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "ADV",
+        "setId": "ADV3",
+        "setFile": "data-asia\\ADV\\ADV3.ts",
+        "cardsDir": "data-asia\\ADV\\ADV3"
+      },
+      "stats": {
+        "blueprints": 56,
+        "cardsWritten": 56,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:56:31.102Z",
+      "cardtrader": {
+        "id": 1994,
+        "code": "mvsa",
+        "name": "Magma VS Aqua: Two Ambitions"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "ADV",
+        "setId": "ADV4",
+        "setFile": "data-asia\\ADV\\ADV4.ts",
+        "cardsDir": "data-asia\\ADV\\ADV4"
+      },
+      "stats": {
+        "blueprints": 82,
+        "cardsWritten": 82,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:56:35.107Z",
+      "cardtrader": {
+        "id": 1995,
+        "code": "uns",
+        "name": "Undone Seal"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "ADV",
+        "setId": "ADV5",
+        "setFile": "data-asia\\ADV\\ADV5.ts",
+        "cardsDir": "data-asia\\ADV\\ADV5"
+      },
+      "stats": {
+        "blueprints": 85,
+        "cardsWritten": 85,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:56:39.097Z",
+      "cardtrader": {
+        "id": 2021,
+        "code": "l2",
+        "name": "Reviving Legends"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "L",
+        "setId": "L2",
+        "setFile": "data-asia\\L\\L2.ts",
+        "cardsDir": "data-asia\\L\\L2"
+      },
+      "stats": {
+        "blueprints": 82,
+        "cardsWritten": 82,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:56:43.079Z",
+      "cardtrader": {
+        "id": 2022,
+        "code": "l3",
+        "name": "Clash at the Summit"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "L",
+        "setId": "L3",
+        "setFile": "data-asia\\L\\L3.ts",
+        "cardsDir": "data-asia\\L\\L3"
+      },
+      "stats": {
+        "blueprints": 81,
+        "cardsWritten": 81,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

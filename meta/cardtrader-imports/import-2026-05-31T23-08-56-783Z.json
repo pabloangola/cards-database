@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-05-31T23:08:56.783Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": true
+  },
+  "imports": [
+    {
+      "importedAt": "2026-05-31T23:08:56.782Z",
+      "cardtrader": {
+        "id": 4013,
+        "code": "csm2b",
+        "name": "CSM2b: Shining Synergy - Supreme"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SM",
+        "setId": "CSM2b",
+        "setFile": "data-asia\\SM\\CSM2b.ts",
+        "cardsDir": "data-asia\\SM\\CSM2b"
+      },
+      "stats": {
+        "blueprints": 195,
+        "cardsWritten": 195,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

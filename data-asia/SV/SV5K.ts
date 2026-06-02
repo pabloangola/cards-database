@@ -5,6 +5,7 @@ const set: Set = {
 	id: 'SV5K',
 
 	name: {
+		en: 'Wild Force',
 		ja: 'ワイルドフォース',
 		ko: '와일드포스',
 		'zh-tw': '狂野之力',

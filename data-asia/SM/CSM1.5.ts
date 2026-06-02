@@ -2,17 +2,23 @@ import { Set } from '../../interfaces'
 import serie from '../SM'
 
 const set: Set = {
-	id: 'csm1.5',
+	id: 'CSM1.5',
 	name: {
-		"zh-cn": "战斗精英",
+		en: 'CSM1.5: Battle Elite',
+		ja: 'CSM1.5: Battle Elite',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 151
+		official: 71
 	},
-	releaseDate: '2022-12-16'
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 4052
+	}
 }
 
 export default set

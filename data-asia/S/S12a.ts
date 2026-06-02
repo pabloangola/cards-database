@@ -5,6 +5,7 @@ const set: Set = {
 	id: 'S12a',
 
 	name: {
+		en: 'VSTAR Universe',
 		ja: 'VSTARユニバース',
 		ko: 'VSTAR 유니버스',
 		'zh-tw': '天地萬物VSTAR',

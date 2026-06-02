@@ -2,16 +2,23 @@ import { Set } from '../../interfaces'
 import serie from '../SM'
 
 const set: Set = {
-	id: 'csm2b',
+	id: 'CSM2b',
 	name: {
-		"zh-cn": "闪耀协同效应"
+		en: 'CSM2b: Shining Synergy - Supreme',
+		ja: 'CSM2b: Shining Synergy - Supreme',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 193
+		official: 195
 	},
-	releaseDate: '2023-01-18'
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 4013
+	}
 }
+
 export default set

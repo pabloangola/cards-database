@@ -4,6 +4,7 @@ import serie from '../SV'
 const set: Set = {
 	id: 'SVAW',
 	name: {
+		en: 'ex Starter Set Quaxly & Mimikyu ex',
 		'zh-tw': '起始組合ex 潤水鴨&謎擬Ｑ ex',
 		id: 'Quaxly & Mimikyu ex'
 	},

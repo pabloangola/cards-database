@@ -4,6 +4,7 @@ import serie from '../SV'
 const set: Set = {
 	id: 'SVEL',
 	name: {
+		en: 'Terastal Starter Set Skeledirge ex',
 		'zh-tw': '骨紋巨聲鱷ex'
 	},
 

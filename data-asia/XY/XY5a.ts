@@ -4,6 +4,7 @@ import serie from '../XY'
 const set: Set = {
 	id: 'XY5a',
 	name: {
+		en: 'Gaia Volcano',
 		ja: 'ガイアボルケーノ',
 		ko: '가이아 볼케이노'
 	},
@@ -11,7 +12,7 @@ const set: Set = {
 	serie: serie,
 
 	cardCount: {
-		official: 70
+		official: 80
 	},
 	releaseDate: '2014-12-13'
 }

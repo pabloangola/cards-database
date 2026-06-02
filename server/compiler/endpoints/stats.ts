@@ -1,4 +1,4 @@
-import { SupportedLanguages } from '../../../interfaces'
+import type { SupportedLanguages } from '../../../interfaces.d.ts'
 import { Set } from '../../../meta/definitions/api'
 import { FileFunction } from '../compilerInterfaces'
 import { getCards } from '../utils/cardUtil'

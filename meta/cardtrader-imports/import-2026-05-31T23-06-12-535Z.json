@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-05-31T23:06:12.535Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": true
+  },
+  "imports": [
+    {
+      "importedAt": "2026-05-31T23:06:12.535Z",
+      "cardtrader": {
+        "id": 4029,
+        "code": "cs45",
+        "name": "CS4.5: Final Flame Dance"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "S",
+        "setId": "CS4.5",
+        "setFile": "data-asia\\S\\CS4.5.ts",
+        "cardsDir": "data-asia\\S\\CS4.5"
+      },
+      "stats": {
+        "blueprints": 85,
+        "cardsWritten": 85,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

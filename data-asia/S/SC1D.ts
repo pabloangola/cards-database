@@ -4,6 +4,7 @@ import serie from '../S'
 const set: Set = {
 	id: 'SC1D',
 	name: {
+		en: 'Sword & Shield',
 		'zh-tw': '劍&盾',
 		id: 'Pedang & Perisai',
 		th: 'ซอร์ด แอนด์ ชีลด์'

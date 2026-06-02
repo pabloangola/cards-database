@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-05-31T23:10:00.630Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": true
+  },
+  "imports": [
+    {
+      "importedAt": "2026-05-31T23:10:00.629Z",
+      "cardtrader": {
+        "id": 2054,
+        "code": "ep20",
+        "name": "Expansion Pack 20th Anniversary"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "XYb",
+        "setId": "CP6",
+        "setFile": "data-asia\\XYb\\CP6.ts",
+        "cardsDir": "data-asia\\XYb\\CP6"
+      },
+      "stats": {
+        "blueprints": 103,
+        "cardsWritten": 103,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

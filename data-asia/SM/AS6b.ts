@@ -4,6 +4,7 @@ import serie from '../SM'
 const set: Set = {
 	id: 'AS6b',
 	name: {
+		en: 'Legendary Clash SET B',
 		'zh-tw': '傳說交鋒 SET B'
 	},
 

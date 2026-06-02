@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-05-31T23:07:03.150Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": true
+  },
+  "imports": [
+    {
+      "importedAt": "2026-05-31T23:07:03.150Z",
+      "cardtrader": {
+        "id": 4042,
+        "code": "cs4b",
+        "name": "CS4b: Nine Colors Gathering - Origin"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "S",
+        "setId": "CS4bC",
+        "setFile": "data-asia\\S\\CS4bC.ts",
+        "cardsDir": "data-asia\\S\\CS4bC"
+      },
+      "stats": {
+        "blueprints": 182,
+        "cardsWritten": 182,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

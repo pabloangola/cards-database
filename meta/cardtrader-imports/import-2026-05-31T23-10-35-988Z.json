@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-05-31T23:10:35.988Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": true
+  },
+  "imports": [
+    {
+      "importedAt": "2026-05-31T23:10:35.987Z",
+      "cardtrader": {
+        "id": 4434,
+        "code": "csv7",
+        "name": "CSV7: Blade Awakening"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SV",
+        "setId": "CSV7C",
+        "setFile": "data-asia\\SV\\CSV7C.ts",
+        "cardsDir": "data-asia\\SV\\CSV7C"
+      },
+      "stats": {
+        "blueprints": 354,
+        "cardsWritten": 354,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

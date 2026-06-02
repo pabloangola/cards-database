@@ -4,6 +4,7 @@ import serie from '../SM'
 const set: Set = {
 	id: 'AC2b',
 	name: {
+		en: 'Dream Come True SET B',
 		'zh-tw': '美夢成真組合篇 SET B'
 	},
 

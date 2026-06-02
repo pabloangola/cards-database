@@ -4,15 +4,21 @@ import serie from '../SM'
 const set: Set = {
 	id: 'CSM2.5C',
 	name: {
-		'zh-cn': '炫奇争胜',
+		en: 'CSM2.5: Striking Competition',
+		ja: 'CSM2.5: Striking Competition',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 61
+		official: 100
 	},
-	releaseDate: '2023-03-17'
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 4011
+	}
 }
 
 export default set

@@ -5,6 +5,7 @@ const set: Set = {
 	id: 'SV9a',
 
 	name: {
+		en: 'Scarlet & Violet Promos',
 		ja: '熱風のアリーナ',
 		"zh-cn": '熱風競技場',
 		"zh-tw": '熱風競技場'

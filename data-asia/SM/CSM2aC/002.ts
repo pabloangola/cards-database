@@ -1,0 +1,22 @@
+import { Card } from "../../../interfaces"
+import Set from "../CSM2aC"
+
+const card: Card = {
+	set: Set,
+
+	name: {
+		en: 'Shining Synergy | Set A',
+		ja: 'Shining Synergy | Set A',
+	},
+
+	category: 'Pokemon',
+
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 317677
+		}
+	}],
+}
+
+export default card

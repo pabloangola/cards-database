@@ -5,6 +5,7 @@ const set: Set = {
 	id: 'SV1V',
 
 	name: {
+		en: 'Violet ex',
 		ja: 'バイオレットex',
 		ko: '바이올렛ex',
 		'zh-tw': '紫ex',

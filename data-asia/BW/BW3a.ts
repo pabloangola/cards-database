@@ -4,14 +4,15 @@ import serie from '../BW'
 const set: Set = {
 	id: 'BW3a',
 	name: {
-		ja: 'サイコドライブ',
-		ko: '사이코 드라이브'
+		en: 'Hail Blizzard',
+		ja: 'ヘイルブリザード',
+		ko: '헤일 블리자드'
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 52
+		official: 64
 	},
 	releaseDate: '2011-09-16'
 }

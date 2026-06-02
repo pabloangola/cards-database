@@ -4,15 +4,21 @@ import serie from '../SV'
 const set: Set = {
 	id: 'CSV6C',
 	name: {
-		'zh-cn': '真实玄虚',
+		en: 'CSV6: True Mystery',
+		ja: 'CSV6: True Mystery',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 128
+		official: 165
 	},
-	releaseDate: '2025-11-07',
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 4366
+	}
 }
 
 export default set

@@ -4,6 +4,7 @@ import serie from '../S'
 const set: Set = {
 	id: 'S7D',
 	name: {
+		en: 'Skyscraping Perfection',
 		ja: '摩天パーフェクト',
 		ko: '마천퍼펙트',
 		'zh-tw': '摩天巔峰',

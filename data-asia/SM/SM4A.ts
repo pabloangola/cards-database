@@ -4,16 +4,21 @@ import serie from '../SM'
 const set: Set = {
 	id: 'SM4A',
 	name: {
-		ja: '超次元の暴獣',
-		ko: '초차원의 침략자'
+		en: 'Ultradimensional Beasts',
+		ja: 'Ultradimensional Beasts',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 50
+		official: 62
 	},
-	releaseDate: '2017-09-15'
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 2063
+	}
 }
 
 export default set

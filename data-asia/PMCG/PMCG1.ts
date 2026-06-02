@@ -4,6 +4,7 @@ import serie from '../PMCG'
 const set: Set = {
 	id: 'PMCG1',
 	name: {
+		en: 'ADV Expansion Pack',
 		ja: '拡張パック'
 	},
 

@@ -4,15 +4,21 @@ import serie from '../S'
 const set: Set = {
 	id: 'CS4.5C',
 	name: {
-		'zh-cn': '终末炎舞',
+		en: 'CS4.5: Final Flame Dance',
+		ja: 'CS4.5: Final Flame Dance',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 63
+		official: 85
 	},
-	releaseDate: '2024-04-26',
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 4029
+	}
 }
 
 export default set

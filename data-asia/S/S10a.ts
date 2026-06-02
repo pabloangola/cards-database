@@ -5,6 +5,7 @@ const set: Set = {
 	id: 'S10a',
 
 	name: {
+		en: 'Dark Phantasma',
 		ja: 'ダークファンタズマ',
 		ko: '다크판타스마',
 		'zh-tw': '黑暗亡靈',

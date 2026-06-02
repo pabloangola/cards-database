@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-05-31T22:56:00.565Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": true
+  },
+  "imports": [
+    {
+      "importedAt": "2026-05-31T22:56:00.564Z",
+      "cardtrader": {
+        "id": 3594,
+        "code": "sc",
+        "name": "Shiny Collection"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "BW",
+        "setId": "SC",
+        "setFile": "data-asia\\BW\\SC.ts",
+        "cardsDir": "data-asia\\BW\\SC"
+      },
+      "stats": {
+        "blueprints": 25,
+        "cardsWritten": 25,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

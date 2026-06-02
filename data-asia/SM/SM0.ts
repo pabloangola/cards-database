@@ -4,6 +4,7 @@ import serie from '../SM'
 const set: Set = {
 	id: 'SM0',
 	name: {
+		en: 'Pikachu and new Friends',
 		ja: 'ピカチュウと新しい仲間たち'
 	},
 

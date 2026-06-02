@@ -73,6 +73,8 @@ interface variant_detailed {
 export interface SetResume {
 	id: string;
 	name: string;
+	/** Official English product name when the requested locale is not English. */
+	englishName?: string;
 	logo?: string;
 	symbol?: string;
 	cardCount: {

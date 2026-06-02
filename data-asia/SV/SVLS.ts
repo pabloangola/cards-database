@@ -4,6 +4,7 @@ import serie from '../SV'
 const set: Set = {
 	id: 'SVLS',
 	name: {
+		en: 'Stellar Tera Type Starter Set Ceruledge ex',
 		ja: 'スターターセット テラスタイプ：ステラ ソウブレイズex'
 	},
 

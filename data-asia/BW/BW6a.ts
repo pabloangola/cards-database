@@ -4,6 +4,7 @@ import serie from '../BW'
 const set: Set = {
 	id: 'BW6a',
 	name: {
+		en: 'Freeze Bolt',
 		ja: 'フリーズボルト',
 		ko: '프리즈볼트'
 	},
@@ -11,7 +12,7 @@ const set: Set = {
 	serie: serie,
 
 	cardCount: {
-		official: 59
+		official: 65
 	},
 	releaseDate: '2012-07-13'
 }

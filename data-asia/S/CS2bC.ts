@@ -4,15 +4,21 @@ import serie from '../S'
 const set: Set = {
 	id: 'CS2bC',
 	name: {
-		'zh-cn': '浓墨重彩 靛',
+		en: 'CS2b: Vivid Portrayals - Indigo',
+		ja: 'CS2b: Vivid Portrayals - Indigo',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 115
+		official: 145
 	},
-	releaseDate: '2023-08-18',
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 4046
+	}
 }
 
 export default set

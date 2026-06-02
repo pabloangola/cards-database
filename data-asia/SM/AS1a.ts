@@ -4,6 +4,7 @@ import serie from '../SM'
 const set: Set = {
 	id: 'AS1a',
 	name: {
+		en: 'Sun & Moon First Impact SET A',
 		id: 'Matahari & Bulan: Hantaman Pertama Set A',
 		th: 'ซันแอนด์มูน เฟิร์สอิมแพค Sun & Moon: First Impact Set A'
 	},

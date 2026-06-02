@@ -5,6 +5,7 @@ const set: Set = {
 	id: 'SV2D',
 
 	name: {
+		en: 'Clay Burst',
 		ja: 'クレイバースト',
 		ko: '클레이버스트',
 		'zh-tw': '碟旋暴擊',

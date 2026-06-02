@@ -1,0 +1,23 @@
+import { Card } from "../../../interfaces"
+import Set from "../SM1M"
+
+const card: Card = {
+	set: Set,
+
+	name: {
+		en: 'Dragonite',
+		ja: 'Dragonite',
+	},
+
+	category: 'Pokemon',
+	rarity: 'Holo Rare',
+
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 136559
+		}
+	}],
+}
+
+export default card

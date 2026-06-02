@@ -4,15 +4,21 @@ import serie from '../SV'
 const set: Set = {
 	id: 'CSV3C',
 	name: {
-		'zh-cn': '无畏太晶',
+		en: 'CSV3: Fearless Terastal',
+		ja: 'CSV3: Fearless Terastal',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 130
+		official: 169
 	},
-	releaseDate: '2025-05-16',
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 4163
+	}
 }
 
 export default set

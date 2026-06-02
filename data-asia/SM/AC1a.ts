@@ -4,6 +4,7 @@ import serie from '../SM'
 const set: Set = {
 	id: 'AC1a',
 	name: {
+		en: 'Tag Team GX All Stars SET A',
 		'zh-tw': '眾星雲集組合篇 SET A'
 	},
 

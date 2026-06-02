@@ -4,6 +4,7 @@ import serie from '../S'
 const set: Set = {
 	id: 'S6K',
 	name: {
+		en: 'Jet-Black Spirit',
 		ja: '漆黒のガイスト',
 		ko: '칠흑의 가이스트',
 		'zh-tw': '漆黑幽魂',

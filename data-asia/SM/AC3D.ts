@@ -4,6 +4,7 @@ import serie from '../SM'
 const set: Set = {
 	id: 'AC3a',
 	name: {
+		en: 'TAG TEAM Collection SET A',
 		id: 'Booster Pack Koleksi TAG TEAM',
 	},
 

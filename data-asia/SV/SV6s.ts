@@ -4,6 +4,7 @@ import serie from '../SV'
 const set: Set = {
 	id: 'SV6s',
 	name: {
+		en: 'Twilight Masquerade',
 		id: 'Topeng Transfigurasi'
 	},
 

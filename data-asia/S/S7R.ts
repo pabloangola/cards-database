@@ -5,6 +5,7 @@ const set: Set = {
 	id: 'S7R',
 
 	name: {
+		en: 'Blue Sky Stream',
 		ja: '蒼空ストリーム',
 		ko: '창공의스트림',
 		'zh-tw': '蒼空烈流',

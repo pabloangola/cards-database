@@ -4,6 +4,7 @@ import serie from '../SM'
 const set: Set = {
 	id: 'AS1D',
 	name: {
+		en: 'Sun & Moon First Impact',
 		id: 'Starter Deck GX Hantaman Pertama'
 	},
 

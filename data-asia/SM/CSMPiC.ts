@@ -4,6 +4,7 @@ import serie from '../SM'
 const set: Set = {
 	id: 'CSMPiC',
 	name: {
+		en: 'Battle Party Dream Vol. 1',
 		'zh-cn': '对战派对组合 奖励包',
 	},
 

@@ -4,6 +4,7 @@ import serie from '../S'
 const set: Set = {
 	id: 'SJ',
 	name: {
+		en: 'Special Deck Set: Zacian & Zamazenta vs Eternatus',
 		'zh-tw': '藏瑪然特VS無極汰那'
 	},
 

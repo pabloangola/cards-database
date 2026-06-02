@@ -4,6 +4,7 @@ import serie from '../S'
 const set: Set = {
 	id: 'SC2a',
 	name: {
+		en: 'Infinite Power SET A',
 		'zh-tw': '無極力量 SET A',
 	},
 

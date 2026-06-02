@@ -4,15 +4,21 @@ import serie from '../S'
 const set: Set = {
 	id: 'CS5bC',
 	name: {
-		'zh-cn': '勇魅群星 勇',
+		en: 'CS5b: Brave Enchanting Stars - Charm',
+		ja: 'CS5b: Brave Enchanting Stars - Charm',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 128
+		official: 180
 	},
-	releaseDate: '2024-06-18',
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 4049
+	}
 }
 
 export default set

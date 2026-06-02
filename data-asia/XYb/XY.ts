@@ -4,16 +4,21 @@ import serie from '../XYb'
 const set: Set = {
 	id: 'XY',
 	name: {
-		ja: 'THE BEST OF XY',
-		ko: 'THE BEST OF XY'
+		en: 'The Best of XY',
+		ja: 'The Best of XY',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 171
+		official: 188
 	},
-	releaseDate: '2017-04-21'
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 3665
+	}
 }
 
 export default set

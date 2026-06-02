@@ -4,6 +4,7 @@ import serie from '../SV'
 const set: Set = {
 	id: 'SV10',
 	name: {
+		en: 'Glory of Team Rocket',
 		ja: 'ロケット団の栄光',
 		"zh-cn": '火箭隊的榮耀',
 		"zh-tw": '火箭隊的榮耀'

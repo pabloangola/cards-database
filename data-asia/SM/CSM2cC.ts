@@ -4,15 +4,21 @@ import serie from '../SM'
 const set: Set = {
 	id: 'CSM2cC',
 	name: {
-		'zh-cn': '交相辉映 唤',
+		en: 'CSM2c: Shining Synergy - Summon',
+		ja: 'CSM2c: Shining Synergy - Summon',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 150
+		official: 194
 	},
-	releaseDate: '2023-01-18'
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 4014
+	}
 }
 
 export default set

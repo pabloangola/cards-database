@@ -5,6 +5,7 @@ const set: Set = {
 	id: 'S12',
 
 	name: {
+		en: 'Paradigm Trigger',
 		ja: 'パラダイムトリガー',
 		ko: '패러다임트리거',
 		'zh-tw': '思維激盪',

@@ -1,0 +1,149 @@
+{
+  "generatedAt": "2026-05-31T22:54:19.599Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": true
+  },
+  "imports": [
+    {
+      "importedAt": "2026-05-31T22:53:59.745Z",
+      "cardtrader": {
+        "id": 2024,
+        "code": "bw1",
+        "name": "White Collection"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "BW",
+        "setId": "BW1b",
+        "setFile": "data-asia\\BW\\BW1b.ts",
+        "cardsDir": "data-asia\\BW\\BW1b"
+      },
+      "stats": {
+        "blueprints": 56,
+        "cardsWritten": 56,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:54:03.595Z",
+      "cardtrader": {
+        "id": 2027,
+        "code": "hab",
+        "name": "Hail Blizzard"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "BW",
+        "setId": "BW3a",
+        "setFile": "data-asia\\BW\\BW3a.ts",
+        "cardsDir": "data-asia\\BW\\BW3a"
+      },
+      "stats": {
+        "blueprints": 64,
+        "cardsWritten": 64,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:54:07.467Z",
+      "cardtrader": {
+        "id": 2026,
+        "code": "bw3",
+        "name": "Psycho Drive"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "BW",
+        "setId": "BW3b",
+        "setFile": "data-asia\\BW\\BW3b.ts",
+        "cardsDir": "data-asia\\BW\\BW3b"
+      },
+      "stats": {
+        "blueprints": 58,
+        "cardsWritten": 58,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:54:11.337Z",
+      "cardtrader": {
+        "id": 2028,
+        "code": "bw4",
+        "name": "Dark Rush"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "BW",
+        "setId": "BW4",
+        "setFile": "data-asia\\BW\\BW4.ts",
+        "cardsDir": "data-asia\\BW\\BW4"
+      },
+      "stats": {
+        "blueprints": 77,
+        "cardsWritten": 77,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:54:15.564Z",
+      "cardtrader": {
+        "id": 2016,
+        "code": "pt2",
+        "name": "Bonds to the End of Time"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "DPt",
+        "setId": "Pt2",
+        "setFile": "data-asia\\DPt\\Pt2.ts",
+        "cardsDir": "data-asia\\DPt\\Pt2"
+      },
+      "stats": {
+        "blueprints": 98,
+        "cardsWritten": 98,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:54:19.598Z",
+      "cardtrader": {
+        "id": 2017,
+        "code": "pt3",
+        "name": "Beat of the Frontier"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "DPt",
+        "setId": "Pt3",
+        "setFile": "data-asia\\DPt\\Pt3.ts",
+        "cardsDir": "data-asia\\DPt\\Pt3"
+      },
+      "stats": {
+        "blueprints": 108,
+        "cardsWritten": 108,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

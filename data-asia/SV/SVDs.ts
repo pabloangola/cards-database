@@ -4,6 +4,7 @@ import serie from '../SV'
 const set: Set = {
 	id: 'SVDs',
 	name: {
+		en: 'ex Starter Decks',
 		id: 'Deck Ringkas ex',
 		th: 'ex คอมแพกต์เด็ค'
 	},

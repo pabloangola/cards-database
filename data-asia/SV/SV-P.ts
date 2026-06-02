@@ -4,6 +4,7 @@ import serie from '../SV'
 const set: Set = {
 	id: 'SV-P',
 	name: {
+		en: 'Scarlet & Violet Promos',
 		'zh-tw': '特典卡 朱&紫',
 		th: 'การ์ดโปรโม สการ์เล็ต แอนด์ ไวโอเล็ต',
 		id: 'Kartu Promo'

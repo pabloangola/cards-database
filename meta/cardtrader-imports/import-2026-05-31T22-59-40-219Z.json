@@ -1,0 +1,149 @@
+{
+  "generatedAt": "2026-05-31T22:59:40.219Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": true
+  },
+  "imports": [
+    {
+      "importedAt": "2026-05-31T22:59:19.472Z",
+      "cardtrader": {
+        "id": 2041,
+        "code": "xy2",
+        "name": "Rising Fist"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "XY",
+        "setId": "XY3",
+        "setFile": "data-asia\\XY\\XY3.ts",
+        "cardsDir": "data-asia\\XY\\XY3"
+      },
+      "stats": {
+        "blueprints": 105,
+        "cardsWritten": 105,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:59:23.735Z",
+      "cardtrader": {
+        "id": 2042,
+        "code": "xy4",
+        "name": "Phantom Gate"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "XY",
+        "setId": "XY4",
+        "setFile": "data-asia\\XY\\XY4.ts",
+        "cardsDir": "data-asia\\XY\\XY4"
+      },
+      "stats": {
+        "blueprints": 97,
+        "cardsWritten": 97,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:59:27.915Z",
+      "cardtrader": {
+        "id": 2043,
+        "code": "xy5",
+        "name": "Gaia Volcano"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "XY",
+        "setId": "XY5a",
+        "setFile": "data-asia\\XY\\XY5a.ts",
+        "cardsDir": "data-asia\\XY\\XY5a"
+      },
+      "stats": {
+        "blueprints": 80,
+        "cardsWritten": 80,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:59:32.092Z",
+      "cardtrader": {
+        "id": 2045,
+        "code": "xy6",
+        "name": "Emerald Break"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "XY",
+        "setId": "XY6",
+        "setFile": "data-asia\\XY\\XY6.ts",
+        "cardsDir": "data-asia\\XY\\XY6"
+      },
+      "stats": {
+        "blueprints": 91,
+        "cardsWritten": 91,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:59:36.111Z",
+      "cardtrader": {
+        "id": 2046,
+        "code": "xy7",
+        "name": "Bandit Ring"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "XY",
+        "setId": "XY7",
+        "setFile": "data-asia\\XY\\XY7.ts",
+        "cardsDir": "data-asia\\XY\\XY7"
+      },
+      "stats": {
+        "blueprints": 97,
+        "cardsWritten": 97,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    },
+    {
+      "importedAt": "2026-05-31T22:59:40.218Z",
+      "cardtrader": {
+        "id": 2074,
+        "code": "s1w",
+        "name": "Sword"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "S",
+        "setId": "S1W",
+        "setFile": "data-asia\\S\\S1W.ts",
+        "cardsDir": "data-asia\\S\\S1W"
+      },
+      "stats": {
+        "blueprints": 76,
+        "cardsWritten": 76,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 0,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

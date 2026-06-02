@@ -5,6 +5,7 @@ const set: Set = {
 	id: 'SV3a',
 
 	name: {
+		en: 'Raging Surf',
 		ja: 'レイジングサーフ',
 		ko: '레이징서프',
 		'zh-tw': '激狂駭浪',

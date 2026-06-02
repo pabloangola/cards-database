@@ -4,6 +4,7 @@ import serie from '../BW'
 const set: Set = {
 	id: 'BW5b',
 	name: {
+		en: 'Dragon Blade',
 		ja: 'リューノブレード',
 		ko: '드래곤 블레이드'
 	},
@@ -11,7 +12,7 @@ const set: Set = {
 	serie: serie,
 
 	cardCount: {
-		official: 50
+		official: 57
 	},
 	releaseDate: '2012-03-16'
 }

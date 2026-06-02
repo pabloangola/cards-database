@@ -4,6 +4,7 @@ import serie from '../DPt'
 const set: Set = {
 	id: 'DP5b',
 	name: {
+		en: 'Temple of Anger',
 		ja: '怒りの神殿'
 	},
 

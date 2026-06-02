@@ -5,6 +5,7 @@ const set: Set = {
 	id: 'SV2a',
 
 	name: {
+		en: 'Pokémon Card 151',
 		ja: 'ポケモンカード151',
 		ko: '포켓몬 카드 151',
 		'zh-tw': '寶可夢卡牌151',

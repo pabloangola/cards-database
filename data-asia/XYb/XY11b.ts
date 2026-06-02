@@ -2,18 +2,23 @@ import { Set } from '../../interfaces'
 import serie from '../XYb'
 
 const set: Set = {
-	id: 'XY11a',
+	id: 'XY11b',
 	name: {
-		ja: '冷酷の反逆者',
-		ko: '냉혹한 반역자'
+		en: 'Cruel Traitor',
+		ja: 'Cruel Traitor',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 54
+		official: 61
 	},
-	releaseDate: '2016-06-17'
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 2053
+	}
 }
 
 export default set

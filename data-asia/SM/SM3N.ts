@@ -4,16 +4,21 @@ import serie from '../SM'
 const set: Set = {
 	id: 'SM3N',
 	name: {
-		ja: '光を喰らう闇',
-		ko: '빛을 삼킨 어둠'
+		en: 'Darkness that Consumes Light',
+		ja: 'Darkness that Consumes Light',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 51
+		official: 64
 	},
-	releaseDate: '2017-06-16'
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 2060
+	}
 }
 
 export default set

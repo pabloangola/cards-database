@@ -4,6 +4,7 @@ import serie from '../BW'
 const set: Set = {
 	id: 'SC',
 	name: {
+		en: 'Shiny Collection',
 		ja: 'シャイニーコレクション',
 		ko: '샤이니 컬렉션'
 	},
@@ -11,7 +12,7 @@ const set: Set = {
 	serie: serie,
 
 	cardCount: {
-		official: 20
+		official: 25
 	},
 	releaseDate: '2013-02-01'
 }

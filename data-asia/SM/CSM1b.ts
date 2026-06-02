@@ -2,17 +2,23 @@ import { Set } from '../../interfaces'
 import serie from '../SM'
 
 const set: Set = {
-	id: 'csm1b',
+	id: 'CSM1b',
 	name: {
-		"zh-cn": "风暴涌现"
+		en: 'CSM1b: Storming Emergence - Verdant',
+		ja: 'CSM1b: Storming Emergence - Verdant',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 204
+		official: 206
 	},
-	releaseDate: '2022-10-22'
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 4016
+	}
 }
 
 export default set

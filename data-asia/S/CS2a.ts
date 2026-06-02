@@ -1,24 +1,24 @@
 import { Set } from '../../interfaces'
-import serie from '../S'
+import serie from '../CT'
 
 const set: Set = {
 	id: 'CS2a',
 	name: {
-		ja: 'トリプレットビート',
-		ko: '트리플렛비트',
-		'zh-tw': '三連音爆',
-		id: 'Hantaman Triplet',
-		th: 'ทริปเปิลบีต'
+		en: 'CS2a: Vivid Portrayals - Obsidian',
+		ja: 'CS2a: Vivid Portrayals - Obsidian',
 	},
 
 	serie: serie,
 
-	// TODO: fill the rest
-
 	cardCount: {
-		official: 101
+		official: 142
 	},
-	releaseDate: '2024-04-26'
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 4045
+	}
 }
 
 export default set

@@ -5,6 +5,7 @@ const set: Set = {
 	id: 'SV1a',
 
 	name: {
+		en: 'Triplet Beat',
 		ja: 'トリプレットビート',
 		ko: '트리플렛비트',
 		'zh-tw': '三連音爆',

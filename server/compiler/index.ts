@@ -1,8 +1,20 @@
 /* eslint-disable max-statements */
+import { createHash } from 'node:crypto'
 import { existsSync, promises as fs } from 'fs'
-import { SupportedLanguages } from '../../interfaces'
+import type { SupportedLanguages } from '../../interfaces.d.ts'
 import { FileFunction } from './compilerInterfaces'
-import { fetchRemoteFile, loadLastEdits } from './utils/util'
+import { compileCardsIncremental } from './endpoints/cards'
+import {
+	computeCompilerHash,
+	computeLangAggregateHash,
+	computeRemoteAssetsHash,
+	ensureManifest,
+	isForceCompile,
+	loadManifest,
+	manifestKey,
+	saveManifest,
+} from './utils/compileCache'
+import { fetchRemoteFile } from './utils/util'
 
 const LANGS: Array<SupportedLanguages> = [
 	'en', 'fr', 'es', 'es-mx', 'it', 'pt', 'pt-br', 'pt-pt', 'de', 'nl', 'pl', 'ru',
@@ -10,65 +22,127 @@ const LANGS: Array<SupportedLanguages> = [
 ]
 
 const DIST_FOLDER = './generated'
+const force = isForceCompile()
 
 ;(async () => {
 	const paths = (await fs.readdir('./compiler/endpoints')).filter((p) => p.endsWith('.ts'))
+	const totalSteps = LANGS.length * paths.length
+	let progressIndex = 0
 
-	// Prefetch the pictures at the start as it can bug because of bad connection
 	console.log('1. Loading remote sources')
 	await fetchRemoteFile('https://assets.tcgdex.net/datas.json')
 
-	// Delete dist folder to be sure to have a clean base
-	try {
-		await fs.rm(DIST_FOLDER, {recursive: true})
-	} catch {}
+	const compilerHash = await computeCompilerHash()
+	const remoteAssetsHash = await computeRemoteAssetsHash()
+	let manifest = await loadManifest()
+	manifest = await ensureManifest(manifest, compilerHash, remoteAssetsHash)
 
-	console.log('\n2. Loading informations from GIT')
-	await loadLastEdits()
-
-	console.log('\n3. Compiling Files')
-
-	// Process each languages
-	let progressIndex = 0
-	for await (const lang of LANGS) {
-		// loop through """endpoints"""
-		for await (const file of paths) {
-
-			// final folder path
-			const folder = `${DIST_FOLDER}/${lang}`
-
-			// console.log('files1:', await fs.readdir('.'))
-			// console.log('files2:', await fs.readdir(DIST_FOLDER))
-			// console.log('files3:', await fs.readdir(folder))
-
-			// Make the folder
-			try {
-				await fs.mkdir(folder, { recursive: true })
-			} catch {
-				// idk why it throws when file is present even if nodejs says it should not throw...
-				// maybe Bun changed how the throws works...
-			}
-
-			// Import the """Endpoint"""
-			const fn = (await import(`./endpoints/${file}`)).default as FileFunction
-
-			// Run the function
-			console.log('      ', 'Compiling', lang, file)
-			const item = await fn(lang)
-
-			// Write to file
-			await fs.writeFile(`${folder}/${file.replace('.ts', '')}.json`, JSON.stringify(
-				item
-			))
-
-			console.log(`${(++progressIndex / (LANGS.length * paths.length) * 100).toFixed(2).padStart(5, '0')}%`, 'Compiled ', lang, file)
+	if (force) {
+		console.log('Force mode: clearing generated output and compile manifest')
+		try {
+			await fs.rm(DIST_FOLDER, { recursive: true })
+		} catch {}
+		manifest = {
+			version: manifest.version,
+			compilerHash,
+			remoteAssetsHash,
+			entries: {},
 		}
 	}
 
-	console.log('4. Copying static files to public folder')
-	// Finally copy definitions files to the public folder :D
+	console.log('\n2. Compiling files (incremental cache enabled; use --force for full rebuild)')
+
+	for await (const lang of LANGS) {
+		for await (const file of paths) {
+			const endpoint = file.replace('.ts', '')
+			const folder = `${DIST_FOLDER}/${lang}`
+			const outputFile = `${folder}/${endpoint}.json`
+
+			try {
+				await fs.mkdir(folder, { recursive: true })
+			} catch {
+				// folder may already exist
+			}
+
+			if (endpoint === 'cards') {
+				console.log('      ', 'Compiling', lang, file)
+				const { cards, setsCompiled, setsSkipped } = await compileCardsIncremental(
+					lang,
+					manifest,
+					force,
+				)
+				await fs.writeFile(outputFile, JSON.stringify(cards))
+				console.log(
+					`${(++progressIndex / totalSteps * 100).toFixed(2).padStart(5, '0')}%`,
+					'Compiled',
+					lang,
+					file,
+					`(${setsCompiled} sets rebuilt, ${setsSkipped} cached)`,
+				)
+				continue
+			}
+
+			const entryKey = manifestKey(lang, endpoint)
+			const aggregateHash = await createEndpointInputHash(
+				lang,
+				endpoint,
+				manifest,
+				compilerHash,
+				remoteAssetsHash,
+			)
+
+			if (
+				!force &&
+				manifest.entries[entryKey]?.inputHash === aggregateHash &&
+				existsSync(outputFile)
+			) {
+				console.log(
+					`${(++progressIndex / totalSteps * 100).toFixed(2).padStart(5, '0')}%`,
+					'Skipped',
+					lang,
+					file,
+					'(cache hit)',
+				)
+				continue
+			}
+
+			const fn = (await import(`./endpoints/${file}`)).default as FileFunction
+			console.log('      ', 'Compiling', lang, file)
+			const item = await fn(lang)
+			await fs.writeFile(outputFile, JSON.stringify(item))
+
+			manifest.entries[entryKey] = {
+				inputHash: aggregateHash,
+				compiledAt: new Date().toISOString(),
+			}
+
+			console.log(`${(++progressIndex / totalSteps * 100).toFixed(2).padStart(5, '0')}%`, 'Compiled ', lang, file)
+		}
+	}
+
+	await saveManifest(manifest)
+
+	console.log('3. Copying static files to public folder')
 	for await (const file of await fs.readdir('../meta/definitions')) {
 		await fs.copyFile('../meta/definitions/' + file, './public/v2/' + file)
 	}
-
 })()
+
+async function createEndpointInputHash(
+	lang: SupportedLanguages,
+	endpoint: string,
+	manifest: Awaited<ReturnType<typeof ensureManifest>>,
+	compilerHash: string,
+	remoteAssetsHash: string,
+): Promise<string> {
+	const langAggregate = await computeLangAggregateHash(lang, manifest)
+	return createHash('sha256')
+		.update(compilerHash)
+		.update('\0')
+		.update(remoteAssetsHash)
+		.update('\0')
+		.update(endpoint)
+		.update('\0')
+		.update(langAggregate)
+		.digest('hex')
+}

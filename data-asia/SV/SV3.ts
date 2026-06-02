@@ -5,6 +5,7 @@ const set: Set = {
 	id: 'SV3',
 
 	name: {
+		en: 'Ruler of the Black Flame',
 		ja: '黒炎の支配者',
 		ko: '흑염의 지배자',
 		'zh-tw': '黯焰支配者',

@@ -4,6 +4,7 @@ import serie from '../S'
 const set: Set = {
 	id: 'SP6',
 	name: {
+		en: 'VSTAR Special Set',
 		'zh-tw': 'VSTAR特別組合'
 	},
 

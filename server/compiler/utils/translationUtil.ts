@@ -1,4 +1,4 @@
-import { SupportedLanguages } from '../../../interfaces'
+import type { SupportedLanguages } from '../../../interfaces.d.ts'
 import es from '../../../meta/translations/es.json'
 import it from '../../../meta/translations/it.json'
 import pt from '../../../meta/translations/pt.json'

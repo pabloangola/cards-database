@@ -5,6 +5,7 @@ const set: Set = {
 	id: 'S9a',
 
 	name: {
+		en: 'Battle Region',
 		ja: 'バトルリージョン',
 		ko: '배틀리전',
 		'zh-tw': '對戰地區',

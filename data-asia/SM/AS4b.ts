@@ -4,6 +4,7 @@ import serie from '../SM'
 const set: Set = {
 	id: 'AS4b',
 	name: {
+		en: 'Sky Ruler SET B',
 		id: 'Booster Pack Penguasa Langit Set B'
 	},
 

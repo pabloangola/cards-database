@@ -4,6 +4,7 @@ import serie from '../SV'
 const set: Set = {
 	id: 'SV4s',
 	name: {
+		en: 'Paradox Rift',
 		id: 'Pertemuan Paradoks'
 	},
 

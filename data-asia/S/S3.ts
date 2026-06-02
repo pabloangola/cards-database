@@ -4,6 +4,7 @@ import serie from '../S'
 const set: Set = {
 	id: 'S3',
 	name: {
+		en: 'Infinity Zone',
 		ja: 'ムゲンゾーン',
 		ko: '무한존'
 	},
@@ -11,11 +12,12 @@ const set: Set = {
 	serie: serie,
 
 	cardCount: {
-		official: 100
+		official: 120
 	},
 	releaseDate: '2020-06-05',
 
 	thirdParty: {
+		cardtrader: 0,
 		cardmarket: 3274
 	}
 }

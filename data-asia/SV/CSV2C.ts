@@ -4,15 +4,21 @@ import serie from '../SV'
 const set: Set = {
 	id: 'CSV2C',
 	name: {
-		'zh-cn': '奇迹启程',
+		en: 'CSV2: Miracle Journey',
+		ja: 'CSV2: Miracle Journey',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 128
+		official: 167
 	},
-	releaseDate: '2025-03-21',
+
+	releaseDate: '2026-05-31',
+
+	thirdParty: {
+		cardtrader: 4160
+	}
 }
 
 export default set
