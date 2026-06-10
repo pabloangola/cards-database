@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-06-10T03:32:38.681Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": false
+  },
+  "imports": [
+    {
+      "importedAt": "2026-06-10T03:32:38.587Z",
+      "cardtrader": {
+        "id": 4314,
+        "code": "m2a",
+        "name": "MEGA Dream ex"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "M",
+        "setId": "M2a",
+        "setFile": "data-asia\\M\\M2a.ts",
+        "cardsDir": "data-asia\\M\\M2a"
+      },
+      "stats": {
+        "blueprints": 256,
+        "cardsWritten": 256,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 256,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

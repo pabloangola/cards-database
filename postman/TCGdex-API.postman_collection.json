@@ -1,0 +1,678 @@
+{
+	"info": {
+		"_postman_id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+		"name": "TCGdex API (cards-database)",
+		"description": "Colección Postman para todos los endpoints del servidor local de cards-database.\n\n**Base URL por defecto:** `http://localhost:3000` (variable `baseUrl`)\n\n**Idiomas soportados (`lang`):** en, fr, es, es-mx, it, pt, pt-br, pt-pt, de, nl, pl, ru, ja, ko, zh-tw, id, th, zh-cn\n\n**Filtrado / paginación / orden:** en listados que lo soportan puedes usar query params como `name=like:char`, `pagination:page=1`, `pagination:itemsPerPage=20`, `sort:field=name`, `sort:order=ASC`.\n\nDocumentación OpenAPI: `{{baseUrl}}/v2/openapi`",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:3000"
+		},
+		{
+			"key": "lang",
+			"value": "en"
+		},
+		{
+			"key": "cardId",
+			"value": "base1-4"
+		},
+		{
+			"key": "setId",
+			"value": "base1"
+		},
+		{
+			"key": "serieId",
+			"value": "base"
+		},
+		{
+			"key": "localId",
+			"value": "4"
+		},
+		{
+			"key": "category",
+			"value": "Pokemon"
+		},
+		{
+			"key": "type",
+			"value": "Fire"
+		},
+		{
+			"key": "rarity",
+			"value": "Rare"
+		},
+		{
+			"key": "illustrator",
+			"value": "Mitsuhiro Arita"
+		},
+		{
+			"key": "dexId",
+			"value": "25"
+		},
+		{
+			"key": "hp",
+			"value": "120"
+		},
+		{
+			"key": "retreat",
+			"value": "2"
+		},
+		{
+			"key": "stage",
+			"value": "Basic"
+		},
+		{
+			"key": "suffix",
+			"value": "ex"
+		},
+		{
+			"key": "trainerType",
+			"value": "Supporter"
+		},
+		{
+			"key": "energyType",
+			"value": "Basic"
+		},
+		{
+			"key": "regulationMark",
+			"value": "G"
+		},
+		{
+			"key": "variant",
+			"value": "holo"
+		}
+	],
+	"item": [
+		{
+			"name": "Sistema",
+			"item": [
+				{
+					"name": "Ping (health check)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/ping"
+					}
+				},
+				{
+					"name": "Root (redirect a tcgdex.dev)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/"
+					}
+				},
+				{
+					"name": "Status page",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/status"
+					}
+				},
+				{
+					"name": "Status - GitHub badge SVG",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/status/github.svg"
+					}
+				},
+				{
+					"name": "OpenAPI (Swagger UI)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/openapi"
+					}
+				},
+				{
+					"name": "GraphQL - GraphiQL UI",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/graphql"
+					}
+				}
+			]
+		},
+		{
+			"name": "GraphQL",
+			"item": [
+				{
+					"name": "Query - List cards",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"query\": \"query { cards(pagination: { page: 1, itemsPerPage: 10 }) { id name localId } }\"\n}"
+						},
+						"url": "{{baseUrl}}/v2/graphql"
+					}
+				},
+				{
+					"name": "Query - Get card by id",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"query\": \"query { card(id: \\\"{{cardId}}\\\") { id name rarity category set { id name } } }\"\n}"
+						},
+						"url": "{{baseUrl}}/v2/graphql"
+					}
+				},
+				{
+					"name": "Query - List sets",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"query\": \"query { sets(pagination: { page: 1, itemsPerPage: 10 }) { id name cardCount { total official } } }\"\n}"
+						},
+						"url": "{{baseUrl}}/v2/graphql"
+					}
+				},
+				{
+					"name": "Query - Get set by id",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"query\": \"query { set(id: \\\"{{setId}}\\\") { id name releaseDate cards { id localId name } } }\"\n}"
+						},
+						"url": "{{baseUrl}}/v2/graphql"
+					}
+				},
+				{
+					"name": "Query - List series",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"query\": \"query { series(pagination: { page: 1, itemsPerPage: 10 }) { id name } }\"\n}"
+						},
+						"url": "{{baseUrl}}/v2/graphql"
+					}
+				},
+				{
+					"name": "Query - Get serie by id",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"query\": \"query { serie(id: \\\"{{serieId}}\\\") { id name sets { id name } } }\"\n}"
+						},
+						"url": "{{baseUrl}}/v2/graphql"
+					}
+				},
+				{
+					"name": "Query - Cards with locale (es)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"query\": \"query { cards(pagination: { page: 1, itemsPerPage: 5 }) @locale(lang: \\\"es\\\") { id name } }\"\n}"
+						},
+						"url": "{{baseUrl}}/v2/graphql"
+					}
+				}
+			]
+		},
+		{
+			"name": "Random",
+			"item": [
+				{
+					"name": "Random card",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/{{lang}}/random/card"
+					}
+				},
+				{
+					"name": "Random set",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/{{lang}}/random/set"
+					}
+				},
+				{
+					"name": "Random serie",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/{{lang}}/random/serie"
+					}
+				},
+				{
+					"name": "Random card (con filtros)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/v2/{{lang}}/random/card?category=Pokemon&types=Fire",
+							"host": ["{{baseUrl}}"],
+							"path": ["v2", "{{lang}}", "random", "card"],
+							"query": [
+								{ "key": "category", "value": "Pokemon" },
+								{ "key": "types", "value": "Fire" }
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Cards",
+			"item": [
+				{
+					"name": "List cards",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/{{lang}}/cards"
+					}
+				},
+				{
+					"name": "List cards (paginado y orden)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/v2/{{lang}}/cards?pagination:page=1&pagination:itemsPerPage=20&sort:field=name&sort:order=ASC",
+							"host": ["{{baseUrl}}"],
+							"path": ["v2", "{{lang}}", "cards"],
+							"query": [
+								{ "key": "pagination:page", "value": "1" },
+								{ "key": "pagination:itemsPerPage", "value": "20" },
+								{ "key": "sort:field", "value": "name" },
+								{ "key": "sort:order", "value": "ASC" }
+							]
+						}
+					}
+				},
+				{
+					"name": "List cards (filtrar por set)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/v2/{{lang}}/cards?set={{setId}}",
+							"host": ["{{baseUrl}}"],
+							"path": ["v2", "{{lang}}", "cards"],
+							"query": [
+								{ "key": "set", "value": "{{setId}}" }
+							]
+						}
+					}
+				},
+				{
+					"name": "List cards (filtrar por nombre)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/v2/{{lang}}/cards?name=like:char",
+							"host": ["{{baseUrl}}"],
+							"path": ["v2", "{{lang}}", "cards"],
+							"query": [
+								{ "key": "name", "value": "like:char" }
+							]
+						}
+					}
+				},
+				{
+					"name": "Get card by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/{{lang}}/cards/{{cardId}}"
+					}
+				},
+				{
+					"name": "Get card by id (.json)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/{{lang}}/cards/{{cardId}}.json"
+					}
+				},
+				{
+					"name": "Get card TCGPlayer SKUs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/{{lang}}/cards/{{cardId}}/skus"
+					}
+				}
+			]
+		},
+		{
+			"name": "Sets",
+			"item": [
+				{
+					"name": "List sets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/{{lang}}/sets"
+					}
+				},
+				{
+					"name": "List sets (filtrar por serie)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/v2/{{lang}}/sets?serie={{serieId}}",
+							"host": ["{{baseUrl}}"],
+							"path": ["v2", "{{lang}}", "sets"],
+							"query": [
+								{ "key": "serie", "value": "{{serieId}}" }
+							]
+						}
+					}
+				},
+				{
+					"name": "Get set by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/{{lang}}/sets/{{setId}}"
+					}
+				},
+				{
+					"name": "Get card in set (set + localId)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/{{lang}}/sets/{{setId}}/{{localId}}"
+					}
+				}
+			]
+		},
+		{
+			"name": "Series",
+			"item": [
+				{
+					"name": "List series",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/{{lang}}/series"
+					}
+				},
+				{
+					"name": "Get serie by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/{{lang}}/series/{{serieId}}"
+					}
+				}
+			]
+		},
+		{
+			"name": "Filtros (listas)",
+			"item": [
+				{
+					"name": "List categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/{{lang}}/categories"
+					}
+				},
+				{
+					"name": "List types",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/{{lang}}/types"
+					}
+				},
+				{
+					"name": "List rarities",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/{{lang}}/rarities"
+					}
+				},
+				{
+					"name": "List illustrators",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/{{lang}}/illustrators"
+					}
+				},
+				{
+					"name": "List dex-ids",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/{{lang}}/dex-ids"
+					}
+				},
+				{
+					"name": "List hp values",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/{{lang}}/hp"
+					}
+				},
+				{
+					"name": "List retreats",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/{{lang}}/retreats"
+					}
+				},
+				{
+					"name": "List stages",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/{{lang}}/stages"
+					}
+				},
+				{
+					"name": "List suffixes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/{{lang}}/suffixes"
+					}
+				},
+				{
+					"name": "List trainer-types",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/{{lang}}/trainer-types"
+					}
+				},
+				{
+					"name": "List energy-types",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/{{lang}}/energy-types"
+					}
+				},
+				{
+					"name": "List regulation-marks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/{{lang}}/regulation-marks"
+					}
+				},
+				{
+					"name": "List variants",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/{{lang}}/variants"
+					}
+				}
+			]
+		},
+		{
+			"name": "Filtros (detalle → cards)",
+			"item": [
+				{
+					"name": "Cards by category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/{{lang}}/categories/{{category}}"
+					}
+				},
+				{
+					"name": "Cards by type",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/{{lang}}/types/{{type}}"
+					}
+				},
+				{
+					"name": "Cards by rarity",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/{{lang}}/rarities/{{rarity}}"
+					}
+				},
+				{
+					"name": "Cards by illustrator",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/{{lang}}/illustrators/{{illustrator}}"
+					}
+				},
+				{
+					"name": "Cards by dex-id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/{{lang}}/dex-ids/{{dexId}}"
+					}
+				},
+				{
+					"name": "Cards by hp",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/{{lang}}/hp/{{hp}}"
+					}
+				},
+				{
+					"name": "Cards by retreat",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/{{lang}}/retreats/{{retreat}}"
+					}
+				},
+				{
+					"name": "Cards by stage",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/{{lang}}/stages/{{stage}}"
+					}
+				},
+				{
+					"name": "Cards by suffix",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/{{lang}}/suffixes/{{suffix}}"
+					}
+				},
+				{
+					"name": "Cards by trainer-type",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/{{lang}}/trainer-types/{{trainerType}}"
+					}
+				},
+				{
+					"name": "Cards by energy-type",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/{{lang}}/energy-types/{{energyType}}"
+					}
+				},
+				{
+					"name": "Cards by regulation-mark",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/{{lang}}/regulation-marks/{{regulationMark}}"
+					}
+				},
+				{
+					"name": "Cards by variant",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{baseUrl}}/v2/{{lang}}/variants/{{variant}}"
+					}
+				}
+			]
+		}
+	]
+}

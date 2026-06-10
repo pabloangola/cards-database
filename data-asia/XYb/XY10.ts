@@ -4,7 +4,7 @@ import serie from '../XYb'
 const set: Set = {
 	id: 'XY10',
 	name: {
-		en: 'Awakening Psychic King',
+		en: 'Awakened Psychic King',
 		ja: 'Awakening Psychic King',
 	},
 

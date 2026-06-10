@@ -4,7 +4,7 @@ import serie from '../SM'
 const set: Set = {
 	id: 'SM7',
 	name: {
-		en: 'Sky-Splitting Charisma',
+		en: 'Charisma of the Ripped Sky',
 		ja: 'Sky-Splitting Charisma',
 	},
 

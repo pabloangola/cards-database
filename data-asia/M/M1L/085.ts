@@ -4,6 +4,7 @@ import Set from "../M1L";
 const card: Card = {
 	set: Set,
 	name: {
+		en: "Lt. Surge's Deal",
 		ja: "マチスの取引",
 	},
 

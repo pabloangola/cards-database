@@ -13,6 +13,12 @@ import { fileURLToPath } from 'node:url'
 const serverRoot = path.dirname(fileURLToPath(import.meta.url))
 const repoRoot = path.resolve(serverRoot, '..')
 
+// Local defaults: skip git timestamps, keep incremental cache (see compiler/utils/util.ts).
+if (!process.env.CI && process.env.GITHUB_ACTIONS !== 'true') {
+	process.env.LOCAL_COMPILE ??= '1'
+	process.env.SKIP_GIT_TIMESTAMPS ??= '1'
+}
+
 const WATCH_PATHS = [
 	path.join(serverRoot, 'src'),
 	path.join(serverRoot, 'generated'),
@@ -178,7 +184,11 @@ function onPathChanged(changedPath) {
 		normalized.includes('/data/') ||
 		normalized.includes('/compiler/')
 	) {
-		scheduleCompileAndRestart(path.basename(normalized))
+		if (process.env.COMPILE_ON_DATA_CHANGE === '1') {
+			scheduleCompileAndRestart(path.basename(normalized))
+		} else {
+			logAlways('Cambio en datos (compilación diferida). Ejecuta: cd cards-database/server && npm run compile')
+		}
 		return
 	}
 

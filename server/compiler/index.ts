@@ -1,44 +1,77 @@
 /* eslint-disable max-statements */
-import { createHash } from 'node:crypto'
 import { existsSync, promises as fs } from 'fs'
 import type { SupportedLanguages } from '../../interfaces.d.ts'
 import { FileFunction } from './compilerInterfaces'
 import { compileCardsIncremental } from './endpoints/cards'
+import { compileSetsIncremental } from './endpoints/sets'
+import { compileStatsIncremental } from './endpoints/stats'
 import {
 	computeCompilerHash,
-	computeLangAggregateHash,
 	computeRemoteAssetsHash,
+	computeSeriesInputHash,
 	ensureManifest,
 	isForceCompile,
 	loadManifest,
 	manifestKey,
 	saveManifest,
 } from './utils/compileCache'
-import { fetchRemoteFile } from './utils/util'
+import { CompileLogger } from './utils/compileLog'
+import { resolveCompileConcurrency } from './utils/compilePool'
+import { initRemoteDatas } from './utils/remoteDatas'
+import { isLocalDevCompile, shouldSkipGitTimestamps } from './utils/util'
 
-const LANGS: Array<SupportedLanguages> = [
+const ALL_LANGS: Array<SupportedLanguages> = [
 	'en', 'fr', 'es', 'es-mx', 'it', 'pt', 'pt-br', 'pt-pt', 'de', 'nl', 'pl', 'ru',
 	'ja', 'ko', 'zh-tw', 'id', 'th', 'zh-cn'
 ]
+
+function resolveCompileLangs(): Array<SupportedLanguages> {
+	const fromEnv = process.env.COMPILE_LANGS?.trim()
+	if (!fromEnv) {
+		return ALL_LANGS
+	}
+	const requested = fromEnv.split(',').map((l) => l.trim()).filter(Boolean)
+	const langs = requested.filter((l): l is SupportedLanguages =>
+		(ALL_LANGS as readonly string[]).includes(l),
+	)
+	if (langs.length === 0) {
+		console.warn('COMPILE_LANGS no contiene idiomas válidos; usando todos')
+		return ALL_LANGS
+	}
+	return langs
+}
 
 const DIST_FOLDER = './generated'
 const force = isForceCompile()
 
 ;(async () => {
+	const LANGS = resolveCompileLangs()
 	const paths = (await fs.readdir('./compiler/endpoints')).filter((p) => p.endsWith('.ts'))
 	const totalSteps = LANGS.length * paths.length
-	let progressIndex = 0
+	const logger = new CompileLogger(LANGS.length, totalSteps)
 
-	console.log('1. Loading remote sources')
-	await fetchRemoteFile('https://assets.tcgdex.net/datas.json')
+	logger.banner({
+		langs: LANGS,
+		concurrency: resolveCompileConcurrency(),
+		localMode: isLocalDevCompile(),
+		skipGit: shouldSkipGitTimestamps(),
+		force,
+	})
+
+	logger.phase('Fuentes remotas')
+	await initRemoteDatas()
+	logger.phaseOk('datas.json cargado')
 
 	const compilerHash = await computeCompilerHash()
 	const remoteAssetsHash = await computeRemoteAssetsHash()
 	let manifest = await loadManifest()
 	manifest = await ensureManifest(manifest, compilerHash, remoteAssetsHash)
+	if (isLocalDevCompile() && manifest.remoteAssetsHash !== remoteAssetsHash) {
+		manifest.remoteAssetsHash = remoteAssetsHash
+	}
 
 	if (force) {
-		console.log('Force mode: clearing generated output and compile manifest')
+		logger.phase('Force: limpiando generated/ y manifest')
 		try {
 			await fs.rm(DIST_FOLDER, { recursive: true })
 		} catch {}
@@ -50,9 +83,11 @@ const force = isForceCompile()
 		}
 	}
 
-	console.log('\n2. Compiling files (incremental cache enabled; use --force for full rebuild)')
+	logger.phase('Compilación incremental (por expansión)')
 
 	for await (const lang of LANGS) {
+		logger.langStart(lang)
+
 		for await (const file of paths) {
 			const endpoint = file.replace('.ts', '')
 			const folder = `${DIST_FOLDER}/${lang}`
@@ -65,49 +100,45 @@ const force = isForceCompile()
 			}
 
 			if (endpoint === 'cards') {
-				console.log('      ', 'Compiling', lang, file)
-				const { cards, setsCompiled, setsSkipped } = await compileCardsIncremental(
-					lang,
-					manifest,
-					force,
-				)
-				await fs.writeFile(outputFile, JSON.stringify(cards))
-				console.log(
-					`${(++progressIndex / totalSteps * 100).toFixed(2).padStart(5, '0')}%`,
-					'Compiled',
-					lang,
-					file,
-					`(${setsCompiled} sets rebuilt, ${setsSkipped} cached)`,
-				)
+				await compileCardsIncremental(lang, manifest, force, logger)
+				await saveManifest(manifest)
+				continue
+			}
+
+			if (endpoint === 'sets') {
+				await compileSetsIncremental(lang, manifest, force, logger)
+				await saveManifest(manifest)
+				continue
+			}
+
+			if (endpoint === 'stats') {
+				const { stats, rebuilt } = await compileStatsIncremental(lang, manifest, force)
+				await saveManifest(manifest)
+				if (rebuilt) {
+					logger.endpointRebuilt(
+						lang,
+						endpoint,
+						`${stats.count.toLocaleString('es')} cartas · ${stats.images.toLocaleString('es')} imágenes`,
+					)
+				} else {
+					logger.endpointCacheHit(lang, endpoint, 'desde shards')
+				}
 				continue
 			}
 
 			const entryKey = manifestKey(lang, endpoint)
-			const aggregateHash = await createEndpointInputHash(
-				lang,
-				endpoint,
-				manifest,
-				compilerHash,
-				remoteAssetsHash,
-			)
+			const aggregateHash = await computeSeriesInputHash(lang, compilerHash, remoteAssetsHash)
 
 			if (
 				!force &&
 				manifest.entries[entryKey]?.inputHash === aggregateHash &&
 				existsSync(outputFile)
 			) {
-				console.log(
-					`${(++progressIndex / totalSteps * 100).toFixed(2).padStart(5, '0')}%`,
-					'Skipped',
-					lang,
-					file,
-					'(cache hit)',
-				)
+				logger.endpointCacheHit(lang, endpoint)
 				continue
 			}
 
 			const fn = (await import(`./endpoints/${file}`)).default as FileFunction
-			console.log('      ', 'Compiling', lang, file)
 			const item = await fn(lang)
 			await fs.writeFile(outputFile, JSON.stringify(item))
 
@@ -116,33 +147,19 @@ const force = isForceCompile()
 				compiledAt: new Date().toISOString(),
 			}
 
-			console.log(`${(++progressIndex / totalSteps * 100).toFixed(2).padStart(5, '0')}%`, 'Compiled ', lang, file)
+			logger.endpointRebuilt(lang, endpoint)
 		}
+
+		await saveManifest(manifest)
 	}
 
 	await saveManifest(manifest)
 
-	console.log('3. Copying static files to public folder')
+	logger.phase('Copiando definiciones estáticas → public/v2/')
 	for await (const file of await fs.readdir('../meta/definitions')) {
 		await fs.copyFile('../meta/definitions/' + file, './public/v2/' + file)
 	}
-})()
+	logger.phaseOk()
 
-async function createEndpointInputHash(
-	lang: SupportedLanguages,
-	endpoint: string,
-	manifest: Awaited<ReturnType<typeof ensureManifest>>,
-	compilerHash: string,
-	remoteAssetsHash: string,
-): Promise<string> {
-	const langAggregate = await computeLangAggregateHash(lang, manifest)
-	return createHash('sha256')
-		.update(compilerHash)
-		.update('\0')
-		.update(remoteAssetsHash)
-		.update('\0')
-		.update(endpoint)
-		.update('\0')
-		.update(langAggregate)
-		.digest('hex')
-}
+	logger.finalSummary()
+})()

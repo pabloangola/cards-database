@@ -4,6 +4,7 @@ import Set from "../M1S"
 const card: Card = {
 	set: Set,
 	name: {
+		en: "Mega Latias ex",
 		ja: "メガラティアスex"
 	},
 	illustrator: "5ban Graphics",

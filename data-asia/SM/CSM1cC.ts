@@ -4,7 +4,7 @@ import serie from '../SM'
 const set: Set = {
 	id: 'CSM1cC',
 	name: {
-		en: 'CSM1c: Storming Emergence - Abundant',
+		en: 'Storming Emergence - Abundant',
 		ja: 'CSM1c: Storming Emergence - Abundant',
 	},
 

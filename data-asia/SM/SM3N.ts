@@ -4,7 +4,7 @@ import serie from '../SM'
 const set: Set = {
 	id: 'SM3N',
 	name: {
-		en: 'Darkness that Consumes Light',
+		en: 'Light Consuming Darkness',
 		ja: 'Darkness that Consumes Light',
 	},
 

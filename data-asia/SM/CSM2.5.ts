@@ -4,7 +4,7 @@ import serie from '../SM'
 const set: Set = {
 	id: 'CSM2.5',
 	name: {
-		en: 'CSM2.5: Striking Competition',
+		en: 'Battle Party Dream Vol. 1',
 		ja: 'CSM2.5: Striking Competition',
 	},
 

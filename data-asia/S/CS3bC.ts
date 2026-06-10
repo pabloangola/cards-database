@@ -4,7 +4,7 @@ import serie from '../S'
 const set: Set = {
 	id: 'CS3bC',
 	name: {
-		en: 'CS3b: Primordial Martial Arts - Torrent',
+		en: 'Primordial Arts - Torrent',
 		ja: 'CS3b: Primordial Martial Arts - Torrent',
 	},
 

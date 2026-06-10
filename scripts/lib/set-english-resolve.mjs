@@ -27,7 +27,7 @@ export function parseMapSection(filePath, sectionName) {
 export function loadSetEnglishMaps(cardsDbRoot) {
   const homologPath = path.resolve(
     cardsDbRoot,
-    '../dittos-army-back/data/set_name_homologs.json',
+    '../dittos-army-back/data/cardtrader_tcgdex_homolog.json',
   );
 
   const jpById = parseStringMapFile(
@@ -62,13 +62,25 @@ export function loadSetEnglishMaps(cardsDbRoot) {
     for (const entry of Object.values(homolog.sets ?? {})) {
       const id = entry.tcgdex_set_id;
       if (!id) continue;
-      const en = entry.names?.en_cardtrader;
+      const en =
+        entry.names?.en_cardtrader ??
+        entry.names?.englishName ??
+        entry.names?.database?.en;
       if (typeof en === 'string' && en.trim() && !homologEnById.has(id)) {
         homologEnById.set(id, en.trim());
       }
       if (entry.cardmarket_expansion_id && !homologCmById.has(id)) {
         homologCmById.set(id, entry.cardmarket_expansion_id);
       }
+    }
+    for (const item of homolog.cardtrader_only ?? []) {
+      const code = item?.code;
+      const name = item?.name;
+      if (!code || !name || homologEnById.has(code)) continue;
+      homologEnById.set(
+        code[0].toUpperCase() + code.slice(1),
+        String(name).split('|')[0].trim(),
+      );
     }
   }
 
@@ -84,20 +96,33 @@ export function loadSetEnglishMaps(cardsDbRoot) {
   };
 }
 
+function readQuotedValue(raw) {
+  if (!raw) return undefined;
+  const trimmed = raw.trim();
+  if (
+    (trimmed.startsWith("'") && trimmed.endsWith("'")) ||
+    (trimmed.startsWith('"') && trimmed.endsWith('"'))
+  ) {
+    return trimmed.slice(1, -1).replace(/\\'/g, "'");
+  }
+  return trimmed;
+}
+
 export function extractSetMeta(source) {
-  const id = source.match(/id:\s*'([^']+)'/)?.[1];
+  const id = readQuotedValue(source.match(/\bid:\s*(['"][^'"]+['"])/)?.[1]);
   const cardmarket = source.match(/cardmarket:\s*(\d+)/)?.[1];
   const names = {};
-  for (const m of source.matchAll(/(?:ja|ko|id|th):\s*'([^']+)'/g)) {
-    names[m[0].split(':')[0]] = m[1];
+  for (const m of source.matchAll(/(?:ja|ko|id|th):\s*(['"][^'"]+['"])/g)) {
+    const key = m[0].split(':')[0].trim();
+    names[key] = readQuotedValue(m[1]);
   }
-  for (const m of source.matchAll(/'zh-(?:tw|cn)':\s*'([^']+)'/g)) {
+  for (const m of source.matchAll(/['"]zh-(?:tw|cn)['"]:\s*(['"][^'"]+['"])/g)) {
     const key = m[0].includes('zh-tw') ? 'zh-tw' : 'zh-cn';
-    names[key] = m[1];
+    names[key] = readQuotedValue(m[1]);
   }
-  const enMatch = source.match(/\ben:\s*'((?:\\'|[^'])*)'/);
+  const enMatch = source.match(/\ben:\s*(['"])((?:\\.|(?!\1).)*)\1/);
   if (enMatch) {
-    names.en = enMatch[1].replace(/\\'/g, "'");
+    names.en = enMatch[2].replace(/\\'/g, "'");
   }
   return {
     id,

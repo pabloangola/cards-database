@@ -4,6 +4,7 @@ import serie from "../M";
 const set: Set = {
 	id: "M3",
 	name: {
+		en: 'Nihil Zero',
 		ja: "ムニキスゼロ",
 	},
 

@@ -59,7 +59,10 @@ function parseArgs(argv) {
 		allManifests: false,
 		manifestsDir: DEFAULT_MANIFESTS_DIR,
 		expansionId: undefined,
+		expansionIds: [],
 		locale: 'ja',
+		setId: undefined,
+		serie: undefined,
 		outDir: getDefaultImagesOutDir(),
 		rate: 18,
 		maxRetries: 3,
@@ -74,8 +77,14 @@ function parseArgs(argv) {
 		if (arg === '--manifest' && argv[i + 1]) opts.manifest = argv[++i]
 		else if (arg === '--all-manifests') opts.allManifests = true
 		else if (arg === '--manifests-dir' && argv[i + 1]) opts.manifestsDir = argv[++i]
-		else if (arg === '--expansion-id' && argv[i + 1]) opts.expansionId = Number(argv[++i])
+		else if (arg === '--expansion-id' && argv[i + 1]) {
+			const id = Number(argv[++i])
+			opts.expansionId = id
+			opts.expansionIds.push(id)
+		}
 		else if (arg === '--locale' && argv[i + 1]) opts.locale = argv[++i]
+		else if (arg === '--set-id' && argv[i + 1]) opts.setId = argv[++i]
+		else if (arg === '--serie' && argv[i + 1]) opts.serie = argv[++i]
 		else if (arg === '--out' && argv[i + 1]) opts.outDir = argv[++i]
 		else if (arg === '--rate' && argv[i + 1]) opts.rate = Number(argv[++i])
 		else if (arg === '--max-retries' && argv[i + 1]) opts.maxRetries = Number(argv[++i])
@@ -342,14 +351,18 @@ function dedupeManifestEntries(entries) {
 	return [...byExpansion.values()]
 }
 
-async function jobsFromExpansion(ctx, expansionId, locale, setIdOverride) {
+async function jobsFromExpansion(ctx, expansionId, locale, setIdOverride, serieOverride) {
 	const expansion = ctx.expansionsById.get(expansionId)
 	if (!expansion) {
 		console.warn(`  Expansión ${expansionId} no encontrada en CardTrader`)
 		return []
 	}
 
-	const target = resolveSetTarget(expansion, { locale, setId: setIdOverride })
+	const target = resolveSetTarget(expansion, {
+		locale,
+		setId: setIdOverride,
+		serie: serieOverride,
+	})
 	let blueprints = ctx.blueprintCache.get(expansionId)
 	if (!blueprints) {
 		console.log(`  Blueprints expansión ${expansionId} (${expansion.name})…`)
@@ -401,8 +414,12 @@ async function collectJobs(opts, token) {
 	}
 
 	let jobs = []
-	if (opts.expansionId) {
-		jobs = await jobsFromExpansion(ctx, opts.expansionId, opts.locale)
+	if (opts.expansionIds.length > 0) {
+		for (const expansionId of opts.expansionIds) {
+			jobs = jobs.concat(
+				await jobsFromExpansion(ctx, expansionId, opts.locale, opts.setId, opts.serie),
+			)
+		}
 	} else {
 		const entries = dedupeManifestEntries(await loadManifestEntries(opts))
 		console.log(`Manifests: ${entries.length} expansión(es) únicas`)
@@ -410,7 +427,7 @@ async function collectJobs(opts, token) {
 			const id = entry.cardtrader.id
 			const locale = entry.tcgdex?.locale ?? opts.locale
 			const setId = entry.tcgdex?.setId
-			jobs = jobs.concat(await jobsFromExpansion(ctx, id, locale, setId))
+			jobs = jobs.concat(await jobsFromExpansion(ctx, id, locale, setId, undefined))
 		}
 	}
 
@@ -513,7 +530,7 @@ async function main() {
 		process.exit(1)
 	}
 
-	if (!opts.manifest && !opts.allManifests && !opts.expansionId) {
+	if (!opts.manifest && !opts.allManifests && opts.expansionIds.length === 0) {
 		printHelp()
 		process.exit(1)
 	}

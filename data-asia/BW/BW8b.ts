@@ -4,7 +4,7 @@ import serie from '../BW'
 const set: Set = {
 	id: 'BW8b',
 	name: {
-		en: 'Thunder Knuckle',
+		en: 'Raiden Knuckle',
 		ja: 'ライデンナックル',
 		ko: '볼트너클'
 	},

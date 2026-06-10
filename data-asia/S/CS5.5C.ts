@@ -4,7 +4,7 @@ import serie from '../S'
 const set: Set = {
 	id: 'CS5.5C',
 	name: {
-		en: 'CS5.5: Shadow of Glory',
+		en: 'Shadow of Glory',
 		ja: 'CS5.5: Shadow of Glory',
 	},
 

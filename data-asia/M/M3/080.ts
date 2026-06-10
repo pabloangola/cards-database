@@ -4,6 +4,7 @@ import Set from "../M3";
 const card: Card = {
 	set: Set,
 	name: {
+		en: "Rocky Fighting Energy",
 		ja: "ロック闘エネルギー",
 	},
 

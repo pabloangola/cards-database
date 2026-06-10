@@ -4,7 +4,7 @@ import serie from '../XYb'
 const set: Set = {
 	id: 'CP6',
 	name: {
-		en: 'Expansion Pack 20th Anniversary',
+		en: '20th Anniversary Pack',
 		ja: 'Expansion Pack 20th Anniversary',
 	},
 

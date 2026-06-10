@@ -1,6 +1,10 @@
 /**
- * Generates dittos-army-back/data/asia_set_english_labels.json from cards-database
- * sources (data-asia, jp_set_translations, cm_expansions, homologs, manual maps).
+ * Canonical set English labels + CardTrader expansion map from cards-database sources.
+ *
+ * Writes:
+ *   cards-database/meta/set-english-labels.json   (source of truth)
+ *   dittos-army-back/data/asia_set_english_labels.json (legacy consumer)
+ *   scripts/card-trader/data/set_locale_map.json (card-trader pipeline)
  *
  * Usage (from cards-database/):
  *   npm run sets:english-labels
@@ -8,15 +12,23 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {
+  buildExpansionMaps,
+  mergeCardtraderHomologFile,
+} from './lib/expansion-map.mjs';
+import {
   extractSetMeta,
   loadSetEnglishMaps,
   resolveEnglish,
 } from './lib/set-english-resolve.mjs';
 
 const cardsDbRoot = path.resolve(import.meta.dirname, '..');
-const outputPath = path.resolve(
-  cardsDbRoot,
-  '../dittos-army-back/data/asia_set_english_labels.json',
+const repoRoot = path.resolve(cardsDbRoot, '..');
+
+const canonicalPath = path.join(cardsDbRoot, 'meta/set-english-labels.json');
+const backLabelsPath = path.join(repoRoot, 'dittos-army-back/data/asia_set_english_labels.json');
+const cardTraderLocaleMapPath = path.join(
+  repoRoot,
+  'scripts/card-trader/data/set_locale_map.json',
 );
 
 const maps = loadSetEnglishMaps(cardsDbRoot);
@@ -78,8 +90,21 @@ for (const id of setIdConflicts) {
   delete bySetId[id];
 }
 
+let expansionMaps = buildExpansionMaps(entries, {
+  jpById: maps.jpById,
+  cmByName: maps.cmByName,
+});
+
+const ctHomologPath = path.join(repoRoot, 'dittos-army-back/data/cardtrader_tcgdex_homolog.json');
+if (fs.existsSync(ctHomologPath)) {
+  expansionMaps = mergeCardtraderHomologFile(
+    expansionMaps,
+    JSON.parse(fs.readFileSync(ctHomologPath, 'utf8')),
+  );
+}
+
 const payload = {
-  version: 2,
+  version: 3,
   generated_at: new Date().toISOString(),
   sources: [
     'cards-database/data-asia',
@@ -87,23 +112,56 @@ const payload = {
     'cards-database/scripts/utils-data/cm_expansions.ts',
     'cards-database/scripts/utils-data/tcgdex_set_english_sources.ts',
     'cards-database/scripts/utils-data/tcgdex_set_english_by_id.ts',
-    'dittos-army-back/data/set_name_homologs.json',
+    'dittos-army-back/data/cardtrader_tcgdex_homolog.json',
   ],
   stats: {
     scanned: entries.length,
     resolved: Object.keys(bySetId).length,
     ambiguousSetIds: [...setIdConflicts],
     missing: missing.length,
+    expansionAliases: Object.keys(expansionMaps.cardtrader_en_to_locale).length,
   },
   bySetId,
   byJaName: byLocalizedName,
+  cardtrader_en_to_locale: expansionMaps.cardtrader_en_to_locale,
+  sets: expansionMaps.sets,
   missing,
 };
 
-fs.mkdirSync(path.dirname(outputPath), { recursive: true });
-fs.writeFileSync(outputPath, `${JSON.stringify(payload, null, 2)}\n`, 'utf8');
+const backPayload = {
+  version: 2,
+  generated_at: payload.generated_at,
+  sources: payload.sources,
+  stats: payload.stats,
+  bySetId: payload.bySetId,
+  byJaName: payload.byJaName,
+  missing: payload.missing,
+};
 
-console.log(`Wrote ${outputPath}`);
+const localeMapPayload = {
+  version: 2,
+  generated: true,
+  generated_at: payload.generated_at,
+  sources: payload.sources,
+  locale_set_to_en: expansionMaps.locale_set_to_en,
+  expansion_to_en_set: expansionMaps.expansion_to_en_set,
+};
+
+for (const target of [canonicalPath, backLabelsPath, cardTraderLocaleMapPath]) {
+  fs.mkdirSync(path.dirname(target), { recursive: true });
+}
+
+fs.writeFileSync(canonicalPath, `${JSON.stringify(payload, null, 2)}\n`, 'utf8');
+fs.writeFileSync(backLabelsPath, `${JSON.stringify(backPayload, null, 2)}\n`, 'utf8');
+fs.writeFileSync(
+  cardTraderLocaleMapPath,
+  `${JSON.stringify(localeMapPayload, null, 2)}\n`,
+  'utf8',
+);
+
+console.log(`Wrote ${canonicalPath}`);
+console.log(`Wrote ${backLabelsPath}`);
+console.log(`Wrote ${cardTraderLocaleMapPath}`);
 console.log(JSON.stringify(payload.stats, null, 2));
 if (missing.length > 0) {
   console.log('\nStill missing English label:');

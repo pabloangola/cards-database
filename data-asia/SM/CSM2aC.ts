@@ -4,7 +4,7 @@ import serie from '../SM'
 const set: Set = {
 	id: 'CSM2aC',
 	name: {
-		en: 'CSM2a: Shining Synergy - Shower',
+		en: 'Shining Synergy - Shower',
 		ja: 'CSM2a: Shining Synergy - Shower',
 	},
 

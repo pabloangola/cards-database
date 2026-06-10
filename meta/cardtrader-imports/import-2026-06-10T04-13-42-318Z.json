@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-06-10T04:13:42.318Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": false
+  },
+  "imports": [
+    {
+      "importedAt": "2026-06-10T04:13:42.230Z",
+      "cardtrader": {
+        "id": 4009,
+        "code": "cbb1c",
+        "name": "Gem Pack Vol.1"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SV",
+        "setId": "CBB1C",
+        "setFile": "data-asia\\SV\\CBB1C.ts",
+        "cardsDir": "data-asia\\SV\\CBB1C"
+      },
+      "stats": {
+        "blueprints": 117,
+        "cardsWritten": 117,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 117,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

@@ -5,6 +5,7 @@
 	"scripts": {
 		"compile": "node run-bun.mjs compiler/index.ts",
 		"compile:force": "node run-bun.mjs compiler/index.ts --force",
+		"prestart": "node ensure-generated.mjs",
 		"dev": "node run-bun.mjs --watch src/index.ts",
 		"daemon": "node dev-daemon.mjs",
 		"validate": "tsgo --noEmit --project ./tsconfig.json",

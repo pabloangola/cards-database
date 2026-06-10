@@ -4,7 +4,7 @@ import serie from '../XYb'
 const set: Set = {
 	id: 'CP4',
 	name: {
-		en: 'Premium Champion Pack',
+		en: 'EX x MEGA x BREAK Champion Pack',
 		ja: 'Premium Champion Pack',
 	},
 

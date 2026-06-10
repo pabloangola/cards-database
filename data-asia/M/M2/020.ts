@@ -4,6 +4,7 @@ import Set from "../M2";
 const card: Card = {
 	set: Set,
 	name: {
+		en: "Ceruledge",
 		ja: "ソウブレイズ",
 	},
 

@@ -1,47 +1,48 @@
 import { existsSync, promises as fs } from 'fs'
+import path from 'node:path'
 import type { SupportedLanguages } from '../../../interfaces.d.ts'
 import { Card as CardSingle } from '../../../meta/definitions/api'
 import { FileFunction } from '../compilerInterfaces'
 import {
-	computeSetInputHash,
-	listSetSourceBundles,
-	manifestKey,
+	cardsShardPath,
+	planExpansionBuilds,
+	recordExpansionEntry,
 	type CompileManifest,
-	type SetSourceBundle,
+	type ExpansionBuildPlan,
 } from '../utils/compileCache'
-import { cardToCardSingle, getCards } from '../utils/cardUtil'
-import { getSet } from '../utils/setUtil'
+import { resolveCompileConcurrency, runPool } from '../utils/compilePool'
+import { getCardsFromPaths, cardToCardSingle } from '../utils/cardUtil'
+import { clearSetResumeCache, getSet, setToSetSimpleFast } from '../utils/setUtil'
+import type { CompileLogger } from '../utils/compileLog'
 import { loadLastEditsForPaths } from '../utils/util'
 
 const OUTPUT_DIR = './generated'
+const CARD_IMPORT_CONCURRENCY = Math.max(
+	4,
+	Number(process.env.COMPILE_CARD_IMPORT_CONCURRENCY) || 16,
+)
 
-async function loadExistingCardsBySet(
-	lang: SupportedLanguages,
-): Promise<Map<string, CardSingle[]>> {
-	const outputPath = `${OUTPUT_DIR}/${lang}/cards.json`
-	if (!existsSync(outputPath)) {
-		return new Map()
-	}
-
-	const raw = await fs.readFile(outputPath, 'utf8')
-	const cards = JSON.parse(raw) as CardSingle[]
-	const bySet = new Map<string, CardSingle[]>()
-
-	for (const card of cards) {
-		const setId = card.set.id
-		const bucket = bySet.get(setId)
-		if (bucket) {
-			bucket.push(card)
-		} else {
-			bySet.set(setId, [card])
-		}
-	}
-
-	return bySet
+function bundleSourcePaths(plan: ExpansionBuildPlan): string[] {
+	const { bundle } = plan
+	return [bundle.setFile, bundle.serieFile, ...bundle.cardFiles]
 }
 
-function bundleSourcePaths(bundle: SetSourceBundle): string[] {
-	return [bundle.setFile, bundle.serieFile, ...bundle.cardFiles]
+async function readCardsShard(lang: SupportedLanguages, setApiId: string): Promise<CardSingle[]> {
+	const shardPath = cardsShardPath(lang, setApiId)
+	if (!existsSync(shardPath)) {
+		return []
+	}
+	return JSON.parse(await fs.readFile(shardPath, 'utf8')) as CardSingle[]
+}
+
+async function writeCardsShard(
+	lang: SupportedLanguages,
+	setApiId: string,
+	cards: CardSingle[],
+): Promise<void> {
+	const shardPath = cardsShardPath(lang, setApiId)
+	await fs.mkdir(path.dirname(shardPath), { recursive: true })
+	await fs.writeFile(shardPath, JSON.stringify(cards))
 }
 
 function sortCards(cards: CardSingle[]): CardSingle[] {
@@ -59,76 +60,113 @@ function sortCards(cards: CardSingle[]): CardSingle[] {
 	})
 }
 
+async function mergeCardShards(
+	lang: SupportedLanguages,
+	plans: ExpansionBuildPlan[],
+): Promise<CardSingle[]> {
+	const shards = await runPool(
+		plans,
+		(plan) => readCardsShard(lang, plan.setApiId),
+		resolveCompileConcurrency(),
+	)
+	return sortCards(shards.flat())
+}
+
+async function compileExpansionCards(
+	lang: SupportedLanguages,
+	plan: ExpansionBuildPlan,
+): Promise<CardSingle[]> {
+	const set = await getSet(plan.bundle.setId, plan.bundle.serieFolder, lang)
+	if (!(lang in set.name)) {
+		return []
+	}
+
+	const cards = await getCardsFromPaths(
+		lang,
+		set,
+		plan.bundle.cardFiles,
+		CARD_IMPORT_CONCURRENCY,
+	)
+	const setResume = await setToSetSimpleFast(set, lang, cards.length)
+	const compileContext = { setResume }
+
+	return runPool(
+		cards,
+		([id, card]) =>
+			cardToCardSingle(id, card, lang, compileContext).catch((e) => {
+				console.error('error compiling card', `${card.set.id}-${id}`, e)
+				throw e
+			}),
+		CARD_IMPORT_CONCURRENCY,
+	)
+}
+
 export async function compileCardsIncremental(
 	lang: SupportedLanguages,
 	manifest: CompileManifest,
 	force: boolean,
+	logger?: CompileLogger,
 ): Promise<{ cards: CardSingle[]; setsCompiled: number; setsSkipped: number }> {
-	const bundles = await listSetSourceBundles(lang)
-	const existingBySet = force ? new Map<string, CardSingle[]>() : await loadExistingCardsBySet(lang)
-	const result: CardSingle[] = []
-	const bundlesToCompile: Array<{
-		bundle: SetSourceBundle
-		inputHash: string
-	}> = []
-	let setsSkipped = 0
+	clearSetResumeCache()
+	const startedAt = Date.now()
 
-	for (const bundle of bundles) {
-		const inputHash = await computeSetInputHash(
-			bundle,
-			manifest.compilerHash,
-			manifest.remoteAssetsHash,
-		)
-		const key = manifestKey(lang, 'cards', bundle.setId)
-		const cachedCards = existingBySet.get(bundle.setId)
-		const cacheHit =
-			!force &&
-			manifest.entries[key]?.inputHash === inputHash &&
-			cachedCards &&
-			cachedCards.length > 0
+	const { toCompile, skipped } = await planExpansionBuilds(lang, manifest, force, 'cards')
+	const rebuiltIds = toCompile.map((p) => p.setApiId)
+	const cachedIds = skipped.map((p) => p.setApiId)
 
-		if (cacheHit) {
-			result.push(...cachedCards)
-			setsSkipped++
+	logger?.expansionPlan(lang, 'cards', rebuiltIds, cachedIds)
+
+	const allPlans = [...skipped, ...toCompile].sort((a, b) =>
+		`${a.bundle.serieFolder}/${a.setApiId}`.localeCompare(`${b.bundle.serieFolder}/${b.setApiId}`),
+	)
+
+	if (toCompile.length > 0) {
+		await loadLastEditsForPaths(toCompile.flatMap(bundleSourcePaths))
+	}
+
+	const concurrency = resolveCompileConcurrency()
+	let progressDone = 0
+	const compiledSets = await runPool(
+		toCompile,
+		async (plan) => {
+			const compiled = await compileExpansionCards(lang, plan)
+			if (compiled.length === 0) {
+				return { plan, compiled: null as CardSingle[] | null }
+			}
+			await writeCardsShard(lang, plan.setApiId, compiled)
+			progressDone++
+			logger?.expansionProgress(lang, 'cards', progressDone, toCompile.length, plan.setApiId)
+			return { plan, compiled }
+		},
+		concurrency,
+	)
+	logger?.expansionProgressDone()
+
+	let setsCompiled = 0
+	for (const { plan, compiled } of compiledSets) {
+		if (!compiled || compiled.length === 0) {
 			continue
 		}
-
-		bundlesToCompile.push({ bundle, inputHash })
+		recordExpansionEntry(manifest, plan.setApiId, lang, 'cards', plan.inputHash)
+		setsCompiled++
 	}
 
-	if (bundlesToCompile.length > 0) {
-		await loadLastEditsForPaths(
-			bundlesToCompile.flatMap(({ bundle }) => bundleSourcePaths(bundle)),
-		)
-	}
+	const merged = await mergeCardShards(lang, allPlans)
+	const outputPath = `${OUTPUT_DIR}/${lang}/cards.json`
+	await fs.mkdir(path.dirname(outputPath), { recursive: true })
+	await fs.writeFile(outputPath, JSON.stringify(merged))
 
-	for (const { bundle, inputHash } of bundlesToCompile) {
-		const set = await getSet(bundle.setId, bundle.serieFolder, lang)
-		if (!(lang in set.name)) {
-			continue
-		}
-
-		const cards = await getCards(lang, set)
-		const compiled = await Promise.all(
-			cards.map(([id, card]) =>
-				cardToCardSingle(id, card, lang).catch((e) => {
-					console.error('error compiling card', `${card.set.id}-${id}`, e)
-					throw e
-				}),
-			),
-		)
-
-		result.push(...compiled)
-		manifest.entries[manifestKey(lang, 'cards', bundle.setId)] = {
-			inputHash,
-			compiledAt: new Date().toISOString(),
-		}
-	}
+	logger?.endpointExpansionSummary(lang, 'cards', {
+		rebuilt: setsCompiled,
+		cached: skipped.length,
+		elapsedMs: Date.now() - startedAt,
+		extra: `${merged.length.toLocaleString('es')} cartas`,
+	})
 
 	return {
-		cards: sortCards(result),
-		setsCompiled: bundlesToCompile.length,
-		setsSkipped,
+		cards: merged,
+		setsCompiled,
+		setsSkipped: skipped.length,
 	}
 }
 

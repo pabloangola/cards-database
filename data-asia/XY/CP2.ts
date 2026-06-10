@@ -4,7 +4,7 @@ import serie from '../XY'
 const set: Set = {
 	id: 'CP2',
 	name: {
-		en: 'Legendary Shine Collection',
+		en: 'Legendary Holo Collection',
 		ja: 'Legendary Shine Collection',
 	},
 

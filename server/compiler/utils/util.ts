@@ -1,10 +1,29 @@
-import { objectSize } from '@dzeio/object-util'
 import Queue from '@dzeio/queue'
 import { glob } from 'glob'
 import { exec, spawn } from 'node:child_process'
-import { writeFileSync } from 'node:fs'
 import type { Card, Languages, Set, SupportedLanguages } from '../../../interfaces.d.ts'
 import * as legals from '../../../meta/legals'
+
+/** Local dev: skip git timestamps unless CI or SKIP_GIT_TIMESTAMPS=0. */
+export function isLocalDevCompile(): boolean {
+	if (process.env.LOCAL_COMPILE === '0') {
+		return false
+	}
+	if (process.env.LOCAL_COMPILE === '1') {
+		return true
+	}
+	return process.env.CI !== 'true' && process.env.GITHUB_ACTIONS !== 'true'
+}
+
+export function shouldSkipGitTimestamps(): boolean {
+	if (process.env.SKIP_GIT_TIMESTAMPS === '0') {
+		return false
+	}
+	if (process.env.SKIP_GIT_TIMESTAMPS === '1') {
+		return true
+	}
+	return isLocalDevCompile()
+}
 interface fileCacheInterface {
 	[key: string]: any
 }
@@ -132,6 +151,10 @@ function runCommand(command: string, useSpawn = true): Promise<string> {
 const lastEditsCache: Record<string, string> = {}
 
 export async function loadLastEditsForPaths(relativePaths: string[]): Promise<void> {
+	if (shouldSkipGitTimestamps()) {
+		return
+	}
+
 	const uniquePaths = [...new Set(relativePaths.map((p) => p.replace(/\\/g, '/')))]
 	if (uniquePaths.length === 0) {
 		return
@@ -159,48 +182,6 @@ export async function loadLastEditsForPaths(relativePaths: string[]): Promise<vo
 		}))
 	}
 	await queue.waitEnd()
-}
-
-export async function loadLastEdits() {
-	console.log('Loading Git File Tree...')
-	const firstCommand = 'git ls-tree -r --name-only HEAD ../data'
-	const files = (await runCommand(firstCommand)).split('\n')
-	const secondCommand = 'git ls-tree -r --name-only HEAD ../data-asia'
-	files.push(...(await runCommand(secondCommand)).split('\n'))
-	console.log('Loaded files tree', files.length, 'files')
-	console.log('Loading their last edit time')
-	let processed = 0
-	const concurrent = process.platform === 'win32' ? 10 : 1000
-	const queue = new Queue(concurrent, 10)
-	queue.start()
-
-	for await (let file of files) {
-		file = file.replace(/"/g, '').replace("\\303\\251", "é")
-		await queue.add(runCommand(`git log -1 --pretty="format:%cd" --date=iso-strict "${file}"`, false).then((res) => {
-			lastEditsCache[file] = res
-		})
-		.catch(() => {
-			console.warn('could not load file', file, 'hope it does not break everything else lol')
-		})
-		.finally(() => {
-			processed++
-			if (processed % 1000 === 0) {
-				console.log('loaded', processed, 'out of', files.length, 'files', `(${(processed / files.length * 100).toFixed(0)}%)`)
-			}
-		}))
-		// try {
-		// 	// don't really know why but it does not correctly execute the command when using Spawn
-		// 	lastEditsCache[file] = await runCommand(`git log -1 --pretty="format:%cd" --date=iso-strict "${file}"`, false)
-		// } catch {
-		// 	console.warn('could not load file', file, 'hope it does not break everything else lol')
-		// }
-		// processed++
-		// if (processed % 1000 === 0) {
-		// 	console.log('loaded', processed, 'out of', files.length, 'files', `(${(processed / files.length * 100).toFixed(0)}%)`)
-		// }
-	}
-	await queue.waitEnd()
-	console.log('done loading files', objectSize(lastEditsCache))
 }
 
 export function getLastEdit(path: string): string {

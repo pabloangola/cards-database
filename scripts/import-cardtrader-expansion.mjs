@@ -14,6 +14,7 @@
  *   node scripts/import-cardtrader-expansion.mjs --expansion-id 1991 --dry-run
  */
 
+import { spawnSync } from 'node:child_process'
 import fs from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -59,6 +60,8 @@ function parseArgs(argv) {
 		forceSet: false,
 		skipExistingCards: true,
 		delayMs: 2500,
+		compile: false,
+		compileLangs: 'ja',
 		help: false,
 	}
 
@@ -79,6 +82,8 @@ function parseArgs(argv) {
 		else if (arg === '--force-set') opts.forceSet = true
 		else if (arg === '--overwrite-cards') opts.skipExistingCards = false
 		else if (arg === '--delay-ms' && argv[i + 1]) opts.delayMs = Math.max(0, Number(argv[++i]))
+		else if (arg === '--compile') opts.compile = true
+		else if (arg === '--compile-langs' && argv[i + 1]) opts.compileLangs = argv[++i]
 		else if (arg === '--help') opts.help = true
 	}
 
@@ -104,10 +109,45 @@ Options:
   --force-set             Reescribir .ts del set
   --overwrite-cards       Sobrescribir cartas existentes
   --delay-ms <n>          Pausa entre expansiones (default: 2500, rate limit CT)
+  --compile               Tras todas las expansiones: labels + compile (una sola vez)
+  --compile-langs <list>  Idiomas para compile (default: ja). Ej: ja,en
 
 Env:
   CARDTRADER_API_TOKEN    Bearer token CardTrader API
 `)
+}
+
+function runCatalogRefresh(compileLangs) {
+	console.log('\nActualizando labels y compilando catálogo (una sola pasada)…')
+	const labels = spawnSync(process.execPath, ['scripts/generate-set-english-labels.mjs'], {
+		cwd: REPO_ROOT,
+		stdio: 'inherit',
+	})
+	if (labels.status !== 0) {
+		throw new Error('generate-set-english-labels falló')
+	}
+	const apply = spawnSync(process.execPath, ['scripts/apply-set-english-names.mjs'], {
+		cwd: REPO_ROOT,
+		stdio: 'inherit',
+	})
+	if (apply.status !== 0) {
+		throw new Error('apply-set-english-names falló')
+	}
+	const compile = spawnSync(
+		process.execPath,
+		['scripts/compile-catalog.mjs'],
+		{
+			cwd: REPO_ROOT,
+			stdio: 'inherit',
+			env: {
+				...process.env,
+				COMPILE_LANGS: compileLangs,
+			},
+		},
+	)
+	if (compile.status !== 0) {
+		throw new Error('compile-catalog falló')
+	}
 }
 
 async function loadExpansionIdsFromJson(jsonPath, expansionLimit) {
@@ -365,10 +405,15 @@ async function main() {
 			console.log(`Fallos imagen: ${failPath}`)
 		}
 
-		console.log(
-			'\nCatálogo en disco actualizado. Recompila solo cuando quieras refrescar la API (lote al final, no tras cada set):',
-		)
-		console.log('  cd cards-database/server && npm run compile')
+		if (opts.compile) {
+			runCatalogRefresh(opts.compileLangs)
+		} else {
+			console.log(
+				'\nCatálogo en disco actualizado. Compila una sola vez al terminar todos los imports:',
+			)
+			console.log('  npm run catalog:refresh')
+			console.log('  o: node scripts/import-cardtrader-expansion.mjs ... --compile')
+		}
 	}
 
 	console.log('\nListo.')

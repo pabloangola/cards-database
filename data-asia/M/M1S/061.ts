@@ -4,6 +4,7 @@ import Set from "../M1S"
 const card: Card = {
 	set: Set,
 	name: {
+		en: "Vitality Forest",
 		ja: "活力の森"
 	},
 	illustrator: "AYUMI ODASHIMA",

@@ -4,7 +4,7 @@ import serie from '../XYb'
 const set: Set = {
 	id: 'XY',
 	name: {
-		en: 'The Best of XY',
+		en: 'Best of XY',
 		ja: 'The Best of XY',
 	},
 

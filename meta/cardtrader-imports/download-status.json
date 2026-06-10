@@ -1,9 +1,14 @@
 {
-  "updatedAt": "2026-06-01T01:11:19.226Z",
-  "phase": "inicial",
-  "processedInPass": 17000,
-  "totalInPass": 17148,
-  "downloaded": 9649,
-  "skipped": 7351,
-  "failedInPass": 0
+  "updatedAt": "2026-06-10T03:52:32.591Z",
+  "phase": "completed",
+  "ledger": "meta\\cardtrader-imports\\download-ledger.json",
+  "total": 428,
+  "pending": 0,
+  "downloading": 0,
+  "downloaded": 428,
+  "skipped": 0,
+  "failed": 0,
+  "done": 428,
+  "percent": 100,
+  "current": null
 }

@@ -4,7 +4,7 @@ import serie from '../XYb'
 const set: Set = {
 	id: 'CP5',
 	name: {
-		en: 'Mythical & Legendary Dream Shine Collection',
+		en: 'Illusion - Legend - Dream Holo Collection',
 		ja: 'Mythical & Legendary Dream Shine Collection',
 	},
 

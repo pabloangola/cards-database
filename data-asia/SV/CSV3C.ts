@@ -4,7 +4,7 @@ import serie from '../SV'
 const set: Set = {
 	id: 'CSV3C',
 	name: {
-		en: 'CSV3: Fearless Terastal',
+		en: 'Fearless Terastal',
 		ja: 'CSV3: Fearless Terastal',
 	},
 

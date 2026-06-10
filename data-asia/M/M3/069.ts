@@ -4,6 +4,7 @@ import Set from "../M3";
 const card: Card = {
 	set: Set,
 	name: {
+		en: "Antique Sail Fossil",
 		ja: "古びたヒレの化石",
 	},
 
