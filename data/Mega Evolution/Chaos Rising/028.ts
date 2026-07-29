@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "If its coat becomes fully charged with electricity, its tail lights up. Flaaffy can fire wool that zaps on impact.",
 	},
+
 
 	name: {
 		en: "Flaaffy",
@@ -67,10 +65,22 @@ const card: Card = {
 	retreat: 2,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693487,
-		cardmarket: 886420
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 886420,
+				tcgplayer: 693487
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886420,
+				tcgplayer: 693487
+			}
+		},
+	],
 }
 
 export default card

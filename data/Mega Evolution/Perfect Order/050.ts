@@ -16,6 +16,16 @@ const card: Card = {
 		pt: "Gengar"
 	},
 
+	evolveFrom: {
+		en: "Haunter",
+		fr: "Spectrum",
+		es: "Haunter",
+		'es-mx': "Haunter",
+		de: "Alpollo",
+		it: "Haunter",
+		pt: "Haunter",
+	},
+
 	illustrator: "Masako Tomii",
 	rarity: "Rare",
 	category: "Pokemon",
@@ -73,22 +83,44 @@ const card: Card = {
 		damage: "10+"
 	}],
 
+	weaknesses: [
+		{
+			type: "Fighting",
+			value: "×2",
+		},
+	],
 	retreat: 1,
 	regulationMark: "J",
 
 	variants: [
 		{
-			type: "holo"
+			type: "holo",
+			thirdParty: {
+				tcgplayer: 684431,
+				cardmarket: 877465
+			}
 		},
 		{
-			type: "reverse"
+			type: "reverse",
+			thirdParty: {
+				tcgplayer: 684431,
+				cardmarket: 877465
+			}
+		},
+		{
+			type: "normal",
+			stamp: ["player-rewards-program"]
+		},
+		{
+			type: "normal",
+			stamp: ["gamestop"]
+		},
+		{
+			type: "normal",
+			stamp: ["eb-games"]
 		}
 	],
 
-	thirdParty: {
-		tcgplayer: 684431,
-		cardmarket: 877465
-	}
 }
 
 export default card

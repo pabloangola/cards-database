@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "It moves while spinning around on its single foot. Some Baltoy have been seen spinning on their heads.",
 	},
+
 
 	name: {
 		en: "Baltoy",
@@ -62,10 +60,22 @@ const card: Card = {
 	retreat: 2,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693452,
-		cardmarket: 886438
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 886438,
+				tcgplayer: 693452
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886438,
+				tcgplayer: 693452
+			}
+		},
+	],
 }
 
 export default card

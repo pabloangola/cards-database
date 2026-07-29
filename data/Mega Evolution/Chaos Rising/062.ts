@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "It defends itself by launching spikes, but its aim isn't very good at first. Only after a lot of practice will it improve.",
 	},
+
 
 	name: {
 		en: "Ferroseed",
@@ -57,10 +55,22 @@ const card: Card = {
 	retreat: 2,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693485,
-		cardmarket: 886454
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 886454,
+				tcgplayer: 693485
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886454,
+				tcgplayer: 693485
+			}
+		},
+	],
 }
 
 export default card

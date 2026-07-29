@@ -16,6 +16,16 @@ const card: Card = {
 		pt: "Luxray"
 	},
 
+	evolveFrom: {
+		en: "Luxio",
+		fr: "Luxio",
+		es: "Luxio",
+		'es-mx': "Luxio",
+		de: "Luxio",
+		it: "Luxio",
+		pt: "Luxio",
+	},
+
 	illustrator: "Taiga Kasai",
 	rarity: "Rare",
 	category: "Pokemon",
@@ -73,22 +83,36 @@ const card: Card = {
 		damage: 200
 	}],
 
+	weaknesses: [
+		{
+			type: "Fighting",
+			value: "×2",
+		},
+	],
 	retreat: 0,
 	regulationMark: "J",
 
 	variants: [
 		{
-			type: "holo"
+			type: "holo",
+			thirdParty: {
+				tcgplayer: 684411,
+				cardmarket: 877441
+			}
 		},
 		{
-			type: "reverse"
+			type: "reverse",
+			thirdParty: {
+				tcgplayer: 684411,
+				cardmarket: 877441
+			}
+		},
+		{
+			type: "normal",
+			stamp: ["set-logo"]
 		}
 	],
 
-	thirdParty: {
-		tcgplayer: 684411,
-		cardmarket: 877441
-	}
 }
 
 export default card

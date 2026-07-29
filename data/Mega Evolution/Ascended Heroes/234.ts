@@ -14,9 +14,20 @@ const card: Card = {
 		pt: "Banette"
 	},
 
+	evolveFrom: {
+		en: "Shuppet",
+		fr: "Polichombr",
+		es: "Shuppet",
+		'es-mx': "Shuppet",
+		de: "Shuppet",
+		it: "Shuppet",
+		pt: "Shuppet",
+	},
+
 	illustrator: "YASHIRO Nanaco",
 	rarity: "Illustration rare",
 	category: "Pokemon",
+	dexId: [354],
 	hp: 90,
 	types: ["Psychic"],
 	stage: "Stage1",
@@ -59,8 +70,24 @@ const card: Card = {
 		damage: 70
 	}],
 
+	weaknesses: [
+		{
+			type: "Darkness",
+			value: "×2",
+		},
+	],
+	resistances: [
+		{
+			type: "Fighting",
+			value: "-30",
+		},
+	],
 	retreat: 1,
 	regulationMark: "I",
+
+	description: {
+		en: "This Pokémon developed from an abandoned doll that amassed a grudge. It is seen in dark alleys.",
+	},
 
 	variants: [
 		{

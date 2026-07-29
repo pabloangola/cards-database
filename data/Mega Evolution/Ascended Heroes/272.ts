@@ -27,6 +27,7 @@ const card: Card = {
 	illustrator: "Tika Matsuno",
 	rarity: "Special illustration rare",
 	category: "Pokemon",
+	dexId: [154],
 	hp: 360,
 	types: ["Grass"],
 	stage: "Stage2",
@@ -57,6 +58,12 @@ const card: Card = {
 		damage: "70+"
 	}],
 
+	weaknesses: [
+		{
+			type: "Fire",
+			value: "×2",
+		},
+	],
 	retreat: 2,
 	regulationMark: "J",
 

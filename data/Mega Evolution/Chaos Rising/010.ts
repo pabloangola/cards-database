@@ -4,11 +4,8 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "A legend says that its body glows in seven colors. A rainbow is said to form behind it when it flies.",
 	},
 
 	name: {
@@ -84,10 +81,36 @@ const card: Card = {
 	retreat: 2,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693500,
-		cardmarket: 886402
-	}
+	variants: [
+		{
+			type: 'holo',
+			thirdParty: {
+				cardmarket: 886402,
+				tcgplayer: 693500
+			}
+		},
+		{
+			type: 'reverse',
+			thirdParty: {
+				cardmarket: 886402,
+				tcgplayer: 693500
+			}
+		},
+		{
+			type: 'holo',
+			stamp: ['gamestop'],
+			thirdParty: {
+				cardmarket: 886625
+			}
+		},
+		{
+			type: 'holo',
+			stamp: ['eb-games'],
+			thirdParty: {
+				cardmarket: 888580
+			}
+		},
+	],
 }
 
 export default card

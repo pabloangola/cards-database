@@ -59,8 +59,18 @@ const card: Card = {
 		damage: 20
 	}],
 
+	weaknesses: [
+		{
+			type: "Metal",
+			value: "×2",
+		},
+	],
 	retreat: 1,
 	regulationMark: "I",
+
+	description: {
+		en: "The temperature of their breath is -58 degrees Fahrenheit. They create snow crystals and make snow fall in the areas around them.",
+	},
 
 	variants: [
 	{
@@ -74,7 +84,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "pokeball",
 		thirdParty: {
-			cardmarket: 870213,
+			cardmarket: 870214,
 			tcgplayer: 676891
 		}
 	},
@@ -82,7 +92,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870214,
+			cardmarket: 870213,
 			tcgplayer: 677031
 		}
 	},

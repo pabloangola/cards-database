@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "Saboteri",
 	rarity: "Common",
 	category: "Pokemon",
+	dexId: [92],
 	hp: 70,
 	types: ["Darkness"],
 	stage: "Basic",
@@ -37,8 +38,18 @@ const card: Card = {
 		damage: 10
 	}],
 
+	weaknesses: [
+		{
+			type: "Fighting",
+			value: "×2",
+		},
+	],
 	retreat: 1,
 	regulationMark: "I",
+
+	description: {
+		en: "It wraps its opponent in its gas-like body, slowly weakening its prey by poisoning it through the skin.",
+	},
 
 	variants: [
 	{
@@ -52,7 +63,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "duskball",
 		thirdParty: {
-			cardmarket: 870110,
+			cardmarket: 870330,
 			tcgplayer: 676949
 		}
 	},
@@ -62,6 +73,14 @@ const card: Card = {
 		thirdParty: {
 			cardmarket: 870329,
 			tcgplayer: 677089
+		}
+	},
+	{
+		type: "holo",
+		foil: "cosmos",
+		thirdParty: {
+			cardmarket: 870110,
+			tcgplayer: 677399
 		}
 	},
 ],

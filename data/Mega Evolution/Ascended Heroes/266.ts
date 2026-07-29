@@ -27,6 +27,7 @@ const card: Card = {
 	illustrator: "DOM",
 	rarity: "Ultra Rare",
 	category: "Pokemon",
+	dexId: [604],
 	hp: 350,
 	types: ["Lightning"],
 	stage: "Stage2",
@@ -79,6 +80,12 @@ const card: Card = {
 		damage: 190
 	}],
 
+	weaknesses: [
+		{
+			type: "Fighting",
+			value: "×2",
+		},
+	],
 	retreat: 2,
 	regulationMark: "I",
 

@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Magcargo do Ethan"
 	},
 
+	evolveFrom: {
+		en: "Ethan's Slugma",
+		fr: "Limagma de Luth",
+		es: "Slugma de Eco",
+		'es-mx': "Slugma de Ethan",
+		de: "Klarins Schneckmag",
+		it: "Slugma di Armonio",
+		pt: "Slugma do Ethan",
+	},
+
 	illustrator: "Hideki Ishikawa",
 	rarity: "Illustration rare",
 	category: "Pokemon",
@@ -71,8 +81,18 @@ const card: Card = {
 		damage: "70×"
 	}],
 
+	weaknesses: [
+		{
+			type: "Water",
+			value: "×2",
+		},
+	],
 	retreat: 3,
 	regulationMark: "I",
+
+	description: {
+		en: "This Pokémon lives near the craters of volcanoes. It stores fire energy in its shell of cooled and hardened magma.",
+	},
 
 	variants: [
 		{

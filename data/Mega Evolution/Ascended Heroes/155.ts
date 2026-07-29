@@ -74,6 +74,10 @@ const card: Card = {
 	retreat: 2,
 	regulationMark: "I",
 
+	description: {
+		en: "When the interior part of its tail spins like a motor, Zekrom can generate many bolts of lightning to blast its surroundings.",
+	},
+
 	variants: [
 	{
 		type: "holo",
@@ -83,10 +87,26 @@ const card: Card = {
 		}
 	},
 	{
+		type: "normal",
+		stamp: ["pokemon-center"],
+		thirdParty: {
+			cardmarket: 894179,
+			tcgplayer: 704446
+		}
+	},
+	{
+		type: "holo",
+		stamp: ["pokemon-center"],
+		thirdParty: {
+			cardmarket: 894178,
+			tcgplayer: 704447
+		}
+	},
+	{
 		type: "reverse",
 		foil: "pokeball",
 		thirdParty: {
-			cardmarket: 870377,
+			cardmarket: 870378,
 			tcgplayer: 676973
 		}
 	},
@@ -94,7 +114,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870378,
+			cardmarket: 870377,
 			tcgplayer: 677113
 		}
 	},

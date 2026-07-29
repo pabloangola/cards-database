@@ -14,10 +14,21 @@ const card: Card = {
 		pt: "Mega Gardevoir ex"
 	},
 
+	evolveFrom: {
+		en: "Kirlia",
+		fr: "Kirlia",
+		es: "Kirlia",
+		'es-mx': "Kirlia",
+		de: "Kirlia",
+		it: "Kirlia",
+		pt: "Kirlia",
+	},
+
 	suffix: "ex",
 	illustrator: "takuyoa",
 	rarity: "Double rare",
 	category: "Pokemon",
+	dexId: [282],
 	hp: 360,
 	types: ["Psychic"],
 	stage: "Stage2",
@@ -70,6 +81,18 @@ const card: Card = {
 		damage: "50×"
 	}],
 
+	weaknesses: [
+		{
+			type: "Darkness",
+			value: "×2",
+		},
+	],
+	resistances: [
+		{
+			type: "Fighting",
+			value: "-30",
+		},
+	],
 	retreat: 2,
 	regulationMark: "I",
 

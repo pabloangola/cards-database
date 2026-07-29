@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "The energy made in its cheeks' electric pouches is stored inside its patagial membranes and released while it is gliding.",
 	},
+
 
 	name: {
 		en: "Emolga",
@@ -84,10 +82,22 @@ const card: Card = {
 	retreat: 1,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693481,
-		cardmarket: 886422
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 886422,
+				tcgplayer: 693481
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886422,
+				tcgplayer: 693481
+			}
+		},
+	],
 }
 
 export default card

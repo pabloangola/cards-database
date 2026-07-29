@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "Jerky",
 	rarity: "Illustration rare",
 	category: "Pokemon",
+	dexId: [885],
 	hp: 70,
 	types: ["Dragon"],
 	stage: "Basic",
@@ -53,6 +54,10 @@ const card: Card = {
 
 	retreat: 1,
 	regulationMark: "H",
+
+	description: {
+		en: "It has a habit of biting at Clauncher even though it doesn’t feed on them. This is said to be vestigial behavior from when Dreepy was alive.",
+	},
 
 	variants: [
 		{

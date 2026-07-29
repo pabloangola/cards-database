@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "When in danger, it raises its ears and releases enough psychic power to grind a 10-ton truck into dust.",
 	},
+
 
 	name: {
 		en: "Meowstic",
@@ -72,10 +70,22 @@ const card: Card = {
 	retreat: 1,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693521,
-		cardmarket: 886429
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 886429,
+				tcgplayer: 693521
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886429,
+				tcgplayer: 693521
+			}
+		},
+	],
 }
 
 export default card

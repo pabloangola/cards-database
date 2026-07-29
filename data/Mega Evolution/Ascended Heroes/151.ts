@@ -14,9 +14,20 @@ const card: Card = {
 		pt: "Dragonair"
 	},
 
+	evolveFrom: {
+		en: "Dratini",
+		fr: "Minidraco",
+		es: "Dratini",
+		'es-mx': "Dratini",
+		de: "Dratini",
+		it: "Dratini",
+		pt: "Dratini",
+	},
+
 	illustrator: "Gemi",
 	rarity: "Uncommon",
 	category: "Pokemon",
+	dexId: [148],
 	hp: 100,
 	types: ["Dragon"],
 	stage: "Stage1",
@@ -64,6 +75,10 @@ const card: Card = {
 	retreat: 2,
 	regulationMark: "I",
 
+	description: {
+		en: "Its crystalline orbs appear to give this Pokémon the power to freely control the weather.",
+	},
+
 	variants: [
 	{
 		type: "normal",
@@ -76,7 +91,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "loveball",
 		thirdParty: {
-			cardmarket: 870371,
+			cardmarket: 870372,
 			tcgplayer: 676970
 		}
 	},
@@ -84,7 +99,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870372,
+			cardmarket: 870371,
 			tcgplayer: 677110
 		}
 	},

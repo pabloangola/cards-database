@@ -16,6 +16,16 @@ const card: Card = {
 		pt: "Probopass"
 	},
 
+	evolveFrom: {
+		en: "Nosepass",
+		fr: "Tarinor",
+		es: "Nosepass",
+		'es-mx': "Nosepass",
+		de: "Nasgnet",
+		it: "Nosepass",
+		pt: "Nosepass",
+	},
+
 	illustrator: "Kinu Nishimura",
 	rarity: "Illustration rare",
 	category: "Pokemon",
@@ -63,19 +73,25 @@ const card: Card = {
 		damage: 260
 	}],
 
+	weaknesses: [
+		{
+			type: "Grass",
+			value: "×2",
+		},
+	],
 	retreat: 3,
 	regulationMark: "J",
 
 	variants: [
 		{
-			type: "holo"
+			type: "holo",
+			thirdParty: {
+				tcgplayer: 684424,
+				cardmarket: 877513
+			}
 		}
 	],
 
-	thirdParty: {
-		tcgplayer: 684424,
-		cardmarket: 877513
-	}
 }
 
 export default card

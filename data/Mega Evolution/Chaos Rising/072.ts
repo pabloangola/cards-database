@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "These Pokemon like things neat and tidy. They are always sweeping and dusting their habitat, using their tails as brooms.",
 	},
+
 
 	name: {
 		en: "Minccino",
@@ -62,10 +60,22 @@ const card: Card = {
 	retreat: 1,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693525,
-		cardmarket: 886464
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 886464,
+				tcgplayer: 693525
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886464,
+				tcgplayer: 693525
+			}
+		},
+	],
 }
 
 export default card

@@ -14,9 +14,20 @@ const card: Card = {
 		pt: "Togetic"
 	},
 
+	evolveFrom: {
+		en: "Togepi",
+		fr: "Togepi",
+		es: "Togepi",
+		'es-mx': "Togepi",
+		de: "Togepi",
+		it: "Togepi",
+		pt: "Togepi",
+	},
+
 	illustrator: "Teeziro",
 	rarity: "Common",
 	category: "Pokemon",
+	dexId: [176],
 	hp: 90,
 	types: ["Psychic"],
 	stage: "Stage1",
@@ -47,8 +58,18 @@ const card: Card = {
 		damage: 30
 	}],
 
+	weaknesses: [
+		{
+			type: "Metal",
+			value: "×2",
+		},
+	],
 	retreat: 1,
 	regulationMark: "H",
+
+	description: {
+		en: "They say that it will appear before kindhearted, caring people and shower them with happiness.",
+	},
 
 	variants: [
 	{
@@ -62,7 +83,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "loveball",
 		thirdParty: {
-			cardmarket: 870261,
+			cardmarket: 870262,
 			tcgplayer: 676915
 		}
 	},
@@ -70,7 +91,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870262,
+			cardmarket: 870261,
 			tcgplayer: 677055
 		}
 	},

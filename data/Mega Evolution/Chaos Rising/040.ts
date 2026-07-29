@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "It was recently discovered that the different varieties of Pumpkaboo vary not only in size but also in the size of the souls they collect.",
 	},
+
 
 	name: {
 		en: "Pumpkaboo",
@@ -57,10 +55,22 @@ const card: Card = {
 	retreat: 2,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693536,
-		cardmarket: 886432
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 886432,
+				tcgplayer: 693536
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886432,
+				tcgplayer: 693536
+			}
+		},
+	],
 }
 
 export default card

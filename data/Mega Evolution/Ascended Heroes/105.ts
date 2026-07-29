@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "Whisker",
 	rarity: "Rare",
 	category: "Pokemon",
+	dexId: [337],
 	hp: 110,
 	types: ["Fighting"],
 	stage: "Basic",
@@ -61,8 +62,18 @@ const card: Card = {
 		damage: 50
 	}],
 
+	weaknesses: [
+		{
+			type: "Grass",
+			value: "×2",
+		},
+	],
 	retreat: 1,
 	regulationMark: "I",
+
+	description: {
+		en: "It was discovered at the site of a meteor strike 40 years ago. Its stare can lull its foes to sleep.",
+	},
 
 	variants: [
 	{
@@ -76,7 +87,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "duskball",
 		thirdParty: {
-			cardmarket: 870305,
+			cardmarket: 870306,
 			tcgplayer: 676937
 		}
 	},
@@ -84,7 +95,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870306,
+			cardmarket: 870305,
 			tcgplayer: 677077
 		}
 	},

@@ -14,7 +14,7 @@ const card: Card = {
 		de: "Friedwuff-ex"
 	},
 
-	rarity: "None",
+	rarity: "Promo",
 	category: "Pokemon",
 	hp: 260,
 	types: ["Psychic"],
@@ -52,10 +52,38 @@ const card: Card = {
 		damage: "100+"
 	}],
 
+	weaknesses: [
+		{
+			type: "Darkness",
+			value: "×2",
+		},
+	],
+	resistances: [
+		{
+			type: "Fighting",
+			value: "-30",
+		},
+	],
 	retreat: 3,
 	regulationMark: "H",
 	suffix: "ex",
-	illustrator: "takuyoa"
+	illustrator: "takuyoa",
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardmarket: 791831,
+				tcgplayer: 591023
+			},
+		},
+		{
+			type: "holo",
+			size: "jumbo",
+			thirdParty: {
+				tcgplayer: 791832
+			}
+		}
+	],
 }
 
 export default card

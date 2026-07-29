@@ -14,7 +14,7 @@ const card: Card = {
 		en: "Charizard VMAX"
 	},
 
-	rarity: "None",
+	rarity: "Promo",
 	category: "Pokemon",
 	hp: 330,
 	types: ["Fire"],
@@ -67,6 +67,12 @@ const card: Card = {
 		damage: 300
 	}],
 
+	weaknesses: [
+		{
+			type: "Water",
+			value: "×2",
+		},
+	],
 	retreat: 3,
 	regulationMark: "D",
 

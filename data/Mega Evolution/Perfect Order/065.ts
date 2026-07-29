@@ -16,6 +16,16 @@ const card: Card = {
 		pt: "Diggersby"
 	},
 
+	evolveFrom: {
+		en: "Bunnelby",
+		fr: "Sapereau",
+		es: "Bunnelby",
+		'es-mx': "Bunnelby",
+		de: "Scoppel",
+		it: "Bunnelby",
+		pt: "Bunnelby",
+	},
+
 	illustrator: "Mousho",
 	rarity: "Uncommon",
 	category: "Pokemon",
@@ -63,22 +73,32 @@ const card: Card = {
 		damage: 100
 	}],
 
+	weaknesses: [
+		{
+			type: "Fighting",
+			value: "×2",
+		},
+	],
 	retreat: 4,
 	regulationMark: "J",
 
 	variants: [
 		{
-			type: "normal"
+			type: "normal",
+			thirdParty: {
+				tcgplayer: 684442,
+				cardmarket: 877481
+			}
 		},
 		{
-			type: "reverse"
+			type: "reverse",
+			thirdParty: {
+				tcgplayer: 684442,
+				cardmarket: 877481
+			}
 		}
 	],
 
-	thirdParty: {
-		tcgplayer: 684442,
-		cardmarket: 877481
-	}
 }
 
 export default card

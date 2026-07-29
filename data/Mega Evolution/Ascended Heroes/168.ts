@@ -59,8 +59,24 @@ const card: Card = {
 		damage: 10
 	}],
 
+	weaknesses: [
+		{
+			type: "Lightning",
+			value: "×2",
+		},
+	],
+	resistances: [
+		{
+			type: "Fighting",
+			value: "-30",
+		},
+	],
 	retreat: 1,
 	regulationMark: "J",
+
+	description: {
+		en: "Because they are weak individually, they form groups. However, they bicker if the group grows too big.",
+	},
 
 	variants: [
 	{
@@ -74,7 +90,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "pokeball",
 		thirdParty: {
-			cardmarket: 870395,
+			cardmarket: 870396,
 			tcgplayer: 676982
 		}
 	},
@@ -82,7 +98,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870396,
+			cardmarket: 870395,
 			tcgplayer: 677122
 		}
 	},

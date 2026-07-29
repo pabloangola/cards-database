@@ -80,17 +80,25 @@ const card: Card = {
 		damage: "120+"
 	}],
 
+	weaknesses: [
+		{
+			type: "Grass",
+			value: "×2",
+		},
+	],
 	retreat: 0,
 	regulationMark: "I",
 
+	illustrator: "5ban Graphics",
 	variants: [
 		{
-			type: "holo",
+			type: 'holo',
 			thirdParty: {
 				cardmarket: 857636,
-				tcgplayer: 662191
+				tcgplayer: 662191,
+				cardtrader: 356845
 			}
-		}
+		},
 	],	
 }
 

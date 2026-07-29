@@ -18,6 +18,7 @@ const card: Card = {
 	illustrator: "Nisota Niso",
 	rarity: "Double rare",
 	category: "Pokemon",
+	dexId: [377],
 	hp: 230,
 	types: ["Fighting"],
 	stage: "Basic",
@@ -70,6 +71,12 @@ const card: Card = {
 		damage: "140+"
 	}],
 
+	weaknesses: [
+		{
+			type: "Grass",
+			value: "×2",
+		},
+	],
 	retreat: 3,
 	regulationMark: "I",
 

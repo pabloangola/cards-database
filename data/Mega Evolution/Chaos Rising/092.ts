@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "This mysterious Pokémon started life as an ancient clay figurine made over 20,000 years ago.",
 	},
+
 
 	name: {
 		en: "Claydol",
@@ -67,10 +65,15 @@ const card: Card = {
 	retreat: 2,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693467,
-		cardmarket: 886484
-	}
+	variants: [
+		{
+			type: 'holo',
+			thirdParty: {
+				cardmarket: 886484,
+				tcgplayer: 693467
+			}
+		},
+	],
 }
 
 export default card

@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "Wintr Wandr",
 	rarity: "Common",
 	category: "Pokemon",
+	dexId: [361],
 	hp: 70,
 	types: ["Water"],
 	stage: "Basic",
@@ -37,8 +38,18 @@ const card: Card = {
 		damage: 10
 	}],
 
+	weaknesses: [
+		{
+			type: "Metal",
+			value: "×2",
+		},
+	],
 	retreat: 1,
 	regulationMark: "I",
+
+	description: {
+		en: "In some snowy lands, certain folklore says a house will prosper if a Snorunt lives there.",
+	},
 
 	variants: [
 	{
@@ -52,7 +63,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "loveball",
 		thirdParty: {
-			cardmarket: 870211,
+			cardmarket: 870212,
 			tcgplayer: 676890
 		}
 	},
@@ -60,7 +71,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870212,
+			cardmarket: 870211,
 			tcgplayer: 677030
 		}
 	},

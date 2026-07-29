@@ -16,6 +16,16 @@ const card: Card = {
 		pt: "Ariados"
 	},
 
+	evolveFrom: {
+		en: "Spinarak",
+		fr: "Mimigal",
+		es: "Spinarak",
+		'es-mx': "Spinarak",
+		de: "Webarak",
+		it: "Spinarak",
+		pt: "Spinarak",
+	},
+
 	illustrator: "svlt",
 	rarity: "Common",
 	category: "Pokemon",
@@ -49,22 +59,32 @@ const card: Card = {
 		damage: 50
 	}],
 
+	weaknesses: [
+		{
+			type: "Fire",
+			value: "×2",
+		},
+	],
 	retreat: 1,
 	regulationMark: "J",
 
 	variants: [
 		{
-			type: "normal"
+			type: "normal",
+			thirdParty: {
+				tcgplayer: 684398,
+				cardmarket: 877414
+			}
 		},
 		{
-			type: "reverse"
+			type: "reverse",
+			thirdParty: {
+				tcgplayer: 684398,
+				cardmarket: 877414
+			}
 		}
 	],
 
-	thirdParty: {
-		tcgplayer: 684398,
-		cardmarket: 877414
-	}
 }
 
 export default card

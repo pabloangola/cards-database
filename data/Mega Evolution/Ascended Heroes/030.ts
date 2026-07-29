@@ -14,9 +14,20 @@ const card: Card = {
 		pt: "Pignite"
 	},
 
+	evolveFrom: {
+		en: "Tepig",
+		fr: "Gruikui",
+		es: "Tepig",
+		'es-mx': "Tepig",
+		de: "Floink",
+		it: "Tepig",
+		pt: "Tepig",
+	},
+
 	illustrator: "Aliya Chen",
 	rarity: "Uncommon",
 	category: "Pokemon",
+	dexId: [499],
 	hp: 110,
 	types: ["Fire"],
 	stage: "Stage1",
@@ -47,8 +58,18 @@ const card: Card = {
 		damage: 70
 	}],
 
+	weaknesses: [
+		{
+			type: "Water",
+			value: "×2",
+		},
+	],
 	retreat: 3,
 	regulationMark: "J",
+
+	description: {
+		en: "The more it eats, the more fuel it has to make the fire in its stomach stronger. This fills it with even more power.",
+	},
 
 	variants: [
 	{
@@ -62,7 +83,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "friendball",
 		thirdParty: {
-			cardmarket: 870185,
+			cardmarket: 870186,
 			tcgplayer: 676877
 		}
 	},
@@ -70,7 +91,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870186,
+			cardmarket: 870185,
 			tcgplayer: 677017
 		}
 	},

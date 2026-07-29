@@ -14,8 +14,19 @@ const card: Card = {
 		pt: "Ceruledge"
 	},
 
-	rarity: "Uncommon",
+	evolveFrom: {
+		en: "Charcadet",
+		fr: "Charbambin",
+		es: "Charcadet",
+		'es-mx': "Charcadet",
+		de: "Knarbon",
+		it: "Charcadet",
+		pt: "Charcadet",
+	},
+
+	rarity: "Promo",
 	category: "Pokemon",
+	dexId: [937],
 	hp: 140,
 	types: ["Fire"],
 	stage: "Stage1",
@@ -50,22 +61,23 @@ const card: Card = {
 
 	retreat: 2,
     regulationMark: "I",
-    
-    thirdParty: {
-        tcgplayer: 663187,
-        cardmarket: 857390
-    },
 
     variants: [
-		{
-			type: "holo",
-			stamp: ["set-logo"]
-		},
-		{
-			type: "holo",
-			stamp: ["set-logo","staff"]
-		},
-    ]
+    	{
+    		type: "holo",
+    		stamp: ["set-logo"],
+    		thirdParty: {
+    			cardmarket: 857390
+    		}
+    	},
+    	{
+    		type: "holo",
+    		stamp: ["set-logo","staff"],
+    		thirdParty: {
+    			cardmarket: 859014
+    		}
+    	},
+    ],
 }
 
 export default card

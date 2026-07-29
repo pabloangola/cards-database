@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "They fight each other by locking horns. The herd's protectors take pride in their battle-scarred horns.",
 	},
+
 
 	name: {
 		en: "Tauros",
@@ -61,10 +59,22 @@ const card: Card = {
 	retreat: 2,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693552,
-		cardmarket: 886461
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 886461,
+				tcgplayer: 693552
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886461,
+				tcgplayer: 693552
+			}
+		},
+	],
 }
 
 export default card

@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "Yoriyuki Ikegami",
 	rarity: "Common",
 	category: "Pokemon",
+	dexId: [406],
 	hp: 30,
 	types: ["Grass"],
 	stage: "Basic",
@@ -45,8 +46,18 @@ const card: Card = {
 		damage: 10
 	}],
 
+	weaknesses: [
+		{
+			type: "Fire",
+			value: "×2",
+		},
+	],
 	retreat: 0,
 	regulationMark: "H",
+
+	description: {
+		en: "The pollen it releases contains poison. If this Pokémon is raised on clean water, the poison’s toxicity is increased.",
+	},
 
 	variants: [
 		{
@@ -60,7 +71,7 @@ const card: Card = {
 			type: "reverse",
 			foil: "friendball",
 			thirdParty: {
-				cardmarket: 870161,
+				cardmarket: 870162,
 				tcgplayer: 676865
 			}
 		},
@@ -68,7 +79,7 @@ const card: Card = {
 			type: "reverse",
 			foil: "energy",
 			thirdParty: {
-				cardmarket: 870162,
+				cardmarket: 870161,
 				tcgplayer: 677005
 			}
 		},

@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "sui",
 	rarity: "Illustration rare",
 	category: "Pokemon",
+	dexId: [703],
 	hp: 90,
 	types: ["Fighting"],
 	stage: "Basic",
@@ -71,6 +72,12 @@ const card: Card = {
 		damage: "70+"
 	}],
 
+	weaknesses: [
+		{
+			type: "Grass",
+			value: "×2",
+		},
+	],
 	retreat: 1,
 	regulationMark: "J",
 

@@ -14,9 +14,20 @@ const card: Card = {
 		pt: "Coalossal"
 	},
 
+	evolveFrom: {
+		en: "Carkol",
+		fr: "Wagomine",
+		es: "Carkol",
+		'es-mx': "Carkol",
+		de: "Wagong",
+		it: "Carkol",
+		pt: "Carkol",
+	},
+
 	illustrator: "Nisota Niso",
 	rarity: "Rare",
 	category: "Pokemon",
+	dexId: [839],
 	hp: 180,
 	types: ["Fighting"],
 	stage: "Stage2",
@@ -69,8 +80,18 @@ const card: Card = {
 		damage: 220
 	}],
 
+	weaknesses: [
+		{
+			type: "Grass",
+			value: "×2",
+		},
+	],
 	retreat: 4,
 	regulationMark: "I",
+
+	description: {
+		en: "It’s gentle usually but fearsome when angered. With a body that burns at over 2,700 degrees Fahrenheit, it crushes foes and turns them to ash.",
+	},
 
 	variants: [
 	{
@@ -84,7 +105,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "duskball",
 		thirdParty: {
-			cardmarket: 870325,
+			cardmarket: 870326,
 			tcgplayer: 676947
 		}
 	},
@@ -92,7 +113,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870326,
+			cardmarket: 870325,
 			tcgplayer: 677087
 		}
 	},

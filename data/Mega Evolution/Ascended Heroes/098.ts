@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "Taiga Kasai",
 	rarity: "Rare",
 	category: "Pokemon",
+	dexId: [897],
 	hp: 120,
 	types: ["Psychic"],
 	stage: "Basic",
@@ -59,8 +60,24 @@ const card: Card = {
 		}
 	}],
 
+	weaknesses: [
+		{
+			type: "Darkness",
+			value: "×2",
+		},
+	],
+	resistances: [
+		{
+			type: "Fighting",
+			value: "-30",
+		},
+	],
 	retreat: 1,
 	regulationMark: "I",
+
+	description: {
+		en: "It probes its surroundings with all its senses save one—it doesn’t use its sense of sight. Spectrier’s kicks are said to separate soul from body.",
+	},
 
 	variants: [
 	{
@@ -74,7 +91,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "duskball",
 		thirdParty: {
-			cardmarket: 870291,
+			cardmarket: 870292,
 			tcgplayer: 676930
 		}
 	},
@@ -82,7 +99,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870292,
+			cardmarket: 870291,
 			tcgplayer: 677070
 		}
 	},

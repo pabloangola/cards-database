@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "Tika Matsuno",
 	rarity: "Common",
 	category: "Pokemon",
+	dexId: [694],
 	hp: 70,
 	types: ["Lightning"],
 	stage: "Basic",
@@ -37,8 +38,18 @@ const card: Card = {
 		damage: 30
 	}],
 
+	weaknesses: [
+		{
+			type: "Fighting",
+			value: "×2",
+		},
+	],
 	retreat: 1,
 	regulationMark: "I",
+
+	description: {
+		en: "The frills on either side of its head have cells that generate electricity when exposed to sunlight.",
+	},
 
 	variants: [
 	{
@@ -52,7 +63,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "quickball",
 		thirdParty: {
-			cardmarket: 870235,
+			cardmarket: 870236,
 			tcgplayer: 676902
 		}
 	},
@@ -60,7 +71,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870236,
+			cardmarket: 870235,
 			tcgplayer: 677042
 		}
 	},

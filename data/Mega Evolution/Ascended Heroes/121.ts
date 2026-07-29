@@ -18,6 +18,7 @@ const card: Card = {
 	illustrator: "aky CG Works",
 	rarity: "Double rare",
 	category: "Pokemon",
+	dexId: [1007],
 	hp: 230,
 	types: ["Fighting"],
 	stage: "Basic",
@@ -72,6 +73,12 @@ const card: Card = {
 		damage: 200
 	}],
 
+	weaknesses: [
+		{
+			type: "Psychic",
+			value: "×2",
+		},
+	],
 	retreat: 2,
 	regulationMark: "J",
 

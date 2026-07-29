@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Grimmsnarl ex da Marine"
 	},
 
+	evolveFrom: {
+		en: "Marnie's Morgrem",
+		fr: "Fourbelin de Rosemary",
+		es: "Morgrem de Roxy",
+		'es-mx': "Morgrem de Marnie",
+		de: "Marys Pelzebub",
+		it: "Morgrem di Mary",
+		pt: "Morgrem da Marine",
+	},
+
 	suffix: "ex",
 	illustrator: "Ligton",
 	rarity: "Special illustration rare",
@@ -72,6 +82,12 @@ const card: Card = {
 		damage: 180
 	}],
 
+	weaknesses: [
+		{
+			type: "Grass",
+			value: "×2",
+		},
+	],
 	retreat: 2,
 	regulationMark: "I",
 

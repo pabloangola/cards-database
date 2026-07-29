@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "Eri Kamei",
 	rarity: "Uncommon",
 	category: "Pokemon",
+	dexId: [703],
 	hp: 90,
 	types: ["Fighting"],
 	stage: "Basic",
@@ -71,6 +72,12 @@ const card: Card = {
 		damage: "70+"
 	}],
 
+	weaknesses: [
+		{
+			type: "Grass",
+			value: "×2",
+		},
+	],
 	retreat: 1,
 	regulationMark: "J",
 
@@ -86,7 +93,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "loveball",
 		thirdParty: {
-			cardmarket: 870319,
+			cardmarket: 870320,
 			tcgplayer: 676944
 		}
 	},
@@ -94,7 +101,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870320,
+			cardmarket: 870319,
 			tcgplayer: 677084
 		}
 	},

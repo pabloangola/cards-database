@@ -16,6 +16,16 @@ const card: Card = {
 		pt: "Haunter"
 	},
 
+	evolveFrom: {
+		en: "Gastly",
+		fr: "Fantominus",
+		es: "Gastly",
+		'es-mx': "Gastly",
+		de: "Nebulak",
+		it: "Gastly",
+		pt: "Gastly",
+	},
+
 	illustrator: "Kedamahadaitai Yawarakai",
 	rarity: "Common",
 	category: "Pokemon",
@@ -47,22 +57,36 @@ const card: Card = {
 		}
 	}],
 
+	weaknesses: [
+		{
+			type: "Fighting",
+			value: "×2",
+		},
+	],
 	retreat: 1,
 	regulationMark: "J",
 
 	variants: [
 		{
-			type: "normal"
+			type: "normal",
+			thirdParty: {
+				tcgplayer: 684430,
+				cardmarket: 877464
+			}
 		},
 		{
-			type: "reverse"
+			type: "reverse",
+			thirdParty: {
+				tcgplayer: 684430,
+				cardmarket: 877464
+			}
+		},
+		{
+			type: "normal",
+			stamp: ["player-rewards-program"]
 		}
 	],
 
-	thirdParty: {
-		tcgplayer: 684430,
-		cardmarket: 877464
-	}
 }
 
 export default card

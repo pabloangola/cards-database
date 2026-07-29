@@ -16,6 +16,16 @@ const card: Card = {
 		pt: "Luxio"
 	},
 
+	evolveFrom: {
+		en: "Shinx",
+		fr: "Lixy",
+		es: "Shinx",
+		'es-mx': "Shinx",
+		de: "Sheinux",
+		it: "Shinx",
+		pt: "Shinx",
+	},
+
 	illustrator: "Atsuko Nishida",
 	rarity: "Uncommon",
 	category: "Pokemon",
@@ -63,22 +73,32 @@ const card: Card = {
 		damage: 40
 	}],
 
+	weaknesses: [
+		{
+			type: "Fighting",
+			value: "×2",
+		},
+	],
 	retreat: 1,
 	regulationMark: "J",
 
 	variants: [
 		{
-			type: "normal"
+			type: "normal",
+			thirdParty: {
+				tcgplayer: 684410,
+				cardmarket: 877440
+			}
 		},
 		{
-			type: "reverse"
+			type: "reverse",
+			thirdParty: {
+				tcgplayer: 684410,
+				cardmarket: 877440
+			}
 		}
 	],
 
-	thirdParty: {
-		tcgplayer: 684410,
-		cardmarket: 877440
-	}
 }
 
 export default card

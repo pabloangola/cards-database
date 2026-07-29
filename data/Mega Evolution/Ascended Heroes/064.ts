@@ -14,9 +14,20 @@ const card: Card = {
 		pt: "Heliolisk"
 	},
 
+	evolveFrom: {
+		en: "Helioptile",
+		fr: "Galvaran",
+		es: "Helioptile",
+		'es-mx': "Helioptile",
+		de: "Eguana",
+		it: "Helioptile",
+		pt: "Helioptile",
+	},
+
 	illustrator: "svlt",
 	rarity: "Uncommon",
 	category: "Pokemon",
+	dexId: [695],
 	hp: 120,
 	types: ["Lightning"],
 	stage: "Stage1",
@@ -71,8 +82,18 @@ const card: Card = {
 		damage: "70×"
 	}],
 
+	weaknesses: [
+		{
+			type: "Fighting",
+			value: "×2",
+		},
+	],
 	retreat: 1,
 	regulationMark: "I",
+
+	description: {
+		en: "They flare their frills and generate energy. A single Heliolisk can generate sufficient electricity to power a skyscraper.",
+	},
 
 	variants: [
 	{
@@ -86,7 +107,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "quickball",
 		thirdParty: {
-			cardmarket: 870237,
+			cardmarket: 870238,
 			tcgplayer: 676903
 		}
 	},
@@ -94,7 +115,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870238,
+			cardmarket: 870237,
 			tcgplayer: 677043
 		}
 	},

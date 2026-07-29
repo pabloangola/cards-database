@@ -4,11 +4,8 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "Its tackle is forceful enough to flip a 50-ton tank. It shields its allies from danger with its own body.",
 	},
 
 	name: {
@@ -91,10 +88,22 @@ const card: Card = {
 	retreat: 4,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693460,
-		cardmarket: 886399
-	}
+	variants: [
+		{
+			type: 'holo',
+			thirdParty: {
+				cardmarket: 886399,
+				tcgplayer: 693460
+			}
+		},
+		{
+			type: 'reverse',
+			thirdParty: {
+				cardmarket: 886399,
+				tcgplayer: 693460
+			}
+		},
+	],
 }
 
 export default card

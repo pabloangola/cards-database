@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "satoma",
 	rarity: "Common",
 	category: "Pokemon",
+	dexId: [35],
 	hp: 60,
 	types: ["Psychic"],
 	stage: "Basic",
@@ -37,8 +38,18 @@ const card: Card = {
 		damage: 40
 	}],
 
+	weaknesses: [
+		{
+			type: "Metal",
+			value: "×2",
+		},
+	],
 	retreat: 1,
 	regulationMark: "H",
+
+	description: {
+		en: "On nights with a full moon, they gather together and dance. The surrounding area is enveloped in an abnormal magnetic field.",
+	},
 
 	variants: [
 	{
@@ -52,7 +63,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "loveball",
 		thirdParty: {
-			cardmarket: 870251,
+			cardmarket: 870252,
 			tcgplayer: 676910
 		}
 	},
@@ -60,7 +71,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870252,
+			cardmarket: 870251,
 			tcgplayer: 677050
 		}
 	},

@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "It keeps its intense psychic power from leaking out by using its ears to cover the organs emitting that power.",
 	},
+
 
 	name: {
 		en: "Espurr",
@@ -67,10 +65,22 @@ const card: Card = {
 	retreat: 1,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693483,
-		cardmarket: 886428
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 886428,
+				tcgplayer: 693483
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886428,
+				tcgplayer: 693483
+			}
+		},
+	],
 }
 
 export default card

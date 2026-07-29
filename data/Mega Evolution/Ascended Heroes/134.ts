@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "Shimaris Yukichi",
 	rarity: "Common",
 	category: "Pokemon",
+	dexId: [559],
 	hp: 80,
 	types: ["Darkness"],
 	stage: "Basic",
@@ -47,8 +48,18 @@ const card: Card = {
 		damage: 20
 	}],
 
+	weaknesses: [
+		{
+			type: "Grass",
+			value: "×2",
+		},
+	],
 	retreat: 2,
 	regulationMark: "I",
+
+	description: {
+		en: "Its skin has a rubbery elasticity, so it can reduce damage by defensively pulling its skin up to its neck.",
+	},
 
 	variants: [
 	{
@@ -62,7 +73,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "quickball",
 		thirdParty: {
-			cardmarket: 870349,
+			cardmarket: 870350,
 			tcgplayer: 676959
 		}
 	},
@@ -70,7 +81,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870350,
+			cardmarket: 870349,
 			tcgplayer: 677099
 		}
 	},

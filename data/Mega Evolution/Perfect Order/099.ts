@@ -16,6 +16,16 @@ const card: Card = {
 		pt: "Raticate"
 	},
 
+	evolveFrom: {
+		en: "Rattata",
+		fr: "Rattata",
+		es: "Rattata",
+		'es-mx': "Rattata",
+		de: "Rattfratz",
+		it: "Rattata",
+		pt: "Rattata",
+	},
+
 	illustrator: "Mina Nakai",
 	rarity: "Illustration rare",
 	category: "Pokemon",
@@ -73,19 +83,25 @@ const card: Card = {
 		damage: "40×"
 	}],
 
+	weaknesses: [
+		{
+			type: "Fighting",
+			value: "×2",
+		},
+	],
 	retreat: 1,
 	regulationMark: "J",
 
 	variants: [
 		{
-			type: "holo"
+			type: "holo",
+			thirdParty: {
+				tcgplayer: 684439,
+				cardmarket: 877516
+			}
 		}
 	],
 
-	thirdParty: {
-		tcgplayer: 684439,
-		cardmarket: 877516
-	}
 }
 
 export default card

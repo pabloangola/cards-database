@@ -16,6 +16,16 @@ const card: Card = {
 		pt: "Hippowdon"
 	},
 
+	evolveFrom: {
+		en: "Hippopotas",
+		fr: "Hippopotas",
+		es: "Hippopotas",
+		'es-mx': "Hippopotas",
+		de: "Hippopotas",
+		it: "Hippopotas",
+		pt: "Hippopotas",
+	},
+
 	illustrator: "Souichirou Gunjima",
 	rarity: "Uncommon",
 	category: "Pokemon",
@@ -63,22 +73,32 @@ const card: Card = {
 		damage: 130
 	}],
 
+	weaknesses: [
+		{
+			type: "Grass",
+			value: "×2",
+		},
+	],
 	retreat: 4,
 	regulationMark: "J",
 
 	variants: [
 		{
-			type: "normal"
+			type: "normal",
+			thirdParty: {
+				tcgplayer: 684426,
+				cardmarket: 877454
+			}
 		},
 		{
-			type: "reverse"
+			type: "reverse",
+			thirdParty: {
+				tcgplayer: 684426,
+				cardmarket: 877454
+			}
 		}
 	],
 
-	thirdParty: {
-		tcgplayer: 684426,
-		cardmarket: 877454
-	}
 }
 
 export default card

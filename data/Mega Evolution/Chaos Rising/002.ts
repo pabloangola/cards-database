@@ -4,11 +4,8 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "Almost incapable of moving, this Pokémon can only harden its shell to protect itself when it is in danger.",
 	},
 
 	name: {
@@ -81,10 +78,22 @@ const card: Card = {
 	retreat: 3,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693502,
-		cardmarket: 886394
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 886394,
+				tcgplayer: 693502
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886394,
+				tcgplayer: 693502
+			}
+		},
+	],
 }
 
 export default card

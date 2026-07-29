@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "Minato",
 	rarity: "Common",
 	category: "Pokemon",
+	dexId: [674],
 	hp: 70,
 	types: ["Fighting"],
 	stage: "Basic",
@@ -47,8 +48,18 @@ const card: Card = {
 		damage: 20
 	}],
 
+	weaknesses: [
+		{
+			type: "Psychic",
+			value: "×2",
+		},
+	],
 	retreat: 2,
 	regulationMark: "I",
+
+	description: {
+		en: "It does its level best to glare and pull a scary face, but it can’t help grinning if anyone pats its head.",
+	},
 
 	variants: [
 	{
@@ -62,7 +73,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "loveball",
 		thirdParty: {
-			cardmarket: 870317,
+			cardmarket: 870318,
 			tcgplayer: 676943
 		}
 	},
@@ -70,7 +81,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870318,
+			cardmarket: 870317,
 			tcgplayer: 677083
 		}
 	},

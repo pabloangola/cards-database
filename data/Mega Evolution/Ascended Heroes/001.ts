@@ -47,8 +47,18 @@ const card: Card = {
 		damage: 30
 	}],
 
+	weaknesses: [
+		{
+			type: "Fire",
+			value: "×2",
+		},
+	],
 	retreat: 1,
 	regulationMark: "J",
+
+	description: {
+		en: "When it is woken by moonlight, it wanders about. But during the day, it stays still underground.",
+	},
 
 	variants: [
 		{
@@ -62,7 +72,7 @@ const card: Card = {
 			type: "reverse",
 			foil: "pokeball",
 			thirdParty: {
-				cardmarket: 870135,
+				cardmarket: 870136,
 				tcgplayer: 676852
 			}
 		},
@@ -70,7 +80,7 @@ const card: Card = {
 			type: "reverse",
 			foil: "energy",
 			thirdParty: {
-				cardmarket: 870136,
+				cardmarket: 870135,
 				tcgplayer: 676992
 			}
 		},

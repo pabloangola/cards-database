@@ -14,9 +14,20 @@ const card: Card = {
 		pt: "Weavile"
 	},
 
+	evolveFrom: {
+		en: "Sneasel",
+		fr: "Farfuret",
+		es: "Sneasel",
+		'es-mx': "Sneasel",
+		de: "Sniebel",
+		it: "Sneasel",
+		pt: "Sneasel",
+	},
+
 	illustrator: "Uninori",
 	rarity: "Illustration rare",
 	category: "Pokemon",
+	dexId: [461],
 	hp: 100,
 	types: ["Water"],
 	stage: "Stage1",
@@ -61,8 +72,18 @@ const card: Card = {
 		damage: 70
 	}],
 
+	weaknesses: [
+		{
+			type: "Metal",
+			value: "×2",
+		},
+	],
 	retreat: 1,
 	regulationMark: "H",
+
+	description: {
+		en: "They travel in groups of four or five, leaving signs for one another on trees and rocks. They bring down their prey with coordinated attacks.",
+	},
 
 	variants: [
 		{

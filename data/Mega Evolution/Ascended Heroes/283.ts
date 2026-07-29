@@ -18,6 +18,7 @@ const card: Card = {
 	illustrator: "AKIRA EGAWA",
 	rarity: "Special illustration rare",
 	category: "Pokemon",
+	dexId: [701],
 	hp: 250,
 	types: ["Fighting"],
 	stage: "Basic",
@@ -72,6 +73,12 @@ const card: Card = {
 		damage: "120+"
 	}],
 
+	weaknesses: [
+		{
+			type: "Psychic",
+			value: "×2",
+		},
+	],
 	retreat: 1,
 	regulationMark: "I",
 

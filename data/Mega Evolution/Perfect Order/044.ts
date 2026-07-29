@@ -16,6 +16,16 @@ const card: Card = {
 		pt: "Tyrunt"
 	},
 
+	evolveFrom: {
+		en: "Antique Jaw Fossil",
+		fr: "Fossile Mâchoire Ancien",
+		es: "Fósil Mandíbula Antiguo",
+		'es-mx': "Fósil Mandíbula Antiguo",
+		de: "Antikes Kieferfossil",
+		it: "Vecchio Fossilmascella",
+		pt: "Fóssil de Mandíbula Arcaico",
+	},
+
 	illustrator: "Tomomi Kaneko",
 	rarity: "Common",
 	category: "Pokemon",
@@ -49,22 +59,32 @@ const card: Card = {
 		damage: "20×"
 	}],
 
+	weaknesses: [
+		{
+			type: "Grass",
+			value: "×2",
+		},
+	],
 	retreat: 3,
 	regulationMark: "J",
 
 	variants: [
 		{
-			type: "normal"
+			type: "normal",
+			thirdParty: {
+				tcgplayer: 684358,
+				cardmarket: 877458
+			}
 		},
 		{
-			type: "reverse"
+			type: "reverse",
+			thirdParty: {
+				tcgplayer: 684358,
+				cardmarket: 877458
+			}
 		}
 	],
 
-	thirdParty: {
-		tcgplayer: 684358,
-		cardmarket: 877458
-	}
 }
 
 export default card

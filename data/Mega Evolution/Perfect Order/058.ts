@@ -16,6 +16,16 @@ const card: Card = {
 		pt: "Aegislash"
 	},
 
+	evolveFrom: {
+		en: "Doublade",
+		fr: "Dimoclès",
+		es: "Doublade",
+		'es-mx': "Doublade",
+		de: "Duokles",
+		it: "Doublade",
+		pt: "Doublade",
+	},
+
 	illustrator: "Mitsuhiro Arita",
 	rarity: "Uncommon",
 	category: "Pokemon",
@@ -63,22 +73,38 @@ const card: Card = {
 		damage: 230
 	}],
 
+	weaknesses: [
+		{
+			type: "Fire",
+			value: "×2",
+		},
+	],
+	resistances: [
+		{
+			type: "Grass",
+			value: "-30",
+		},
+	],
 	retreat: 3,
 	regulationMark: "J",
 
 	variants: [
 		{
-			type: "normal"
+			type: "normal",
+			thirdParty: {
+				tcgplayer: 684381,
+				cardmarket: 877474
+			}
 		},
 		{
-			type: "reverse"
+			type: "reverse",
+			thirdParty: {
+				tcgplayer: 684381,
+				cardmarket: 877474
+			}
 		}
 	],
 
-	thirdParty: {
-		tcgplayer: 684381,
-		cardmarket: 877474
-	}
 }
 
 export default card

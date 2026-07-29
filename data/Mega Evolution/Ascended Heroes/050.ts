@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Vanillish do N"
 	},
 
+	evolveFrom: {
+		en: "N's Vanillite",
+		fr: "Sorbébé de N",
+		es: "Vanillite de N",
+		'es-mx': "Vanillite de N",
+		de: "Ns Gelatini",
+		it: "Vanillite di N",
+		pt: "Vanillite do N",
+	},
+
 	illustrator: "kirisAki",
 	rarity: "Common",
 	category: "Pokemon",
@@ -61,8 +71,18 @@ const card: Card = {
 		damage: 60
 	}],
 
+	weaknesses: [
+		{
+			type: "Metal",
+			value: "×2",
+		},
+	],
 	retreat: 1,
 	regulationMark: "I",
+
+	description: {
+		en: "They cool down the surrounding air and create ice particles, which they use to freeze their foes.",
+	},
 
 	variants: [
 	{
@@ -76,7 +96,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "pokeball",
 		thirdParty: {
-			cardmarket: 870215,
+			cardmarket: 870216,
 			tcgplayer: 676892
 		}
 	},
@@ -84,7 +104,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870216,
+			cardmarket: 870215,
 			tcgplayer: 677032
 		}
 	},

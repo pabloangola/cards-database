@@ -16,6 +16,16 @@ const card: Card = {
 		pt: "Tyrantrum"
 	},
 
+	evolveFrom: {
+		en: "Tyrunt",
+		fr: "Ptyranidur",
+		es: "Tyrunt",
+		'es-mx': "Tyrunt",
+		de: "Balgoras",
+		it: "Tyrunt",
+		pt: "Tyrunt",
+	},
+
 	illustrator: "Dsuke",
 	rarity: "Rare",
 	category: "Pokemon",
@@ -73,22 +83,35 @@ const card: Card = {
 		damage: 160
 	}],
 
+	weaknesses: [
+		{
+			type: "Grass",
+			value: "×2",
+		},
+	],
 	retreat: 3,
 	regulationMark: "J",
 
 	variants: [
 		{
-			type: "holo"
+			type: "holo",
+			thirdParty: {
+				tcgplayer: 684359,
+				cardmarket: 877459
+			}
 		},
 		{
-			type: "reverse"
+			type: "reverse",
+			thirdParty: {
+				tcgplayer: 684359,
+				cardmarket: 877459
+			}
+		},
+		{
+			type: "normal"
 		}
 	],
 
-	thirdParty: {
-		tcgplayer: 684359,
-		cardmarket: 877459
-	}
 }
 
 export default card

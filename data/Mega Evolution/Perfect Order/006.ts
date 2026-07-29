@@ -16,6 +16,16 @@ const card: Card = {
 		pt: "Serperior"
 	},
 
+	evolveFrom: {
+		en: "Servine",
+		fr: "Lianaja",
+		es: "Servine",
+		'es-mx': "Servine",
+		de: "Efoserp",
+		it: "Servine",
+		pt: "Servine",
+	},
+
 	illustrator: "kodama",
 	rarity: "Rare",
 	category: "Pokemon",
@@ -73,22 +83,33 @@ const card: Card = {
 		damage: "100+"
 	}],
 
+	weaknesses: [
+		{
+			type: "Fire",
+			value: "×2",
+		},
+	],
 	retreat: 2,
 	regulationMark: "J",
 
 	variants: [
 		{
-			type: "holo"
+			type: "normal",
+			thirdParty: {
+				tcgplayer: 684402,
+				cardmarket: 877418
+			}
 		},
 		{
-			type: "reverse"
-		}
+			type: "reverse",
+			thirdParty: {
+				tcgplayer: 684402,
+				cardmarket: 877418
+			}
+		},
+
 	],
 
-	thirdParty: {
-		tcgplayer: 684402,
-		cardmarket: 877418
-	}
 }
 
 export default card

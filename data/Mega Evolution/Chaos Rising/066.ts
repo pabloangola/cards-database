@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "Thanks to the slimy membrane covering its body punches or kicks from its enemies slide right off it.",
 	},
+
 
 	name: {
 		en: "Goomy",
@@ -57,10 +55,22 @@ const card: Card = {
 	retreat: 2,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693496,
-		cardmarket: 886458
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 886458,
+				tcgplayer: 693496
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886458,
+				tcgplayer: 693496
+			}
+		},
+	],
 }
 
 export default card

@@ -61,22 +61,38 @@ const card: Card = {
 		damage: 20
 	}],
 
+	weaknesses: [
+		{
+			type: "Lightning",
+			value: "×2",
+		},
+	],
+	resistances: [
+		{
+			type: "Fighting",
+			value: "-30",
+		},
+	],
 	retreat: 1,
 	regulationMark: "J",
 
 	variants: [
 		{
-			type: "normal"
+			type: "normal",
+			thirdParty: {
+				tcgplayer: 684403,
+				cardmarket: 877482
+			}
 		},
 		{
-			type: "reverse"
+			type: "reverse",
+			thirdParty: {
+				tcgplayer: 684403,
+				cardmarket: 877482
+			}
 		}
 	],
 
-	thirdParty: {
-		tcgplayer: 684403,
-		cardmarket: 877482
-	}
 }
 
 export default card

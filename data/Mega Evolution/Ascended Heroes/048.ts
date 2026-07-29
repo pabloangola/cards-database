@@ -18,6 +18,7 @@ const card: Card = {
 	illustrator: "akagi",
 	rarity: "Double rare",
 	category: "Pokemon",
+	dexId: [378],
 	hp: 230,
 	types: ["Water"],
 	stage: "Basic",
@@ -70,6 +71,12 @@ const card: Card = {
 		damage: 140
 	}],
 
+	weaknesses: [
+		{
+			type: "Metal",
+			value: "×2",
+		},
+	],
 	retreat: 3,
 	regulationMark: "J",
 

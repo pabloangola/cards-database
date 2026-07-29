@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "Kurata So",
 	rarity: "Common",
 	category: "Pokemon",
+	dexId: [837],
 	hp: 80,
 	types: ["Fighting"],
 	stage: "Basic",
@@ -37,8 +38,18 @@ const card: Card = {
 		damage: 20
 	}],
 
+	weaknesses: [
+		{
+			type: "Grass",
+			value: "×2",
+		},
+	],
 	retreat: 3,
 	regulationMark: "I",
+
+	description: {
+		en: "Chunks of the surface of this Pokémon’s body that have grown old and flaked off have long been used for fuel as an alternative to coal.",
+	},
 
 	variants: [
 	{
@@ -52,7 +63,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "duskball",
 		thirdParty: {
-			cardmarket: 870321,
+			cardmarket: 870322,
 			tcgplayer: 676945
 		}
 	},
@@ -60,7 +71,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870322,
+			cardmarket: 870321,
 			tcgplayer: 677085
 		}
 	},

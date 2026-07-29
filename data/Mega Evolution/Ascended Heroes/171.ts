@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "Toshinao Aoki",
 	rarity: "Common",
 	category: "Pokemon",
+	dexId: [479],
 	hp: 70,
 	types: ["Colorless"],
 	stage: "Basic",
@@ -71,8 +72,24 @@ const card: Card = {
 		damage: 70
 	}],
 
+	weaknesses: [
+		{
+			type: "Lightning",
+			value: "×2",
+		},
+	],
+	resistances: [
+		{
+			type: "Fighting",
+			value: "-30",
+		},
+	],
 	retreat: 1,
 	regulationMark: "H",
+
+	description: {
+		en: "There are several appliances that Rotom can inspirit, but the first one to be developed was the electric fan.",
+	},
 
 	variants: [
 	{
@@ -86,7 +103,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "duskball",
 		thirdParty: {
-			cardmarket: 870401,
+			cardmarket: 870402,
 			tcgplayer: 676985
 		}
 	},
@@ -94,7 +111,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870402,
+			cardmarket: 870401,
 			tcgplayer: 677125
 		}
 	},

@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "It attacks by spraying a repugnant fluid from its tail, but the stench dulls after a few squirts.",
 	},
+
 
 	name: {
 		en: "Skuntank",
@@ -80,10 +78,22 @@ const card: Card = {
 	retreat: 2,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693544,
-		cardmarket: 886446
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 886446,
+				tcgplayer: 693544
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886446,
+				tcgplayer: 693544
+			}
+		},
+	],
 }
 
 export default card

@@ -68,18 +68,22 @@ const card: Card = {
 		fr: "Il accélère la vitesse à laquelle il pense en tournant sa tête à 180 degrés."
 	},
 
-	thirdParty: {
-		cardmarket: 274762,
-		tcgplayer: 89168
-	},
 
 	variants: [
 		{
-			type: "normal"
+			type: "holo",
+			thirdParty: {
+				cardmarket: 274762,
+				tcgplayer: 89168
+			}
 		},
 		{
-			type: "normal",
-			stamp: ["1st-edition"]
+			type: "holo",
+			stamp: ["1st-edition"],
+			thirdParty: {
+				cardmarket: 274762,
+				tcgplayer: 89168
+			}
 		}
 	]
 }

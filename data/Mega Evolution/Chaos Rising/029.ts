@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "The tail's tip shines brightly and can be seen from far away. It acts as a beacon for lost people.",
 	},
+
 
 	name: {
 		en: "Ampharos",
@@ -91,10 +89,22 @@ const card: Card = {
 	retreat: 2,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693445,
-		cardmarket: 886421
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 888542,
+				tcgplayer: 693445
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 888542,
+				tcgplayer: 693445
+			}
+		},
+	],
 }
 
 export default card

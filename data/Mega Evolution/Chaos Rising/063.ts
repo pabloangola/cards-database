@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "This Pokémon scrapes its spikes across rocks, and then uses the tips of its feelers to absorb the nutrients it finds within the stone.",
 	},
+
 
 	name: {
 		en: "Ferrothorn",
@@ -96,10 +94,22 @@ const card: Card = {
 	retreat: 3,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693486,
-		cardmarket: 886455
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 886455,
+				tcgplayer: 693486
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886455,
+				tcgplayer: 693486
+			}
+		},
+	],
 }
 
 export default card

@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "The foul fluid from its rear is so revolting that it can make people feel queasy up to a mile and a quarter away.",
 	},
+
 
 	name: {
 		en: "Stunky",
@@ -52,10 +50,22 @@ const card: Card = {
 	retreat: 2,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693549,
-		cardmarket: 886445
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 886445,
+				tcgplayer: 693549
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886445,
+				tcgplayer: 693549
+			}
+		},
+	],
 }
 
 export default card

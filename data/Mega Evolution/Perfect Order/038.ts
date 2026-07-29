@@ -16,6 +16,16 @@ const card: Card = {
 		pt: "Probopass"
 	},
 
+	evolveFrom: {
+		en: "Nosepass",
+		fr: "Tarinor",
+		es: "Nosepass",
+		'es-mx': "Nosepass",
+		de: "Nasgnet",
+		it: "Nosepass",
+		pt: "Nosepass",
+	},
+
 	illustrator: "Nurikabe",
 	rarity: "Common",
 	category: "Pokemon",
@@ -63,22 +73,32 @@ const card: Card = {
 		damage: 260
 	}],
 
+	weaknesses: [
+		{
+			type: "Grass",
+			value: "×2",
+		},
+	],
 	retreat: 3,
 	regulationMark: "J",
 
 	variants: [
 		{
-			type: "normal"
+			type: "normal",
+			thirdParty: {
+				tcgplayer: 684423,
+				cardmarket: 877452
+			}
 		},
 		{
-			type: "reverse"
+			type: "reverse",
+			thirdParty: {
+				tcgplayer: 684423,
+				cardmarket: 877452
+			}
 		}
 	],
 
-	thirdParty: {
-		tcgplayer: 684423,
-		cardmarket: 877452
-	}
 }
 
 export default card

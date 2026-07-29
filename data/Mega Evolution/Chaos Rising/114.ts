@@ -4,12 +4,6 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
-	},
 
 	name: {
 		en: "Surfing Beach",
@@ -27,11 +21,6 @@ const card: Card = {
 	trainerType: "Stadium",
 	regulationMark: "I",
 
-	thirdParty: {
-		tcgplayer: 693551,
-		cardmarket: 886507
-	},
-
 	effect: {
 		en: "Once during each player's turn, that player may switch their Active {W} Pokémon with 1 of their Benched {W} Pokémon.",
 		fr: "Une fois pendant le tour de chaque personne, cette personne-là peut échanger son Pokémon {W} Actif contre l'un de ses Pokémon {W} de Banc.",
@@ -40,7 +29,17 @@ const card: Card = {
 		de: "Einmal während des Zuges jedes Spielers kann jener Spieler sein Aktives {W}-Pokémon gegen 1 {W}-Pokémon auf seiner Bank austauschen.",
 		it: "Una sola volta durante il turno di ciascun giocatore, quel giocatore può scambiare il suo Pokémon {W} attivo con uno dei Pokémon {W} nella propria panchina.",
 		pt: "Uma vez durante o turno de cada jogador, aquele jogador poderá trocar o Pokémon {W} Ativo dele por 1 dos Pokémon {W} no Banco dele."
-	}
+	},
+
+	variants: [
+		{
+			type: 'holo',
+			thirdParty: {
+				cardmarket: 886507,
+				tcgplayer: 693551
+			}
+		},
+	],
 }
 
 export default card

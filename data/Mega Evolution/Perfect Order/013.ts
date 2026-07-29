@@ -16,6 +16,16 @@ const card: Card = {
 		pt: "Fletchinder"
 	},
 
+	evolveFrom: {
+		en: "Fletchling",
+		fr: "Passerouge",
+		es: "Fletchling",
+		'es-mx': "Fletchling",
+		de: "Dartiri",
+		it: "Fletchling",
+		pt: "Fletchling",
+	},
+
 	illustrator: "Sumiyoshi Kizuki",
 	rarity: "Common",
 	category: "Pokemon",
@@ -39,22 +49,38 @@ const card: Card = {
 		damage: 60
 	}],
 
+	weaknesses: [
+		{
+			type: "Lightning",
+			value: "×2",
+		},
+	],
+	resistances: [
+		{
+			type: "Fighting",
+			value: "-30",
+		},
+	],
 	retreat: 1,
 	regulationMark: "J",
 
 	variants: [
 		{
-			type: "normal"
+			type: "normal",
+			thirdParty: {
+				tcgplayer: 684404,
+				cardmarket: 877425
+			}
 		},
 		{
-			type: "reverse"
+			type: "reverse",
+			thirdParty: {
+				tcgplayer: 684404,
+				cardmarket: 877425
+			}
 		}
 	],
 
-	thirdParty: {
-		tcgplayer: 684404,
-		cardmarket: 877425
-	}
 }
 
 export default card

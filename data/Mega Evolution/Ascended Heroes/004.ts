@@ -37,8 +37,18 @@ const card: Card = {
 		damage: 20
 	}],
 
+	weaknesses: [
+		{
+			type: "Fire",
+			value: "×2",
+		},
+	],
 	retreat: 1,
 	regulationMark: "J",
+
+	description: {
+		en: "Even though its body is extremely skinny, it is blindingly fast when catching its prey.",
+	},
 
 	variants: [
 		{
@@ -52,7 +62,7 @@ const card: Card = {
 			type: "reverse",
 			foil: "pokeball",
 			thirdParty: {
-				cardmarket: 870139,
+				cardmarket: 870140,
 				tcgplayer: 676854
 			}
 		},
@@ -60,7 +70,7 @@ const card: Card = {
 			type: "reverse",
 			foil: "energy",
 			thirdParty: {
-				cardmarket: 870140,
+				cardmarket: 870139,
 				tcgplayer: 676994
 			}
 		},

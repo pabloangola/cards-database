@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "Nisota Niso",
 	rarity: "Common",
 	category: "Pokemon",
+	dexId: [629],
 	hp: 70,
 	types: ["Darkness"],
 	stage: "Basic",
@@ -37,8 +38,24 @@ const card: Card = {
 		damage: 20
 	}],
 
+	weaknesses: [
+		{
+			type: "Lightning",
+			value: "×2",
+		},
+	],
+	resistances: [
+		{
+			type: "Fighting",
+			value: "-30",
+		},
+	],
 	retreat: 1,
 	regulationMark: "J",
+
+	description: {
+		en: "Its healthy appetite leads to visible growth spurts. It often has to replace the bones it wears as its size increases.",
+	},
 
 	variants: [
 	{
@@ -52,7 +69,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "duskball",
 		thirdParty: {
-			cardmarket: 870353,
+			cardmarket: 870354,
 			tcgplayer: 676961
 		}
 	},
@@ -60,7 +77,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870354,
+			cardmarket: 870353,
 			tcgplayer: 677101
 		}
 	},

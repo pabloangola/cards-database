@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "Mitsuhiro Arita",
 	rarity: "Rare",
 	category: "Pokemon",
+	dexId: [1014],
 	hp: 140,
 	types: ["Fighting"],
 	stage: "Basic",
@@ -61,8 +62,18 @@ const card: Card = {
 		damage: "80+"
 	}],
 
+	weaknesses: [
+		{
+			type: "Psychic",
+			value: "×2",
+		},
+	],
 	retreat: 3,
 	regulationMark: "I",
+
+	description: {
+		en: "Okidogi is a ruffian with a short temper. It can pulverize anything by swinging around the chain on its neck.",
+	},
 
 	variants: [
 	{
@@ -76,7 +87,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "friendball",
 		thirdParty: {
-			cardmarket: 870327,
+			cardmarket: 870328,
 			tcgplayer: 676948
 		}
 	},
@@ -84,7 +95,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870328,
+			cardmarket: 870327,
 			tcgplayer: 677088
 		}
 	},

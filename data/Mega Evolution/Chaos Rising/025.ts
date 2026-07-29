@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "It's nature's cleaner-it eats anything and everything, including garbage and rotten things. The ground near its nest is always clean.",
 	},
+
 
 	name: {
 		en: "Wimpod",
@@ -65,10 +63,22 @@ const card: Card = {
 	retreat: 2,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693562,
-		cardmarket: 886417
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 886417,
+				tcgplayer: 693562
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886417,
+				tcgplayer: 693562
+			}
+		},
+	],
 }
 
 export default card

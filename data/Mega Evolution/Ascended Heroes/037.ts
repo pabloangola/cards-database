@@ -14,9 +14,20 @@ const card: Card = {
 		pt: "Raboot"
 	},
 
+	evolveFrom: {
+		en: "Scorbunny",
+		fr: "Flambino",
+		es: "Scorbunny",
+		'es-mx': "Scorbunny",
+		de: "Hopplo",
+		it: "Scorbunny",
+		pt: "Scorbunny",
+	},
+
 	illustrator: "aspara",
 	rarity: "Common",
 	category: "Pokemon",
+	dexId: [814],
 	hp: 90,
 	types: ["Fire"],
 	stage: "Stage1",
@@ -51,8 +62,18 @@ const card: Card = {
 		damage: 60
 	}],
 
+	weaknesses: [
+		{
+			type: "Water",
+			value: "×2",
+		},
+	],
 	retreat: 1,
 	regulationMark: "H",
+
+	description: {
+		en: "While it prides itself on its varied kicking moves, it can also deliver powerful headbutts once its flames have heated up its forehead.",
+	},
 
 	variants: [
 	{
@@ -66,7 +87,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "friendball",
 		thirdParty: {
-			cardmarket: 870197,
+			cardmarket: 870198,
 			tcgplayer: 676883
 		}
 	},
@@ -74,7 +95,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870198,
+			cardmarket: 870197,
 			tcgplayer: 677023
 		}
 	},

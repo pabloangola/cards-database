@@ -16,6 +16,16 @@ const card: Card = {
 		pt: "Spewpa"
 	},
 
+	evolveFrom: {
+		en: "Scatterbug",
+		fr: "Lépidonille",
+		es: "Scatterbug",
+		'es-mx': "Scatterbug",
+		de: "Purmel",
+		it: "Scatterbug",
+		pt: "Scatterbug",
+	},
+
 	illustrator: "kamonabe",
 	rarity: "Illustration rare",
 	category: "Pokemon",
@@ -47,19 +57,25 @@ const card: Card = {
 		}
 	}],
 
+	weaknesses: [
+		{
+			type: "Fire",
+			value: "×2",
+		},
+	],
 	retreat: 3,
 	regulationMark: "J",
 
 	variants: [
 		{
-			type: "holo"
+			type: "holo",
+			thirdParty: {
+				tcgplayer: 684365,
+				cardmarket: 877506
+			}
 		}
 	],
 
-	thirdParty: {
-		tcgplayer: 684365,
-		cardmarket: 877506
-	}
 }
 
 export default card

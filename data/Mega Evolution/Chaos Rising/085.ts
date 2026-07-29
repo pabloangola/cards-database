@@ -4,12 +4,6 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
-	},
 
 	name: {
 		en: "Magnetic Metal Energy",
@@ -26,11 +20,6 @@ const card: Card = {
 	energyType: "Normal",
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693506,
-		cardmarket: 886477
-	},
-
 	effect: {
 		en: "As long as this card is attached to a Pokémon, it provides {M} Energy.\n\nThe {M} Pokémon this card is attached to has no Retreat Cost.",
 		fr: "Tant que cette carte est attachée à un Pokémon, elle fournit une Énergie {M}.\n\nLe Pokémon {M} auquel cette carte est attachée n'a pas de Coût de Retraite.",
@@ -39,7 +28,31 @@ const card: Card = {
 		de: "Solange diese Karte an ein Pokémon angelegt ist, liefert sie {M}-Energie.\n\nDas {M}-Pokémon, an das diese Karte angelegt ist, hat keine Rückzugskosten.",
 		it: "Fintanto che questa carta è assegnata a un Pokémon, fornisce Energia {M}.\n\nIl Pokémon {M} a cui è assegnata questa carta non ha costo di ritirata.",
 		pt: "Enquanto esta carta estiver ligada a um Pokémon, ela fornecerá Energia {M}.\n\nO Pokémon {M} ao qual esta carta está ligada não tem Custo de Recuo."
-	}
+	},
+
+	variants: [
+		{
+			type: 'normal',
+			thirdParty: {
+				cardmarket: 898185,
+				tcgplayer: 707308
+			}
+		},
+		{
+			type: 'holo',
+			thirdParty: {
+				cardmarket: 886477,
+				tcgplayer: 693506
+			}
+		},
+		{
+			type: 'reverse',
+			thirdParty: {
+				cardmarket: 886477,
+				tcgplayer: 693506
+			}
+		},
+	],
 }
 
 export default card

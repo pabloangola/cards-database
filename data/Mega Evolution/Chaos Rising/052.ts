@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "Experienced fishers say they try to catch Qwilfish in the brief moment that these Pokemon become defenseless just after launching poisonous spikes.",
 	},
+
 
 	name: {
 		en: "Qwilfish",
@@ -86,10 +84,22 @@ const card: Card = {
 	retreat: 1,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693538,
-		cardmarket: 886444
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 886444,
+				tcgplayer: 693538
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886444,
+				tcgplayer: 693538
+			}
+		},
+	],
 }
 
 export default card

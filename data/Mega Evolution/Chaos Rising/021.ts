@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "Its swiftness is unparalleled. It can scale a tower of more than 2,000 feet in a minute's time.",
 	},
+
 
 	name: {
 		en: "Frogadier",
@@ -79,10 +77,22 @@ const card: Card = {
 	retreat: 1,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693490,
-		cardmarket: 886413
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 886413,
+				tcgplayer: 693490
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886413,
+				tcgplayer: 693490
+			}
+		},
+	],
 }
 
 export default card

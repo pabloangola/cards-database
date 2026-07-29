@@ -14,8 +14,18 @@ const card: Card = {
 		'es-mx': "Alakazam"
 	},
 
+	evolveFrom: {
+		en: "Kadabra",
+		fr: "Kadabra",
+		de: "Kadabra",
+		it: "Kadabra",
+		es: "Kadabra",
+		pt: "Kadabra",
+		'es-mx': "Kadabra",
+	},
+
 	illustrator: "cochi8i",
-	rarity: "None",
+	rarity: "Promo",
 	category: "Pokemon",
 	hp: 140,
 	types: ["Psychic"],
@@ -73,20 +83,22 @@ const card: Card = {
 	retreat: 1,
 	regulationMark: "I",
 
-	thirdParty: {
-		tcgplayer: 654597,
-		cardmarket: 851047
-	},
 	variants: [
 		{
 			type: "holo",
-			stamp: ["set-logo"]
+			stamp: ["set-logo"],
+			thirdParty: {
+				cardmarket: 851047
+			}
 		},
 		{
 			type: "holo",
-			stamp: ["set-logo","staff"]
+			stamp: ["set-logo","staff"],
+			thirdParty: {
+				cardmarket: 851048
+			}
 		},
-	]
+	],
 }
 
 export default card

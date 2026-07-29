@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "It blocks opponents' attacks with the ice that shields its body. If the ice breaks, this Pokémon uses cold air to quickly create new ice.",
 	},
+
 
 	name: {
 		en: "Bergmite",
@@ -65,10 +63,22 @@ const card: Card = {
 	retreat: 2,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693456,
-		cardmarket: 886415
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 886415,
+				tcgplayer: 693456
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886415,
+				tcgplayer: 693456
+			}
+		},
+	],
 }
 
 export default card

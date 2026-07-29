@@ -16,6 +16,16 @@ const card: Card = {
 		pt: "Drapion"
 	},
 
+	evolveFrom: {
+		en: "Skorupi",
+		fr: "Rapion",
+		es: "Skorupi",
+		'es-mx': "Skorupi",
+		de: "Pionskora",
+		it: "Skorupi",
+		pt: "Skorupi",
+	},
+
 	illustrator: "Nelnal",
 	rarity: "Uncommon",
 	category: "Pokemon",
@@ -63,22 +73,32 @@ const card: Card = {
 		damage: 100
 	}],
 
+	weaknesses: [
+		{
+			type: "Fighting",
+			value: "×2",
+		},
+	],
 	retreat: 3,
 	regulationMark: "J",
 
 	variants: [
 		{
-			type: "normal"
+			type: "normal",
+			thirdParty: {
+				tcgplayer: 684433,
+				cardmarket: 877468
+			}
 		},
 		{
-			type: "reverse"
+			type: "reverse",
+			thirdParty: {
+				tcgplayer: 684433,
+				cardmarket: 877468
+			}
 		}
 	],
 
-	thirdParty: {
-		tcgplayer: 684433,
-		cardmarket: 877468
-	}
 }
 
 export default card

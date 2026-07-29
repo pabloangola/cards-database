@@ -49,22 +49,32 @@ const card: Card = {
 		damage: "30+"
 	}],
 
+	weaknesses: [
+		{
+			type: "Psychic",
+			value: "×2",
+		},
+	],
 	retreat: 0,
 	regulationMark: "J",
 
 	variants: [
 		{
-			type: "normal"
+			type: "normal",
+			thirdParty: {
+				tcgplayer: 684428,
+				cardmarket: 877460
+			}
 		},
 		{
-			type: "reverse"
+			type: "reverse",
+			thirdParty: {
+				tcgplayer: 684428,
+				cardmarket: 877460
+			}
 		}
 	],
 
-	thirdParty: {
-		tcgplayer: 684428,
-		cardmarket: 877460
-	}
 }
 
 export default card

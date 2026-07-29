@@ -14,7 +14,7 @@ const card: Card = {
 		de: "Furienblitz-ex"
 	},
 
-	rarity: "None",
+	rarity: "Promo",
 	category: "Pokemon",
 	hp: 240,
 	types: ["Dragon"],
@@ -67,7 +67,16 @@ const card: Card = {
 	retreat: 3,
 	regulationMark: "H",
 	suffix: "ex",
-	illustrator: "PLANETA Mochizuki"
+	illustrator: "PLANETA Mochizuki",
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardmarket: 775959,
+				tcgplayer: 583850
+			},
+		}
+	],
 }
 
 export default card

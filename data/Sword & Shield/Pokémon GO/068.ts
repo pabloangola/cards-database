@@ -13,6 +13,7 @@ const card: Card = {
 		de: "PokéStop"
 	},
 
+	illustrator: "Studio Bora Inc.",
 	rarity: "Uncommon",
 	category: "Trainer",
 
@@ -28,15 +29,25 @@ const card: Card = {
 	trainerType: "Stadium",
 	regulationMark: "F",
 
-	variants: {
-		"normal": true,
-		"reverse": true,
-		"holo": false
-	},
 
-	thirdParty: {
-		cardmarket: 664665
-	}
+	
+
+	variants: [
+		{
+			type: 'normal',
+			thirdParty: {
+				cardmarket: 665288,
+				tcgplayer: 276996
+			}
+		},
+		{
+			type: 'reverse',
+			thirdParty: {
+				cardmarket: 665288,
+				tcgplayer: 276996
+			}
+		},
+	],
 }
 
 export default card

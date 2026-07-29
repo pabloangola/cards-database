@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "Consuming garbage makes new kinds of poison gases and liquids inside their bodies.",
 	},
+
 
 	name: {
 		en: "Garbodor",
@@ -81,10 +79,22 @@ const card: Card = {
 	retreat: 3,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693492,
-		cardmarket: 886449
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 886449,
+				tcgplayer: 693492
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886449,
+				tcgplayer: 693492
+			}
+		},
+	],
 }
 
 export default card

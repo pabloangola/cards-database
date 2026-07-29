@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Zoroark ex do N"
 	},
 
+	evolveFrom: {
+		en: "N's Zorua",
+		fr: "Zorua de N",
+		es: "Zorua de N",
+		'es-mx': "Zorua de N",
+		de: "Ns Zorua",
+		it: "Zorua di N",
+		pt: "Zorua do N",
+	},
+
 	suffix: "ex",
 	illustrator: "Raita Kazama",
 	rarity: "Special illustration rare",
@@ -70,6 +80,12 @@ const card: Card = {
 		}
 	}],
 
+	weaknesses: [
+		{
+			type: "Grass",
+			value: "×2",
+		},
+	],
 	retreat: 2,
 	regulationMark: "I",
 

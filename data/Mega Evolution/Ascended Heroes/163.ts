@@ -47,8 +47,18 @@ const card: Card = {
 		damage: "10+"
 	}],
 
+	weaknesses: [
+		{
+			type: "Fighting",
+			value: "×2",
+		},
+	],
 	retreat: 0,
 	regulationMark: "J",
+
+	description: {
+		en: "If spotted, it escapes by burrowing with its tail. It can float just slightly using its wings.",
+	},
 
 	variants: [
 	{
@@ -62,7 +72,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "pokeball",
 		thirdParty: {
-			cardmarket: 870389,
+			cardmarket: 870390,
 			tcgplayer: 676979
 		}
 	},
@@ -70,7 +80,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870390,
+			cardmarket: 870389,
 			tcgplayer: 677119
 		}
 	},

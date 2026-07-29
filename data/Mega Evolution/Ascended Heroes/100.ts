@@ -45,8 +45,18 @@ const card: Card = {
 		}
 	}],
 
+	weaknesses: [
+		{
+			type: "Grass",
+			value: "×2",
+		},
+	],
 	retreat: 1,
 	regulationMark: "I",
+
+	description: {
+		en: "Its skin is very thin. If it is exposed to light, its blood heats up, causing it to grow weak.",
+	},
 
 	variants: [
 	{
@@ -60,7 +70,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870295,
+			cardmarket: 870296,
 			tcgplayer: 677072
 		}
 	},
@@ -68,7 +78,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "team-rocket",
 		thirdParty: {
-			cardmarket: 870296,
+			cardmarket: 870295,
 			tcgplayer: 676932
 		}
 	},

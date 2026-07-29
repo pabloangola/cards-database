@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "Using psychic power, it generates a fiery vortex of 5,400 degrees Fahrenheit, incinerating foes swept into this whirl of flame.",
 	},
+
 
 	name: {
 		en: "Delphox",
@@ -91,10 +89,30 @@ const card: Card = {
 	retreat: 2,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693473,
-		cardmarket: 886405
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 888552,
+				tcgplayer: 694632
+			}
+		},
+		{
+			type: "holo",
+			thirdParty: {
+				cardmarket: 886405,
+				tcgplayer: 693473
+			}
+		},
+		{
+			type: 'holo',
+			stamp: ['set-logo'],
+			thirdParty: {
+				cardmarket: 886624,
+				tcgplayer: 694677
+			}
+		},
+	],
 }
 
 export default card

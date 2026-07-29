@@ -16,6 +16,16 @@ const card: Card = {
 		pt: "Talonflame"
 	},
 
+	evolveFrom: {
+		en: "Fletchinder",
+		fr: "Braisillon",
+		es: "Fletchinder",
+		'es-mx': "Fletchinder",
+		de: "Dartignis",
+		it: "Fletchinder",
+		pt: "Fletchinder",
+	},
+
 	illustrator: "OKACHEKE",
 	rarity: "Illustration rare",
 	category: "Pokemon",
@@ -63,19 +73,31 @@ const card: Card = {
 		damage: 110
 	}],
 
+	weaknesses: [
+		{
+			type: "Lightning",
+			value: "×2",
+		},
+	],
+	resistances: [
+		{
+			type: "Fighting",
+			value: "-30",
+		},
+	],
 	retreat: 1,
 	regulationMark: "J",
 
 	variants: [
 		{
-			type: "holo"
+			type: "holo",
+			thirdParty: {
+				tcgplayer: 684406,
+				cardmarket: 877508
+			}
 		}
 	],
 
-	thirdParty: {
-		tcgplayer: 684406,
-		cardmarket: 877508
-	}
 }
 
 export default card

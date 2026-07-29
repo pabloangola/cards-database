@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "Its instinct is to bury itself in holes. It often steals the nesting holes of others to sleep in them.",
 	},
+
 
 	name: {
 		en: "Octillery",
@@ -90,10 +88,22 @@ const card: Card = {
 	retreat: 2,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693528,
-		cardmarket: 886409
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 886409,
+				tcgplayer: 693528
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886409,
+				tcgplayer: 693528
+			}
+		},
+	],
 }
 
 export default card

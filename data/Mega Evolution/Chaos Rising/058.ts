@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "Camouflaged as rotten kelp, this Pokemon sprays liquid poison to take down prey that approach unawares.",
 	},
+
 
 	name: {
 		en: "Skrelp",
@@ -52,10 +50,22 @@ const card: Card = {
 	retreat: 1,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693543,
-		cardmarket: 886450
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 886450,
+				tcgplayer: 693543
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886450,
+				tcgplayer: 693543
+			}
+		},
+	],
 }
 
 export default card

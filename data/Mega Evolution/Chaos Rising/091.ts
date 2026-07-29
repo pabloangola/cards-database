@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "When the horns on its head shine in seven colors, it is said to be sharing everlasting life.",
 	},
+
 
 	name: {
 		en: "Xerneas",
@@ -62,10 +60,15 @@ const card: Card = {
 	retreat: 2,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693564,
-		cardmarket: 886483
-	}
+	variants: [
+		{
+			type: 'holo',
+			thirdParty: {
+				cardmarket: 886483,
+				tcgplayer: 693564
+			}
+		},
+	],
 }
 
 export default card

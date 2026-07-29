@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "It is formed by two Beldum joining together. Its steel body won't be scratched if it collides with a jet.",
 	},
+
 
 	name: {
 		en: "Metang",
@@ -85,10 +83,22 @@ const card: Card = {
 	retreat: 2,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693523,
-		cardmarket: 886452
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 886452,
+				tcgplayer: 693523
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886452,
+				tcgplayer: 693523
+			}
+		},
+	],
 }
 
 export default card

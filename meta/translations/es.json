@@ -57,7 +57,8 @@
 		"Two Shiny": "Two Shiny",
 		"Three Shiny": "Three Shiny",
 		"Black White Rare": "Rara Blanca y Negra",
-		"Mega Hyper Rare": "Mega Hiper Rara"
+		"Mega Hyper Rare": "Mega Hiper Rara",
+		"Promo": "Promo"
 	},
 	"stage": {
 		"Baby": "Bebé",
@@ -133,10 +134,12 @@
 		"professor-program": "professor-program",
 		"tinsel": "tinsel",
 		"loveball": "Amor Ball",
-		"friendball": "Amigo Ball", 
+		"friendball": "Amigo Ball",
 		"quickball": "Veloz Ball",
-		"duskball": "Ocaso Ball", 
-		"team-rocket": "Team Rocket"
+		"duskball": "Ocaso Ball",
+		"team-rocket": "Team Rocket",
+		"rainbow": "Rainbow",
+		"glitter": "Purpurina"
 	},
 	"variantStamp": {
 		"1st-edition": "1ra Edición",
@@ -179,9 +182,9 @@
 		"regional-championships": "regional-championships",
 		"stadium-challenge": "stadium-challenge",
 		"10th-anniversary": "10th-anniversary",
-		"wizard-world-philadelphia" : "wizard-world-philadelphia",
-		"wizard-world-chicago" : "wizard-world-chicago",
-		"comic-con" : "comic-con",
+		"wizard-world-philadelphia": "wizard-world-philadelphia",
+		"wizard-world-chicago": "wizard-world-chicago",
+		"comic-con": "comic-con",
 		"nintendo-world": "nintendo-world",
 		"gen-con": "gen-con",
 		"akira-miyazaki": "akira-miyazaki",
@@ -202,6 +205,8 @@
 		"semi-finalist": "semi-finalist",
 		"top-sixteen": "top-sixteen",
 		"top-thirty-two": "top-thirty-two",
+		"worlds-2004": "worlds-2004",
+		"worlds-2005": "worlds-2005",
 		"worlds-2008": "worlds-2008",
 		"worlds-2009": "worlds-2009",
 		"countdown-calendar": "countdown-calendar",
@@ -222,10 +227,11 @@
 		"player-rewards-program": "player-rewards-program",
 		"igor-costa": "igor-costa",
 		"zachary-bokhari": "zachary-bokhari",
-		"shuto-itagaki" : "shuto-itagaki",
+		"shuto-itagaki": "shuto-itagaki",
 		"gamestop": "GameStop",
 		"eb-games": "EB Games",
 		"horizons": "horizons",
+		"illustration-contest-2022": "illustration-contest-2022",
 		"illustration-contest-2024": "illustration-contest-2024",
 		"worlds-2025": "worlds-2025",
 		"top-eight": "top-eight",
@@ -233,6 +239,7 @@
 		"champion": "campeón",
 		"master-ball-league": "liga-master-ball",
 		"ultra-ball-league": "liga-ultra-ball",
+		"poke-ball-league": "liga-poke-ball",
 		"asia-promo": "asia-promo",
 		"judge": "juez",
 		"international-championship-europe": "campeonato-internacional-europa",
@@ -246,7 +253,18 @@
 		"charmander": "charmander",
 		"pokeball": "pokeball",
 		"mcdonalds": "mcdonalds",
-		"pokemon-together" : "pokemon-together"
+		"pokemon-together": "pokemon-together",
+		"rain-city": "rain-city",
+		"tournament-collection": "tournament-collection",
+		"worlds-2024": "worlds-2024",
+		"worlds-2023": "worlds-2023",
+		"asia-2023-24": "asia-2023-24",
+		"thank-you": "thank-you",
+		"jr-stamp-rally": "jr-stamp-rally",
+		"grey-star": "estrella gris",
+		"pop-tournament": "pop-tournament",
+		"chicago-2009": "chicago-2009",
+		"chase-moloney": "chase-moloney"
 	},
 	"variantSubtype": {
 		"shadowless": "sin sombra",
@@ -266,6 +284,14 @@
 		"japanese-back": "Reverso japonés",
 		"no-e-reader": "Sin e-Reader",
 		"rarity-error": "Error de rareza",
-		"cosmos": "cosmos"
+		"cosmos": "cosmos",
+		"glossy": "con brillo",
+		"shadowless-red-cheek": "mejilla roja sin sombras",
+		"2019-copyright": "Copyright 2019 ",
+		"2020-copyright": "Copyright 2020 ",
+		"nintedo-error": "Error Nintedo",
+		"1995-1998-copyright": "Copyright 1995-1998",
+		"no-rarity": "Sin rareza",
+		"phanphy-error" : "Error de phanphy"
 	}
 }

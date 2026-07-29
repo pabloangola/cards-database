@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "Kouki Saitou",
 	rarity: "Common",
 	category: "Pokemon",
+	dexId: [237],
 	hp: 100,
 	types: ["Fighting"],
 	stage: "Basic",
@@ -59,8 +60,18 @@ const card: Card = {
 		damage: 50
 	}],
 
+	weaknesses: [
+		{
+			type: "Psychic",
+			value: "×2",
+		},
+	],
 	retreat: 1,
 	regulationMark: "J",
+
+	description: {
+		en: "It spins on its horn while dealing out elegant kicks. Its horn grows continuously through its lifetime.",
+	},
 
 	variants: [
 	{
@@ -74,7 +85,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "duskball",
 		thirdParty: {
-			cardmarket: 870299,
+			cardmarket: 870300,
 			tcgplayer: 676934
 		}
 	},
@@ -82,7 +93,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870300,
+			cardmarket: 870299,
 			tcgplayer: 677074
 		}
 	},

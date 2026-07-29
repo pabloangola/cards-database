@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "Ounishi",
 	rarity: "Common",
 	category: "Pokemon",
+	dexId: [322],
 	hp: 80,
 	types: ["Fire"],
 	stage: "Basic",
@@ -61,8 +62,18 @@ const card: Card = {
 		damage: 20
 	}],
 
+	weaknesses: [
+		{
+			type: "Water",
+			value: "×2",
+		},
+	],
 	retreat: 3,
 	regulationMark: "I",
+
+	description: {
+		en: "The magma in its body reaches 2,200 degrees Fahrenheit. Its hump gets smaller when it uses Fire-type moves.",
+	},
 
 	variants: [
 	{
@@ -76,7 +87,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "quickball",
 		thirdParty: {
-			cardmarket: 870179,
+			cardmarket: 870180,
 			tcgplayer: 676874
 		}
 	},
@@ -84,7 +95,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870180,
+			cardmarket: 870179,
 			tcgplayer: 677014
 		}
 	},

@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "Using luminescent matter within its body, it makes its eyes and body glow and stuns attacking opponents.",
 	},
+
 
 	name: {
 		en: "Watchog",
@@ -79,10 +77,22 @@ const card: Card = {
 	retreat: 1,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693559,
-		cardmarket: 886463
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 886463,
+				tcgplayer: 693559
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886463,
+				tcgplayer: 693559
+			}
+		},
+	],
 }
 
 export default card

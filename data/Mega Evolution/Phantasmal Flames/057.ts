@@ -48,24 +48,43 @@ const card: Card = {
 		damage: "10+"
 	}],
 
+	weaknesses: [
+		{
+			type: "Lightning",
+			value: "×2",
+		},
+	],
+	resistances: [
+		{
+			type: "Fighting",
+			value: "-30",
+		},
+	],
 	retreat: 1,
 	regulationMark: "I",
 
+	description: {
+		en: "Feared and loathed by many, it is believed to bring misfortune to all those who see it at night.",
+	},
+
+	illustrator: "Tomokazu Komiya",
 	variants: [
 		{
-			type: "normal",
+			type: 'normal',
 			thirdParty: {
 				cardmarket: 857632,
-				tcgplayer: 662202
+				tcgplayer: 662202,
+				cardtrader: 356840
 			}
 		},
 		{
-			type: "reverse",
+			type: 'reverse',
 			thirdParty: {
 				cardmarket: 857632,
-				tcgplayer: 662202
+				tcgplayer: 662202,
+				cardtrader: 356840
 			}
-		}
+		},
 	],	
 }
 

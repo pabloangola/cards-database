@@ -27,6 +27,7 @@ const card: Card = {
 	illustrator: "Ultimateinudog",
 	rarity: "Double rare",
 	category: "Pokemon",
+	dexId: [630],
 	hp: 260,
 	types: ["Darkness"],
 	stage: "Stage1",
@@ -79,6 +80,18 @@ const card: Card = {
 		damage: 160
 	}],
 
+	weaknesses: [
+		{
+			type: "Lightning",
+			value: "×2",
+		},
+	],
+	resistances: [
+		{
+			type: "Fighting",
+			value: "-30",
+		},
+	],
 	retreat: 1,
 	regulationMark: "J",
 

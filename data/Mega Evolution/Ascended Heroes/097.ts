@@ -45,8 +45,24 @@ const card: Card = {
 		}
 	}],
 
+	weaknesses: [
+		{
+			type: "Darkness",
+			value: "×2",
+		},
+	],
+	resistances: [
+		{
+			type: "Fighting",
+			value: "-30",
+		},
+	],
 	retreat: 0,
 	regulationMark: "I",
+
+	description: {
+		en: "This Pokémon lives in dark places untouched by sunlight. When it appears before humans, it hides itself under a cloth that resembles a Pikachu.",
+	},
 
 	variants: [
 	{
@@ -60,7 +76,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870289,
+			cardmarket: 870290,
 			tcgplayer: 677069
 		}
 	},
@@ -68,7 +84,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "team-rocket",
 		thirdParty: {
-			cardmarket: 870290,
+			cardmarket: 870289,
 			tcgplayer: 676929
 		}
 	},

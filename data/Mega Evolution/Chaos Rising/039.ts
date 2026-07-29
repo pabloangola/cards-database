@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "Using its roots as a nervous system, it controls the trees in the forest. It's kind to the Pokémon that reside in its body.",
 	},
+
 
 	name: {
 		en: "Trevenant",
@@ -95,10 +93,22 @@ const card: Card = {
 	retreat: 3,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693556,
-		cardmarket: 886431
-	}
+	variants: [
+		{
+			type: 'holo',
+			thirdParty: {
+				cardmarket: 886431,
+				tcgplayer: 693556
+			}
+		},
+		{
+			type: 'reverse',
+			thirdParty: {
+				cardmarket: 886431,
+				tcgplayer: 693556
+			}
+		},
+	],
 }
 
 export default card

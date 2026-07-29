@@ -16,6 +16,16 @@ const card: Card = {
 		pt: "Barbaracle"
 	},
 
+	evolveFrom: {
+		en: "Binacle",
+		fr: "Opermine",
+		es: "Binacle",
+		'es-mx': "Binacle",
+		de: "Bithora",
+		it: "Binacle",
+		pt: "Binacle",
+	},
+
 	illustrator: "Kazumasa Yasukuni",
 	rarity: "Uncommon",
 	category: "Pokemon",
@@ -63,22 +73,32 @@ const card: Card = {
 		damage: 80
 	}],
 
+	weaknesses: [
+		{
+			type: "Grass",
+			value: "×2",
+		},
+	],
 	retreat: 2,
 	regulationMark: "J",
 
 	variants: [
 		{
-			type: "normal"
+			type: "normal",
+			thirdParty: {
+				tcgplayer: 684335,
+				cardmarket: 877457
+			}
 		},
 		{
-			type: "reverse"
+			type: "reverse",
+			thirdParty: {
+				tcgplayer: 684335,
+				cardmarket: 877457
+			}
 		}
 	],
 
-	thirdParty: {
-		tcgplayer: 684335,
-		cardmarket: 877457
-	}
 }
 
 export default card

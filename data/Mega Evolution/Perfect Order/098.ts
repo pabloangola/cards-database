@@ -16,6 +16,16 @@ const card: Card = {
 		pt: "Doublade"
 	},
 
+	evolveFrom: {
+		en: "Honedge",
+		fr: "Monorpale",
+		es: "Honedge",
+		'es-mx': "Honedge",
+		de: "Gramokles",
+		it: "Honedge",
+		pt: "Honedge",
+	},
+
 	illustrator: "Anesaki Dynamic",
 	rarity: "Illustration rare",
 	category: "Pokemon",
@@ -49,19 +59,31 @@ const card: Card = {
 		damage: "60×"
 	}],
 
+	weaknesses: [
+		{
+			type: "Fire",
+			value: "×2",
+		},
+	],
+	resistances: [
+		{
+			type: "Grass",
+			value: "-30",
+		},
+	],
 	retreat: 2,
 	regulationMark: "J",
 
 	variants: [
 		{
-			type: "holo"
+			type: "holo",
+			thirdParty: {
+				tcgplayer: 684380,
+				cardmarket: 877515
+			}
 		}
 	],
 
-	thirdParty: {
-		tcgplayer: 684380,
-		cardmarket: 877515
-	}
 }
 
 export default card

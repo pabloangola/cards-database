@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "Its fluffy coat doubles in size when static electricity builds up. Touching it can be shocking.",
 	},
+
 
 	name: {
 		en: "Mareep",
@@ -62,10 +60,22 @@ const card: Card = {
 	retreat: 2,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693507,
-		cardmarket: 886419
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 886419,
+				tcgplayer: 693507
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886419,
+				tcgplayer: 693507
+			}
+		},
+	],
 }
 
 export default card

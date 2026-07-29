@@ -4,11 +4,8 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "The quills on its head are usually soft. When it flexes them, the points become so hard and sharp that they can pierce rock.",
 	},
 
 	name: {
@@ -65,10 +62,22 @@ const card: Card = {
 	retreat: 2,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693461,
-		cardmarket: 886397
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 886397,
+				tcgplayer: 693461
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886397,
+				tcgplayer: 693461
+			}
+		},
+	],
 }
 
 export default card

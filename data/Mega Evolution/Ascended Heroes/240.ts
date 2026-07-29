@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "osare",
 	rarity: "Illustration rare",
 	category: "Pokemon",
+	dexId: [237],
 	hp: 100,
 	types: ["Fighting"],
 	stage: "Basic",
@@ -59,8 +60,18 @@ const card: Card = {
 		damage: 50
 	}],
 
+	weaknesses: [
+		{
+			type: "Psychic",
+			value: "×2",
+		},
+	],
 	retreat: 1,
 	regulationMark: "J",
+
+	description: {
+		en: "It spins on its horn while dealing out elegant kicks. Its horn grows continuously through its lifetime.",
+	},
 
 	variants: [
 		{

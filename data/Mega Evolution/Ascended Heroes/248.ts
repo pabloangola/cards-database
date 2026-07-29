@@ -14,9 +14,20 @@ const card: Card = {
 		pt: "Drakloak"
 	},
 
+	evolveFrom: {
+		en: "Dreepy",
+		fr: "Fantyrm",
+		es: "Dreepy",
+		'es-mx': "Dreepy",
+		de: "Grolldra",
+		it: "Dreepy",
+		pt: "Dreepy",
+	},
+
 	illustrator: "Jerky",
 	rarity: "Illustration rare",
 	category: "Pokemon",
+	dexId: [886],
 	hp: 90,
 	types: ["Dragon"],
 	stage: "Stage1",
@@ -63,6 +74,10 @@ const card: Card = {
 
 	retreat: 1,
 	regulationMark: "H",
+
+	description: {
+		en: "This Pokémon stores up energy in its lungs, then shoots it out. It takes care of Dreepy and battles alongside them until they’re all grown up.",
+	},
 
 	variants: [
 		{

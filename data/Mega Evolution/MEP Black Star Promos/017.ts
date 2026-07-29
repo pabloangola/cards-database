@@ -14,8 +14,19 @@ const card: Card = {
 		pt: "Toxtricity"
 	},
 
-	rarity: "Rare",
+	evolveFrom: {
+		en: "Toxel",
+		fr: "Toxizap",
+		es: "Toxel",
+		'es-mx': "Toxel",
+		de: "Toxel",
+		it: "Toxel",
+		pt: "Toxel",
+	},
+
+	rarity: "Promo",
 	category: "Pokemon",
+	dexId: [849],
 	hp: 140,
 	types: ["Darkness"],
 	stage: "Stage1",
@@ -65,21 +76,22 @@ const card: Card = {
 
 	illustrator: "Krgc",
 
-	thirdParty: {
-        tcgplayer: 663193,
-        cardmarket: 857400
-	},
-
     variants: [
-		{
-			type: "holo",
-			stamp: ["set-logo"]
-		},
-		{
-			type: "holo",
-			stamp: ["set-logo","staff"]
-		},
-    ]
+    	{
+    		type: "holo",
+    		stamp: ["set-logo"],
+    		thirdParty: {
+    			cardmarket: 857400
+    		}
+    	},
+    	{
+    		type: "holo",
+    		stamp: ["set-logo","staff"],
+    		thirdParty: {
+    			cardmarket: 859018
+    		}
+    	},
+    ],
 }
 
 export default card

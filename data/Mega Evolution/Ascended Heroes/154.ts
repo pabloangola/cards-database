@@ -64,6 +64,10 @@ const card: Card = {
 	retreat: 2,
 	regulationMark: "I",
 
+	description: {
+		en: "According to myth, if people ignore truth and let themselves become consumed by greed, Reshiram will arrive to burn their kingdoms down.",
+	},
+
 	variants: [
 	{
 		type: "holo",
@@ -76,7 +80,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "pokeball",
 		thirdParty: {
-			cardmarket: 870375,
+			cardmarket: 870376,
 			tcgplayer: 676972
 		}
 	},
@@ -84,7 +88,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870376,
+			cardmarket: 870375,
 			tcgplayer: 677112
 		}
 	},

@@ -61,19 +61,25 @@ const card: Card = {
 		damage: 30
 	}],
 
+	weaknesses: [
+		{
+			type: "Metal",
+			value: "×2",
+		},
+	],
 	retreat: 1,
 	regulationMark: "J",
 
 	variants: [
 		{
-			type: "holo"
+			type: "holo",
+			thirdParty: {
+				tcgplayer: 684415,
+				cardmarket: 877511
+			}
 		}
 	],
 
-	thirdParty: {
-		tcgplayer: 684415,
-		cardmarket: 877511
-	}
 }
 
 export default card

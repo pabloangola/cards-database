@@ -72,17 +72,25 @@ const card: Card = {
 		damage: 130
 	}],
 
+	weaknesses: [
+		{
+			type: "Fighting",
+			value: "×2",
+		},
+	],
 	retreat: 1,
 	regulationMark: "I",
 
+	illustrator: "Yoshimi Miyoshi",
 	variants: [
 		{
-			type: "holo",
+			type: 'holo',
 			thirdParty: {
 				cardmarket: 857701,
-				tcgplayer: 662222
+				tcgplayer: 662222,
+				cardtrader: 356912
 			}
-		}
+		},
 	],
 }
 

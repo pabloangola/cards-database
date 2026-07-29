@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "They set off on their own from their pride and live by themselves to become stronger. These hot-blooded Pokémon are quick to fight.",
 	},
+
 
 	name: {
 		en: "Litleo",
@@ -52,10 +50,22 @@ const card: Card = {
 	retreat: 1,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693505,
-		cardmarket: 886406
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 886406,
+				tcgplayer: 693505
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886406,
+				tcgplayer: 693505
+			}
+		},
+	],
 }
 
 export default card

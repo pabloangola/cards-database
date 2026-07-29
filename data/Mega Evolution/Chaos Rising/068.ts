@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "This very friendly dragon Pokémon will hug its beloved Trainer, leaving that Trainer covered in sticky slime.",
 	},
+
 
 	name: {
 		en: "Goodra",
@@ -86,10 +84,43 @@ const card: Card = {
 	retreat: 3,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693495,
-		cardmarket: 886460
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 888530,
+				tcgplayer: 694638
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886460,
+				tcgplayer: 693495
+			}
+		},
+		{
+			type: "holo",
+			thirdParty: {
+				cardmarket: 886460,
+				tcgplayer: 693495
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886460,
+				tcgplayer: 693495
+			}
+		},
+		{
+			type: "holo",
+			thirdParty: {
+				cardmarket: 886460,
+				tcgplayer: 693495
+			}
+		},
+	],
 }
 
 export default card

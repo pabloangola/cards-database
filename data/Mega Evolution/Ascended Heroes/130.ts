@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "osare",
 	rarity: "Common",
 	category: "Pokemon",
+	dexId: [263],
 	hp: 70,
 	types: ["Darkness"],
 	stage: "Basic",
@@ -37,8 +38,18 @@ const card: Card = {
 		damage: 10
 	}],
 
+	weaknesses: [
+		{
+			type: "Grass",
+			value: "×2",
+		},
+	],
 	retreat: 1,
 	regulationMark: "I",
+
+	description: {
+		en: "Its restlessness has it constantly running around. If it sees another Pokémon, it will purposely run into them in order to start a fight.",
+	},
 
 	variants: [
 	{
@@ -52,7 +63,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "duskball",
 		thirdParty: {
-			cardmarket: 870341,
+			cardmarket: 870342,
 			tcgplayer: 676955
 		}
 	},
@@ -60,7 +71,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870342,
+			cardmarket: 870341,
 			tcgplayer: 677095
 		}
 	},

@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "It will do anything to win, taking advantage of every opening and finishing opponents off with the small claws on its front legs.",
 	},
+
 
 	name: {
 		en: "Golisopod",
@@ -90,10 +88,22 @@ const card: Card = {
 	retreat: 2,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693494,
-		cardmarket: 886418
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 886418,
+				tcgplayer: 693494
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886418,
+				tcgplayer: 693494
+			}
+		},
+	],
 }
 
 export default card

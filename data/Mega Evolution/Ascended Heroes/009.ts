@@ -14,9 +14,20 @@ const card: Card = {
 		pt: "Bayleef"
 	},
 
+	evolveFrom: {
+		en: "Chikorita",
+		fr: "Germignon",
+		es: "Chikorita",
+		'es-mx': "Chikorita",
+		de: "Endivie",
+		it: "Chikorita",
+		pt: "Chikorita",
+	},
+
 	illustrator: "Tomomi Ozaki",
 	rarity: "Uncommon",
 	category: "Pokemon",
+	dexId: [153],
 	hp: 100,
 	types: ["Grass"],
 	stage: "Stage1",
@@ -37,6 +48,12 @@ const card: Card = {
 		damage: 60
 	}],
 
+	weaknesses: [
+		{
+			type: "Fire",
+			value: "×2",
+		},
+	],
 	retreat: 2,
 	regulationMark: "J",
 
@@ -52,7 +69,7 @@ const card: Card = {
 			type: "reverse",
 			foil: "friendball",
 			thirdParty: {
-				cardmarket: 870149,
+				cardmarket: 870150,
 				tcgplayer: 676859
 			}
 		},
@@ -60,7 +77,7 @@ const card: Card = {
 			type: "reverse",
 			foil: "energy",
 			thirdParty: {
-				cardmarket: 870150,
+				cardmarket: 870149,
 				tcgplayer: 676999
 			}
 		},

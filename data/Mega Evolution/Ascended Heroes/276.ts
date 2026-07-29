@@ -18,6 +18,7 @@ const card: Card = {
 	illustrator: "booota",
 	rarity: "Special illustration rare",
 	category: "Pokemon",
+	dexId: [25],
 	hp: 200,
 	types: ["Lightning"],
 	stage: "Basic",
@@ -38,6 +39,12 @@ const card: Card = {
 		damage: 120
 	}],
 
+	weaknesses: [
+		{
+			type: "Fighting",
+			value: "×2",
+		},
+	],
 	retreat: 1,
 	regulationMark: "H",
 

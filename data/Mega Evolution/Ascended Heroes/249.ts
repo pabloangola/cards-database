@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Staraptor do Lauro"
 	},
 
+	evolveFrom: {
+		en: "Larry's Staravia",
+		fr: "Étourvol d'Okuba",
+		es: "Staravia de Laureano",
+		'es-mx': "Staravia de Laureano",
+		de: "Aokis Staravia",
+		it: "Staravia di Ubaldo",
+		pt: "Staravia do Lauro",
+	},
+
 	illustrator: "kantaro",
 	rarity: "Illustration rare",
 	category: "Pokemon",
@@ -71,8 +81,24 @@ const card: Card = {
 		damage: 150
 	}],
 
+	weaknesses: [
+		{
+			type: "Lightning",
+			value: "×2",
+		},
+	],
+	resistances: [
+		{
+			type: "Fighting",
+			value: "-30",
+		},
+	],
 	retreat: 1,
 	regulationMark: "J",
+
+	description: {
+		en: "It never stops attacking even if it is injured. It fusses over the shape of its comb.",
+	},
 
 	variants: [
 		{

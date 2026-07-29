@@ -16,6 +16,16 @@ const card: Card = {
 		pt: "Amaura"
 	},
 
+	evolveFrom: {
+		en: "Antique Sail Fossil",
+		fr: "Fossile Nageoire Ancien",
+		es: "Fósil Aleta Antiguo",
+		'es-mx': "Fósil Aleta Antiguo",
+		de: "Antikes Flossenfossil",
+		it: "Vecchio Fossilpinna",
+		pt: "Fóssil de Vela Arcaico",
+	},
+
 	illustrator: "Hitoshi Ariga",
 	rarity: "Common",
 	category: "Pokemon",
@@ -49,22 +59,32 @@ const card: Card = {
 		damage: 50
 	}],
 
+	weaknesses: [
+		{
+			type: "Metal",
+			value: "×2",
+		},
+	],
 	retreat: 3,
 	regulationMark: "J",
 
 	variants: [
 		{
-			type: "normal"
+			type: "normal",
+			thirdParty: {
+				tcgplayer: 684355,
+				cardmarket: 877435
+			}
 		},
 		{
-			type: "reverse"
+			type: "reverse",
+			thirdParty: {
+				tcgplayer: 684355,
+				cardmarket: 877435
+			}
 		}
 	],
 
-	thirdParty: {
-		tcgplayer: 684355,
-		cardmarket: 877435
-	}
 }
 
 export default card

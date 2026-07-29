@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "Its four horns are a high-performance radar system. It uses them to sense sounds and smells, rather than using ears or a nose.",
 	},
+
 
 	name: {
 		en: "Sliggoo",
@@ -52,10 +50,22 @@ const card: Card = {
 	retreat: 3,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693545,
-		cardmarket: 886459
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 886459,
+				tcgplayer: 693545
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886459,
+				tcgplayer: 693545
+			}
+		},
+	],
 }
 
 export default card

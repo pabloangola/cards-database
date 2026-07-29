@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "Kazuhisa Uragami",
 	rarity: "Common",
 	category: "Pokemon",
+	dexId: [200],
 	hp: 60,
 	types: ["Psychic"],
 	stage: "Basic",
@@ -45,8 +46,24 @@ const card: Card = {
 		}
 	}],
 
+	weaknesses: [
+		{
+			type: "Darkness",
+			value: "×2",
+		},
+	],
+	resistances: [
+		{
+			type: "Fighting",
+			value: "-30",
+		},
+	],
 	retreat: 1,
 	regulationMark: "I",
+
+	description: {
+		en: "It loves to bite and yank people's hair from behind without warning, just to see their shocked reactions.",
+	},
 
 	variants: [
 	{
@@ -60,7 +77,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "duskball",
 		thirdParty: {
-			cardmarket: 870267,
+			cardmarket: 870268,
 			tcgplayer: 676918
 		}
 	},
@@ -68,7 +85,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870268,
+			cardmarket: 870267,
 			tcgplayer: 677058
 		}
 	},

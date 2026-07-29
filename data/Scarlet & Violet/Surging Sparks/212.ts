@@ -42,6 +42,12 @@ const card: Card = {
 		}
 	}],
 
+	weaknesses: [
+		{
+			type: "Fighting",
+			value: "×2",
+		},
+	],
 	retreat: 2,
 	regulationMark: "H",
 
@@ -56,10 +62,6 @@ const card: Card = {
 	],
 
 	illustrator: "Mékayu",
-
-		thirdParty: {
-			cardmarket: 794585
-		}
 }
 
 export default card

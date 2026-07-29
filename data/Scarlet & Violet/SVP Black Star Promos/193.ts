@@ -16,7 +16,7 @@ const card: Card = {
 
 	suffix: "ex",
 	illustrator: "PLANETA Mochizuki",
-	rarity: "None",
+	rarity: "Promo",
 	category: "Pokemon",
 	hp: 230,
 	types: ["Metal"],
@@ -69,7 +69,24 @@ const card: Card = {
 	}],
 
 	retreat: 2,
-	regulationMark: "I"
+	regulationMark: "I",
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardmarket: 819265,
+				tcgplayer: 625631
+			}
+		},
+		{
+			type: "holo",
+			size: "jumbo",
+			thirdParty: {
+				cardmarket: 819345,
+				tcgplayer: 625633
+			}
+		}
+	],
 }
 
 export default card

@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "Yuya Oka",
 	rarity: "Common",
 	category: "Pokemon",
+	dexId: [624],
 	hp: 70,
 	types: ["Metal"],
 	stage: "Basic",
@@ -47,8 +48,24 @@ const card: Card = {
 		damage: 10
 	}],
 
+	weaknesses: [
+		{
+			type: "Fire",
+			value: "×2",
+		},
+	],
+	resistances: [
+		{
+			type: "Grass",
+			value: "-30",
+		},
+	],
 	retreat: 1,
 	regulationMark: "I",
+
+	description: {
+		en: "Any chips in its blades would prove fatal for it. After each battle, it diligently maintains its blades using its favorite sharpening stone.",
+	},
 
 	variants: [
 	{
@@ -62,7 +79,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "quickball",
 		thirdParty: {
-			cardmarket: 870363,
+			cardmarket: 870364,
 			tcgplayer: 676966
 		}
 	},
@@ -70,7 +87,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870364,
+			cardmarket: 870363,
 			tcgplayer: 677106
 		}
 	},

@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Dudunsparce ex do Lauro"
 	},
 
+	evolveFrom: {
+		en: "Larry's Dunsparce",
+		fr: "Insolourdo d'Okuba",
+		es: "Dunsparce de Laureano",
+		'es-mx': "Dunsparce de Laureano",
+		de: "Aokis Dummisel",
+		it: "Dunsparce di Ubaldo",
+		pt: "Dunsparce do Lauro",
+	},
+
 	suffix: "ex",
 	illustrator: "5ban Graphics",
 	rarity: "Double rare",
@@ -48,6 +58,12 @@ const card: Card = {
 		damage: "80×"
 	}],
 
+	weaknesses: [
+		{
+			type: "Fighting",
+			value: "×2",
+		},
+	],
 	retreat: 3,
 	regulationMark: "J",
 

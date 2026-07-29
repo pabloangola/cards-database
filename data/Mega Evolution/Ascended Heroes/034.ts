@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "Felicia Chen",
 	rarity: "Common",
 	category: "Pokemon",
+	dexId: [757],
 	hp: 70,
 	types: ["Fire"],
 	stage: "Basic",
@@ -47,8 +48,18 @@ const card: Card = {
 		damage: 30
 	}],
 
+	weaknesses: [
+		{
+			type: "Water",
+			value: "×2",
+		},
+	],
 	retreat: 1,
 	regulationMark: "H",
+
+	description: {
+		en: "Only female Salandit can produce gas laden with pheromones. Males entranced by this gas will do whatever the females tell them.",
+	},
 
 	variants: [
 	{
@@ -62,7 +73,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "quickball",
 		thirdParty: {
-			cardmarket: 870191,
+			cardmarket: 870192,
 			tcgplayer: 676880
 		}
 	},
@@ -70,7 +81,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870192,
+			cardmarket: 870191,
 			tcgplayer: 677020
 		}
 	},

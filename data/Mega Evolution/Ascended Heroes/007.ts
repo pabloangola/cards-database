@@ -71,8 +71,18 @@ const card: Card = {
 		damage: 50
 	}],
 
+	weaknesses: [
+		{
+			type: "Fire",
+			value: "×2",
+		},
+	],
 	retreat: 2,
 	regulationMark: "J",
+
+	description: {
+		en: "Hidden beneath a tangle of vines that grows nonstop even if the vines are torn off, this Pokémon’s true appearance remains a mystery.",
+	},
 
 	variants: [
 		{
@@ -86,7 +96,7 @@ const card: Card = {
 			type: "reverse",
 			foil: "pokeball",
 			thirdParty: {
-				cardmarket: 870146,
+				cardmarket: 870145,
 				tcgplayer: 676857
 			}
 		},
@@ -94,8 +104,16 @@ const card: Card = {
 			type: "reverse",
 			foil: "energy",
 			thirdParty: {
-				cardmarket: 870145,
+				cardmarket: 870146,
 				tcgplayer: 676997
+			}
+		},
+		{
+			type: "holo",
+			foil: "cosmos",
+			thirdParty: {
+				cardmarket: 870106,
+				tcgplayer: 679249
 			}
 		},
 	],

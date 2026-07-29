@@ -60,24 +60,37 @@ const card: Card = {
 		damage: 60
 	}],
 
+	weaknesses: [
+		{
+			type: "Grass",
+			value: "×2",
+		},
+	],
 	retreat: 1,
 	regulationMark: "I",
 
+	description: {
+		en: "Because of this Pokémon's ability to detect danger, people mistook Absol as a bringer of doom.",
+	},
+
+	illustrator: "Takumi Wada",
 	variants: [
 		{
-			type: "normal",
+			type: 'normal',
 			thirdParty: {
 				cardmarket: 857638,
-				tcgplayer: 662125
+				tcgplayer: 662125,
+				cardtrader: 356847
 			}
 		},
 		{
-			type: "reverse",
+			type: 'reverse',
 			thirdParty: {
 				cardmarket: 857638,
-				tcgplayer: 662125
+				tcgplayer: 662125,
+				cardtrader: 356847
 			}
-		}
+		},
 	],
 }
 

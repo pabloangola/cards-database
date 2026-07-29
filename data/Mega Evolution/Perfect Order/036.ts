@@ -16,6 +16,16 @@ const card: Card = {
 		pt: "Aromatisse"
 	},
 
+	evolveFrom: {
+		en: "Spritzee",
+		fr: "Fluvetin",
+		es: "Spritzee",
+		'es-mx': "Spritzee",
+		de: "Parfi",
+		it: "Spritzee",
+		pt: "Spritzee",
+	},
+
 	illustrator: "Mori Yuu",
 	rarity: "Uncommon",
 	category: "Pokemon",
@@ -73,22 +83,32 @@ const card: Card = {
 		damage: 50
 	}],
 
+	weaknesses: [
+		{
+			type: "Metal",
+			value: "×2",
+		},
+	],
 	retreat: 1,
 	regulationMark: "J",
 
 	variants: [
 		{
-			type: "normal"
+			type: "normal",
+			thirdParty: {
+				tcgplayer: 684421,
+				cardmarket: 877450
+			}
 		},
 		{
-			type: "reverse"
+			type: "reverse",
+			thirdParty: {
+				tcgplayer: 684421,
+				cardmarket: 877450
+			}
 		}
 	],
 
-	thirdParty: {
-		tcgplayer: 684421,
-		cardmarket: 877450
-	}
 }
 
 export default card

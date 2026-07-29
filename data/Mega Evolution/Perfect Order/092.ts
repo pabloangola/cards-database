@@ -16,6 +16,16 @@ const card: Card = {
 		pt: "Aurorus"
 	},
 
+	evolveFrom: {
+		en: "Amaura",
+		fr: "Amagara",
+		es: "Amaura",
+		'es-mx': "Amaura",
+		de: "Amarino",
+		it: "Amaura",
+		pt: "Amaura",
+	},
+
 	illustrator: "Masa",
 	rarity: "Illustration rare",
 	category: "Pokemon",
@@ -73,19 +83,25 @@ const card: Card = {
 		damage: 150
 	}],
 
+	weaknesses: [
+		{
+			type: "Metal",
+			value: "×2",
+		},
+	],
 	retreat: 3,
 	regulationMark: "J",
 
 	variants: [
 		{
-			type: "holo"
+			type: "holo",
+			thirdParty: {
+				tcgplayer: 684357,
+				cardmarket: 877509
+			}
 		}
 	],
 
-	thirdParty: {
-		tcgplayer: 684357,
-		cardmarket: 877509
-	}
 }
 
 export default card

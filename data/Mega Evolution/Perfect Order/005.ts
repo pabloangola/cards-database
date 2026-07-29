@@ -16,6 +16,16 @@ const card: Card = {
 		pt: "Servine"
 	},
 
+	evolveFrom: {
+		en: "Snivy",
+		fr: "Vipélierre",
+		es: "Snivy",
+		'es-mx': "Snivy",
+		de: "Serpifeu",
+		it: "Snivy",
+		pt: "Snivy",
+	},
+
 	illustrator: "Kurata So",
 	rarity: "Common",
 	category: "Pokemon",
@@ -39,22 +49,32 @@ const card: Card = {
 		damage: 40
 	}],
 
+	weaknesses: [
+		{
+			type: "Fire",
+			value: "×2",
+		},
+	],
 	retreat: 1,
 	regulationMark: "J",
 
 	variants: [
 		{
-			type: "normal"
+			type: "normal",
+			thirdParty: {
+				tcgplayer: 684401,
+				cardmarket: 877417
+			}
 		},
 		{
-			type: "reverse"
+			type: "reverse",
+			thirdParty: {
+				tcgplayer: 684401,
+				cardmarket: 877417
+			}
 		}
 	],
 
-	thirdParty: {
-		tcgplayer: 684401,
-		cardmarket: 877417
-	}
 }
 
 export default card

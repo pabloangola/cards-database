@@ -72,19 +72,25 @@ const card: Card = {
 		}
 	}],
 
+	weaknesses: [
+		{
+			type: "Grass",
+			value: "×2",
+		},
+	],
 	retreat: 2,
 	regulationMark: "J",
 
 	variants: [
 		{
-			type: "holo"
+			type: "holo",
+			thirdParty: {
+				tcgplayer: 684339,
+				cardmarket: 877541
+			}
 		}
 	],
 
-	thirdParty: {
-		tcgplayer: 684339,
-		cardmarket: 877541
-	}
 }
 
 export default card

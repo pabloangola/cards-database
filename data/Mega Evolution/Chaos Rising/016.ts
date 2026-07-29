@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "The water they shoot from their mouths can hit moving prey from more than 300 feet away.",
 	},
+
 
 	name: {
 		en: "Remoraid",
@@ -52,10 +50,22 @@ const card: Card = {
 	retreat: 1,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693539,
-		cardmarket: 886408
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 886408,
+				tcgplayer: 693539
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886408,
+				tcgplayer: 693539
+			}
+		},
+	],
 }
 
 export default card

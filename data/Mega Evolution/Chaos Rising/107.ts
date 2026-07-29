@@ -4,12 +4,6 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
-	},
 
 	name: {
 		en: "Emma",
@@ -27,11 +21,6 @@ const card: Card = {
 	trainerType: "Supporter",
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693480,
-		cardmarket: 886501
-	},
-
 	effect: {
 		en: "Your opponent reveals their hand, and you draw a card for each Pokémon you find there.",
 		fr: "Votre adversaire montre sa main et vous piochez une carte pour chaque Pokémon que vous y trouvez.",
@@ -40,7 +29,17 @@ const card: Card = {
 		de: "Dein Gegner zeigt dir seine Handkarten und du ziehst 1 Karte für jedes Pokémon, das du dort findest.",
 		it: "Il tuo avversario mostra le carte che ha in mano e tu peschi una carta per ogni Pokémon presente tra quelle carte.",
 		pt: "Seu oponente revela a mão dele e você compra uma carta para cada Pokémon que você encontrar lá."
-	}
+	},
+
+	variants: [
+		{
+			type: 'holo',
+			thirdParty: {
+				cardmarket: 886501,
+				tcgplayer: 693480
+			}
+		},
+	],
 }
 
 export default card

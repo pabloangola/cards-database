@@ -26,6 +26,7 @@ const card: Card = {
 	illustrator: "5ban Graphics",
 	rarity: "Double rare",
 	category: "Pokemon",
+	dexId: [448],
 	hp: 340,
 	types: ["Fighting"],
 	stage: "Stage1",
@@ -80,6 +81,12 @@ const card: Card = {
 		damage: 270
 	}],
 
+	weaknesses: [
+		{
+			type: "Psychic",
+			value: "×2",
+		},
+	],
 	retreat: 2,
 	regulationMark: "I",
 

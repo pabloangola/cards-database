@@ -16,6 +16,16 @@ const card: Card = {
 		pt: "Meowstic"
 	},
 
+	evolveFrom: {
+		en: "Espurr",
+		fr: "Psystigri",
+		es: "Espurr",
+		'es-mx': "Espurr",
+		de: "Psiau",
+		it: "Espurr",
+		pt: "Espurr",
+	},
+
 	illustrator: "Kannnu",
 	rarity: "Uncommon",
 	category: "Pokemon",
@@ -71,22 +81,38 @@ const card: Card = {
 		damage: "30+"
 	}],
 
+	weaknesses: [
+		{
+			type: "Darkness",
+			value: "×2",
+		},
+	],
+	resistances: [
+		{
+			type: "Fighting",
+			value: "-30",
+		},
+	],
 	retreat: 1,
 	regulationMark: "J",
 
 	variants: [
 		{
-			type: "normal"
+			type: "normal",
+			thirdParty: {
+				tcgplayer: 684419,
+				cardmarket: 877448
+			}
 		},
 		{
-			type: "reverse"
+			type: "reverse",
+			thirdParty: {
+				tcgplayer: 684419,
+				cardmarket: 877448
+			}
 		}
 	],
 
-	thirdParty: {
-		tcgplayer: 684419,
-		cardmarket: 877448
-	}
 }
 
 export default card

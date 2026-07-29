@@ -14,9 +14,20 @@ const card: Card = {
 		pt: "Golduck"
 	},
 
+	evolveFrom: {
+		en: "Psyduck",
+		fr: "Psykokwak",
+		es: "Psyduck",
+		'es-mx': "Psyduck",
+		de: "Enton",
+		it: "Psyduck",
+		pt: "Psyduck",
+	},
+
 	illustrator: "Jiro Sasumo",
 	rarity: "Uncommon",
 	category: "Pokemon",
+	dexId: [55],
 	hp: 120,
 	types: ["Water"],
 	stage: "Stage1",
@@ -71,8 +82,18 @@ const card: Card = {
 		damage: "60+"
 	}],
 
+	weaknesses: [
+		{
+			type: "Lightning",
+			value: "×2",
+		},
+	],
 	retreat: 1,
 	regulationMark: "I",
+
+	description: {
+		en: "When it swims at full speed using its long, webbed limbs, its forehead somehow begins to glow.",
+	},
 
 	variants: [
 	{
@@ -86,7 +107,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "loveball",
 		thirdParty: {
-			cardmarket: 870201,
+			cardmarket: 870202,
 			tcgplayer: 676885
 		}
 	},
@@ -94,7 +115,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870202,
+			cardmarket: 870201,
 			tcgplayer: 677025
 		}
 	},

@@ -14,8 +14,19 @@ const card: Card = {
 		pt: "Flygon"
 	},
 
-	rarity: "None",
+	evolveFrom: {
+		en: "Vibrava",
+		fr: "Vibraninf",
+		es: "Vibrava",
+		'es-mx': "Vibrava",
+		de: "Vibrava",
+		it: "Vibrava",
+		pt: "Vibrava",
+	},
+
+	rarity: "Promo",
 	category: "Pokemon",
+	dexId: [330],
 	hp: 150,
 	types: ["Fighting"],
 	stage: "Stage2",
@@ -65,21 +76,22 @@ const card: Card = {
 
 	illustrator: "Oswaldo KATO",
 
-	thirdParty: {
-        tcgplayer: 663191,
-        cardmarket: 857396
-	},
-
     variants: [
-		{
-			type: "holo",
-			stamp: ["set-logo"]
-		},
-		{
-			type: "holo",
-			stamp: ["set-logo","staff"]
-		},
-    ]
+    	{
+    		type: "holo",
+    		stamp: ["set-logo"],
+    		thirdParty: {
+    			cardmarket: 857396
+    		}
+    	},
+    	{
+    		type: "holo",
+    		stamp: ["set-logo","staff"],
+    		thirdParty: {
+    			cardmarket: 859016
+    		}
+    	},
+    ],
 }
 
 export default card

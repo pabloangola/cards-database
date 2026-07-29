@@ -14,6 +14,16 @@ const card: Card = {
 		pt: "Gabite da Cíntia"
 	},
 
+	evolveFrom: {
+		en: "Cynthia's Gible",
+		fr: "Griknot de Cynthia",
+		es: "Gible de Cintia",
+		'es-mx': "Gible de Cynthia",
+		de: "Cynthias Kaumalat",
+		it: "Gible di Camilla",
+		pt: "Gible da Cíntia",
+	},
+
 	illustrator: "Taira Akitsu",
 	rarity: "Uncommon",
 	category: "Pokemon",
@@ -61,8 +71,18 @@ const card: Card = {
 		damage: 40
 	}],
 
+	weaknesses: [
+		{
+			type: "Grass",
+			value: "×2",
+		},
+	],
 	retreat: 1,
 	regulationMark: "I",
+
+	description: {
+		en: "In rare cases, it molts and sheds its scales. Medicine containing its scales as an ingredient will make a weary body feel invigorated.",
+	},
 
 	variants: [
 	{
@@ -76,7 +96,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "pokeball",
 		thirdParty: {
-			cardmarket: 870313,
+			cardmarket: 870314,
 			tcgplayer: 676941
 		}
 	},
@@ -84,7 +104,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870314,
+			cardmarket: 870313,
 			tcgplayer: 677081
 		}
 	},

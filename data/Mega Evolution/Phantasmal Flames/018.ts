@@ -62,17 +62,25 @@ const card: Card = {
 		damage: 110
 	}],
 
+	weaknesses: [
+		{
+			type: "Water",
+			value: "×2",
+		},
+	],
 	retreat: 1,
 	regulationMark: "I",
 
+	illustrator: "akagi",
 	variants: [
 		{
-			type: "holo",
+			type: 'holo',
 			thirdParty: {
 				cardmarket: 857593,
-				tcgplayer: 662206
+				tcgplayer: 662206,
+				cardtrader: 356801
 			}
-		}
+		},
 	],
 }
 

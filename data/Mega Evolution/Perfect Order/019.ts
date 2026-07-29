@@ -16,6 +16,16 @@ const card: Card = {
 		pt: "Dewgong"
 	},
 
+	evolveFrom: {
+		en: "Seel",
+		fr: "Otaria",
+		es: "Seel",
+		'es-mx': "Seel",
+		de: "Jurob",
+		it: "Seel",
+		pt: "Seel",
+	},
+
 	illustrator: "Yoshioka",
 	rarity: "Rare",
 	category: "Pokemon",
@@ -63,22 +73,36 @@ const card: Card = {
 		damage: 60
 	}],
 
+	weaknesses: [
+		{
+			type: "Lightning",
+			value: "×2",
+		},
+	],
 	retreat: 2,
 	regulationMark: "J",
 
 	variants: [
 		{
-			type: "holo"
+			type: "holo",
+			thirdParty: {
+				tcgplayer: 684373,
+				cardmarket: 877431
+			}
 		},
 		{
-			type: "reverse"
+			type: "reverse",
+			thirdParty: {
+				tcgplayer: 684373,
+				cardmarket: 877431
+			}
+		},
+		{
+			type: "normal",
+			stamp: ["player-rewards-program"]
 		}
 	],
 
-	thirdParty: {
-		tcgplayer: 684373,
-		cardmarket: 877431
-	}
 }
 
 export default card

@@ -47,8 +47,24 @@ const card: Card = {
 		damage: "10+"
 	}],
 
+	weaknesses: [
+		{
+			type: "Darkness",
+			value: "×2",
+		},
+	],
+	resistances: [
+		{
+			type: "Fighting",
+			value: "-30",
+		},
+	],
 	retreat: 1,
 	regulationMark: "I",
+
+	description: {
+		en: "Using telepathy only fellow Exeggcute can pick up on, they always form a cluster of six.",
+	},
 
 	variants: [
 	{
@@ -62,7 +78,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 869688,
+			cardmarket: 870256,
 			tcgplayer: 677052
 		}
 	},
@@ -70,7 +86,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "team-rocket",
 		thirdParty: {
-			cardmarket: 870256,
+			cardmarket: 869688,
 			tcgplayer: 676912
 		}
 	},

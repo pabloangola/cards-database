@@ -4,11 +4,8 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "Often found in forests and grasslands. It has a sharp, toxic barb of around two inches on top of its head.",
 	},
 
 	name: {
@@ -62,10 +59,22 @@ const card: Card = {
 	retreat: 1,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693561,
-		cardmarket: 886393
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 886393,
+				tcgplayer: 693561
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886393,
+				tcgplayer: 693561
+			}
+		},
+	],
 }
 
 export default card

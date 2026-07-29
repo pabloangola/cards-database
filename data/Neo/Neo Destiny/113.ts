@@ -69,18 +69,22 @@ const card: Card = {
 		damage: 50
 	}],
 
-	thirdParty: {
-		cardmarket: 274765,
-		tcgplayer: 89171
-	},
 
 	variants: [
 		{
-			type: "normal"
+			type: "holo",
+			thirdParty: {
+				cardmarket: 274765,
+				tcgplayer: 89171
+			}
 		},
 		{
-			type: "normal",
-			stamp: ["1st-edition"]
+			type: "holo",
+			stamp: ["1st-edition"],
+			thirdParty: {
+				cardmarket: 274765,
+				tcgplayer: 89171
+			}
 		}
 	]
 }

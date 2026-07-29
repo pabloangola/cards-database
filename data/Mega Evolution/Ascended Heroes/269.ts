@@ -27,6 +27,7 @@ const card: Card = {
 	illustrator: "Taiga Kasai",
 	rarity: "Ultra Rare",
 	category: "Pokemon",
+	dexId: [94],
 	hp: 350,
 	types: ["Darkness"],
 	stage: "Stage2",
@@ -81,6 +82,12 @@ const card: Card = {
 		damage: 230
 	}],
 
+	weaknesses: [
+		{
+			type: "Fighting",
+			value: "×2",
+		},
+	],
 	retreat: 2,
 	regulationMark: "I",
 

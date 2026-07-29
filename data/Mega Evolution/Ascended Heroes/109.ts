@@ -47,8 +47,18 @@ const card: Card = {
 		damage: 20
 	}],
 
+	weaknesses: [
+		{
+			type: "Grass",
+			value: "×2",
+		},
+	],
 	retreat: 1,
 	regulationMark: "I",
+
+	description: {
+		en: "It skulks in caves, and when prey or an enemy passes by, it leaps out and chomps them. The force of its attack sometimes chips its teeth.",
+	},
 
 	variants: [
 	{
@@ -62,7 +72,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "pokeball",
 		thirdParty: {
-			cardmarket: 870311,
+			cardmarket: 870312,
 			tcgplayer: 676940
 		}
 	},
@@ -70,7 +80,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870312,
+			cardmarket: 870311,
 			tcgplayer: 677080
 		}
 	},

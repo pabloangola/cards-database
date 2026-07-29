@@ -27,6 +27,7 @@ const card: Card = {
 	illustrator: "5ban Graphics",
 	rarity: "Double rare",
 	category: "Pokemon",
+	dexId: [500],
 	hp: 380,
 	types: ["Fire"],
 	stage: "Stage2",
@@ -57,6 +58,12 @@ const card: Card = {
 		damage: 320
 	}],
 
+	weaknesses: [
+		{
+			type: "Water",
+			value: "×2",
+		},
+	],
 	retreat: 4,
 	regulationMark: "J",
 

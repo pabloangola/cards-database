@@ -16,6 +16,16 @@ const card: Card = {
 		pt: "Vivillon"
 	},
 
+	evolveFrom: {
+		en: "Spewpa",
+		fr: "Pérégrain",
+		es: "Spewpa",
+		'es-mx': "Spewpa",
+		de: "Puponcho",
+		it: "Spewpa",
+		pt: "Spewpa",
+	},
+
 	illustrator: "mingo",
 	rarity: "Uncommon",
 	category: "Pokemon",
@@ -73,22 +83,32 @@ const card: Card = {
 		damage: "60+"
 	}],
 
+	weaknesses: [
+		{
+			type: "Fire",
+			value: "×2",
+		},
+	],
 	retreat: 1,
 	regulationMark: "J",
 
 	variants: [
 		{
-			type: "normal"
+			type: "normal",
+			thirdParty: {
+				tcgplayer: 684366,
+				cardmarket: 877421
+			}
 		},
 		{
-			type: "reverse"
+			type: "reverse",
+			thirdParty: {
+				tcgplayer: 684366,
+				cardmarket: 877421
+			}
 		}
 	],
 
-	thirdParty: {
-		tcgplayer: 684366,
-		cardmarket: 877421
-	}
 }
 
 export default card

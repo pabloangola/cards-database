@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "Metang combined to form it. With four brains, it has the intelligence of a supercomputer.",
 	},
+
 
 	name: {
 		en: "Metagross",
@@ -95,10 +93,22 @@ const card: Card = {
 	retreat: 3,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693522,
-		cardmarket: 886453
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 886453,
+				tcgplayer: 693522
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886453,
+				tcgplayer: 693522
+			}
+		},
+	],
 }
 
 export default card

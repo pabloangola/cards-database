@@ -13,8 +13,17 @@ const card: Card = {
 		pt: "Drifblim"
 	},
 
+	evolveFrom: {
+		en: "Drifloon",
+		fr: "Baudrive",
+		de: "Driftlon",
+		it: "Drifloon",
+		es: "Drifloon",
+		pt: "Drifloon",
+	},
+
 	illustrator: "Shimaris Yukichi",
-	rarity: "None",
+	rarity: "Promo",
 	category: "Pokemon",
 	hp: 110,
 	types: ["Psychic"],
@@ -68,15 +77,15 @@ const card: Card = {
 	retreat: 1,
 	regulationMark: "I",
 
-	thirdParty: {
-		tcgplayer: 656256,
-		cardmarket: 851052
-	},
 	variants: [
 		{
-			type: "holo"
-		}
-	]
+			type: "holo",
+			thirdParty: {
+				cardmarket: 851052,
+				tcgplayer: 656256
+			}
+		},
+	],
 }
 
 export default card

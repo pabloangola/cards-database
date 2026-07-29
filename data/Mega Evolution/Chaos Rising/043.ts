@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "To avoid being attacked, it does nothing but mimic a tree. It hates water and flees from rain.",
 	},
+
 
 	name: {
 		en: "Sudowoodo",
@@ -84,10 +82,22 @@ const card: Card = {
 	retreat: 1,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693550,
-		cardmarket: 886435
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 886435,
+				tcgplayer: 693550
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886435,
+				tcgplayer: 693550
+			}
+		},
+	],
 }
 
 export default card

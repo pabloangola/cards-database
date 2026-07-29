@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "It loves to drink other creatures' blood. It's said that if it finds others of its kind going hungry, it sometimes shares the blood it's gathered.",
 	},
+
 
 	name: {
 		en: "Golbat",
@@ -72,10 +70,22 @@ const card: Card = {
 	retreat: 1,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693493,
-		cardmarket: 886442
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 886442,
+				tcgplayer: 693493
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886442,
+				tcgplayer: 693493
+			}
+		},
+	],
 }
 
 export default card

@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "The combination of garbage bags and industrial waste caused the chemical reaction that created this Pokémon.",
 	},
+
 
 	name: {
 		en: "Trubbish",
@@ -62,10 +60,22 @@ const card: Card = {
 	retreat: 2,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693557,
-		cardmarket: 886448
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 886448,
+				tcgplayer: 693557
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886448,
+				tcgplayer: 693557
+			}
+		},
+	],
 }
 
 export default card

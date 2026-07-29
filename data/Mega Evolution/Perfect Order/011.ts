@@ -16,6 +16,16 @@ const card: Card = {
 		pt: "Dartrix"
 	},
 
+	evolveFrom: {
+		en: "Rowlet",
+		fr: "Brindibou",
+		es: "Rowlet",
+		'es-mx': "Rowlet",
+		de: "Bauz",
+		it: "Rowlet",
+		pt: "Rowlet",
+	},
+
 	illustrator: "aspara",
 	rarity: "Common",
 	category: "Pokemon",
@@ -61,22 +71,32 @@ const card: Card = {
 		}
 	}],
 
+	weaknesses: [
+		{
+			type: "Fire",
+			value: "×2",
+		},
+	],
 	retreat: 2,
 	regulationMark: "J",
 
 	variants: [
 		{
-			type: "normal"
+			type: "normal",
+			thirdParty: {
+				tcgplayer: 684369,
+				cardmarket: 877423
+			}
 		},
 		{
-			type: "reverse"
+			type: "reverse",
+			thirdParty: {
+				tcgplayer: 684369,
+				cardmarket: 877423
+			}
 		}
 	],
 
-	thirdParty: {
-		tcgplayer: 684369,
-		cardmarket: 877423
-	}
 }
 
 export default card

@@ -4,11 +4,8 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "It attracts prey with its sweet-smelling saliva, then chomps down. It takes a whole day to eat prey.",
 	},
 
 	name: {
@@ -62,10 +59,22 @@ const card: Card = {
 	retreat: 2,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693459,
-		cardmarket: 886396
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 886396,
+				tcgplayer: 693459
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886396,
+				tcgplayer: 693459
+			}
+		},
+	],
 }
 
 export default card

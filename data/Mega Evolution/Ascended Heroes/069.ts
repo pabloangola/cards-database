@@ -37,8 +37,18 @@ const card: Card = {
 		damage: 30
 	}],
 
+	weaknesses: [
+		{
+			type: "Fighting",
+			value: "×2",
+		},
+	],
 	retreat: 2,
 	regulationMark: "I",
+
+	description: {
+		en: "Tadbulb shakes its tail to generate electricity. If it senses danger, it will make its head blink on and off to alert its allies.",
+	},
 
 	variants: [
 	{
@@ -52,7 +62,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "pokeball",
 		thirdParty: {
-			cardmarket: 870245,
+			cardmarket: 870246,
 			tcgplayer: 676907
 		}
 	},
@@ -60,7 +70,7 @@ const card: Card = {
 		type: "reverse",
 		foil: "energy",
 		thirdParty: {
-			cardmarket: 870246,
+			cardmarket: 870245,
 			tcgplayer: 677047
 		}
 	},

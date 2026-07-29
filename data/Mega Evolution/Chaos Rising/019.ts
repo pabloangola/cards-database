@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "Keldeo has strengthened its resolve for battle filling its body with power and changing its form.",
 	},
+
 
 	name: {
 		en: "Keldeo",
@@ -85,10 +83,30 @@ const card: Card = {
 	retreat: 1,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693503,
-		cardmarket: 886411
-	}
+	variants: [
+		{
+			type: 'holo',
+			thirdParty: {
+				cardmarket: 886411,
+				tcgplayer: 693503
+			}
+		},
+		{
+			type: 'reverse',
+			thirdParty: {
+				cardmarket: 886411,
+				tcgplayer: 693503
+			}
+		},
+		{
+			type: 'holo',
+			stamp: ['set-logo'],
+			thirdParty: {
+				cardmarket: 886626,
+				tcgplayer: 694630
+			}
+		},
+	],
 }
 
 export default card

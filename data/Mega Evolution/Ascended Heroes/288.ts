@@ -18,6 +18,7 @@ const card: Card = {
 	illustrator: "SIE NANAHARA",
 	rarity: "Special illustration rare",
 	category: "Pokemon",
+	dexId: [1016],
 	hp: 210,
 	types: ["Darkness"],
 	stage: "Basic",
@@ -70,6 +71,12 @@ const card: Card = {
 		}
 	}],
 
+	weaknesses: [
+		{
+			type: "Fighting",
+			value: "×2",
+		},
+	],
 	retreat: 1,
 	regulationMark: "H",
 

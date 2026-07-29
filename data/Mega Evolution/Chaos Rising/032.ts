@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "An alien virus that fell to earth on a meteor underwent a DNA mutation to become this Pokémon.",
 	},
+
 
 	name: {
 		en: "Deoxys",
@@ -67,10 +65,22 @@ const card: Card = {
 	retreat: 2,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693475,
-		cardmarket: 886424
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 886424,
+				tcgplayer: 693475
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886424,
+				tcgplayer: 693475
+			}
+		},
+	],
 }
 
 export default card

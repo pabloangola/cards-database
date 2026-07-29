@@ -4,12 +4,10 @@ import Set from "../Chaos Rising"
 const card: Card = {
 	set: Set,
 
-	variants: {
-		normal: true,
-		reverse: false,
-		holo: false,
-		firstEdition: false
+	description: {
+		en: "Its ice-covered body is as hard as steel. Its enormous frame crushes anything that stands in its way.",
 	},
+
 
 	name: {
 		en: "Avalugg",
@@ -81,10 +79,22 @@ const card: Card = {
 	retreat: 4,
 	regulationMark: "J",
 
-	thirdParty: {
-		tcgplayer: 693448,
-		cardmarket: 886416
-	}
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 886416,
+				tcgplayer: 693448
+			}
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 886416,
+				tcgplayer: 693448
+			}
+		},
+	],
 }
 
 export default card

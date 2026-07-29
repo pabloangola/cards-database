@@ -4,7 +4,7 @@ import Set from "../SWSH Black Star Promos"
 const card: Card = {
 	dexId: [6],
 	set: Set,
-	illustrator: "The Pokémon Company Art Team",
+	illustrator: "Illus. & Direc. The Pokémon Company Art Team",
 
 	name: {
 		en: "Special Delivery Charizard"
@@ -14,7 +14,7 @@ const card: Card = {
 		en: "It spits fire that is hot enough to melt boulders. It may cause forest fires by blowing flames."
 	},
 
-	rarity: "None",
+	rarity: "Promo",
 	category: "Pokemon",
 	hp: 160,
 	types: ["Fire"],
@@ -61,7 +61,7 @@ const card: Card = {
 				type: "holo",
 			}
 		],
-		
+
 	regulationMark: "D"
 }
 

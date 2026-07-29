@@ -81,17 +81,25 @@ const card: Card = {
 		damage: 160
 	}],
 
+	weaknesses: [
+		{
+			type: "Fighting",
+			value: "×2",
+		},
+	],
 	retreat: 1,
 	regulationMark: "I",
 
+	illustrator: "5ban Graphics",
 	variants: [
 		{
-			type: "holo",
+			type: 'holo',
 			thirdParty: {
 				cardmarket: 857690,
-				tcgplayer: 662189
+				tcgplayer: 662189,
+				cardtrader: 356901
 			}
-		}
+		},
 	],
 }
 

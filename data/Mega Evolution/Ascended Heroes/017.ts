@@ -17,6 +17,7 @@ const card: Card = {
 	illustrator: "Jerky",
 	rarity: "Common",
 	category: "Pokemon",
+	dexId: [736],
 	hp: 70,
 	types: ["Grass"],
 	stage: "Basic",
@@ -47,8 +48,18 @@ const card: Card = {
 		damage: "10+"
 	}],
 
+	weaknesses: [
+		{
+			type: "Fire",
+			value: "×2",
+		},
+	],
 	retreat: 2,
 	regulationMark: "H",
+
+	description: {
+		en: "It spits sticky threads and winds them around branches, then swings nimbly from tree to tree in a pendulum-like motion.",
+	},
 
 	variants: [
 		{
@@ -62,7 +73,7 @@ const card: Card = {
 			type: "reverse",
 			foil: "quickball",
 			thirdParty: {
-				cardmarket: 870163,
+				cardmarket: 870164,
 				tcgplayer: 676866
 			}
 		},
@@ -70,7 +81,7 @@ const card: Card = {
 			type: "reverse",
 			foil: "energy",
 			thirdParty: {
-				cardmarket: 870164,
+				cardmarket: 870163,
 				tcgplayer: 677006
 			}
 		},
