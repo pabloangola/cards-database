@@ -5,18 +5,19 @@ const card: Card = {
 	set: Set,
 
 	name: {
-		'zh-tw': "可爾妮的氣勢"
+		en: 'Korrina\'s Focus',
+		ja: 'Korrina\'s Focus',
 	},
 
-	illustrator: "kirisAki",
-	category: "Trainer",
+	category: 'Pokemon',
+	rarity: 'Fixed',
 
-	effect: {
-		'zh-tw': "從牌庫抽卡直到自己的手牌滿6張為止。"
-	},
-
-	trainerType: "Supporter",
-	regulationMark: "E"
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 232907
+		}
+	}],
 }
 
 export default card

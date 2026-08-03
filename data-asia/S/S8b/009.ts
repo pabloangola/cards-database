@@ -5,36 +5,19 @@ const card: Card = {
 	set: Set,
 
 	name: {
-		'zh-tw': "索偵蟲"
+		en: 'Blipbug',
+		ja: 'Blipbug',
 	},
 
-	illustrator: "Masakazu Fukuda",
-	category: "Pokemon",
-	hp: 50,
-	types: ["Grass"],
+	category: 'Pokemon',
+	rarity: 'Fixed',
 
-	description: {
-		'zh-tw': "經常出現在田地裡的寶可夢。會透過長在身體上的毛來感應周圍發生的事。"
-	},
-
-	stage: "Basic",
-
-	attacks: [{
-		name: {
-			'zh-tw': "踩"
-		},
-
-		damage: 10,
-		cost: ["Colorless"]
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 231482
+		}
 	}],
-
-	weaknesses: [{
-		type: "Fire",
-		value: "×2"
-	}],
-
-	retreat: 1,
-	regulationMark: "E"
 }
 
 export default card

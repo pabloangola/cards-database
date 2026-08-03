@@ -5,18 +5,19 @@ const card: Card = {
 	set: Set,
 
 	name: {
-		'zh-tw': "通頂雪道"
+		en: 'Path to the Peak',
+		ja: 'Path to the Peak',
 	},
 
-	illustrator: "Oswaldo KATO",
-	category: "Trainer",
+	category: 'Pokemon',
+	rarity: 'Fixed',
 
-	effect: {
-		'zh-tw': "雙方場上的「擁有規則的寶可夢」的特性全部消除。"
-	},
-
-	trainerType: "Stadium",
-	regulationMark: "E"
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 232930
+		}
+	}],
 }
 
 export default card

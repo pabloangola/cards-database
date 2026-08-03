@@ -5,36 +5,19 @@ const card: Card = {
 	set: Set,
 
 	name: {
-		'zh-tw': "戴魯比"
+		en: 'Houndour',
+		ja: 'Houndour',
 	},
 
-	illustrator: "Sanosuke Sakuma",
-	category: "Pokemon",
-	hp: 60,
-	types: ["Darkness"],
+	category: 'Pokemon',
+	rarity: 'Fixed',
 
-	description: {
-		'zh-tw': "會在天亮前反覆發出令人不寒而慄的長嚎，藉此強調 自己群體的存在。"
-	},
-
-	stage: "Basic",
-
-	attacks: [{
-		name: {
-			'zh-tw': "咬住"
-		},
-
-		damage: 20,
-		cost: ["Colorless"]
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 232857
+		}
 	}],
-
-	weaknesses: [{
-		type: "Grass",
-		value: "×2"
-	}],
-
-	retreat: 1,
-	regulationMark: "E"
 }
 
 export default card

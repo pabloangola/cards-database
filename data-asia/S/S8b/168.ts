@@ -5,18 +5,19 @@ const card: Card = {
 	set: Set,
 
 	name: {
-		'zh-tw': "遠古墓地"
+		en: 'Old Cemetery',
+		ja: 'Old Cemetery',
 	},
 
-	illustrator: "Oswaldo KATO",
-	category: "Trainer",
+	category: 'Pokemon',
+	rarity: 'Fixed',
 
-	effect: {
-		'zh-tw': "雙方玩家每次從自己的手牌將能量附於寶可夢（【超】寶可夢除外）身上時，在那隻寶可夢身上放置2個傷害指示物。"
-	},
-
-	trainerType: "Stadium",
-	regulationMark: "E"
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 232931
+		}
+	}],
 }
 
 export default card

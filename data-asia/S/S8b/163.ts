@@ -5,18 +5,19 @@ const card: Card = {
 	set: Set,
 
 	name: {
-		'zh-tw': "小優"
+		en: 'Gloria',
+		ja: 'Gloria',
 	},
 
-	illustrator: "Ken Sugimori",
-	category: "Trainer",
+	category: 'Pokemon',
+	rarity: 'Fixed',
 
-	effect: {
-		'zh-tw': "從自己的牌庫選擇最多3張【基礎】寶可夢卡（「擁有規則的寶可夢」除外），放置於備戰區。並且重洗牌庫。"
-	},
-
-	trainerType: "Supporter",
-	regulationMark: "E"
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 232926
+		}
+	}],
 }
 
 export default card

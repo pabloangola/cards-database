@@ -5,18 +5,19 @@ const card: Card = {
 	set: Set,
 
 	name: {
-		'zh-tw': "芽米"
+		en: 'Cheryl',
+		ja: 'Cheryl',
 	},
 
-	illustrator: "Ken Sugimori",
-	category: "Trainer",
+	category: 'Pokemon',
+	rarity: 'Fixed',
 
-	effect: {
-		'zh-tw': "將自己的所有進化寶可夢的HP全部恢復。然後，將恢復的寶可夢身上附加的能量全部丟棄。"
-	},
-
-	trainerType: "Supporter",
-	regulationMark: "E"
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 232917
+		}
+	}],
 }
 
 export default card

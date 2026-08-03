@@ -5,41 +5,19 @@ const card: Card = {
 	set: Set,
 
 	name: {
-		'zh-tw': "好啦魷"
+		en: 'Inkay',
+		ja: 'Inkay',
 	},
 
-	illustrator: "Sanosuke Sakuma",
-	category: "Pokemon",
-	hp: 50,
-	types: ["Psychic"],
+	category: 'Pokemon',
+	rarity: 'Fixed',
 
-	description: {
-		'zh-tw': "會讓敵人看到自己閃爍的發光體來讓對方喪失戰意， 然後趁機逃之夭夭。"
-	},
-
-	stage: "Basic",
-
-	attacks: [{
-		name: {
-			'zh-tw': "迴轉攻擊"
-		},
-
-		damage: 20,
-		cost: ["Psychic"]
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 232826
+		}
 	}],
-
-	weaknesses: [{
-		type: "Darkness",
-		value: "×2"
-	}],
-
-	resistances: [{
-		type: "Fighting",
-		value: "-30"
-	}],
-
-	retreat: 1,
-	regulationMark: "E"
 }
 
 export default card

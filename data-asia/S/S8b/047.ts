@@ -5,36 +5,19 @@ const card: Card = {
 	set: Set,
 
 	name: {
-		'zh-tw': "霹靂電球"
+		en: 'Voltorb',
+		ja: 'Voltorb',
 	},
 
-	illustrator: "Sekio",
-	category: "Pokemon",
-	hp: 60,
-	types: ["Lightning"],
+	category: 'Pokemon',
+	rarity: 'Fixed',
 
-	description: {
-		'zh-tw': "會出現在發電廠等地方。很多人會把牠錯當成精靈球去觸碰而被電麻。"
-	},
-
-	stage: "Basic",
-
-	attacks: [{
-		name: {
-			'zh-tw': "電球"
-		},
-
-		damage: 40,
-		cost: ["Lightning", "Lightning"]
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 232802
+		}
 	}],
-
-	weaknesses: [{
-		type: "Fighting",
-		value: "×2"
-	}],
-
-	retreat: 1,
-	regulationMark: "D"
 }
 
 export default card

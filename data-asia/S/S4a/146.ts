@@ -5,40 +5,19 @@ const card: Card = {
 	set: Set,
 
 	name: {
-		'zh-tw': "掘掘兔"
+		en: 'Bunnelby',
+		ja: 'Bunnelby',
 	},
 
-	illustrator: "Tomokazu Komiya",
-	category: "Pokemon",
-	hp: 40,
-	types: ["Colorless"],
+	category: 'Pokemon',
+	rarity: 'Common',
 
-	description: {
-		'zh-tw': "擅長用耳朵挖洞。只需一個晚上就能挖出深至地下１０公尺的巢穴。"
-	},
-
-	stage: "Basic",
-
-	attacks: [{
-		name: {
-			'zh-tw': "瘋狂派對"
-		},
-
-		effect: {
-			'zh-tw': "造成自己的棄牌區的，持有「瘋狂派對」招式的寶可夢的數量×20點傷害。"
-		},
-
-		damage: "20×",
-		cost: ["Colorless", "Colorless"]
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 225153
+		}
 	}],
-
-	weaknesses: [{
-		type: "Fighting",
-		value: "×2"
-	}],
-
-	retreat: 1,
-	regulationMark: "D"
 }
 
 export default card

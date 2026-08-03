@@ -1,0 +1,23 @@
+import { Card } from "../../../interfaces"
+import Set from "../Cs55"
+
+const card: Card = {
+	set: Set,
+
+	name: {
+		en: 'Regigigas',
+		ja: 'Regigigas',
+	},
+
+	category: 'Pokemon',
+	rarity: 'Holo Rare',
+
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 349417
+		}
+	}],
+}
+
+export default card

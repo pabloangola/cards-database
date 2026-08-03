@@ -5,23 +5,19 @@ const set: Set = {
 	id: 'S4a',
 	name: {
 		en: 'Shiny Star V',
-		ja: 'シャイニースターV',
-		ko: '샤이니스타V',
-		'zh-tw': '閃色明星V',
+		ja: 'Shiny Star V',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 190
-	},
-	releaseDate: {
-		ja: '2020-11-20',
-		'zh-tw': '2020-11-27'
+		official: 336
 	},
 
+	releaseDate: '2026-06-10',
+
 	thirdParty: {
-		cardmarket: 3580
+		cardtrader: 2123
 	}
 }
 

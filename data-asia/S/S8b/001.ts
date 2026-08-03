@@ -5,36 +5,18 @@ const card: Card = {
 	set: Set,
 
 	name: {
-		'zh-tw': "獨角蟲"
+		en: 'VMAX Climax Booster Box',
+		ja: 'VMAX Climax Booster Box',
 	},
 
-	illustrator: "Sanosuke Sakuma",
-	category: "Pokemon",
-	hp: 40,
-	types: ["Grass"],
+	category: 'Pokemon',
 
-	description: {
-		'zh-tw': "毒針非常厲害。鮮豔的體色是用來 警告對手的。"
-	},
-
-	stage: "Basic",
-
-	attacks: [{
-		name: {
-			'zh-tw': "突刺"
-		},
-
-		damage: 20,
-		cost: ["Grass"]
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 201602
+		}
 	}],
-
-	weaknesses: [{
-		type: "Fire",
-		value: "×2"
-	}],
-
-	retreat: 1,
-	regulationMark: "E"
 }
 
 export default card

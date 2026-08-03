@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-06-10T04:33:36.893Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": false
+  },
+  "imports": [
+    {
+      "importedAt": "2026-06-10T04:33:36.790Z",
+      "cardtrader": {
+        "id": 3898,
+        "code": "sv8",
+        "name": "Super Electric Breaker"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "SV",
+        "setId": "SV8",
+        "setFile": "data-asia\\SV\\SV8.ts",
+        "cardsDir": "data-asia\\SV\\SV8"
+      },
+      "stats": {
+        "blueprints": 143,
+        "cardsWritten": 143,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 143,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

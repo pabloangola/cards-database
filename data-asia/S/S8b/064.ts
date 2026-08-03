@@ -5,41 +5,19 @@ const card: Card = {
 	set: Set,
 
 	name: {
-		'zh-tw': "怨影娃娃"
+		en: 'Shuppet',
+		ja: 'Shuppet',
 	},
 
-	illustrator: "OKACHEKE",
-	category: "Pokemon",
-	hp: 50,
-	types: ["Psychic"],
+	category: 'Pokemon',
+	rarity: 'Fixed',
 
-	description: {
-		'zh-tw': "不要去跟那些在黃昏時有怨影娃娃在排隊的人家來往。 這是自古流傳下來的諺語。"
-	},
-
-	stage: "Basic",
-
-	attacks: [{
-		name: {
-			'zh-tw': "鬼火"
-		},
-
-		damage: 20,
-		cost: ["Psychic"]
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 232819
+		}
 	}],
-
-	weaknesses: [{
-		type: "Darkness",
-		value: "×2"
-	}],
-
-	resistances: [{
-		type: "Fighting",
-		value: "-30"
-	}],
-
-	retreat: 1,
-	regulationMark: "E"
 }
 
 export default card

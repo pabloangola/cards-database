@@ -5,36 +5,19 @@ const card: Card = {
 	set: Set,
 
 	name: {
-		'zh-tw': "淚眼蜥"
+		en: 'Sobble',
+		ja: 'Sobble',
 	},
 
-	illustrator: "Megumi Mizutani",
-	category: "Pokemon",
-	hp: 60,
-	types: ["Water"],
+	category: 'Pokemon',
+	rarity: 'Common',
 
-	description: {
-		'zh-tw': "害怕時流下的淚水中含有相當於１００顆洋蔥的催淚成分，能讓對手淚流不止。"
-	},
-
-	stage: "Basic",
-
-	attacks: [{
-		name: {
-			'zh-tw': "水槍"
-		},
-
-		damage: 20,
-		cost: ["Water"]
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 224992
+		}
 	}],
-
-	weaknesses: [{
-		type: "Lightning",
-		value: "×2"
-	}],
-
-	retreat: 1,
-	regulationMark: "D"
 }
 
 export default card

@@ -5,17 +5,19 @@ const card: Card = {
 	set: Set,
 
 	name: {
-		'zh-tw': "強力無能量"
+		en: 'Powerful [C] Energy',
+		ja: 'Powerful [C] Energy',
 	},
 
-	category: "Energy",
+	category: 'Energy',
+	rarity: 'Common',
 
-	effect: {
-		'zh-tw': "只要這張卡附於寶可夢身上，視為提供1個【無】能量。附有這張卡的【無】寶可夢使用的招式，對對手的戰鬥寶可夢造成的傷害「+20」點。"
-	},
-
-	energyType: "Special",
-	regulationMark: "D"
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 225197
+		}
+	}],
 }
 
 export default card

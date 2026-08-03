@@ -5,18 +5,19 @@ const card: Card = {
 	set: Set,
 
 	name: {
-		'zh-tw': "丹帝"
+		en: 'Leon',
+		ja: 'Leon',
 	},
 
-	illustrator: "Ken Sugimori",
-	category: "Trainer",
+	category: 'Pokemon',
+	rarity: 'Fixed',
 
-	effect: {
-		'zh-tw': "在這個回合，自己的寶可夢使用的招式，對對手的戰鬥寶可夢造成的傷害「+30」點。"
-	},
-
-	trainerType: "Supporter",
-	regulationMark: "D"
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 232909
+		}
+	}],
 }
 
 export default card

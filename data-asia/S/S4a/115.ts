@@ -5,40 +5,19 @@ const card: Card = {
 	set: Set,
 
 	name: {
-		'zh-tw': "破破袋"
+		en: 'Trubbish',
+		ja: 'Trubbish',
 	},
 
-	illustrator: "HYOGONOSUKE",
-	category: "Pokemon",
-	hp: 60,
-	types: ["Darkness"],
+	category: 'Pokemon',
+	rarity: 'Common',
 
-	description: {
-		'zh-tw': "喜歡不衛生的地方。如果不及時清理家裡的垃圾，破破袋就會過來居住。"
-	},
-
-	stage: "Basic",
-
-	attacks: [{
-		name: {
-			'zh-tw': "毒液衝擊"
-		},
-
-		effect: {
-			'zh-tw': "若對手的戰鬥寶可夢【中毒】，則增加50點傷害。"
-		},
-
-		damage: "20+",
-		cost: ["Colorless", "Colorless"]
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 225124
+		}
 	}],
-
-	weaknesses: [{
-		type: "Fighting",
-		value: "×2"
-	}],
-
-	retreat: 1,
-	regulationMark: "D"
 }
 
 export default card

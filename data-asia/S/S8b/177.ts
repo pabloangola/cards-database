@@ -5,17 +5,19 @@ const card: Card = {
 	set: Set,
 
 	name: {
-		'zh-tw': "潛行惡能量"
+		en: 'Hiding [D] Energy',
+		ja: 'Hiding [D] Energy',
 	},
 
-	category: "Energy",
+	category: 'Energy',
+	rarity: 'Fixed',
 
-	effect: {
-		'zh-tw': "只要這張卡附於寶可夢身上，視為提供1個【惡】能量。附有這張卡的【惡】寶可夢【撤退】所需的能量全部消除。"
-	},
-
-	energyType: "Special",
-	regulationMark: "D"
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 232940
+		}
+	}],
 }
 
 export default card

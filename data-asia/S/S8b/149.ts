@@ -5,18 +5,19 @@ const card: Card = {
 	set: Set,
 
 	name: {
-		'zh-tw': "伽勒爾的夥伴"
+		en: 'Friends in Galar',
+		ja: 'Friends in Galar',
 	},
 
-	illustrator: "Yuu Nishida",
-	category: "Trainer",
+	category: 'Pokemon',
+	rarity: 'Fixed',
 
-	effect: {
-		'zh-tw': "從自己的牌庫抽出3張卡。"
-	},
-
-	trainerType: "Supporter",
-	regulationMark: "E"
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 232904
+		}
+	}],
 }
 
 export default card

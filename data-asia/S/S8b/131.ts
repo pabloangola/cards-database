@@ -5,18 +5,19 @@ const card: Card = {
 	set: Set,
 
 	name: {
-		'zh-tw': "潮漩之扇"
+		en: 'Fan of Waves',
+		ja: 'Fan of Waves',
 	},
 
-	illustrator: "sadaji",
-	category: "Trainer",
+	category: 'Pokemon',
+	rarity: 'Fixed',
 
-	effect: {
-		'zh-tw': "選擇1個對手的場上寶可夢身上附加的特殊能量，放回對手的牌庫下方。"
-	},
-
-	trainerType: "Item",
-	regulationMark: "E"
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 232886
+		}
+	}],
 }
 
 export default card

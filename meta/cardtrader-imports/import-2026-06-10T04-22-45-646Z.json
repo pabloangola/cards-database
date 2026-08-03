@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-06-10T04:22:45.646Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": false
+  },
+  "imports": [
+    {
+      "importedAt": "2026-06-10T04:22:45.545Z",
+      "cardtrader": {
+        "id": 4050,
+        "code": "cs6a",
+        "name": "CS6a: Azure Shadow - Roar"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "S",
+        "setId": "Cs6a",
+        "setFile": "data-asia\\S\\Cs6a.ts",
+        "cardsDir": "data-asia\\S\\Cs6a"
+      },
+      "stats": {
+        "blueprints": 174,
+        "cardsWritten": 174,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 174,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

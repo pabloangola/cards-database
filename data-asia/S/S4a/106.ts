@@ -5,43 +5,19 @@ const card: Card = {
 	set: Set,
 
 	name: {
-		'zh-tw': "圓絲蛛"
+		en: 'Spinarak',
+		ja: 'Spinarak',
 	},
 
-	illustrator: "Kyoko Umemoto",
-	category: "Pokemon",
-	hp: 60,
-	types: ["Darkness"],
+	category: 'Pokemon',
+	rarity: 'Common',
 
-	description: {
-		'zh-tw': "總是一心一意地等待，直到愛吃的萌虻落入巢中。實在是很有耐心的寶可夢。"
-	},
-
-	stage: "Basic",
-
-	attacks: [{
-		name: {
-			'zh-tw': "垂吊"
-		},
-
-		damage: 10,
-		cost: ["Darkness"]
-	}, {
-		name: {
-			'zh-tw': "刺刺痛痛"
-		},
-
-		damage: 20,
-		cost: ["Darkness", "Colorless"]
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 225115
+		}
 	}],
-
-	weaknesses: [{
-		type: "Fighting",
-		value: "×2"
-	}],
-
-	retreat: 1,
-	regulationMark: "D"
 }
 
 export default card

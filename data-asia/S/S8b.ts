@@ -3,31 +3,21 @@ import serie from '../S'
 
 const set: Set = {
 	id: 'S8b',
-
 	name: {
 		en: 'VMAX Climax',
-		ja: 'VMAXクライマックス',
-		ko: 'VMAX 클라이맥스',
-		'zh-tw': 'VMAX絕群壓軸',
-		id: 'VMAX Klimaks',
-		th: 'VMAX ไคลแมกซ์'
+		ja: 'VMAX Climax',
 	},
 
 	serie: serie,
 
 	cardCount: {
-		official: 184
+		official: 300
 	},
 
-	releaseDate: {
-		ja: '2021-12-03',
-		'zh-tw': '2021-12-17',
-		id: '2022-01-21',
-		th: '2021-12-17'
-	},
+	releaseDate: '2026-06-10',
 
 	thirdParty: {
-		cardmarket: 4390
+		cardtrader: 2917
 	}
 }
 

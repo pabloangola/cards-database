@@ -5,18 +5,19 @@ const card: Card = {
 	set: Set,
 
 	name: {
-		'zh-tw': "活力之壺"
+		en: 'Urn of Vitality',
+		ja: 'Urn of Vitality',
 	},
 
-	illustrator: "Toyste Beach",
-	category: "Trainer",
+	category: 'Pokemon',
+	rarity: 'Fixed',
 
-	effect: {
-		'zh-tw': "從自己的棄牌區選擇最多2張「一擊能量」卡，在給對手看過後放回牌庫並重洗。"
-	},
-
-	trainerType: "Item",
-	regulationMark: "E"
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 232889
+		}
+	}],
 }
 
 export default card

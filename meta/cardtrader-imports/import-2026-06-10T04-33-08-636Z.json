@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-06-10T04:33:08.636Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": false
+  },
+  "imports": [
+    {
+      "importedAt": "2026-06-10T04:33:08.541Z",
+      "cardtrader": {
+        "id": 2123,
+        "code": "s4a",
+        "name": "Shiny Star V"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "S",
+        "setId": "S4a",
+        "setFile": "data-asia\\S\\S4a.ts",
+        "cardsDir": "data-asia\\S\\S4a"
+      },
+      "stats": {
+        "blueprints": 336,
+        "cardsWritten": 336,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 336,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

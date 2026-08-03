@@ -5,18 +5,19 @@ const card: Card = {
 	set: Set,
 
 	name: {
-		'zh-tw': "老大的指令（坂木）"
+		en: 'Boss\'s Orders - Giovanni',
+		ja: 'Boss\'s Orders - Giovanni',
 	},
 
-	illustrator: "nagimiso",
-	category: "Trainer",
+	category: 'Pokemon',
+	rarity: 'Common',
 
-	effect: {
-		'zh-tw': "選擇1隻對手的備戰寶可夢，與戰鬥寶可夢互換。"
-	},
-
-	trainerType: "Supporter",
-	regulationMark: "D"
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 225183
+		}
+	}],
 }
 
 export default card

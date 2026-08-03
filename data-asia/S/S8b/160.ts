@@ -5,18 +5,19 @@ const card: Card = {
 	set: Set,
 
 	name: {
-		'zh-tw': "瑪俐"
+		en: 'Marnie',
+		ja: 'Marnie',
 	},
 
-	illustrator: "kirisAki",
-	category: "Trainer",
+	category: 'Pokemon',
+	rarity: 'Fixed',
 
-	effect: {
-		'zh-tw': "雙方玩家各將自己的手牌全部翻回反面並重洗，放回牌庫下方。然後，從牌庫抽卡，自己抽出5張，對手抽出4張。"
-	},
-
-	trainerType: "Supporter",
-	regulationMark: "D"
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 232915
+		}
+	}],
 }
 
 export default card

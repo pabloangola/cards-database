@@ -5,18 +5,19 @@ const card: Card = {
 	set: Set,
 
 	name: {
-		'zh-tw': "呐喊隊加油毛巾"
+		en: 'Team Yell Towel',
+		ja: 'Team Yell Towel',
 	},
 
-	illustrator: "Studio Bora Inc.",
-	category: "Trainer",
+	category: 'Pokemon',
+	rarity: 'Common',
 
-	effect: {
-		'zh-tw': "將雙方的戰鬥寶可夢各恢復「50」HP。"
-	},
-
-	trainerType: "Item",
-	regulationMark: "D"
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 225163
+		}
+	}],
 }
 
 export default card

@@ -5,18 +5,19 @@ const card: Card = {
 	set: Set,
 
 	name: {
-		'zh-tw': "訓練場地"
+		en: 'Training Court',
+		ja: 'Training Court',
 	},
 
-	illustrator: "5ban Graphics",
-	category: "Trainer",
+	category: 'Pokemon',
+	rarity: 'Common',
 
-	effect: {
-		'zh-tw': "雙方玩家在每個自己的回合時，可使用1次，可從自己的棄牌區選擇1張基本能量卡，在給對手看過後加入手牌。"
-	},
-
-	trainerType: "Stadium",
-	regulationMark: "D"
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 225187
+		}
+	}],
 }
 
 export default card

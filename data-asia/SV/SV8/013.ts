@@ -5,59 +5,19 @@ const card: Card = {
 	set: Set,
 
 	name: {
-		ja: "メラルバ",
-		'zh-tw': "燃燒蟲",
-		'zh-cn': "燃燒蟲"
+		en: 'Larvesta',
+		ja: 'Larvesta',
 	},
 
-	illustrator: "MARINA Chikazawa",
-	rarity: "Common",
-	category: "Pokemon",
-	dexId: [636],
-	hp: 70,
-	types: ["Fire"],
+	category: 'Pokemon',
+	rarity: 'Common',
 
-	description: {
-		ja: "大昔は 太陽の遣い と 崇められたが しばしば 山火事を 起こすこともあり 煙たがられた。",
-		'zh-tw': "在遙遠的過去曾被信奉成 太陽的使者，但卻因為常常 引發森林大火而遭人們疏遠。",
-		'zh-cn': "在遙遠的過去曾被信奉成 太陽的使者，但卻因為常常 引發森林大火而遭人們疏遠。"
-	},
-
-	stage: "Basic",
-
-	attacks: [{
-		cost: ["Colorless"],
-
-		name: {
-			ja: "ぶつかる",
-			'zh-tw': "衝撞",
-			'zh-cn': "衝撞"
-		},
-
-		damage: 10
-	}, {
-		cost: ["Fire", "Colorless"],
-
-		name: {
-			ja: "ひをはく",
-			'zh-tw': "吐火",
-			'zh-cn': "吐火"
-		},
-
-		damage: 20
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 305425
+		}
 	}],
-
-	weaknesses: [{
-		type: "Water",
-		value: "×2"
-	}],
-
-	retreat: 2,
-	regulationMark: "H",
-
-	thirdParty: {
-		cardmarket: 793447
-	}
 }
 
 export default card

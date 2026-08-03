@@ -5,18 +5,19 @@ const card: Card = {
 	set: Set,
 
 	name: {
-		'zh-tw': "進化薰香"
+		en: 'Evolution Incense',
+		ja: 'Evolution Incense',
 	},
 
-	illustrator: "Ryo Ueda",
-	category: "Trainer",
+	category: 'Pokemon',
+	rarity: 'Common',
 
-	effect: {
-		'zh-tw': "從自己的牌庫選擇1張進化寶可夢卡，在給對手看過後加入手牌。並且重洗牌庫。"
-	},
-
-	trainerType: "Item",
-	regulationMark: "D"
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 225166
+		}
+	}],
 }
 
 export default card

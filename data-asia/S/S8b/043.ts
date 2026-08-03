@@ -5,43 +5,19 @@ const card: Card = {
 	set: Set,
 
 	name: {
-		'zh-tw': "白馬蕾冠王V"
+		en: 'Ice Rider Calyrex V',
+		ja: 'Ice Rider Calyrex V',
 	},
 
-	illustrator: "D.A.G Inc.",
-	category: "Pokemon",
-	hp: 210,
-	types: ["Water"],
-	stage: "Basic",
-	suffix: "V",
+	category: 'Pokemon',
+	rarity: 'Ultra Rare',
 
-	attacks: [{
-		name: {
-			'zh-tw': "突刺"
-		},
-
-		damage: 40,
-		cost: ["Water"]
-	}, {
-		name: {
-			'zh-tw': "雪矛"
-		},
-
-		effect: {
-			'zh-tw': "選擇2個這隻寶可夢身上附加的能量，將其丟棄。"
-		},
-
-		damage: 200,
-		cost: ["Water", "Water", "Colorless"]
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 232798
+		}
 	}],
-
-	weaknesses: [{
-		type: "Metal",
-		value: "×2"
-	}],
-
-	retreat: 2,
-	regulationMark: "E"
 }
 
 export default card

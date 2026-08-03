@@ -5,17 +5,19 @@ const card: Card = {
 	set: Set,
 
 	name: {
-		'zh-tw': "連擊能量"
+		en: 'Rapid Strike Energy',
+		ja: 'Rapid Strike Energy',
 	},
 
-	category: "Energy",
+	category: 'Energy',
+	rarity: 'Fixed',
 
-	effect: {
-		'zh-tw': "這張卡只可附於「連擊」寶可夢身上，若附於「連擊」寶可夢以外的寶可夢身上，則將其丟棄。 只要這張卡附於寶可夢身上，視為提供2個【水】【鬥】2種屬性的能量。"
-	},
-
-	energyType: "Special",
-	regulationMark: "E"
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 232947
+		}
+	}],
 }
 
 export default card

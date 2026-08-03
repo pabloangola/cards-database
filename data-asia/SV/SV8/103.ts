@@ -5,23 +5,19 @@ const card: Card = {
 	set: Set,
 
 	name: {
-		ja: "シトロンの機転",
-		'zh-tw': "希特隆的機智",
-		'zh-cn': "希特隆的機智"
+		en: 'Clemont’s Quick Wit',
+		ja: 'Clemont’s Quick Wit',
 	},
 
-	illustrator: "Naoki Saito",
-	rarity: "Uncommon",
-	category: "Trainer",
+	category: 'Pokemon',
+	rarity: 'Uncommon',
 
-	effect: {
-		ja: "自分のポケモン全員のHPを、それぞれ「60」回復する。",
-		'zh-tw': "將自己的所有【雷】寶可夢各恢復「60」HP。",
-		'zh-cn': "將自己的所有【雷】寶可夢各恢復「60」HP。"
-	},
-
-	trainerType: "Supporter",
-	regulationMark: "H"
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 304680
+		}
+	}],
 }
 
 export default card

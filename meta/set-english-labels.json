@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "generated_at": "2026-06-10T04:14:37.722Z",
+  "generated_at": "2026-06-10T04:34:05.670Z",
   "sources": [
     "cards-database/data-asia",
     "cards-database/scripts/utils-data/jp_set_translations.ts",
@@ -10,8 +10,8 @@
     "dittos-army-back/data/cardtrader_tcgdex_homolog.json"
   ],
   "stats": {
-    "scanned": 330,
-    "resolved": 316,
+    "scanned": 352,
+    "resolved": 338,
     "ambiguousSetIds": [],
     "missing": 5,
     "expansionAliases": 1282
@@ -90,6 +90,7 @@
     "PMCG6": "Challenge from the Darkness",
     "CS1.5": "Dynamax Tactics",
     "CS1.5C": "Dynamax Tactics",
+    "Cs1": "Snivy - Tepig - Oshawott Collection Sheet",
     "CS1a": "Dynamax Clash - Thunder",
     "CS1aC": "Storming Emergence - Radiant",
     "CS1b": "Dynamax Clash - Flame",
@@ -109,15 +110,26 @@
     "sv1a": "Triplet Beat",
     "CS4.5": "Final Flame Dance",
     "CS4.5C": "Final Flame Dance",
+    "Cs41": "CS4.1: Brilliant Energy Promo Pack",
+    "Cs45": "CS4.5: Final Flame Dance",
     "CS4a": "Nine Colors Gathering - Friends",
     "CS4aC": "Nine Colors Gathering - Friends",
     "CS4b": "Nine Colors Gathering - Origin",
     "CS4bC": "Nine Colors Gathering - Origin",
     "CS5.5C": "Shadow of Glory",
+    "Cs51": "CS5.1: Shadow of Glory Promo Pack",
+    "Cs55": "CS5.5: Shadow of Glory",
+    "Cs5a": "CS5a: Brave Enchanting Stars - Brave",
     "CS5aC": "Brave Stars - Charm",
+    "Cs5b": "CS5b: Brave Enchanting Stars - Charm",
     "CS5bC": "Brave Stars - Brave",
+    "Cs5d": "CS5D: Gallant Galaxy V Starter Deck",
     "CS6.5C": "Victory Star Guide",
+    "Cs61": "CS6.1: Shadow of the Blue Sea Promos",
+    "Cs65": "CS6.5: Victory Star Guide",
+    "Cs6a": "CS6a: Azure Shadow - Roar",
     "CS6aC": "Azure Shadow - Roar",
+    "Cs6b": "CS6b: Azure Shadow - Pursuit",
     "CS6bC": "Azure Shadow - Pursuit",
     "S-P": "Sword & Shield Promos",
     "S10a": "Dark Phantasma",
@@ -147,6 +159,8 @@
     "S7R": "Blue Sky Stream",
     "S8": "Fusion Arts",
     "S8a": "25th Anniversary Collection",
+    "S8ag": "25th Anniversary Golden Box",
+    "S8ap": "25th Anniversary Edition",
     "S8b": "VMAX Climax",
     "S9": "Star Birth",
     "S9a": "Battle Region",
@@ -164,9 +178,15 @@
     "SCD": "V Starter Deck Power",
     "SCE": "Great Power",
     "SCF": "Transformation",
+    "Sd": "V Starter Decks",
     "SDL": "Charizard",
     "SDM": "Mewtwo",
     "SDP": "Pikachu",
+    "Sef": "Venusaur VMAX Starter Set",
+    "Sek": "Blastoise VMAX Starter Set",
+    "Sf": "Premium Trainer Box Single Strike & Rapid Strike",
+    "Sgg": "High-Class Deck Gengar VMAX",
+    "Sgl": "Inteleon VMAX High-Class Deck",
     "SH": "Family Pokémon Card Game",
     "SI": "Starter Decks 100",
     "SJ": "Special Deck Set: Zacian & Zamazenta vs Eternatus",
@@ -174,6 +194,8 @@
     "SLD": "Starter Set Darkrai VSTAR",
     "SLL": "Starter Set Lucario VSTAR",
     "SN": "Starter Deck 100 CoroCoro ver.",
+    "Sp1": "Zacian & Zamazenta Box",
+    "Sp2": "VMAX Special Set",
     "SP5": "V-UNION Special Card Sets",
     "SP6": "VSTAR Special Set",
     "SPD": "VSTAR&VMAX High-Class Deck Deoxys",
@@ -332,7 +354,8 @@
     "XY11b": "Cruel Traitor",
     "XY8a": "Blue Counterattack",
     "XY8b": "Blue Counterattack",
-    "XY9": "Rage of the Broken Heaven"
+    "XY9": "Rage of the Broken Heaven",
+    "me05": "Pitch Black"
   },
   "byJaName": {
     "サイコドライブ": "Psycho Drive",
@@ -651,6 +674,9 @@
     "CS1.5: Dynamax Tactics": "Dynamax Tactics",
     "Dynamax Tactics": "Dynamax Tactics",
     "CS1.5C": "Dynamax Tactics",
+    "Cs1": "Snivy - Tepig - Oshawott Collection Sheet",
+    "Collection Sheet Journey Partners": "Snivy - Tepig - Oshawott Collection Sheet",
+    "Snivy - Tepig - Oshawott Collection Sheet": "Snivy - Tepig - Oshawott Collection Sheet",
     "트리플렛비트": "Triplet Beat",
     "ทริปเปิลบีต": "Triplet Beat",
     "Dynamax Clash - Thunder": "Dynamax Clash - Thunder",
@@ -687,9 +713,12 @@
     "CS3bC": "Primordial Arts - Torrent",
     "Triplet Beat": "Triplet Beat",
     "CS4.5": "Final Flame Dance",
-    "CS4.5: Final Flame Dance": "Final Flame Dance",
+    "CS4.5: Final Flame Dance": "CS4.5: Final Flame Dance",
     "Final Flame Dance": "Final Flame Dance",
     "CS4.5C": "Final Flame Dance",
+    "Cs41": "CS4.1: Brilliant Energy Promo Pack",
+    "CS4.1: Brilliant Energy Promo Pack": "CS4.1: Brilliant Energy Promo Pack",
+    "Cs45": "CS4.5: Final Flame Dance",
     "CS4a": "Nine Colors Gathering - Friends",
     "CS4a: Nine Colors Gathering - Friends": "Nine Colors Gathering - Friends",
     "Nine Colors Gathering - Friends": "Nine Colors Gathering - Friends",
@@ -699,22 +728,34 @@
     "Nine Colors Gathering - Origin": "Nine Colors Gathering - Origin",
     "CS4bC": "Nine Colors Gathering - Origin",
     "CS5.5C": "Shadow of Glory",
-    "CS5.5: Shadow of Glory": "Shadow of Glory",
+    "CS5.5: Shadow of Glory": "CS5.5: Shadow of Glory",
     "Shadow of Glory": "Shadow of Glory",
-    "CS5aC": "Brave Stars - Charm",
+    "Cs51": "CS5.1: Shadow of Glory Promo Pack",
+    "CS5.1: Shadow of Glory Promo Pack": "CS5.1: Shadow of Glory Promo Pack",
+    "Cs55": "CS5.5: Shadow of Glory",
+    "Cs5a": "CS5a: Brave Enchanting Stars - Brave",
     "CS5a: Brave Enchanting Stars - Brave": "Brave Stars - Charm",
+    "CS5aC": "Brave Stars - Charm",
     "Brave Stars - Charm": "Brave Stars - Charm",
-    "CS5bC": "Brave Stars - Brave",
+    "Cs5b": "CS5b: Brave Enchanting Stars - Charm",
     "CS5b: Brave Enchanting Stars - Charm": "Brave Stars - Brave",
+    "CS5bC": "Brave Stars - Brave",
     "Brave Stars - Brave": "Brave Stars - Brave",
+    "Cs5d": "CS5D: Gallant Galaxy V Starter Deck",
+    "CS5D: Gallant Galaxy V Starter Deck": "CS5D: Gallant Galaxy V Starter Deck",
     "CS6.5C": "Victory Star Guide",
-    "CS6.5: Victory Star Guide": "Victory Star Guide",
+    "CS6.5: Victory Star Guide": "CS6.5: Victory Star Guide",
     "Victory Star Guide": "Victory Star Guide",
-    "CS6aC": "Azure Shadow - Roar",
+    "Cs61": "CS6.1: Shadow of the Blue Sea Promos",
+    "CS6.1: Shadow of the Blue Sea Promos": "CS6.1: Shadow of the Blue Sea Promos",
+    "Cs65": "CS6.5: Victory Star Guide",
+    "Cs6a": "CS6a: Azure Shadow - Roar",
     "CS6a: Azure Shadow - Roar": "Azure Shadow - Roar",
+    "CS6aC": "Azure Shadow - Roar",
     "Azure Shadow - Roar": "Azure Shadow - Roar",
-    "CS6bC": "Azure Shadow - Pursuit",
+    "Cs6b": "CS6b: Azure Shadow - Pursuit",
     "CS6b: Azure Shadow - Pursuit": "Azure Shadow - Pursuit",
+    "CS6bC": "Azure Shadow - Pursuit",
     "Azure Shadow - Pursuit": "Azure Shadow - Pursuit",
     "2022-07-14": "Sword & Shield Promos",
     "2022-05-11": "Sword & Shield Promos",
@@ -786,9 +827,6 @@
     "2020-10-09": "Shocking Volt Tackle",
     "Shocking Volt Tackle": "Shocking Volt Tackle",
     "S4a": "Shiny Star V",
-    "2020-11-20": "Shiny Star V",
-    "샤이니스타V": "Shiny Star V",
-    "2020-11-27": "V Starter Deck Buddy",
     "Shiny Star V": "Shiny Star V",
     "2021-07-02": "Matchless Fighters",
     "2021-03-19": "Matchless Fighters",
@@ -837,9 +875,11 @@
     "2021-10-29": "25th Anniversary Collection",
     "2021-10-20": "25th Anniversary Collection",
     "25th Anniversary Collection": "25th Anniversary Collection",
-    "2021-12-03": "VMAX Climax",
-    "VMAX 클라이맥스": "VMAX Climax",
-    "2021-12-17": "VMAX Climax",
+    "S8ag": "25th Anniversary Golden Box",
+    "25th Anniversary Golden Box": "25th Anniversary Golden Box",
+    "S8ap": "25th Anniversary Edition",
+    "25th Anniversary Edition": "25th Anniversary Edition",
+    "S8b": "VMAX Climax",
     "VMAX Climax": "VMAX Climax",
     "2022-01-14": "Star Birth",
     "스타버스": "Star Birth",
@@ -865,6 +905,7 @@
     "2021-03-21": "V Starter Deck Buddy",
     "Shiny VMAX Collection SET A": "Shiny VMAX Collection SET A",
     "Shiny VMAX Collection SET B": "Shiny VMAX Collection SET B",
+    "2020-11-27": "V Starter Deck Buddy",
     "V Starter Deck Buddy": "V Starter Deck Buddy",
     "V Starter Deck Challenge": "V Starter Deck Challenge",
     "2021-07-30": "V Starter Deck Evolution",
@@ -873,12 +914,29 @@
     "Great Power": "Great Power",
     "2022-11-11": "Transformation",
     "Transformation": "Transformation",
+    "Sd": "V Starter Decks",
+    "GX Starter Decks": "V Starter Decks",
+    "V Starter Decks": "V Starter Decks",
     "SDL": "Charizard",
     "Charizard": "Charizard",
     "SDM": "Mewtwo",
     "Mewtwo": "Mewtwo",
     "SDP": "Pikachu",
     "Pikachu": "Pikachu",
+    "Sef": "Venusaur VMAX Starter Set",
+    "VMAX Starter Deck: Venusaur VMAX": "Venusaur VMAX Starter Set",
+    "Venusaur VMAX Starter Set": "Venusaur VMAX Starter Set",
+    "Sek": "Blastoise VMAX Starter Set",
+    "VMAX Starter Deck: Blastoise VMAX": "Blastoise VMAX Starter Set",
+    "Blastoise VMAX Starter Set": "Blastoise VMAX Starter Set",
+    "Sf": "Premium Trainer Box Single Strike & Rapid Strike",
+    "Single Strike & Rapid Strike Premium Trainer Boxes": "Premium Trainer Box Single Strike & Rapid Strike",
+    "Premium Trainer Box Single Strike & Rapid Strike": "Premium Trainer Box Single Strike & Rapid Strike",
+    "Sgg": "High-Class Deck Gengar VMAX",
+    "Gengar VMAX High-Class Deck": "High-Class Deck Gengar VMAX",
+    "High-Class Deck Gengar VMAX": "High-Class Deck Gengar VMAX",
+    "Sgl": "Inteleon VMAX High-Class Deck",
+    "Inteleon VMAX High-Class Deck": "Inteleon VMAX High-Class Deck",
     "SH": "Family Pokémon Card Game",
     "2021-06-28": "Family Pokémon Card Game",
     "Family Pokémon Card Game": "Family Pokémon Card Game",
@@ -896,6 +954,11 @@
     "SN": "Starter Deck 100 CoroCoro ver.",
     "2022-10-02": "Starter Deck 100 CoroCoro ver.",
     "Starter Deck 100 CoroCoro ver.": "Starter Deck 100 CoroCoro ver.",
+    "Sp1": "Zacian & Zamazenta Box",
+    "Zacian + Zamazenta BOX": "Zacian & Zamazenta Box",
+    "Zacian & Zamazenta Box": "Zacian & Zamazenta Box",
+    "Sp2": "VMAX Special Set",
+    "VMAX Special Set": "VMAX Special Set",
     "SP5": "V-UNION Special Card Sets",
     "V-UNION Special Card Sets": "V-UNION Special Card Sets",
     "SP6": "VSTAR Special Set",
@@ -1106,8 +1169,7 @@
     "다크오더": "Dark Order",
     "Dark Order": "Dark Order",
     "SM8b": "GX Ultra Shiny",
-    "GXウルトラシャイニ": "GX Ultra Shiny",
-    "GX 울트라샤이니 ULTIMATE": "GX Ultra Shiny",
+    "High Class Pack GX Ultra Shiny": "GX Ultra Shiny",
     "GX Ultra Shiny": "GX Ultra Shiny",
     "SM9": "Tag Bolt",
     "タッグボルト": "Tag Bolt",
@@ -1238,8 +1300,6 @@
     "2024-09-30": "Stellar Crown",
     "Stellar Crown": "Stellar Crown",
     "SV8": "Super Electric Breaker",
-    "2024-10-18": "Super Electric Breaker",
-    "2024-10-25": "Super Electric Breaker",
     "Super Electric Breaker": "Super Electric Breaker",
     "2025-01-31": "Terastal Festival ex",
     "2024-12-06": "Terastal Festival ex",
@@ -1659,6 +1719,10 @@
       "ko": "CS1.5",
       "zh-cn": "CS1.5C"
     },
+    "snivy - tepig - oshawott collection sheet": {
+      "ja": "CS1",
+      "ko": "CS1"
+    },
     "dynamax clash - thunder": {
       "zh-tw": "CS1a",
       "ja": "CS1a",
@@ -1714,6 +1778,30 @@
       "ko": "CS4.5C",
       "zh-cn": "CS4.5C"
     },
+    "cs4.1: brilliant energy promo pack": {
+      "ja": "Cs41",
+      "ko": "Cs41"
+    },
+    "cs4.1": {
+      "ja": "Cs41",
+      "ko": "Cs41"
+    },
+    "cs4.1:": {
+      "ja": "Cs41",
+      "ko": "Cs41"
+    },
+    "cs4.5: final flame dance": {
+      "ja": "Cs45",
+      "ko": "Cs45"
+    },
+    "cs4.5": {
+      "ja": "Cs45",
+      "ko": "Cs45"
+    },
+    "cs4.5:": {
+      "ja": "Cs45",
+      "ko": "Cs45"
+    },
     "nine colors gathering - friends": {
       "ja": "CS4aC",
       "ko": "CS4aC",
@@ -1729,25 +1817,133 @@
       "ja": "CS5.5C",
       "ko": "CS5.5C"
     },
+    "cs5.1: shadow of glory promo pack": {
+      "ja": "Cs51",
+      "ko": "Cs51"
+    },
+    "cs5.1": {
+      "ja": "Cs51",
+      "ko": "Cs51"
+    },
+    "cs5.1:": {
+      "ja": "Cs51",
+      "ko": "Cs51"
+    },
+    "cs5.5: shadow of glory": {
+      "ja": "Cs55",
+      "ko": "Cs55"
+    },
+    "cs5.5": {
+      "ja": "Cs55",
+      "ko": "Cs55"
+    },
+    "cs5.5:": {
+      "ja": "Cs55",
+      "ko": "Cs55"
+    },
+    "cs5a: brave enchanting stars - brave": {
+      "ja": "Cs5a",
+      "ko": "Cs5a"
+    },
+    "cs5a": {
+      "ja": "Cs5a",
+      "ko": "Cs5a"
+    },
+    "cs5a:": {
+      "ja": "Cs5a",
+      "ko": "Cs5a"
+    },
     "brave stars - charm": {
       "zh-cn": "CS5aC",
       "ja": "CS5aC",
       "ko": "CS5aC"
+    },
+    "cs5b: brave enchanting stars - charm": {
+      "ja": "Cs5b",
+      "ko": "Cs5b"
+    },
+    "cs5b": {
+      "ja": "Cs5b",
+      "ko": "Cs5b"
+    },
+    "cs5b:": {
+      "ja": "Cs5b",
+      "ko": "Cs5b"
     },
     "brave stars - brave": {
       "zh-cn": "CS5bC",
       "ja": "CS5bC",
       "ko": "CS5bC"
     },
+    "cs5d: gallant galaxy v starter deck": {
+      "ja": "Cs5d",
+      "ko": "Cs5d"
+    },
+    "cs5d": {
+      "ja": "Cs5d",
+      "ko": "Cs5d"
+    },
+    "cs5d:": {
+      "ja": "Cs5d",
+      "ko": "Cs5d"
+    },
     "victory star guide": {
       "zh-cn": "CS6.5C",
       "ja": "CS6.5C",
       "ko": "CS6.5C"
     },
+    "cs6.1: shadow of the blue sea promos": {
+      "ja": "Cs61",
+      "ko": "Cs61"
+    },
+    "cs6.1": {
+      "ja": "Cs61",
+      "ko": "Cs61"
+    },
+    "cs6.1:": {
+      "ja": "Cs61",
+      "ko": "Cs61"
+    },
+    "cs6.5: victory star guide": {
+      "ja": "Cs65",
+      "ko": "Cs65"
+    },
+    "cs6.5": {
+      "ja": "Cs65",
+      "ko": "Cs65"
+    },
+    "cs6.5:": {
+      "ja": "Cs65",
+      "ko": "Cs65"
+    },
+    "cs6a: azure shadow - roar": {
+      "ja": "Cs6a",
+      "ko": "Cs6a"
+    },
+    "cs6a": {
+      "ja": "Cs6a",
+      "ko": "Cs6a"
+    },
+    "cs6a:": {
+      "ja": "Cs6a",
+      "ko": "Cs6a"
+    },
     "azure shadow - roar": {
       "zh-cn": "CS6aC",
       "ja": "CS6aC",
       "ko": "CS6aC"
+    },
+    "cs6b: azure shadow - pursuit": {
+      "ja": "Cs6b",
+      "ko": "Cs6b"
+    },
+    "cs6b": {
+      "ja": "Cs6b",
+      "ko": "Cs6b"
+    },
+    "cs6b:": {
+      "ja": "Cs6b",
+      "ko": "Cs6b"
     },
     "azure shadow - pursuit": {
       "zh-cn": "CS6bC",
@@ -1826,9 +2022,9 @@
       "ko": "S4"
     },
     "shiny star v": {
-      "zh-tw": "S4a",
       "ja": "S4a",
-      "ko": "S4a"
+      "ko": "S4a",
+      "zh-tw": "S4a"
     },
     "matchless fighters": {
       "zh-tw": "S5a",
@@ -1880,10 +2076,18 @@
       "ja": "S8a",
       "ko": "S8a"
     },
+    "25th anniversary golden box": {
+      "ja": "S8ag",
+      "ko": "S8ag"
+    },
+    "25th anniversary edition": {
+      "ja": "S8ap",
+      "ko": "S8ap"
+    },
     "vmax climax": {
-      "zh-tw": "S8b",
       "ja": "S8b",
-      "ko": "S8b"
+      "ko": "S8b",
+      "zh-tw": "S8b"
     },
     "star birth": {
       "zh-tw": "S9",
@@ -1938,6 +2142,10 @@
     "transformation": {
       "en": "SCF"
     },
+    "v starter decks": {
+      "ja": "Sd-v",
+      "ko": "Sd-v"
+    },
     "charizard": {
       "zh-tw": "SDL"
     },
@@ -1946,6 +2154,26 @@
     },
     "pikachu": {
       "zh-tw": "SDP"
+    },
+    "venusaur vmax starter set": {
+      "ja": "SEF",
+      "ko": "SEF"
+    },
+    "blastoise vmax starter set": {
+      "ja": "SEK",
+      "ko": "SEK"
+    },
+    "premium trainer box single strike & rapid strike": {
+      "ja": "SF",
+      "ko": "SF"
+    },
+    "high-class deck gengar vmax": {
+      "ja": "SGG",
+      "ko": "SGG"
+    },
+    "inteleon vmax high-class deck": {
+      "ja": "Sgl",
+      "ko": "Sgl"
     },
     "family pokémon card game": {
       "zh-tw": "SH",
@@ -1979,6 +2207,14 @@
     },
     "starter deck 100 corocoro ver.": {
       "zh-tw": "SN"
+    },
+    "zacian & zamazenta box": {
+      "ja": "SP1",
+      "ko": "SP1"
+    },
+    "vmax special set": {
+      "ja": "Sp2",
+      "ko": "Sp2"
     },
     "v-union special card sets": {
       "zh-tw": "SP5"
@@ -2420,11 +2656,10 @@
       "en": "sv07"
     },
     "super electric breaker": {
-      "zh-cn": "SV8",
-      "zh-tw": "SV8",
       "ja": "SV8",
       "ko": "SV8",
-      "en": "SV8s"
+      "en": "SV8s",
+      "zh-tw": "SV8"
     },
     "terastal festival ex": {
       "zh-cn": "SV8a",
@@ -2655,10 +2890,6 @@
       "ja": "SO",
       "ko": "SO"
     },
-    "high-class deck gengar vmax": {
-      "ja": "SGG",
-      "ko": "SGG"
-    },
     "high-class deck inteleon vmax": {
       "ja": "SGI",
       "ko": "SGI"
@@ -2671,29 +2902,9 @@
       "ja": "SP3",
       "ko": "SP3"
     },
-    "premium trainer box single strike & rapid strike": {
-      "ja": "SF",
-      "ko": "SF"
-    },
     "charizard vmax starter set 2": {
       "ja": "SC2",
       "ko": "SC2"
-    },
-    "venusaur vmax starter set": {
-      "ja": "SEF",
-      "ko": "SEF"
-    },
-    "blastoise vmax starter set": {
-      "ja": "SEK",
-      "ko": "SEK"
-    },
-    "vmax special set": {
-      "ja": "Sp2",
-      "ko": "Sp2"
-    },
-    "v starter decks": {
-      "ja": "Sd-v",
-      "ko": "Sd-v"
     },
     "grimmsnarl vmax starter set": {
       "ja": "SCd",
@@ -2702,10 +2913,6 @@
     "charizard vmax starter set": {
       "ja": "SCr",
       "ko": "SCr"
-    },
-    "zacian & zamazenta box": {
-      "ja": "SP1",
-      "ko": "SP1"
     },
     "premium trainer box sword & shield": {
       "ja": "SB",
@@ -2966,10 +3173,6 @@
     "starting set bw": {
       "ja": "HS",
       "ko": "HS"
-    },
-    "snivy - tepig - oshawott collection sheet": {
-      "ja": "CS1",
-      "ko": "CS1"
     },
     "black & white promotional cards": {
       "ja": "BWP",
@@ -4472,10 +4675,6 @@
       "ja": "Cp5",
       "ko": "Cp5"
     },
-    "inteleon vmax high-class deck": {
-      "ja": "Sgl",
-      "ko": "Sgl"
-    },
     "gengar vmax high-class deck": {
       "ja": "Sgg",
       "ko": "Sgg"
@@ -4484,10 +4683,6 @@
       "ja": "S7d",
       "ko": "S7d"
     },
-    "25th anniversary edition": {
-      "ja": "S8ap",
-      "ko": "S8ap"
-    },
     "legendary shine collection": {
       "ja": "Cp2",
       "ko": "Cp2"
@@ -4495,10 +4690,6 @@
     "pokémon trainers off shot!": {
       "ja": "Offshot",
       "ko": "Offshot"
-    },
-    "25th anniversary golden box": {
-      "ja": "S8ag",
-      "ko": "S8ag"
     },
     "unnumbered promos": {
       "ja": "Unpromo",
@@ -5273,78 +5464,6 @@
       "ja": "Csd",
       "ko": "Csd"
     },
-    "cs6.1: shadow of the blue sea promos": {
-      "ja": "Cs61",
-      "ko": "Cs61"
-    },
-    "cs6.1": {
-      "ja": "Cs61",
-      "ko": "Cs61"
-    },
-    "cs6.1:": {
-      "ja": "Cs61",
-      "ko": "Cs61"
-    },
-    "cs4.1: brilliant energy promo pack": {
-      "ja": "Cs41",
-      "ko": "Cs41"
-    },
-    "cs4.1": {
-      "ja": "Cs41",
-      "ko": "Cs41"
-    },
-    "cs4.1:": {
-      "ja": "Cs41",
-      "ko": "Cs41"
-    },
-    "cs5.1: shadow of glory promo pack": {
-      "ja": "Cs51",
-      "ko": "Cs51"
-    },
-    "cs5.1": {
-      "ja": "Cs51",
-      "ko": "Cs51"
-    },
-    "cs5.1:": {
-      "ja": "Cs51",
-      "ko": "Cs51"
-    },
-    "cs6.5: victory star guide": {
-      "ja": "Cs65",
-      "ko": "Cs65"
-    },
-    "cs6.5": {
-      "ja": "Cs65",
-      "ko": "Cs65"
-    },
-    "cs6.5:": {
-      "ja": "Cs65",
-      "ko": "Cs65"
-    },
-    "cs4.5: final flame dance": {
-      "ja": "Cs45",
-      "ko": "Cs45"
-    },
-    "cs4.5": {
-      "ja": "Cs45",
-      "ko": "Cs45"
-    },
-    "cs4.5:": {
-      "ja": "Cs45",
-      "ko": "Cs45"
-    },
-    "cs5.5: shadow of glory": {
-      "ja": "Cs55",
-      "ko": "Cs55"
-    },
-    "cs5.5": {
-      "ja": "Cs55",
-      "ko": "Cs55"
-    },
-    "cs5.5:": {
-      "ja": "Cs55",
-      "ko": "Cs55"
-    },
     "collect 151 - master ball reverse holo": {
       "ja": "M-151c",
       "ko": "M-151c"
@@ -5400,54 +5519,6 @@
     "cs3b:": {
       "ja": "Cs3b",
       "ko": "Cs3b"
-    },
-    "cs5a: brave enchanting stars - brave": {
-      "ja": "Cs5a",
-      "ko": "Cs5a"
-    },
-    "cs5a": {
-      "ja": "Cs5a",
-      "ko": "Cs5a"
-    },
-    "cs5a:": {
-      "ja": "Cs5a",
-      "ko": "Cs5a"
-    },
-    "cs5b: brave enchanting stars - charm": {
-      "ja": "Cs5b",
-      "ko": "Cs5b"
-    },
-    "cs5b": {
-      "ja": "Cs5b",
-      "ko": "Cs5b"
-    },
-    "cs5b:": {
-      "ja": "Cs5b",
-      "ko": "Cs5b"
-    },
-    "cs6a: azure shadow - roar": {
-      "ja": "Cs6a",
-      "ko": "Cs6a"
-    },
-    "cs6a": {
-      "ja": "Cs6a",
-      "ko": "Cs6a"
-    },
-    "cs6a:": {
-      "ja": "Cs6a",
-      "ko": "Cs6a"
-    },
-    "cs6b: azure shadow - pursuit": {
-      "ja": "Cs6b",
-      "ko": "Cs6b"
-    },
-    "cs6b": {
-      "ja": "Cs6b",
-      "ko": "Cs6b"
-    },
-    "cs6b:": {
-      "ja": "Cs6b",
-      "ko": "Cs6b"
     },
     "csm1.5: battle elite": {
       "ja": "Csm15",
@@ -5725,18 +5796,6 @@
     "csm2d:": {
       "ja": "Csm2d",
       "ko": "Csm2d"
-    },
-    "cs5d: gallant galaxy v starter deck": {
-      "ja": "Cs5d",
-      "ko": "Cs5d"
-    },
-    "cs5d": {
-      "ja": "Cs5d",
-      "ko": "Cs5d"
-    },
-    "cs5d:": {
-      "ja": "Cs5d",
-      "ko": "Cs5d"
     },
     "csmpac: battle party combo": {
       "zh-cn": "CSMPAC"
@@ -6140,8 +6199,7 @@
       "ko": "Csv9-m"
     },
     "pitch black": {
-      "ja": "Pbl",
-      "ko": "Pbl"
+      "en": "me05"
     },
     "csv9: poké ball reverse": {
       "ja": "Csv9-p",
@@ -7979,6 +8037,30 @@
         }
       }
     },
+    "ja:Cs1": {
+      "tcgdex_set_id": "Cs1",
+      "locale": "ja",
+      "names": {
+        "en_cardtrader": "Snivy - Tepig - Oshawott Collection Sheet",
+        "database": {
+          "id": "Cs1",
+          "ja": "Collection Sheet Journey Partners",
+          "en": "Snivy - Tepig - Oshawott Collection Sheet"
+        }
+      }
+    },
+    "ko:Cs1": {
+      "tcgdex_set_id": "Cs1",
+      "locale": "ko",
+      "names": {
+        "en_cardtrader": "Snivy - Tepig - Oshawott Collection Sheet",
+        "database": {
+          "id": "Cs1",
+          "ja": "Collection Sheet Journey Partners",
+          "en": "Snivy - Tepig - Oshawott Collection Sheet"
+        }
+      }
+    },
     "zh-tw:CS1a": {
       "tcgdex_set_id": "CS1a",
       "locale": "zh-tw",
@@ -8585,6 +8667,54 @@
         }
       }
     },
+    "ja:Cs41": {
+      "tcgdex_set_id": "Cs41",
+      "locale": "ja",
+      "names": {
+        "en_cardtrader": "CS4.1: Brilliant Energy Promo Pack",
+        "database": {
+          "id": "Cs41",
+          "ja": "CS4.1: Brilliant Energy Promo Pack",
+          "en": "CS4.1: Brilliant Energy Promo Pack"
+        }
+      }
+    },
+    "ko:Cs41": {
+      "tcgdex_set_id": "Cs41",
+      "locale": "ko",
+      "names": {
+        "en_cardtrader": "CS4.1: Brilliant Energy Promo Pack",
+        "database": {
+          "id": "Cs41",
+          "ja": "CS4.1: Brilliant Energy Promo Pack",
+          "en": "CS4.1: Brilliant Energy Promo Pack"
+        }
+      }
+    },
+    "ja:Cs45": {
+      "tcgdex_set_id": "Cs45",
+      "locale": "ja",
+      "names": {
+        "en_cardtrader": "CS4.5: Final Flame Dance",
+        "database": {
+          "id": "Cs45",
+          "ja": "CS4.5: Final Flame Dance",
+          "en": "CS4.5: Final Flame Dance"
+        }
+      }
+    },
+    "ko:Cs45": {
+      "tcgdex_set_id": "Cs45",
+      "locale": "ko",
+      "names": {
+        "en_cardtrader": "CS4.5: Final Flame Dance",
+        "database": {
+          "id": "Cs45",
+          "ja": "CS4.5: Final Flame Dance",
+          "en": "CS4.5: Final Flame Dance"
+        }
+      }
+    },
     "ja:CS4a": {
       "tcgdex_set_id": "CS4a",
       "locale": "ja",
@@ -8741,6 +8871,78 @@
         }
       }
     },
+    "ja:Cs51": {
+      "tcgdex_set_id": "Cs51",
+      "locale": "ja",
+      "names": {
+        "en_cardtrader": "CS5.1: Shadow of Glory Promo Pack",
+        "database": {
+          "id": "Cs51",
+          "ja": "CS5.1: Shadow of Glory Promo Pack",
+          "en": "CS5.1: Shadow of Glory Promo Pack"
+        }
+      }
+    },
+    "ko:Cs51": {
+      "tcgdex_set_id": "Cs51",
+      "locale": "ko",
+      "names": {
+        "en_cardtrader": "CS5.1: Shadow of Glory Promo Pack",
+        "database": {
+          "id": "Cs51",
+          "ja": "CS5.1: Shadow of Glory Promo Pack",
+          "en": "CS5.1: Shadow of Glory Promo Pack"
+        }
+      }
+    },
+    "ja:Cs55": {
+      "tcgdex_set_id": "Cs55",
+      "locale": "ja",
+      "names": {
+        "en_cardtrader": "CS5.5: Shadow of Glory",
+        "database": {
+          "id": "Cs55",
+          "ja": "CS5.5: Shadow of Glory",
+          "en": "CS5.5: Shadow of Glory"
+        }
+      }
+    },
+    "ko:Cs55": {
+      "tcgdex_set_id": "Cs55",
+      "locale": "ko",
+      "names": {
+        "en_cardtrader": "CS5.5: Shadow of Glory",
+        "database": {
+          "id": "Cs55",
+          "ja": "CS5.5: Shadow of Glory",
+          "en": "CS5.5: Shadow of Glory"
+        }
+      }
+    },
+    "ja:Cs5a": {
+      "tcgdex_set_id": "Cs5a",
+      "locale": "ja",
+      "names": {
+        "en_cardtrader": "CS5a: Brave Enchanting Stars - Brave",
+        "database": {
+          "id": "Cs5a",
+          "ja": "CS5a: Brave Enchanting Stars - Brave",
+          "en": "CS5a: Brave Enchanting Stars - Brave"
+        }
+      }
+    },
+    "ko:Cs5a": {
+      "tcgdex_set_id": "Cs5a",
+      "locale": "ko",
+      "names": {
+        "en_cardtrader": "CS5a: Brave Enchanting Stars - Brave",
+        "database": {
+          "id": "Cs5a",
+          "ja": "CS5a: Brave Enchanting Stars - Brave",
+          "en": "CS5a: Brave Enchanting Stars - Brave"
+        }
+      }
+    },
     "zh-cn:CS5aC": {
       "tcgdex_set_id": "CS5aC",
       "locale": "zh-cn",
@@ -8774,6 +8976,30 @@
           "id": "CS5aC",
           "ja": "CS5a: Brave Enchanting Stars - Brave",
           "en": "Brave Stars - Charm"
+        }
+      }
+    },
+    "ja:Cs5b": {
+      "tcgdex_set_id": "Cs5b",
+      "locale": "ja",
+      "names": {
+        "en_cardtrader": "CS5b: Brave Enchanting Stars - Charm",
+        "database": {
+          "id": "Cs5b",
+          "ja": "CS5b: Brave Enchanting Stars - Charm",
+          "en": "CS5b: Brave Enchanting Stars - Charm"
+        }
+      }
+    },
+    "ko:Cs5b": {
+      "tcgdex_set_id": "Cs5b",
+      "locale": "ko",
+      "names": {
+        "en_cardtrader": "CS5b: Brave Enchanting Stars - Charm",
+        "database": {
+          "id": "Cs5b",
+          "ja": "CS5b: Brave Enchanting Stars - Charm",
+          "en": "CS5b: Brave Enchanting Stars - Charm"
         }
       }
     },
@@ -8813,6 +9039,30 @@
         }
       }
     },
+    "ja:Cs5d": {
+      "tcgdex_set_id": "Cs5d",
+      "locale": "ja",
+      "names": {
+        "en_cardtrader": "CS5D: Gallant Galaxy V Starter Deck",
+        "database": {
+          "id": "Cs5d",
+          "ja": "CS5D: Gallant Galaxy V Starter Deck",
+          "en": "CS5D: Gallant Galaxy V Starter Deck"
+        }
+      }
+    },
+    "ko:Cs5d": {
+      "tcgdex_set_id": "Cs5d",
+      "locale": "ko",
+      "names": {
+        "en_cardtrader": "CS5D: Gallant Galaxy V Starter Deck",
+        "database": {
+          "id": "Cs5d",
+          "ja": "CS5D: Gallant Galaxy V Starter Deck",
+          "en": "CS5D: Gallant Galaxy V Starter Deck"
+        }
+      }
+    },
     "zh-cn:CS6.5C": {
       "tcgdex_set_id": "CS6.5C",
       "locale": "zh-cn",
@@ -8849,6 +9099,78 @@
         }
       }
     },
+    "ja:Cs61": {
+      "tcgdex_set_id": "Cs61",
+      "locale": "ja",
+      "names": {
+        "en_cardtrader": "CS6.1: Shadow of the Blue Sea Promos",
+        "database": {
+          "id": "Cs61",
+          "ja": "CS6.1: Shadow of the Blue Sea Promos",
+          "en": "CS6.1: Shadow of the Blue Sea Promos"
+        }
+      }
+    },
+    "ko:Cs61": {
+      "tcgdex_set_id": "Cs61",
+      "locale": "ko",
+      "names": {
+        "en_cardtrader": "CS6.1: Shadow of the Blue Sea Promos",
+        "database": {
+          "id": "Cs61",
+          "ja": "CS6.1: Shadow of the Blue Sea Promos",
+          "en": "CS6.1: Shadow of the Blue Sea Promos"
+        }
+      }
+    },
+    "ja:Cs65": {
+      "tcgdex_set_id": "Cs65",
+      "locale": "ja",
+      "names": {
+        "en_cardtrader": "CS6.5: Victory Star Guide",
+        "database": {
+          "id": "Cs65",
+          "ja": "CS6.5: Victory Star Guide",
+          "en": "CS6.5: Victory Star Guide"
+        }
+      }
+    },
+    "ko:Cs65": {
+      "tcgdex_set_id": "Cs65",
+      "locale": "ko",
+      "names": {
+        "en_cardtrader": "CS6.5: Victory Star Guide",
+        "database": {
+          "id": "Cs65",
+          "ja": "CS6.5: Victory Star Guide",
+          "en": "CS6.5: Victory Star Guide"
+        }
+      }
+    },
+    "ja:Cs6a": {
+      "tcgdex_set_id": "Cs6a",
+      "locale": "ja",
+      "names": {
+        "en_cardtrader": "CS6a: Azure Shadow - Roar",
+        "database": {
+          "id": "Cs6a",
+          "ja": "CS6a: Azure Shadow - Roar",
+          "en": "CS6a: Azure Shadow - Roar"
+        }
+      }
+    },
+    "ko:Cs6a": {
+      "tcgdex_set_id": "Cs6a",
+      "locale": "ko",
+      "names": {
+        "en_cardtrader": "CS6a: Azure Shadow - Roar",
+        "database": {
+          "id": "Cs6a",
+          "ja": "CS6a: Azure Shadow - Roar",
+          "en": "CS6a: Azure Shadow - Roar"
+        }
+      }
+    },
     "zh-cn:CS6aC": {
       "tcgdex_set_id": "CS6aC",
       "locale": "zh-cn",
@@ -8882,6 +9204,30 @@
           "id": "CS6aC",
           "ja": "CS6a: Azure Shadow - Roar",
           "en": "Azure Shadow - Roar"
+        }
+      }
+    },
+    "ja:Cs6b": {
+      "tcgdex_set_id": "Cs6b",
+      "locale": "ja",
+      "names": {
+        "en_cardtrader": "CS6b: Azure Shadow - Pursuit",
+        "database": {
+          "id": "Cs6b",
+          "ja": "CS6b: Azure Shadow - Pursuit",
+          "en": "CS6b: Azure Shadow - Pursuit"
+        }
+      }
+    },
+    "ko:Cs6b": {
+      "tcgdex_set_id": "Cs6b",
+      "locale": "ko",
+      "names": {
+        "en_cardtrader": "CS6b: Azure Shadow - Pursuit",
+        "database": {
+          "id": "Cs6b",
+          "ja": "CS6b: Azure Shadow - Pursuit",
+          "en": "CS6b: Azure Shadow - Pursuit"
         }
       }
     },
@@ -9517,20 +9863,6 @@
         }
       }
     },
-    "zh-tw:S4a": {
-      "tcgdex_set_id": "S4a",
-      "locale": "zh-tw",
-      "names": {
-        "en_cardtrader": "Shiny Star V",
-        "database": {
-          "id": "S4a",
-          "ja": "2020-11-20",
-          "ko": "샤이니스타V",
-          "zh-tw": "2020-11-27",
-          "en": "Shiny Star V"
-        }
-      }
-    },
     "ja:S4a": {
       "tcgdex_set_id": "S4a",
       "locale": "ja",
@@ -9538,9 +9870,7 @@
         "en_cardtrader": "Shiny Star V",
         "database": {
           "id": "S4a",
-          "ja": "2020-11-20",
-          "ko": "샤이니스타V",
-          "zh-tw": "2020-11-27",
+          "ja": "Shiny Star V",
           "en": "Shiny Star V"
         }
       }
@@ -9552,9 +9882,7 @@
         "en_cardtrader": "Shiny Star V",
         "database": {
           "id": "S4a",
-          "ja": "2020-11-20",
-          "ko": "샤이니스타V",
-          "zh-tw": "2020-11-27",
+          "ja": "Shiny Star V",
           "en": "Shiny Star V"
         }
       }
@@ -10009,18 +10337,51 @@
         }
       }
     },
-    "zh-tw:S8b": {
-      "tcgdex_set_id": "S8b",
-      "locale": "zh-tw",
+    "ja:S8ag": {
+      "tcgdex_set_id": "S8ag",
+      "locale": "ja",
       "names": {
-        "en_cardtrader": "VMAX Climax",
+        "en_cardtrader": "25th Anniversary Golden Box",
         "database": {
-          "id": "2022-01-21",
-          "ja": "2021-12-03",
-          "ko": "VMAX 클라이맥스",
-          "th": "2021-12-17",
-          "zh-tw": "2021-12-17",
-          "en": "VMAX Climax"
+          "id": "S8ag",
+          "ja": "25th Anniversary Golden Box",
+          "en": "25th Anniversary Golden Box"
+        }
+      }
+    },
+    "ko:S8ag": {
+      "tcgdex_set_id": "S8ag",
+      "locale": "ko",
+      "names": {
+        "en_cardtrader": "25th Anniversary Golden Box",
+        "database": {
+          "id": "S8ag",
+          "ja": "25th Anniversary Golden Box",
+          "en": "25th Anniversary Golden Box"
+        }
+      }
+    },
+    "ja:S8ap": {
+      "tcgdex_set_id": "S8ap",
+      "locale": "ja",
+      "names": {
+        "en_cardtrader": "25th Anniversary Edition",
+        "database": {
+          "id": "S8ap",
+          "ja": "25th Anniversary Edition",
+          "en": "25th Anniversary Edition"
+        }
+      }
+    },
+    "ko:S8ap": {
+      "tcgdex_set_id": "S8ap",
+      "locale": "ko",
+      "names": {
+        "en_cardtrader": "25th Anniversary Edition",
+        "database": {
+          "id": "S8ap",
+          "ja": "25th Anniversary Edition",
+          "en": "25th Anniversary Edition"
         }
       }
     },
@@ -10030,11 +10391,8 @@
       "names": {
         "en_cardtrader": "VMAX Climax",
         "database": {
-          "id": "2022-01-21",
-          "ja": "2021-12-03",
-          "ko": "VMAX 클라이맥스",
-          "th": "2021-12-17",
-          "zh-tw": "2021-12-17",
+          "id": "S8b",
+          "ja": "VMAX Climax",
           "en": "VMAX Climax"
         }
       }
@@ -10045,11 +10403,8 @@
       "names": {
         "en_cardtrader": "VMAX Climax",
         "database": {
-          "id": "2022-01-21",
-          "ja": "2021-12-03",
-          "ko": "VMAX 클라이맥스",
-          "th": "2021-12-17",
-          "zh-tw": "2021-12-17",
+          "id": "S8b",
+          "ja": "VMAX Climax",
           "en": "VMAX Climax"
         }
       }
@@ -10319,6 +10674,30 @@
         }
       }
     },
+    "ja:Sd": {
+      "tcgdex_set_id": "Sd",
+      "locale": "ja",
+      "names": {
+        "en_cardtrader": "V Starter Decks",
+        "database": {
+          "id": "Sd",
+          "ja": "GX Starter Decks",
+          "en": "V Starter Decks"
+        }
+      }
+    },
+    "ko:Sd": {
+      "tcgdex_set_id": "Sd",
+      "locale": "ko",
+      "names": {
+        "en_cardtrader": "V Starter Decks",
+        "database": {
+          "id": "Sd",
+          "ja": "GX Starter Decks",
+          "en": "V Starter Decks"
+        }
+      }
+    },
     "zh-tw:SDL": {
       "tcgdex_set_id": "SDL",
       "locale": "zh-tw",
@@ -10352,6 +10731,126 @@
           "id": "SDP",
           "zh-tw": "2022-11-04",
           "en": "Pikachu"
+        }
+      }
+    },
+    "ja:Sef": {
+      "tcgdex_set_id": "Sef",
+      "locale": "ja",
+      "names": {
+        "en_cardtrader": "Venusaur VMAX Starter Set",
+        "database": {
+          "id": "Sef",
+          "ja": "VMAX Starter Deck: Venusaur VMAX",
+          "en": "Venusaur VMAX Starter Set"
+        }
+      }
+    },
+    "ko:Sef": {
+      "tcgdex_set_id": "Sef",
+      "locale": "ko",
+      "names": {
+        "en_cardtrader": "Venusaur VMAX Starter Set",
+        "database": {
+          "id": "Sef",
+          "ja": "VMAX Starter Deck: Venusaur VMAX",
+          "en": "Venusaur VMAX Starter Set"
+        }
+      }
+    },
+    "ja:Sek": {
+      "tcgdex_set_id": "Sek",
+      "locale": "ja",
+      "names": {
+        "en_cardtrader": "Blastoise VMAX Starter Set",
+        "database": {
+          "id": "Sek",
+          "ja": "VMAX Starter Deck: Blastoise VMAX",
+          "en": "Blastoise VMAX Starter Set"
+        }
+      }
+    },
+    "ko:Sek": {
+      "tcgdex_set_id": "Sek",
+      "locale": "ko",
+      "names": {
+        "en_cardtrader": "Blastoise VMAX Starter Set",
+        "database": {
+          "id": "Sek",
+          "ja": "VMAX Starter Deck: Blastoise VMAX",
+          "en": "Blastoise VMAX Starter Set"
+        }
+      }
+    },
+    "ja:Sf": {
+      "tcgdex_set_id": "Sf",
+      "locale": "ja",
+      "names": {
+        "en_cardtrader": "Premium Trainer Box Single Strike & Rapid Strike",
+        "database": {
+          "id": "Sf",
+          "ja": "Single Strike & Rapid Strike Premium Trainer Boxes",
+          "en": "Premium Trainer Box Single Strike & Rapid Strike"
+        }
+      }
+    },
+    "ko:Sf": {
+      "tcgdex_set_id": "Sf",
+      "locale": "ko",
+      "names": {
+        "en_cardtrader": "Premium Trainer Box Single Strike & Rapid Strike",
+        "database": {
+          "id": "Sf",
+          "ja": "Single Strike & Rapid Strike Premium Trainer Boxes",
+          "en": "Premium Trainer Box Single Strike & Rapid Strike"
+        }
+      }
+    },
+    "ja:Sgg": {
+      "tcgdex_set_id": "Sgg",
+      "locale": "ja",
+      "names": {
+        "en_cardtrader": "High-Class Deck Gengar VMAX",
+        "database": {
+          "id": "Sgg",
+          "ja": "Gengar VMAX High-Class Deck",
+          "en": "High-Class Deck Gengar VMAX"
+        }
+      }
+    },
+    "ko:Sgg": {
+      "tcgdex_set_id": "Sgg",
+      "locale": "ko",
+      "names": {
+        "en_cardtrader": "High-Class Deck Gengar VMAX",
+        "database": {
+          "id": "Sgg",
+          "ja": "Gengar VMAX High-Class Deck",
+          "en": "High-Class Deck Gengar VMAX"
+        }
+      }
+    },
+    "ja:Sgl": {
+      "tcgdex_set_id": "Sgl",
+      "locale": "ja",
+      "names": {
+        "en_cardtrader": "Inteleon VMAX High-Class Deck",
+        "database": {
+          "id": "Sgl",
+          "ja": "Inteleon VMAX High-Class Deck",
+          "en": "Inteleon VMAX High-Class Deck"
+        }
+      }
+    },
+    "ko:Sgl": {
+      "tcgdex_set_id": "Sgl",
+      "locale": "ko",
+      "names": {
+        "en_cardtrader": "Inteleon VMAX High-Class Deck",
+        "database": {
+          "id": "Sgl",
+          "ja": "Inteleon VMAX High-Class Deck",
+          "en": "Inteleon VMAX High-Class Deck"
         }
       }
     },
@@ -10437,6 +10936,54 @@
           "id": "SN",
           "zh-tw": "2022-10-02",
           "en": "Starter Deck 100 CoroCoro ver."
+        }
+      }
+    },
+    "ja:Sp1": {
+      "tcgdex_set_id": "Sp1",
+      "locale": "ja",
+      "names": {
+        "en_cardtrader": "Zacian & Zamazenta Box",
+        "database": {
+          "id": "Sp1",
+          "ja": "Zacian + Zamazenta BOX",
+          "en": "Zacian & Zamazenta Box"
+        }
+      }
+    },
+    "ko:Sp1": {
+      "tcgdex_set_id": "Sp1",
+      "locale": "ko",
+      "names": {
+        "en_cardtrader": "Zacian & Zamazenta Box",
+        "database": {
+          "id": "Sp1",
+          "ja": "Zacian + Zamazenta BOX",
+          "en": "Zacian & Zamazenta Box"
+        }
+      }
+    },
+    "ja:Sp2": {
+      "tcgdex_set_id": "Sp2",
+      "locale": "ja",
+      "names": {
+        "en_cardtrader": "VMAX Special Set",
+        "database": {
+          "id": "Sp2",
+          "ja": "VMAX Special Set",
+          "en": "VMAX Special Set"
+        }
+      }
+    },
+    "ko:Sp2": {
+      "tcgdex_set_id": "Sp2",
+      "locale": "ko",
+      "names": {
+        "en_cardtrader": "VMAX Special Set",
+        "database": {
+          "id": "Sp2",
+          "ja": "VMAX Special Set",
+          "en": "VMAX Special Set"
         }
       }
     },
@@ -12058,8 +12605,7 @@
         "en_cardtrader": "GX Ultra Shiny",
         "database": {
           "id": "SM8b",
-          "ja": "GXウルトラシャイニ",
-          "ko": "GX 울트라샤이니 ULTIMATE",
+          "ja": "High Class Pack GX Ultra Shiny",
           "en": "GX Ultra Shiny"
         }
       }
@@ -12071,8 +12617,7 @@
         "en_cardtrader": "GX Ultra Shiny",
         "database": {
           "id": "SM8b",
-          "ja": "GXウルトラシャイニ",
-          "ko": "GX 울트라샤이니 ULTIMATE",
+          "ja": "High Class Pack GX Ultra Shiny",
           "en": "GX Ultra Shiny"
         }
       }
@@ -13432,34 +13977,6 @@
         }
       }
     },
-    "zh-cn:SV8": {
-      "tcgdex_set_id": "SV8",
-      "locale": "zh-cn",
-      "names": {
-        "en_cardtrader": "Super Electric Breaker",
-        "database": {
-          "id": "SV8",
-          "ja": "2024-10-18",
-          "zh-cn": "2024-10-25",
-          "zh-tw": "2024-10-25",
-          "en": "Super Electric Breaker"
-        }
-      }
-    },
-    "zh-tw:SV8": {
-      "tcgdex_set_id": "SV8",
-      "locale": "zh-tw",
-      "names": {
-        "en_cardtrader": "Super Electric Breaker",
-        "database": {
-          "id": "SV8",
-          "ja": "2024-10-18",
-          "zh-cn": "2024-10-25",
-          "zh-tw": "2024-10-25",
-          "en": "Super Electric Breaker"
-        }
-      }
-    },
     "ja:SV8": {
       "tcgdex_set_id": "SV8",
       "locale": "ja",
@@ -13467,9 +13984,7 @@
         "en_cardtrader": "Super Electric Breaker",
         "database": {
           "id": "SV8",
-          "ja": "2024-10-18",
-          "zh-cn": "2024-10-25",
-          "zh-tw": "2024-10-25",
+          "ja": "Super Electric Breaker",
           "en": "Super Electric Breaker"
         }
       }
@@ -13481,9 +13996,7 @@
         "en_cardtrader": "Super Electric Breaker",
         "database": {
           "id": "SV8",
-          "ja": "2024-10-18",
-          "zh-cn": "2024-10-25",
-          "zh-tw": "2024-10-25",
+          "ja": "Super Electric Breaker",
           "en": "Super Electric Breaker"
         }
       }
@@ -17444,6 +17957,21 @@
         "code": "viv"
       }
     },
+    "zh-tw:S4a": {
+      "tcgdex_set_id": "S4a",
+      "locale": "zh-tw",
+      "names": {
+        "en_cardtrader": "Shiny Star V",
+        "database": {
+          "zh-tw": "閃色明星V"
+        },
+        "englishName": "Shiny Star V"
+      },
+      "cardtrader": {
+        "id": 2123,
+        "code": "s4a"
+      }
+    },
     "en:swsh4.5": {
       "tcgdex_set_id": "swsh4.5",
       "locale": "en",
@@ -17562,6 +18090,21 @@
       "cardtrader": {
         "id": 2911,
         "code": "brs"
+      }
+    },
+    "zh-tw:S8b": {
+      "tcgdex_set_id": "S8b",
+      "locale": "zh-tw",
+      "names": {
+        "en_cardtrader": "VMAX Climax",
+        "database": {
+          "zh-tw": "VMAX絕群壓軸"
+        },
+        "englishName": "VMAX Climax"
+      },
+      "cardtrader": {
+        "id": 2917,
+        "code": "s8b"
       }
     },
     "en:swsh10": {
@@ -17817,6 +18360,21 @@
       "cardtrader": {
         "id": 3878,
         "code": "ssp"
+      }
+    },
+    "zh-tw:SV8": {
+      "tcgdex_set_id": "SV8",
+      "locale": "zh-tw",
+      "names": {
+        "en_cardtrader": "Super Electric Breaker",
+        "database": {
+          "zh-tw": "超電突圍"
+        },
+        "englishName": "Super Electric Breaker"
+      },
+      "cardtrader": {
+        "id": 3898,
+        "code": "sv8"
       }
     },
     "en:sv08.5": {
@@ -18448,30 +19006,6 @@
         "database": {}
       }
     },
-    "ja:Sek": {
-      "tcgdex_set_id": "Sek",
-      "locale": "ja",
-      "names": {
-        "en_cardtrader": "VMAX Starter Deck: Blastoise VMAX",
-        "database": {}
-      }
-    },
-    "ja:Sef": {
-      "tcgdex_set_id": "Sef",
-      "locale": "ja",
-      "names": {
-        "en_cardtrader": "VMAX Starter Deck: Venusaur VMAX",
-        "database": {}
-      }
-    },
-    "ja:Sp2": {
-      "tcgdex_set_id": "Sp2",
-      "locale": "ja",
-      "names": {
-        "en_cardtrader": "VMAX Special Set",
-        "database": {}
-      }
-    },
     "ja:Mc21": {
       "tcgdex_set_id": "Mc21",
       "locale": "ja",
@@ -18488,35 +19022,11 @@
         "database": {}
       }
     },
-    "ja:Sgl": {
-      "tcgdex_set_id": "Sgl",
-      "locale": "ja",
-      "names": {
-        "en_cardtrader": "Inteleon VMAX High-Class Deck",
-        "database": {}
-      }
-    },
-    "ja:Sgg": {
-      "tcgdex_set_id": "Sgg",
-      "locale": "ja",
-      "names": {
-        "en_cardtrader": "Gengar VMAX High-Class Deck",
-        "database": {}
-      }
-    },
     "ja:S7d": {
       "tcgdex_set_id": "S7d",
       "locale": "ja",
       "names": {
         "en_cardtrader": "Towering Perfection",
-        "database": {}
-      }
-    },
-    "ja:S8ap": {
-      "tcgdex_set_id": "S8ap",
-      "locale": "ja",
-      "names": {
-        "en_cardtrader": "25th Anniversary Edition",
         "database": {}
       }
     },
@@ -18533,14 +19043,6 @@
       "locale": "ja",
       "names": {
         "en_cardtrader": "POKÉMON TRAINERS Off Shot!",
-        "database": {}
-      }
-    },
-    "ja:S8ag": {
-      "tcgdex_set_id": "S8ag",
-      "locale": "ja",
-      "names": {
-        "en_cardtrader": "25th Anniversary Golden Box",
         "database": {}
       }
     },
@@ -18605,14 +19107,6 @@
       "locale": "ja",
       "names": {
         "en_cardtrader": "SV Black Star Promos",
-        "database": {}
-      }
-    },
-    "ja:Sf": {
-      "tcgdex_set_id": "Sf",
-      "locale": "ja",
-      "names": {
-        "en_cardtrader": "Single Strike & Rapid Strike Premium Trainer Boxes",
         "database": {}
       }
     },
@@ -19440,14 +19934,6 @@
         "database": {}
       }
     },
-    "ja:Sd": {
-      "tcgdex_set_id": "Sd",
-      "locale": "ja",
-      "names": {
-        "en_cardtrader": "GX Starter Decks",
-        "database": {}
-      }
-    },
     "ja:Svjp": {
       "tcgdex_set_id": "Svjp",
       "locale": "ja",
@@ -19904,54 +20390,6 @@
         "database": {}
       }
     },
-    "ja:Cs61": {
-      "tcgdex_set_id": "Cs61",
-      "locale": "ja",
-      "names": {
-        "en_cardtrader": "CS6.1: Shadow of the Blue Sea Promos",
-        "database": {}
-      }
-    },
-    "ja:Cs41": {
-      "tcgdex_set_id": "Cs41",
-      "locale": "ja",
-      "names": {
-        "en_cardtrader": "CS4.1: Brilliant Energy Promo Pack",
-        "database": {}
-      }
-    },
-    "ja:Cs51": {
-      "tcgdex_set_id": "Cs51",
-      "locale": "ja",
-      "names": {
-        "en_cardtrader": "CS5.1: Shadow of Glory Promo Pack",
-        "database": {}
-      }
-    },
-    "ja:Cs65": {
-      "tcgdex_set_id": "Cs65",
-      "locale": "ja",
-      "names": {
-        "en_cardtrader": "CS6.5: Victory Star Guide",
-        "database": {}
-      }
-    },
-    "ja:Cs45": {
-      "tcgdex_set_id": "Cs45",
-      "locale": "ja",
-      "names": {
-        "en_cardtrader": "CS4.5: Final Flame Dance",
-        "database": {}
-      }
-    },
-    "ja:Cs55": {
-      "tcgdex_set_id": "Cs55",
-      "locale": "ja",
-      "names": {
-        "en_cardtrader": "CS5.5: Shadow of Glory",
-        "database": {}
-      }
-    },
     "ja:M-151c": {
       "tcgdex_set_id": "M-151c",
       "locale": "ja",
@@ -19997,38 +20435,6 @@
       "locale": "ja",
       "names": {
         "en_cardtrader": "CS3b: Primordial Martial Arts - Torrent",
-        "database": {}
-      }
-    },
-    "ja:Cs5a": {
-      "tcgdex_set_id": "Cs5a",
-      "locale": "ja",
-      "names": {
-        "en_cardtrader": "CS5a: Brave Enchanting Stars - Brave",
-        "database": {}
-      }
-    },
-    "ja:Cs5b": {
-      "tcgdex_set_id": "Cs5b",
-      "locale": "ja",
-      "names": {
-        "en_cardtrader": "CS5b: Brave Enchanting Stars - Charm",
-        "database": {}
-      }
-    },
-    "ja:Cs6a": {
-      "tcgdex_set_id": "Cs6a",
-      "locale": "ja",
-      "names": {
-        "en_cardtrader": "CS6a: Azure Shadow - Roar",
-        "database": {}
-      }
-    },
-    "ja:Cs6b": {
-      "tcgdex_set_id": "Cs6b",
-      "locale": "ja",
-      "names": {
-        "en_cardtrader": "CS6b: Azure Shadow - Pursuit",
         "database": {}
       }
     },
@@ -20141,14 +20547,6 @@
       "locale": "ja",
       "names": {
         "en_cardtrader": "CSH: Eevee GX Gift Box",
-        "database": {}
-      }
-    },
-    "ja:Sp1": {
-      "tcgdex_set_id": "Sp1",
-      "locale": "ja",
-      "names": {
-        "en_cardtrader": "Zacian + Zamazenta BOX",
         "database": {}
       }
     },
@@ -20445,14 +20843,6 @@
       "locale": "ja",
       "names": {
         "en_cardtrader": "CSM2d: Shining Synergy GX Starter Deck",
-        "database": {}
-      }
-    },
-    "ja:Cs5d": {
-      "tcgdex_set_id": "Cs5d",
-      "locale": "ja",
-      "names": {
-        "en_cardtrader": "CS5D: Gallant Galaxy V Starter Deck",
         "database": {}
       }
     },
@@ -20880,14 +21270,6 @@
         "database": {}
       }
     },
-    "ja:Cs1": {
-      "tcgdex_set_id": "Cs1",
-      "locale": "ja",
-      "names": {
-        "en_cardtrader": "Collection Sheet Journey Partners",
-        "database": {}
-      }
-    },
     "ja:M5": {
       "tcgdex_set_id": "M5",
       "locale": "ja",
@@ -20901,14 +21283,6 @@
       "locale": "ja",
       "names": {
         "en_cardtrader": "CSV9: Stellar Crystal",
-        "database": {}
-      }
-    },
-    "ja:Pbl": {
-      "tcgdex_set_id": "Pbl",
-      "locale": "ja",
-      "names": {
-        "en_cardtrader": "Pitch Black",
         "database": {}
       }
     },
@@ -20950,6 +21324,21 @@
       "names": {
         "en_cardtrader": "VMAX Starter Deck: Grimmsnarl VMAX",
         "database": {}
+      }
+    },
+    "en:me05": {
+      "tcgdex_set_id": "me05",
+      "locale": "en",
+      "names": {
+        "en_cardtrader": "Pitch Black",
+        "database": {
+          "en": "Pitch Black"
+        },
+        "englishName": null
+      },
+      "cardtrader": {
+        "id": 4639,
+        "code": "pbl"
       }
     }
   },

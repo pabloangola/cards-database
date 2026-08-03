@@ -1,0 +1,23 @@
+import { Card } from "../../../interfaces"
+import Set from "../Cs45"
+
+const card: Card = {
+	set: Set,
+
+	name: {
+		en: 'Lapras',
+		ja: 'Lapras',
+	},
+
+	category: 'Pokemon',
+	rarity: 'Common',
+
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 347625
+		}
+	}],
+}
+
+export default card

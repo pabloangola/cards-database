@@ -1,0 +1,23 @@
+import { Card } from "../../../interfaces"
+import Set from "../Cs45"
+
+const card: Card = {
+	set: Set,
+
+	name: {
+		en: 'Volcarona V',
+		ja: 'Volcarona V',
+	},
+
+	category: 'Pokemon',
+	rarity: 'Ultra Rare',
+
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 347684
+		}
+	}],
+}
+
+export default card

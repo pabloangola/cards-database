@@ -5,18 +5,19 @@ const card: Card = {
 	set: Set,
 
 	name: {
-		'zh-tw': "獵人手套"
+		en: 'Hunting Gloves',
+		ja: 'Hunting Gloves',
 	},
 
-	illustrator: "Toyste Beach",
-	category: "Trainer",
+	category: 'Pokemon',
+	rarity: 'Fixed',
 
-	effect: {
-		'zh-tw': "寶可夢道具卡，附於自己的寶可夢使用。1隻寶可夢只可附上1張寶可夢道具卡，並且保持附加狀態。"
-	},
-
-	trainerType: "Tool",
-	regulationMark: "E"
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 232899
+		}
+	}],
 }
 
 export default card

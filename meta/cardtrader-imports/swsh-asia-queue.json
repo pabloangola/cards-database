@@ -1,0 +1,134 @@
+[
+  {
+    "id": 2124,
+    "code": "sek",
+    "setId": "Sek",
+    "name": "VMAX Starter Deck: Blastoise VMAX"
+  },
+  {
+    "id": 2125,
+    "code": "sef",
+    "setId": "Sef",
+    "name": "VMAX Starter Deck: Venusaur VMAX"
+  },
+  {
+    "id": 2128,
+    "code": "sp2",
+    "setId": "Sp2",
+    "name": "VMAX Special Set"
+  },
+  {
+    "id": 2185,
+    "code": "sgl",
+    "setId": "Sgl",
+    "name": "Inteleon VMAX High-Class Deck"
+  },
+  {
+    "id": 2186,
+    "code": "sgg",
+    "setId": "Sgg",
+    "name": "Gengar VMAX High-Class Deck"
+  },
+  {
+    "id": 2311,
+    "code": "s8ap",
+    "setId": "S8ap",
+    "name": "25th Anniversary Edition"
+  },
+  {
+    "id": 2919,
+    "code": "s8ag",
+    "setId": "S8ag",
+    "name": "25th Anniversary Golden Box"
+  },
+  {
+    "id": 3269,
+    "code": "sf",
+    "setId": "Sf",
+    "name": "Single Strike & Rapid Strike Premium Trainer Boxes"
+  },
+  {
+    "id": 3746,
+    "code": "sd",
+    "setId": "Sd",
+    "name": "GX Starter Decks"
+  },
+  {
+    "id": 4021,
+    "code": "cs61",
+    "setId": "Cs61",
+    "name": "CS6.1: Shadow of the Blue Sea Promos"
+  },
+  {
+    "id": 4023,
+    "code": "cs41",
+    "setId": "Cs41",
+    "name": "CS4.1: Brilliant Energy Promo Pack"
+  },
+  {
+    "id": 4024,
+    "code": "cs51",
+    "setId": "Cs51",
+    "name": "CS5.1: Shadow of Glory Promo Pack"
+  },
+  {
+    "id": 4025,
+    "code": "cs65",
+    "setId": "Cs65",
+    "name": "CS6.5: Victory Star Guide"
+  },
+  {
+    "id": 4029,
+    "code": "cs45",
+    "setId": "Cs45",
+    "name": "CS4.5: Final Flame Dance"
+  },
+  {
+    "id": 4030,
+    "code": "cs55",
+    "setId": "Cs55",
+    "name": "CS5.5: Shadow of Glory"
+  },
+  {
+    "id": 4048,
+    "code": "cs5a",
+    "setId": "Cs5a",
+    "name": "CS5a: Brave Enchanting Stars - Brave"
+  },
+  {
+    "id": 4049,
+    "code": "cs5b",
+    "setId": "Cs5b",
+    "name": "CS5b: Brave Enchanting Stars - Charm"
+  },
+  {
+    "id": 4050,
+    "code": "cs6a",
+    "setId": "Cs6a",
+    "name": "CS6a: Azure Shadow - Roar"
+  },
+  {
+    "id": 4051,
+    "code": "cs6b",
+    "setId": "Cs6b",
+    "name": "CS6b: Azure Shadow - Pursuit"
+  },
+  {
+    "id": 4112,
+    "code": "sp1",
+    "setId": "Sp1",
+    "name": "Zacian + Zamazenta BOX"
+  },
+  {
+    "id": 4472,
+    "code": "cs5d",
+    "setId": "Cs5d",
+    "name": "CS5D: Gallant Galaxy V Starter Deck"
+  },
+  {
+    "id": 4610,
+    "code": "cs1",
+    "setId": "Cs1",
+    "name": "Collection Sheet Journey Partners"
+  }
+]

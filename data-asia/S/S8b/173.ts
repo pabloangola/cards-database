@@ -5,17 +5,19 @@ const card: Card = {
 	set: Set,
 
 	name: {
-		'zh-tw': "清洗水能量"
+		en: 'Wash W Energy',
+		ja: 'Wash W Energy',
 	},
 
-	category: "Energy",
+	category: 'Energy',
+	rarity: 'Fixed',
 
-	effect: {
-		'zh-tw': "只要這張卡附於寶可夢身上，視為提供1個【水】能量。 附有這張卡的【水】寶可夢，不會受到對手的寶可夢使用招式的效果的影響。（已經受到的效果無法消除。）"
-	},
-
-	energyType: "Special",
-	regulationMark: "D"
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 232936
+		}
+	}],
 }
 
 export default card

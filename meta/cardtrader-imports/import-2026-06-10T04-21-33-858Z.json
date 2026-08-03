@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-06-10T04:21:33.858Z",
+  "options": {
+    "locale": "ja",
+    "outDir": "D:\\TcgDex images",
+    "skipImages": false
+  },
+  "imports": [
+    {
+      "importedAt": "2026-06-10T04:21:33.777Z",
+      "cardtrader": {
+        "id": 2311,
+        "code": "s8ap",
+        "name": "25th Anniversary Edition"
+      },
+      "tcgdex": {
+        "locale": "ja",
+        "serieFolder": "S",
+        "setId": "S8ap",
+        "setFile": "data-asia\\S\\S8ap.ts",
+        "cardsDir": "data-asia\\S\\S8ap"
+      },
+      "stats": {
+        "blueprints": 26,
+        "cardsWritten": 26,
+        "cardsSkipped": 0,
+        "imagesDownloaded": 26,
+        "imagesSkipped": 0,
+        "imagesFailed": 0
+      }
+    }
+  ],
+  "imageFailures": []
+}

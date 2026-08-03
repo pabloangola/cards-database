@@ -5,18 +5,19 @@ const card: Card = {
 	set: Set,
 
 	name: {
-		'zh-tw': "回憶膠囊"
+		en: 'Memory Capsule',
+		ja: 'Memory Capsule',
 	},
 
-	illustrator: "sadaji",
-	category: "Trainer",
+	category: 'Pokemon',
+	rarity: 'Fixed',
 
-	effect: {
-		'zh-tw': "寶可夢道具卡，附於自己的寶可夢使用。1隻寶可夢只可附上1張寶可夢道具卡，並且保持附加狀態。"
-	},
-
-	trainerType: "Tool",
-	regulationMark: "D"
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 232902
+		}
+	}],
 }
 
 export default card

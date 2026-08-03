@@ -5,18 +5,19 @@ const card: Card = {
 	set: Set,
 
 	name: {
-		'zh-tw': "水之塔"
+		en: 'Tower of Waters',
+		ja: 'Tower of Waters',
 	},
 
-	illustrator: "5ban Graphics",
-	category: "Trainer",
+	category: 'Pokemon',
+	rarity: 'Fixed',
 
-	effect: {
-		'zh-tw': "雙方的所有「連擊」寶可夢【撤退】所需的能量各減少2個。"
-	},
-
-	trainerType: "Stadium",
-	regulationMark: "E"
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 232933
+		}
+	}],
 }
 
 export default card

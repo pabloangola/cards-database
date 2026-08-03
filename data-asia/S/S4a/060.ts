@@ -5,35 +5,19 @@ const card: Card = {
 	set: Set,
 
 	name: {
-		'zh-tw': "顫弦蠑螈VMAX"
+		en: 'Toxtricity VMAX',
+		ja: 'Toxtricity VMAX',
 	},
 
-	illustrator: "5ban Graphics",
-	category: "Pokemon",
-	hp: 320,
-	types: ["Lightning"],
-	stage: "VMAX",
+	category: 'Pokemon',
+	rarity: 'Ultra Rare',
 
-	attacks: [{
-		name: {
-			'zh-tw': "超極巨引暴全場"
-		},
-
-		effect: {
-			'zh-tw': "若對手的戰鬥寶可夢【中毒】，則增加80點傷害。"
-		},
-
-		damage: "160+",
-		cost: ["Lightning", "Lightning", "Colorless"]
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 225013
+		}
 	}],
-
-	weaknesses: [{
-		type: "Fighting",
-		value: "×2"
-	}],
-
-	retreat: 2,
-	regulationMark: "D"
 }
 
 export default card

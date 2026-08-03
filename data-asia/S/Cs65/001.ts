@@ -1,0 +1,23 @@
+import { Card } from "../../../interfaces"
+import Set from "../Cs65"
+
+const card: Card = {
+	set: Set,
+
+	name: {
+		en: 'Alolan Exeggutor V',
+		ja: 'Alolan Exeggutor V',
+	},
+
+	category: 'Pokemon',
+	rarity: 'Ultra Rare',
+
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 338134
+		}
+	}],
+}
+
+export default card

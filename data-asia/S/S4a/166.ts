@@ -5,18 +5,19 @@ const card: Card = {
 	set: Set,
 
 	name: {
-		'zh-tw': "金屬碟"
+		en: 'Metal Saucer',
+		ja: 'Metal Saucer',
 	},
 
-	illustrator: "Toyste Beach",
-	category: "Trainer",
+	category: 'Pokemon',
+	rarity: 'Common',
 
-	effect: {
-		'zh-tw': "從自己的棄牌區選擇1張【鋼】能量卡，附於備戰區的【鋼】寶可夢身上。"
-	},
-
-	trainerType: "Item",
-	regulationMark: "D"
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 225173
+		}
+	}],
 }
 
 export default card

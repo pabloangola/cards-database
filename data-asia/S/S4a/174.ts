@@ -5,18 +5,19 @@ const card: Card = {
 	set: Set,
 
 	name: {
-		'zh-tw': "博士的研究(木蘭博士)"
+		en: 'Professor\'s Research - Professor Magnolia',
+		ja: 'Professor\'s Research - Professor Magnolia',
 	},
 
-	illustrator: "Yusuke Ohmura",
-	category: "Trainer",
+	category: 'Pokemon',
+	rarity: 'Common',
 
-	effect: {
-		'zh-tw': "將自己的手牌全部丟棄，從牌庫抽出7張卡。"
-	},
-
-	trainerType: "Supporter",
-	regulationMark: "D"
+	variants: [{
+		type: 'normal',
+		thirdParty: {
+			cardtrader: 225181
+		}
+	}],
 }
 
 export default card

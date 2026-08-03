@@ -5,8 +5,7 @@ const set: Set = {
 	id: 'SM8b',
 	name: {
 		en: 'GX Ultra Shiny',
-		ja: 'GXウルトラシャイニ',
-		ko: 'GX 울트라샤이니 ULTIMATE'
+		ja: 'High Class Pack GX Ultra Shiny',
 	},
 
 	serie: serie,
@@ -14,11 +13,11 @@ const set: Set = {
 	cardCount: {
 		official: 259
 	},
-	releaseDate: '2018-10-05',
+
+	releaseDate: '2026-06-10',
 
 	thirdParty: {
-		cardtrader: 0,
-		cardmarket: 3856
+		cardtrader: 2072
 	}
 }
 
