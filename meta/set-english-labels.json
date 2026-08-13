@@ -6236,6 +6236,12 @@
     "vmax starter deck: grimmsnarl vmax": {
       "ja": "Scjp-g",
       "ko": "Scjp-g"
+    },
+    "ex dragon frontiers": {
+      "en": "ex15"
+    },
+    "dragon frontiers": {
+      "en": "ex15"
     }
   },
   "sets": {
@@ -21339,6 +21345,21 @@
       "cardtrader": {
         "id": 4639,
         "code": "pbl"
+      }
+    },
+    "en:ex15": {
+      "tcgdex_set_id": "ex15",
+      "locale": "en",
+      "names": {
+        "en_cardtrader": "EX Dragon Frontiers",
+        "database": {
+          "en": "Dragon Frontiers"
+        },
+        "englishName": null
+      },
+      "cardtrader": {
+        "id": 1514,
+        "code": "df"
       }
     }
   },
