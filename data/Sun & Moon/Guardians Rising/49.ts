@@ -15,6 +15,7 @@ const card: Card = {
 	rarity: "Uncommon",
 	category: "Pokemon",
 	set: Set,
+	cameoDexIds: [278],
 
 	dexId: [
 		80,
@@ -29,6 +30,7 @@ const card: Card = {
 	evolveFrom: {
 		en: "Slowpoke",
 		fr: "Ramoloss",
+		de: "Flegmon"
 	},
 
 	stage: "Stage1",
@@ -95,6 +97,7 @@ const card: Card = {
 
 	description: {
 		en: "It spaces out while gazing at the sea. With Shellder's poison flowing through its body, it becomes even spacier.",
+		de: "Es betrachtet oft mit leerem Blick das Meer. Das Gift, das Muschas in seinen Körper injiziert, erhöht seine Begriffsstutzigkeit noch weiter."
 	},
 
 	thirdParty: {

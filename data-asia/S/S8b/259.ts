@@ -1,23 +1,33 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Raihan',
-		ja: 'Raihan',
+		ja: "キバナ",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Ultra Rare',
+	illustrator: "take",
+	category: "Trainer",
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 233118
-		}
-	}],
-}
+	effect: {
+		ja: "このカードは、前の相手の番に、自分のポケモンがきぜつしていなければ使えない。自分のトラッシュから基本エネルギーを1枚選び、自分のポケモンにつける。その後、自分の山札から好きなカードを1枚選び、手札に加える。そして山札を切る。",
+	},
 
-export default card
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 233118,
+				cardmarket: 587057,
+				tcgplayer: 571511,
+			},
+		},
+	],
+
+	trainerType: "Supporter",
+	regulationMark: "E",
+	rarity: "Ultra Rare",
+};
+
+export default card;

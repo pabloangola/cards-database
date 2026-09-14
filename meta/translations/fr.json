@@ -17,7 +17,7 @@
 		"Special": "Spécial"
 	},
 	"rarity": {
-		"ACE SPEC Rare": "HIGH-TECG rare",
+		"ACE SPEC Rare": "HIGH-TECH rare",
 		"Amazing Rare": "Magnifique",
 		"Classic Collection": "Collection Classique",
 		"Common": "Commune",
@@ -239,6 +239,7 @@
 		"master-ball-league": "ligue-master-ball",
 		"ultra-ball-league": "ligue-ultra-ball",
 		"poke-ball-league": "ligue-poke-ball",
+		"great-ball-league": "ligue-great-ball",
 		"asia-promo": "asia-promo",
 		"judge": "juge",
 		"international-championship-europe": "championnat-international-europe",
@@ -256,14 +257,25 @@
 		"rain-city": "rain-city",
 		"tournament-collection": "tournament-collection",
 		"worlds-2024": "worlds-2024",
+		"worlds-2022": "worlds-2022",
 		"worlds-2023": "worlds-2023",
 		"asia-2023-24": "asia-2023-24",
 		"thank-you": "thank-you",
 		"jr-stamp-rally": "jr-stamp-rally",
 		"grey-star": "étoile grise",
+		"scrye": "scrye",
+		"inquest-gamer": "inquest-gamer",
 		"pop-tournament": "pop-tournament",
 		"chicago-2009": "chicago-2009",
-		"chase-moloney": "chase-moloney"
+		"chase-moloney": "chase-moloney",
+		"jesse-parker": "jesse-parker",
+		"gabriel-fernandez": "gabriel-fernandez",
+		"shao-tong-yen": "shao-tong-yen",
+		"liao-fu-guan": "liao-fu-guan",
+		"jose-cruz-galindo-resendiz": "Jose Cruz Galindo-Resendiz",
+		"sakuya-ota": "sakuya-ota",
+		"poketour-99": "PokeTour 1999",
+		"fossil-museum": "Fossil Museum"
 	},
 	"variantSubtype": {
 		"shadowless": "sans ombre",
@@ -284,7 +296,7 @@
 		"no-e-reader": "Sans e-Reader",
 		"rarity-error": "Erreur de rareté",
 		"cosmos": "cosmos",
-		"blue border": "bordure bleue",
+		"blue-border": "bordure bleue",
 		"glossy": "brillante",
 		"shadowless-red-cheek": "Sans ombre aux joues rouges",
 		"2019-copyright": "Copyright 2019",
@@ -292,6 +304,8 @@
 		"nintedo-error": "Erreur Nintedo",
 		"1995-1998-copyright": "Copyright 1995-1998",
 		"no-rarity": "Sans rareté",
-		"phanphy-error" : "Erreur de phanphy"
+		"phanphy-error": "Erreur de phanphy",
+		"peelable-ditto": "Ditto décollable",
+		"missing-retreat-cost": "Coût de retraite manquant"
 	}
 }

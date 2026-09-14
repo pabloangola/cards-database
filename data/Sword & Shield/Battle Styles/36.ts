@@ -4,6 +4,7 @@ import Set from '../Battle Styles'
 const card: Card = {
 	dexId: [223],
 	set: Set,
+	cameoDexIds: [224],
 
 	name: {
 		en: "Remoraid",
@@ -58,7 +59,8 @@ const card: Card = {
 	stage: "Basic",
 
 	description: {
-		en: "Using its dorsal fin as a suction pad, it clings to a Mantine's underside to scavenge for leftovers."
+		en: "Using its dorsal fin as a suction pad, it clings to a Mantine's underside to scavenge for leftovers.",
+		de: "Mit seiner Rückenflosse saugt es sich an der Unterseite eines Mantax fest und lebt von Speiseresten."
 	},
 
 	variants: [

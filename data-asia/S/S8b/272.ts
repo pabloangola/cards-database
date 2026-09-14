@@ -1,23 +1,33 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Single Strike Style Mustard',
-		ja: 'Single Strike Style Mustard',
+		ja: "マスタード いちげきのかた",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Ultra Rare',
+	illustrator: "Souichirou Gunjima",
+	category: "Trainer",
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 233131
-		}
-	}],
-}
+	effect: {
+		ja: "このカードは、自分の手札がこのカード1枚だけのときにしか使えない。自分の山札から「いちげき」のポケモンを1枚選び、ベンチに出す。そして山札を切る。その後、自分の山札を5枚引く。",
+	},
 
-export default card
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 233131,
+				cardmarket: 587070,
+				tcgplayer: 571523,
+			},
+		},
+	],
+
+	trainerType: "Supporter",
+	regulationMark: "E",
+	rarity: "Ultra Rare",
+};
+
+export default card;

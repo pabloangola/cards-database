@@ -1,23 +1,33 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Kabu',
-		ja: 'Kabu',
+		ja: "カブ",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Ultra Rare',
+	illustrator: "Hideki Ishikawa",
+	category: "Trainer",
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 233116
-		}
-	}],
-}
+	effect: {
+		ja: "自分の手札をすべて山札にもどして切る。その後、山札を4枚引く。自分の場のポケモンがバトルポケモンだけなら、引く枚数は8枚になる。",
+	},
 
-export default card
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 233116,
+				cardmarket: 587055,
+				tcgplayer: 571509,
+			},
+		},
+	],
+
+	trainerType: "Supporter",
+	regulationMark: "D",
+	rarity: "Ultra Rare",
+};
+
+export default card;

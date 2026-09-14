@@ -3,6 +3,7 @@ import Set from "../Ascended Heroes"
 
 const card: Card = {
 	set: Set,
+	cameoDexIds: [757],
 
 	name: {
 		en: "Salazzle",
@@ -91,6 +92,7 @@ const card: Card = {
 
 	description: {
 		en: "When two Salazzle meet, they will use their pheromone gas to fight over the males in each other’s group.",
+		de: "Wenn sich zwei Amfira begegnen, kämpfen sie mit Pheromongas um die Männchen in ihren Gruppen."
 	},
 
 	variants: [

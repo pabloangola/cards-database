@@ -8,17 +8,17 @@ const card: Card = {
 		de: "Entei & Raikou LEGENDE"
 	},
 
-	illustrator: "Shinji Higuchi + Sachiko Eba 樋口 真嗣 + 江場 左知子",
+	illustrator: "Shinji Higuchi + Sachiko Eba",
 	rarity: "LEGEND",
 	category: "Pokemon",
 	set: Set,
 
-	dexId: [244, 243],
+	dexId: [243],
 	hp: 140,
 
 	types: [
 		"Fire",
-		"Lightning",
+		"Lightning"
 	],
 
 	suffix: "Legend",
@@ -26,16 +26,10 @@ const card: Card = {
 	weaknesses: [
 		{
 			type: "Water",
-			value: "×2",
+			value: "×2"
 		},
 	],
 	retreat: 0,
-
-	variants: [
-		{
-			type: "holo"
-		},
-	],
 
 	attacks: [{
 		name: {
@@ -47,7 +41,7 @@ const card: Card = {
 
 		effect: {
 			en: "Discard a Fire Energy attached to Entei & Raikou LEGEND.",
-			de: "Lege 1 an Entei & Raikou-LEGENDE angelegte -Energie auf deinen Ablagestapel."
+			de: "Lege 1 an Entei & Raikou-LEGENDE angelegte {R}-Energie auf deinen Ablagestapel."
 		},
 
 		cost: ["Fire", "Colorless"]
@@ -65,9 +59,15 @@ const card: Card = {
 		cost: ["Lightning", "Colorless"]
 	}],
 
-	thirdParty: {
-		cardmarket: 279246
-	}
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardmarket: 279246,
+				tcgplayer: 85277,
+			}
+		},
+	],
 }
 
 export default card

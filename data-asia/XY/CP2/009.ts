@@ -1,23 +1,52 @@
-import { Card } from "../../../interfaces"
-import Set from "../CP2"
+import { Card } from "../../../interfaces";
+import Set from "../CP2";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Zekrom',
-		ja: 'Zekrom',
+		ja: "ゼクロム",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Rare',
+	illustrator: "Naoki Saito",
+	category: "Pokemon",
+	hp: 120,
+	types: ["Lightning"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 283202
-		}
-	}],
-}
+	stage: "Basic",
 
-export default card
+	attacks: [
+		{
+			name: { ja: "きりさく" },
+			damage: 20,
+			cost: ["Colorless", "Colorless"],
+		},
+		{
+			name: { ja: "ボルテージストーム" },
+			damage: 90,
+			cost: ["Lightning", "Lightning", "Colorless", "Colorless"],
+			effect: {
+				ja: "相手のベンチポケモン全員にも、それぞれ10ダメージ。［ベンチは弱点・抵抗力の計算をしない。］",
+			},
+		},
+	],
+
+	weaknesses: [{ type: "Fighting", value: "x2" }],
+	resistances: [{ type: "Metal", value: "-20" }],
+
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 283202,
+				cardmarket: 563490,
+				tcgplayer: 605354,
+			},
+		},
+	],
+
+	retreat: 2,
+	rarity: "Rare",
+	dexId: [644],
+};
+
+export default card;

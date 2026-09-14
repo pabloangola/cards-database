@@ -4,6 +4,7 @@ import Set from "../Astral Radiance"
 const card: Card = {
 	dexId: [200],
 	set: Set,
+	cameoDexIds: [110],
 
 	name: {
 		en: "Misdreavus",
@@ -54,6 +55,7 @@ const card: Card = {
 
 	description: {
 		en: "It conceals itself in darkness, sending chills up travelers' spines with its childlike weeping. As it observes the frightened travelers with glee, the red orbs upon its chest let off an eerie light.",
+		de: "Es versteckt sich im Dunkeln und erschreckt Reisende mit seinem kindlichen Geheul. Deren verängstigtes Antlitz bringt ihm Freude und lässt die roten Kugeln an seinem Hals unheilvoll aufleuchten."
 	},
 
 	variants: [

@@ -1,23 +1,37 @@
-import { Card } from "../../../interfaces"
-import Set from "../SV8"
+import { Card } from "../../../interfaces";
+import Set from "../SV8";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Lively Stadium',
-		ja: 'Lively Stadium',
+		ja: "エキサイトスタジアム",
+		'zh-tw': "激動競技場",
+		'zh-cn': "激動競技場",
 	},
 
-	category: 'Trainer',
-	rarity: 'Uncommon',
+	illustrator: "imoniii",
+	category: "Trainer",
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 304682
-		}
-	}],
-}
+	effect: {
+		ja: "おたがいの場のたねポケモン全員の最大HPは、それぞれ「＋30」される。",
+		'zh-tw': "雙方場上所有【基礎】寶可夢的最大HP各「+30」。",
+		'zh-cn': "雙方場上所有【基礎】寶可夢的最大HP各「+30」。",
+	},
 
-export default card
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardtrader: 304682,
+				cardmarket: 793539,
+				tcgplayer: 587685,
+			},
+		},
+	],
+
+	trainerType: "Stadium",
+	regulationMark: "H",
+	rarity: "Uncommon",
+};
+
+export default card;

@@ -4,6 +4,7 @@ import Set from "../151"
 const card: Card = {
 	dexId: [10],
 	set: Set,
+	cameoDexIds: [23, 47, 94],
 
 	name: {
 		fr: "Chenipan",
@@ -55,6 +56,7 @@ const card: Card = {
 
 	description: {
 		en: "Its short feet are tipped with suction pads that enable it to tirelessly climb slopes and walls.",
+		de: "Es hat Saugnäpfe an den Beinchen, mit denen es mühelos Steigungen und Mauern erklimmen kann."
 	},
 
 	variants: [

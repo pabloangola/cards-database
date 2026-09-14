@@ -1,23 +1,62 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Shadow Rider Calyrex VMAX',
-		ja: 'Shadow Rider Calyrex VMAX',
+		ja: "こくばバドレックスVMAX",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Secret Rare',
+	illustrator: "5ban Graphics",
+	category: "Pokemon",
+	hp: 320,
+	types: ["Psychic"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 233140
-		}
-	}],
-}
+	stage: "VMAX",
 
-export default card
+	abilities: [
+		{
+			type: "Ability",
+			name: { ja: "めいかいのとびら" },
+			effect: {
+				ja: "自分の番に1回使える。自分の手札から[超]エネルギーを1枚選び、自分のベンチの[超]ポケモンにつける。その後、自分の山札を2枚引く。",
+			},
+		},
+	],
+
+	attacks: [
+		{
+			name: { ja: "ダイガイスト" },
+			damage: "10+",
+			cost: ["Colorless", "Colorless", "Colorless"],
+			effect: {
+				ja: "自分の場のポケモンについている[超]エネルギーの数×30ダメージ追加。",
+			},
+		},
+	],
+
+	weaknesses: [{ type: "Darkness", value: "x2" }],
+	resistances: [{ type: "Fighting", value: "-30" }],
+
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 233140,
+				cardmarket: 587079,
+				tcgplayer: 571532,
+			},
+		},
+	],
+
+	evolveFrom: {
+		ja: "こくばバドレックスV",
+	},
+
+	retreat: 2,
+	regulationMark: "E",
+	rarity: "Secret Rare",
+	dexId: [898],
+};
+
+export default card;

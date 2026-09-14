@@ -15,6 +15,7 @@ const card: Card = {
 	rarity: "Uncommon",
 	category: "Pokemon",
 	set: Set,
+	cameoDexIds: [672],
 
 	dexId: [
 		673,
@@ -29,6 +30,7 @@ const card: Card = {
 	evolveFrom: {
 		en: "Skiddo",
 		fr: "Cabriolaine",
+		de: "Mähikel"
 	},
 
 	stage: "Stage1",
@@ -89,6 +91,7 @@ const card: Card = {
 
 	description: {
 		en: "They inhabit mountainous regions. The leader of the herd is decided by a battle of clashing horns.",
+		de: "Sie leben im Gebirge. Der Herdenanführer wird durch ein Kräftemessen gewählt, bei dem die Anwärter ihre Hörner gegeneinander rammen."
 	},
 
 	thirdParty: {

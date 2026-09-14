@@ -3,6 +3,7 @@ import Set from '../Evolving Skies'
 
 const card: Card = {
 	set: Set,
+	cameoDexIds: [384],
 
 
 	name: {
@@ -64,7 +65,8 @@ const card: Card = {
 	dexId: [133],
 
 	description: {
-		en: "Thanks to its unstable genetic makeup, this special Pokémon conceals many different possible evolutions."
+		en: "Thanks to its unstable genetic makeup, this special Pokémon conceals many different possible evolutions.",
+		de: "Das Erbmaterial dieses besonderen Pokémon ist instabil, weshalb es das Potenzial für viele verschiedene Entwicklungen in sich trägt."
 	},
 
 	regulationMark: "E",

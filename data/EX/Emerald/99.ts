@@ -5,7 +5,7 @@ const card: Card = {
 	name: {
 		en: "Regirock ex",
 		fr: "Regirock ex",
-		de: "Regirock ex"
+		de: "Regirock-ex"
 	},
 
 	illustrator: "Hikaru Koike",
@@ -81,8 +81,12 @@ const card: Card = {
 	variants: [
 		{
 			type: "holo",
+			thirdParty: {
+				tcgplayer: 88675,
+				cardmarket: 276610
+			},
 		},
-	]
+	],
 }
 
 export default card

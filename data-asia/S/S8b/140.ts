@@ -1,23 +1,41 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Echoing Horn',
-		ja: 'Echoing Horn',
+		ja: "やまびこホーン",
+		'zh-tw': "山谷回音喇叭",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Fixed',
+	illustrator: "Studio Bora Inc.",
+	category: "Trainer",
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 232895
-		}
-	}],
-}
+	effect: {
+		ja: "相手のトラッシュからたねポケモンを1枚選び、相手のベンチに出す。",
+		'zh-tw': "從對手的棄牌區選擇1張【基礎】寶可夢卡，放置於對手的備戰區。",
+	},
 
-export default card
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardtrader: 232895,
+				cardmarket: 586656,
+				tcgplayer: 571393,
+			},
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				tcgplayer: 578421,
+			},
+		},
+	],
+
+	trainerType: "Item",
+	regulationMark: "E",
+	rarity: "None",
+};
+
+export default card;

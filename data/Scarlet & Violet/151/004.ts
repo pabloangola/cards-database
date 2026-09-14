@@ -4,6 +4,7 @@ import Set from "../151"
 const card: Card = {
 	dexId: [4],
 	set: Set,
+	cameoDexIds: [6],
 
 	name: {
 		fr: "Salamèche",
@@ -66,6 +67,7 @@ const card: Card = {
 
 	description: {
 		en: "From the time it is born, a flame burns at the tip of its tail. Its life would end if the flame were to go out.",
+		de: "Von Geburt an brennt die Flamme auf seiner Schwanzspitze. Sobald sie verglimmt, erlischt auch sein Lebenslicht."
 	},
 
 	variants: [

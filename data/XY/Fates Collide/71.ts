@@ -15,6 +15,7 @@ const card: Card = {
 	rarity: "Uncommon",
 	category: "Pokemon",
 	set: Set,
+	cameoDexIds: [25],
 
 	dexId: [
 		547,
@@ -81,6 +82,7 @@ const card: Card = {
 
 	description: {
 		en: "Like the wind, it can slip through any gap, no matter how small. It leaves balls of white fluff behind.",
+		de: "Passiert wie ein Luftzug mühelos jeden noch so engen Spalt und hinterlässt dort nichts als ein weißes Fellknäuel."
 	},
 
 	thirdParty: {

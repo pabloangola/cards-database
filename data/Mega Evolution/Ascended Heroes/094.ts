@@ -3,6 +3,7 @@ import Set from "../Ascended Heroes"
 
 const card: Card = {
 	set: Set,
+	cameoDexIds: [25, 143, 684],
 
 	name: {
 		en: "Slurpuff",
@@ -73,6 +74,7 @@ const card: Card = {
 
 	description: {
 		en: "It can distinguish the faintest of scents. It puts its sensitive sense of smell to use by helping pastry chefs in their work.",
+		de: "Es verfügt über einen feinen Geruchssinn, mit dem es selbst die schwächsten Gerüche erkennen kann. Es hilft deshalb oft in Konditoreien aus."
 	},
 
 	variants: [

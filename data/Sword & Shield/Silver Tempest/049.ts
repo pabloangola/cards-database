@@ -4,6 +4,7 @@ import Set from "../Silver Tempest"
 const card: Card = {
 	dexId: [25],
 	set: Set,
+	cameoDexIds: [702, 777],
 
 	name: {
 		en: "Pikachu",
@@ -57,6 +58,7 @@ const card: Card = {
 
 	description: {
 		en: "Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy.",
+		de: "Je stärker die Elektrizität ist, die Pikachu produziert, desto weicher und elastischer sind seine Backentaschen."
 	},
 
 	variants: [

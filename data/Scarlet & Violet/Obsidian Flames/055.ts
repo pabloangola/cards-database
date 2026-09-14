@@ -4,6 +4,7 @@ import Set from "../Obsidian Flames"
 const card: Card = {
 	dexId: [615],
 	set: Set,
+	cameoDexIds: [608],
 
 	name: {
 		fr: "Hexagel",
@@ -55,6 +56,7 @@ const card: Card = {
 
 	description: {
 		en: "Cryogonal appear during cold seasons. It is said that people and Pokémon who die on snowy mountains are reborn into these Pokémon.",
+		de: "Sie erscheinen in der kalten Jahreszeit. Man sagt, sie seien Reinkarnationen von Pokémon und Menschen, die auf verschneiten Bergen starben."
 	},
 
 	variants: [

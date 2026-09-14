@@ -4,6 +4,7 @@ import Set from "../151"
 const card: Card = {
 	dexId: [138],
 	set: Set,
+	cameoDexIds: [139, 140],
 
 	name: {
 		fr: "Amonita",
@@ -63,6 +64,7 @@ const card: Card = {
 
 	description: {
 		en: "This Pokémon is a member of an ancient, extinct species. Omanyte paddles through water with its 10 tentacles, looking like it's just drifting along.",
+		de: "Ein einst ausgestorbenes Urzeit-Pokémon. Wenn es mit seinen zehn Tentakeln paddelnd durch das Wasser gleitet, meint man, es würde schweben."
 	},
 
 	variants: [

@@ -4,6 +4,7 @@ import Set from '../Chilling Reign'
 const card: Card = {
 	dexId: [215],
 	set: Set,
+	cameoDexIds: [460],
 
 	name: {
 		en: "Sneasel",
@@ -54,7 +55,8 @@ const card: Card = {
 	stage: "Basic",
 
 	description: {
-		en: "It has a cunning yet savage disposition. It waits for parents to leave their nests, and then it sneaks in to steal their eggs."
+		en: "It has a cunning yet savage disposition. It waits for parents to leave their nests, and then it sneaks in to steal their eggs.",
+		de: "Dieses durchtriebene und gewissenlose Pokémon beobachtet Nester, bis die Eltern ausgeflogen sind, und stiehlt dann deren Eier."
 	},
 
 	variants: [

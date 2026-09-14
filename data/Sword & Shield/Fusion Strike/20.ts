@@ -4,6 +4,7 @@ import Set from "../Fusion Strike"
 const card: Card = {
 	dexId: [752],
 	set: Set,
+	cameoDexIds: [769],
 
 	name: {
 		en: "Araquanid",
@@ -40,7 +41,8 @@ const card: Card = {
 	illustrator: "KIYOTAKA OSHIYAMA",
 
 	description: {
-		en: "It acts as a caretaker for Dewpider, putting them inside its bubble and letting them eat any leftover food."
+		en: "It acts as a caretaker for Dewpider, putting them inside its bubble and letting them eat any leftover food.",
+		de: "Es lässt Araqua in der Wasserblase um seinen Kopf Platz nehmen und kümmert sich um es, indem es ihm Futterreste überlässt."
 	},
 
 	attacks: [{

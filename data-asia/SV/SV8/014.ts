@@ -1,23 +1,80 @@
-import { Card } from "../../../interfaces"
-import Set from "../SV8"
+import { Card } from "../../../interfaces";
+import Set from "../SV8";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Volcarona',
-		ja: 'Volcarona',
+		ja: "ウルガモス",
+		'zh-tw': "火神蛾",
+		'zh-cn': "火神蛾",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Common',
+	illustrator: "matazo",
+	category: "Pokemon",
+	hp: 140,
+	types: ["Fire"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 305424
-		}
-	}],
-}
+	description: {
+		ja: "炎の りんぷんを まき散らす。 危険なのは 高熱よりも あたりの 酸素が なくなること。",
+		'zh-tw': "會朝四周灑出火焰鱗粉。 最危險的不是高溫， 而是會耗盡周圍的氧氣。",
+		'zh-cn': "會朝四周灑出火焰鱗粉。 最危險的不是高溫， 而是會耗盡周圍的氧氣。",
+	},
 
-export default card
+	stage: "Stage1",
+
+	attacks: [
+		{
+			name: {
+				ja: "きゅうけつ",
+				'zh-tw': "吸血",
+				'zh-cn': "吸血",
+			},
+			damage: 30,
+			cost: ["Colorless"],
+			effect: {
+				ja: "相手のバトルポケモンに与えたダメージぶん、このポケモンのHPを回復する。",
+				'zh-tw': "將這隻寶可夢恢復對對手的戰鬥寶可夢造成的傷害相同數值的HP。",
+				'zh-cn': "將這隻寶可夢恢復對對手的戰鬥寶可夢造成的傷害相同數值的HP。",
+			},
+		},
+		{
+			name: {
+				ja: "どとうのはばたき",
+				'zh-tw': "怒濤羽擊",
+				'zh-cn': "怒濤羽擊",
+			},
+			damage: 150,
+			cost: ["Fire", "Colorless", "Colorless"],
+			effect: {
+				ja: "このポケモンにも50ダメージ。",
+				'zh-tw': "這隻寶可夢也受到50點傷害。",
+				'zh-cn': "這隻寶可夢也受到50點傷害。",
+			},
+		},
+	],
+
+	weaknesses: [{ type: "Water", value: "x2" }],
+	resistances: [],
+
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardtrader: 305424,
+				cardmarket: 793448,
+				tcgplayer: 587594,
+			},
+		},
+	],
+
+	evolveFrom: {
+		ja: "メラルバ",
+	},
+
+	retreat: 2,
+	regulationMark: "H",
+	rarity: "Common",
+	dexId: [637],
+};
+
+export default card;

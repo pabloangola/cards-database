@@ -4,6 +4,7 @@ import Set from "../Brilliant Stars"
 const card: Card = {
 	dexId: [399],
 	set: Set,
+	cameoDexIds: [396],
 
 	name: {
 		en: "Bidoof",
@@ -48,6 +49,7 @@ const card: Card = {
 
 	description: {
 		en: "It constantly gnaws on logs and rocks to whittle down its front teeth. It nests alongside water.",
+		de: "Es knabbert ständig an Holz und Steinen, um seine Vorderzähne zu kürzen. Es nistet am Wasser."
 	},
 
 	variants: [

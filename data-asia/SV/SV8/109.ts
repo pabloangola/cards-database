@@ -1,23 +1,63 @@
-import { Card } from "../../../interfaces"
-import Set from "../SV8"
+import { Card } from "../../../interfaces";
+import Set from "../SV8";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Ceruledge',
-		ja: 'Ceruledge',
+		ja: "ソウブレイズ",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Illustration Rare',
+	illustrator: "Rond",
+	category: "Pokemon",
+	hp: 140,
+	types: ["Fire"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 305472
-		}
-	}],
-}
+	description: {
+		ja: "怨念の 染みついた 古い 鎧により 進化した 姿。 容赦なく 敵を 切り刻む。",
+	},
 
-export default card
+	stage: "Stage1",
+
+	attacks: [
+		{
+			name: { ja: "ブレイズカース" },
+			cost: ["Colorless"],
+			effect: {
+				ja: "相手のポケモン全員についている特殊エネルギーを、すべてトラッシュする。",
+			},
+		},
+		{
+			name: { ja: "こくえんぎり" },
+			damage: 160,
+			cost: ["Fire", "Fire", "Colorless"],
+			effect: {
+				ja: "次の自分の番、このポケモンはワザが使えない。",
+			},
+		},
+	],
+
+	weaknesses: [{ type: "Water", value: "x2" }],
+	resistances: [],
+
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 305472,
+				cardmarket: 793573,
+				tcgplayer: 587688,
+			},
+		},
+	],
+
+	evolveFrom: {
+		ja: "カルボウ",
+	},
+
+	retreat: 2,
+	regulationMark: "H",
+	rarity: "Illustration rare",
+	dexId: [937],
+};
+
+export default card;

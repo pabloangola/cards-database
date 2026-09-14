@@ -4,6 +4,7 @@ import Set from "../Fusion Strike"
 const card: Card = {
 	dexId: [380],
 	set: Set,
+	cameoDexIds: [381],
 
 	name: {
 		en: "Latias",
@@ -24,7 +25,8 @@ const card: Card = {
 	illustrator: "Yuu Nishida",
 
 	description: {
-		en: "It can telepathically communicate with people. It changes its appearance using its down that refracts light."
+		en: "It can telepathically communicate with people. It changes its appearance using its down that refracts light.",
+		de: "Mittels Telepathie kann es mit Menschen kommunizieren. Mit seinen Daunen, die das Licht brechen, kann es sein Aussehen verändern."
 	},
 
 	abilities: [{

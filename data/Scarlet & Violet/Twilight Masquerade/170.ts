@@ -4,6 +4,7 @@ import Set from "../Twilight Masquerade"
 const card: Card = {
 	dexId: [1011],
 	set: Set,
+	cameoDexIds: [819, 1017],
 
 	name: {
 		en: "Dipplin",
@@ -85,6 +86,7 @@ const card: Card = {
 
 	description: {
 		en: "The head sticking out belongs to the fore-wyrm, while the tail belongs to the core-wyrm. The two share one apple and help each other out.",
+		de: "Im Apfel leben die sich gegenseitig helfenden „Kopfel“ und „Schwanzel“. Beim Ersten ragt der Kopf heraus, beim Zweiten der Schwanz."
 	},
 
 	variants: [

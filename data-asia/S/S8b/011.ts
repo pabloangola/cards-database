@@ -1,23 +1,71 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Orbeetle VMAX',
-		ja: 'Orbeetle VMAX',
+		ja: "イオルブVMAX",
+		'zh-tw': "以歐路普VMAX",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Ultra Rare',
+	illustrator: "5ban Graphics",
+	category: "Pokemon",
+	hp: 310,
+	types: ["Grass"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 232766
-		}
-	}],
-}
+	stage: "VMAX",
 
-export default card
+	abilities: [
+		{
+			type: "Ability",
+			name: {
+				ja: "かいこうせん",
+				'zh-tw': "怪光線",
+			},
+			effect: {
+				ja: "このポケモンがバトル場にいるなら、自分の番に1回使える。相手のポケモン全員に、それぞれダメカンを1個のせる。",
+				'zh-tw': "若這隻寶可夢在戰鬥場上，則在自己的回合時可使用1次。在對手的所有寶可夢身上各放置1個傷害指示物。",
+			},
+		},
+	],
+
+	attacks: [
+		{
+			name: {
+				ja: "キョダイウェーブ",
+				'zh-tw': "超極巨波瀾壯闊",
+			},
+			damage: "50+",
+			cost: ["Grass", "Colorless"],
+			effect: {
+				ja: "相手のバトルポケモンについているエネルギーの数×50ダメージ追加。",
+				'zh-tw': "增加對手的戰鬥寶可夢身上附加的能量的數量×50點傷害。",
+			},
+		},
+	],
+
+	weaknesses: [{ type: "Fire", value: "x2" }],
+	resistances: [],
+
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 232766,
+				cardmarket: 586526,
+				tcgplayer: 571264,
+			},
+		},
+	],
+
+	evolveFrom: {
+		ja: "イオルブV",
+	},
+
+	retreat: 1,
+	regulationMark: "D",
+	rarity: "Triple Rare",
+	dexId: [826],
+};
+
+export default card;

@@ -15,6 +15,7 @@ const card: Card = {
 	rarity: "Common",
 	category: "Pokemon",
 	set: Set,
+	cameoDexIds: [25, 133],
 
 	dexId: [
 		517,
@@ -64,6 +65,7 @@ const card: Card = {
 
 	description: {
 		en: "This Pokémon appears before people and Pokémon who are having nightmares and eats those dreams.",
+		de: "Es erscheint vor schlafenden Menschen und Pokémon und frisst ihre Alpträume."
 	},
 
 	thirdParty: {

@@ -1,23 +1,63 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Frosmoth',
-		ja: 'Frosmoth',
+		ja: "モスノウ",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Illustration Rare',
+	illustrator: "aoki",
+	category: "Pokemon",
+	hp: 90,
+	types: ["Water"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 232955
-		}
-	}],
-}
+	description: {
+		ja: "野山を 荒らすものには 容赦 しない。 冷たいはねで 飛びまわり 吹雪を 起こして 懲らしめる。",
+	},
 
-export default card
+	stage: "Stage1",
+
+	abilities: [
+		{
+			type: "Ability",
+			name: { ja: "ひょうせつのまい" },
+			effect: {
+				ja: "自分の番に何回でも使える。自分の手札から[水]エネルギーを1枚選び、ベンチの[水]ポケモンにつける。",
+			},
+		},
+	],
+
+	attacks: [
+		{
+			name: { ja: "オーロラビーム" },
+			damage: 30,
+			cost: ["Water", "Colorless"],
+		},
+	],
+
+	weaknesses: [{ type: "Metal", value: "x2" }],
+	resistances: [],
+
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 232955,
+				cardmarket: 586931,
+				tcgplayer: 571444,
+			},
+		},
+	],
+
+	evolveFrom: {
+		ja: "ユキハミ",
+	},
+
+	retreat: 2,
+	regulationMark: "D",
+	rarity: "Character Rare",
+	dexId: [873],
+};
+
+export default card;

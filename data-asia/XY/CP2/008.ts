@@ -1,23 +1,57 @@
-import { Card } from "../../../interfaces"
-import Set from "../CP2"
+import { Card } from "../../../interfaces";
+import Set from "../CP2";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Pikachu EX',
-		ja: 'Pikachu EX',
+		ja: "ピカチュウEX",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Ultra Rare',
+	illustrator: "Hitoshi Ariga",
+	category: "Pokemon",
+	hp: 130,
+	types: ["Lightning"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 283203
-		}
-	}],
-}
+	stage: "Basic",
 
-export default card
+	attacks: [
+		{
+			name: { ja: "アイアンテール" },
+			damage: "30×",
+			cost: ["Colorless"],
+			effect: {
+				ja: "ウラが出るまでコインを投げ、オモテの数x30ダメージ。",
+			},
+		},
+		{
+			name: { ja: "オーバースパーク" },
+			damage: "50×",
+			cost: ["Lightning", "Colorless", "Colorless"],
+			effect: {
+				ja: "このポケモンについている[雷]エネルギーをすべてトラッシュし、トラッシュした枚数x50ダメージ。",
+			},
+		},
+	],
+
+	weaknesses: [{ type: "Fighting", value: "x2" }],
+	resistances: [{ type: "Metal", value: "-20" }],
+
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 283203,
+				cardmarket: 563489,
+				tcgplayer: 605348,
+			},
+		},
+	],
+
+	retreat: 1,
+	rarity: "Double rare",
+	dexId: [25],
+
+	suffix: "EX",
+};
+
+export default card;

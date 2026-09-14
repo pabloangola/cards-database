@@ -1,23 +1,60 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Ice Rider Calyrex VMAX',
-		ja: 'Ice Rider Calyrex VMAX',
+		ja: "はくばバドレックスVMAX",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Illustration Rare',
+	illustrator: "Hitoshi Ariga",
+	category: "Pokemon",
+	hp: 320,
+	types: ["Water"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 233080
-		}
-	}],
-}
+	stage: "VMAX",
 
-export default card
+	attacks: [
+		{
+			name: { ja: "エンペラーライド" },
+			damage: "10+",
+			cost: ["Colorless", "Colorless"],
+			effect: {
+				ja: "相手のベンチポケモンの数×30ダメージ追加。",
+			},
+		},
+		{
+			name: { ja: "ダイランス" },
+			damage: "10+",
+			cost: ["Water", "Water"],
+			effect: {
+				ja: "のぞむなら、このポケモンについているエネルギーを2枚まで選び、トラッシュする。その場合、トラッシュした枚数×120ダメージ追加。",
+			},
+		},
+	],
+
+	weaknesses: [{ type: "Metal", value: "x2" }],
+	resistances: [],
+
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 233080,
+				cardmarket: 587019,
+				tcgplayer: 571473,
+			},
+		},
+	],
+
+	evolveFrom: {
+		ja: "はくばバドレックスV",
+	},
+
+	retreat: 2,
+	regulationMark: "E",
+	rarity: "Character Super Rare",
+	dexId: [898],
+};
+
+export default card;

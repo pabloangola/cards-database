@@ -1,23 +1,33 @@
-import { Card } from "../../../interfaces"
-import Set from "../SV8"
+import { Card } from "../../../interfaces";
+import Set from "../SV8";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Cyrano',
-		ja: 'Cyrano',
+		ja: "シアノ",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Ultra Rare',
+	illustrator: "Akira Komayama",
+	category: "Trainer",
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 305470
-		}
-	}],
-}
+	effect: {
+		ja: "自分の山札から「ポケモンex」を3枚まで選び、相手に見せて、手札に加える。そして山札を切る。",
+	},
 
-export default card
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 305470,
+				cardmarket: 793592,
+				tcgplayer: 587696,
+			},
+		},
+	],
+
+	trainerType: "Supporter",
+	regulationMark: "H",
+	rarity: "Ultra Rare",
+};
+
+export default card;

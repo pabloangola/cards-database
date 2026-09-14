@@ -1,28 +1,3 @@
-<<<<<<< HEAD
-import { Card } from "../../../interfaces"
-import Set from "../SM4A"
-
-const card: Card = {
-	set: Set,
-
-	name: {
-		en: 'Primeape',
-		ja: 'Primeape',
-	},
-
-	category: 'Pokemon',
-	rarity: 'Uncommon',
-
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 144046
-		}
-	}],
-}
-
-export default card
-=======
 import { Card } from "../../../interfaces";
 import Set from "../SM4A";
 
@@ -66,6 +41,7 @@ const card: Card = {
 		{
 			type: "normal",
 			thirdParty: {
+				cardtrader: 144046,
 				cardmarket: 560270,
 			},
 		},
@@ -81,4 +57,3 @@ const card: Card = {
 };
 
 export default card;
->>>>>>> upstream/master

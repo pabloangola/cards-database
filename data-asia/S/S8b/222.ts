@@ -1,23 +1,55 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Pikachu V',
-		ja: 'Pikachu V',
+		ja: "ピカチュウV",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Illustration Rare',
+	illustrator: "Ryota Murayama",
+	category: "Pokemon",
+	hp: 190,
+	types: ["Lightning"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 233081
-		}
-	}],
-}
+	stage: "Basic",
 
-export default card
+	attacks: [
+		{
+			name: { ja: "じゅうでん" },
+			cost: ["Lightning"],
+			effect: {
+				ja: "自分の山札から[雷]エネルギーを2枚まで選び、このポケモンにつける。そして山札を切る。",
+			},
+		},
+		{
+			name: { ja: "10まんボルト" },
+			damage: 200,
+			cost: ["Lightning", "Lightning", "Colorless"],
+			effect: {
+				ja: "このポケモンについているエネルギーを、すべてトラッシュする。",
+			},
+		},
+	],
+
+	weaknesses: [{ type: "Fighting", value: "x2" }],
+	resistances: [],
+
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 233081,
+				cardmarket: 587020,
+				tcgplayer: 571474,
+			},
+		},
+	],
+
+	retreat: 1,
+	regulationMark: "D",
+	rarity: "Character Super Rare",
+	dexId: [25],
+};
+
+export default card;

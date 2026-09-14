@@ -4,6 +4,7 @@ import Set from "../Paldea Evolved"
 const card: Card = {
 	dexId: [297],
 	set: Set,
+	cameoDexIds: [296],
 
 	name: {
 		fr: "Hariyama",
@@ -97,6 +98,7 @@ const card: Card = {
 
 	description: {
 		en: "It loves challenging others to tests of strength. It has the power to stop a train with a slap.",
+		de: "Dieses Pokémon liebt ein ordentliches Kräftemessen. Es ist stark genug, um mit der flachen Hand einen rasenden Zug aufzuhalten."
 	},
 }
 

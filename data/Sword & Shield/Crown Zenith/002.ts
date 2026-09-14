@@ -4,6 +4,7 @@ import Set from "../Crown Zenith"
 const card: Card = {
 	dexId: [44],
 	set: Set,
+	cameoDexIds: [43, 45],
 
 	name: {
 		en: "Gloom",
@@ -67,6 +68,7 @@ const card: Card = {
 
 	description: {
 		en: "Its pistils exude an incredibly foul odor. The horrid stench can cause fainting at a distance of 1.25 miles.",
+		de: "Sein Stempel sondert einen unglaublich faulen Gestank ab. Dieser stechende Geruch kann selbst bis zu 2 km entfernte Gegner bewusstlos machen."
 	},
 
 	

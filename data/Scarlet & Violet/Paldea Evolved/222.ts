@@ -4,6 +4,7 @@ import Set from "../Paldea Evolved"
 const card: Card = {
 	dexId: [248],
 	set: Set,
+	cameoDexIds: [398],
 
 	name: {
 		fr: "Tyranocif",
@@ -98,6 +99,7 @@ const card: Card = {
 
 	description: {
 		en: "Extremely strong, it can change the landscape. It is so insolent that it doesn't care about others.",
+		de: "Dieses kaltblütige und rücksichtslose Pokémon ist so stark, dass es mit Leichtigkeit das Aussehen ganzer Landstriche verändern kann."
 	},
 }
 

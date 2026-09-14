@@ -1,23 +1,64 @@
-import { Card } from "../../../interfaces"
-import Set from "../SV8"
+import { Card } from "../../../interfaces";
+import Set from "../SV8";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Milotic ex',
-		ja: 'Milotic ex',
+		ja: "ミロカロスex",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Special Illustration Rare',
+	illustrator: "Kuroimori",
+	category: "Pokemon",
+	hp: 270,
+	types: ["Water"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 304690
-		}
-	}],
-}
+	stage: "Stage1",
 
-export default card
+	abilities: [
+		{
+			type: "Ability",
+			name: { ja: "きらめくウロコ" },
+			effect: {
+				ja: "このポケモンは、相手の「テラスタル」のポケモンからワザのダメージや効果を受けない。",
+			},
+		},
+	],
+
+	attacks: [
+		{
+			name: { ja: "ヒプノスプラッシュ" },
+			damage: 160,
+			cost: ["Water", "Colorless", "Colorless"],
+			effect: {
+				ja: "相手のバトルポケモンをねむりにする。",
+			},
+		},
+	],
+
+	weaknesses: [{ type: "Lightning", value: "x2" }],
+	resistances: [],
+
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 304690,
+				cardmarket: 793596,
+				tcgplayer: 587698,
+			},
+		},
+	],
+
+	evolveFrom: {
+		ja: "ヒンバス",
+	},
+
+	retreat: 2,
+	regulationMark: "H",
+	rarity: "Special illustration rare",
+	dexId: [350],
+
+	suffix: "EX",
+};
+
+export default card;

@@ -4,7 +4,7 @@ import Set from '../Team Rocket Returns'
 const card: Card = {
 	name: {
 		en: "Rocket's Entei ex",
-		de: "Rockets Entei ex"
+		de: "Rockets Entei-ex"
 	},
 
 	illustrator: "Ryo Ueda",
@@ -82,16 +82,17 @@ const card: Card = {
 	
 	retreat: 1,
 
-	thirdParty: {
-		cardmarket: 276389,
-		tcgplayer: 88769
-	},
 
 	variants: [
 		{
-			type: "holo"
+			type: "holo",
+			thirdParty: {
+				cardmarket: 276389,
+				tcgplayer: 88769
+			},
 		},
-	]
+	],
+
 }
 
 export default card

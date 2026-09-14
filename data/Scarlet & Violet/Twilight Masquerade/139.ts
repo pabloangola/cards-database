@@ -4,6 +4,7 @@ import Set from "../Twilight Masquerade"
 const card: Card = {
 	dexId: [580],
 	set: Set,
+	cameoDexIds: [129],
 
 	name: {
 		en: "Ducklett",
@@ -72,6 +73,7 @@ const card: Card = {
 
 	description: {
 		en: "It strengthens its body by diving into the depths of ponds, swimming around while looking for bog moss to eat.",
+		de: "Auf der Suche nach Torfmoos, seiner Nahrung, schwimmt es tief unten in Teichen umher und stählt so seinen Körper."
 	},
 
 	variants: [

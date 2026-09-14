@@ -31,6 +31,16 @@ const card: Card = {
 		},
 		cost: ["Fire", "Psychic", "Colorless"]
 	}],
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardmarket: 840638,
+				tcgplayer: 647216,
+			},
+		},
+	],
+
 	retreat: 1,
 	regulationMark: "I",
 	rarity: "Secret Rare",

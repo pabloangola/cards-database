@@ -1,23 +1,33 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Sordward & Shielbert',
-		ja: 'Sordward & Shielbert',
+		ja: "ソッドとシルディ",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Ultra Rare',
+	illustrator: "nagimiso",
+	category: "Trainer",
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 233122
-		}
-	}],
-}
+	effect: {
+		ja: "自分のトラッシュからトレーナーズを1枚選び、相手に見せて、手札に加えて良いかを相手にたずねる。相手が良いなら、選んだカードを手札に加える。良くないなら、選んだカードをトラッシュにもどし、自分の山札を3枚引く。",
+	},
 
-export default card
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 233122,
+				cardmarket: 587061,
+				tcgplayer: 571515,
+			},
+		},
+	],
+
+	trainerType: "Supporter",
+	regulationMark: "D",
+	rarity: "Ultra Rare",
+};
+
+export default card;

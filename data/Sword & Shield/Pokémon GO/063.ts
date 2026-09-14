@@ -4,6 +4,7 @@ import Set from "../Pokémon GO"
 const card: Card = {
 	dexId: [521],
 	set: Set,
+	cameoDexIds: [259],
 
 	name: {
 		en: "Unfezant",
@@ -86,6 +87,7 @@ const card: Card = {
 
 	description: {
 		en: "Unfezant are exceptional fliers. The females are known for their stamina, while the males outclass them in terms of speed.",
+		de: "Sie verfügen über exzellente Flugfertigkeiten. Weibchen können länger fliegen, aber dafür erreichen Männchen ein höheres Flugtempo."
 	},
 
 	

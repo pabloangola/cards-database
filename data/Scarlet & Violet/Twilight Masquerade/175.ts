@@ -4,6 +4,7 @@ import Set from "../Twilight Masquerade"
 const card: Card = {
 	dexId: [489],
 	set: Set,
+	cameoDexIds: [320, 321],
 
 	name: {
 		en: "Phione",
@@ -75,6 +76,7 @@ const card: Card = {
 
 	description: {
 		en: "When the water warms, they inflate the flotation sac on their heads and drift languidly on the sea in packs.",
+		de: "Steigt die Meerestemperatur, bläst es seinen Schwimmbeutel auf und treibt in Schwärmen auf dem Wasser."
 	},
 
 	variants: [

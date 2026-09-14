@@ -4,6 +4,7 @@ import Set from "../Pokémon GO"
 const card: Card = {
 	dexId: [1],
 	set: Set,
+	cameoDexIds: [43],
 
 	name: {
 		en: "Bulbasaur",
@@ -61,6 +62,7 @@ const card: Card = {
 
 	description: {
 		en: "There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger.",
+		de: "Dieses Pokémon trägt von Geburt an einen Samen auf dem Rücken, der im Laufe der Zeit keimt und wächst."
 	},
 
 	

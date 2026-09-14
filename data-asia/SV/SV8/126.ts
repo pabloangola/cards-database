@@ -1,23 +1,64 @@
-import { Card } from "../../../interfaces"
-import Set from "../SV8"
+import { Card } from "../../../interfaces";
+import Set from "../SV8";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Slaking ex',
-		ja: 'Slaking ex',
+		ja: "ケッキングex",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Ultra Rare',
+	illustrator: "PLANETA Igarashi",
+	category: "Pokemon",
+	hp: 340,
+	types: ["Colorless"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 305665
-		}
-	}],
-}
+	stage: "Stage2",
 
-export default card
+	abilities: [
+		{
+			type: "Ability",
+			name: { ja: "さぼりたいしつ" },
+			effect: {
+				ja: "相手の場に「ポケモンex・V」がいないなら、このポケモンはワザが使えない。",
+			},
+		},
+	],
+
+	attacks: [
+		{
+			name: { ja: "グレートスイング" },
+			damage: 280,
+			cost: ["Colorless", "Colorless"],
+			effect: {
+				ja: "このポケモンについているエネルギーを1個選び、トラッシュする。",
+			},
+		},
+	],
+
+	weaknesses: [{ type: "Fighting", value: "x2" }],
+	resistances: [],
+
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 305665,
+				cardmarket: 793591,
+				tcgplayer: 587714,
+			},
+		},
+	],
+
+	evolveFrom: {
+		ja: "ヤルキモノ",
+	},
+
+	retreat: 4,
+	regulationMark: "H",
+	rarity: "Ultra Rare",
+	dexId: [289],
+
+	suffix: "EX",
+};
+
+export default card;

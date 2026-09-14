@@ -4,6 +4,7 @@ import Set from "../Twilight Masquerade"
 const card: Card = {
 	dexId: [476],
 	set: Set,
+	cameoDexIds: [246, 270, 396, 399, 836],
 
 	name: {
 		en: "Probopass",
@@ -76,6 +77,7 @@ const card: Card = {
 
 	description: {
 		en: "Probopass radiates such a powerful magnetic field that nearby electrical appliances are rendered useless while it's around.",
+		de: "Es strahlt eine starke magnetische Kraft aus, weshalb Elektrogeräte in seiner Nähe unbrauchbar werden."
 	},
 
 	variants: [

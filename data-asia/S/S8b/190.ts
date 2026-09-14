@@ -1,23 +1,66 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Kingdra',
-		ja: 'Kingdra',
+		ja: "キングドラ",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Illustration Rare',
+	illustrator: "Taira Akitsu",
+	category: "Pokemon",
+	hp: 150,
+	types: ["Water"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 232953
-		}
-	}],
-}
+	description: {
+		ja: "どんな 生き物も 降りられない 深い 海の底で 眠りながら 力を 蓄えている という。",
+	},
 
-export default card
+	stage: "Stage2",
+
+	abilities: [
+		{
+			type: "Ability",
+			name: { ja: "かいていのぬし" },
+			effect: {
+				ja: "自分のバトルポケモンが、相手のポケモンからワザのダメージを受けてきぜつするたび、1回使える。きぜつしたポケモンについている[水]エネルギーを好きなだけ選び、このポケモンにつけ替える。",
+			},
+		},
+	],
+
+	attacks: [
+		{
+			name: { ja: "アクアバースト" },
+			damage: "40×",
+			cost: ["Water"],
+			effect: {
+				ja: "このポケモンについている[水]エネルギーの数×40ダメージ。",
+			},
+		},
+	],
+
+	weaknesses: [{ type: "Lightning", value: "x2" }],
+	resistances: [],
+
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 232953,
+				cardmarket: 586929,
+				tcgplayer: 571442,
+			},
+		},
+	],
+
+	evolveFrom: {
+		ja: "シードラ",
+	},
+
+	retreat: 1,
+	regulationMark: "E",
+	rarity: "Character Rare",
+	dexId: [230],
+};
+
+export default card;

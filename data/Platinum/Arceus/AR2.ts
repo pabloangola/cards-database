@@ -4,7 +4,6 @@ import Set from '../Arceus'
 const card: Card = {
 	name: {
 		en: "Arceus",
-		fr: "Arceus",
 		de: "Arceus"
 	},
 
@@ -31,12 +30,10 @@ const card: Card = {
 			],
 			name: {
 				en: "Leaf Refresh",
-				fr: "Feuille revigorante",
 				de: "Blätterheilung"
 			},
 			effect: {
 				en: "Remove 3 damage counters from each of your Benched Pokémon.",
-				fr: "Retirez 3 marqueurs de dégât à chacun des Pokémon de votre Banc.",
 				de: "Entferne 3 Schadensmarken von jedem Pokémon auf deiner Bank."
 			},
 			damage: 30,
@@ -61,7 +58,8 @@ const card: Card = {
 	retreat: 2,
 
 	description: {
-		en: "It is said to have emerged from an egg in a place where there was nothing, then shaped the world."
+		en: "It is said to have emerged from an egg in a place where there was nothing, then shaped the world.",
+		de: "Man sagt, es sei im Nichts aus einem Ei geschlüpft und habe dann die Welt geformt."
 	},
 
 	variants: [

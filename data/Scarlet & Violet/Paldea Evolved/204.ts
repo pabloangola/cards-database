@@ -4,6 +4,7 @@ import Set from "../Paldea Evolved"
 const card: Card = {
 	dexId: [183],
 	set: Set,
+	cameoDexIds: [370, 692, 748, 779, 871],
 
 	name: {
 		fr: "Marill",
@@ -68,6 +69,7 @@ const card: Card = {
 
 	description: {
 		en: "The fur on its body naturally repels water. It can stay dry even when it plays in the water.",
+		de: "Sein Fell ist von Natur aus wasserabweisend. Es bleibt trocken, auch wenn es im Wasser spielt."
 	},
 }
 

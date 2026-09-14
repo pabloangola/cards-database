@@ -239,6 +239,7 @@
 		"master-ball-league": "liga-master-ball",
 		"ultra-ball-league": "liga-ultra-ball",
 		"poke-ball-league": "liga-poke-ball",
+		"great-ball-league": "liga-great-ball",
 		"asia-promo": "asia-promo",
 		"judge": "juiz",
 		"international-championship-europe": "campeonato-internacional-europa",
@@ -256,14 +257,25 @@
 		"rain-city": "rain-city",
 		"tournament-collection": "tournament-collection",
 		"worlds-2024": "worlds-2024",
+		"worlds-2022": "worlds-2022",
 		"worlds-2023": "worlds-2023",
 		"asia-2023-24": "asia-2023-24",
 		"thank-you": "thank-you",
 		"jr-stamp-rally": "jr-stamp-rally",
 		"grey-star": "estrela cinza",
+		"scrye": "scrye",
+		"inquest-gamer": "inquest-gamer",
 		"pop-tournament": "pop-tournament",
 		"chicago-2009": "chicago-2009",
-		"chase-moloney": "chase-moloney"
+		"chase-moloney": "chase-moloney",
+		"jesse-parker": "jesse-parker",
+		"gabriel-fernandez": "gabriel-fernandez",
+		"shao-tong-yen": "shao-tong-yen",
+		"liao-fu-guan": "liao-fu-guan",
+		"jose-cruz-galindo-resendiz": "Jose Cruz Galindo-Resendiz",
+		"sakuya-ota": "sakuya-ota",
+		"poketour-99": "PokeTour 1999",
+		"fossil-museum": "Fossil Museum"
 	},
 	"variantSubtype": {
 		"shadowless": "sem sombra",
@@ -291,6 +303,8 @@
 		"nintedo-error": "Erro de Nintedo",
 		"1995-1998-copyright": "Copyright 1995-1998",
 		"no-rarity": "Sem raridade",
-		"phanphy-error" : "error de phanphy"
+		"phanphy-error": "error de phanphy",
+		"peelable-ditto": "Ditto destacável",
+		"misisng-retreat-cost": "Custo de recuo ausente"
 	}
 }

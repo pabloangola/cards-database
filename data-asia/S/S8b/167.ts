@@ -1,23 +1,41 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Path to the Peak',
-		ja: 'Path to the Peak',
+		ja: "頂への雪道",
+		'zh-tw': "通頂雪道",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Fixed',
+	illustrator: "Oswaldo KATO",
+	category: "Trainer",
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 232930
-		}
-	}],
-}
+	effect: {
+		ja: "おたがいの場の「ルールを持つポケモン」の特性は、すべてなくなる。",
+		'zh-tw': "雙方場上的「擁有規則的寶可夢」的特性全部消除。",
+	},
 
-export default card
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardtrader: 232930,
+				cardmarket: 586683,
+				tcgplayer: 571419,
+			},
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				tcgplayer: 578445,
+			},
+		},
+	],
+
+	trainerType: "Stadium",
+	regulationMark: "E",
+	rarity: "None",
+};
+
+export default card;

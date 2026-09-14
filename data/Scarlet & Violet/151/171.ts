@@ -4,6 +4,7 @@ import Set from "../151"
 const card: Card = {
 	dexId: [8],
 	set: Set,
+	cameoDexIds: [39, 54, 149],
 
 	name: {
 		fr: "Carabaffe",
@@ -74,6 +75,7 @@ const card: Card = {
 
 	description: {
 		en: "It cleverly controls its furry ears and tail to maintain its balance while swimming.",
+		de: "Es balanciert geschickt mit seinen buschigen Ohren und dem Schweif, während es im Wasser schwimmt."
 	},
 
 	variants: [

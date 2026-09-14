@@ -4,6 +4,7 @@ import Set from "../Silver Tempest"
 const card: Card = {
 	dexId: [727],
 	set: Set,
+	cameoDexIds: [222, 370],
 
 	name: {
 		en: "Incineroar",
@@ -87,6 +88,7 @@ const card: Card = {
 
 	description: {
 		en: "When its fighting spirit is set alight, the flames around its waist become especially intense.",
+		de: "Entbrennt sein Kampfeswille, lodern die Flammen um seine Hüfte noch heftiger auf."
 	},
 
 	variants: [

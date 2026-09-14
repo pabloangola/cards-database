@@ -15,6 +15,7 @@ const card: Card = {
 	rarity: "Rare",
 	category: "Pokemon",
 	set: Set,
+	cameoDexIds: [453],
 
 	dexId: [
 		26,
@@ -29,6 +30,7 @@ const card: Card = {
 	evolveFrom: {
 		en: "Pikachu",
 		fr: "Pikachu",
+		de: "Pikachu"
 	},
 
 	stage: "Stage1",
@@ -101,6 +103,7 @@ const card: Card = {
 
 	description: {
 		en: "It unleashes electric shocks that can reach 100,000 volts. When agitated, it can knock out even an Indian elephant.",
+		de: "Seine elektrischen Ladungen erreichen bis zu 100 000 V. Bei unvorsichtigem Kontakt wird sogar ein indischer Elefant bewusstlos."
 	},
 
 	thirdParty: {

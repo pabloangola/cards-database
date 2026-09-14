@@ -1,23 +1,33 @@
-import { Card } from "../../../interfaces"
-import Set from "../SV8"
+import { Card } from "../../../interfaces";
+import Set from "../SV8";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Clemont’s Quick Wit',
-		ja: 'Clemont’s Quick Wit',
+		ja: "シトロンの機転",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Ultra Rare',
+	illustrator: "Naoki Saito",
+	category: "Trainer",
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 305685
-		}
-	}],
-}
+	effect: {
+		ja: "自分の[L]ポケモン全員のHPを、それぞれ「60」回復する。",
+	},
 
-export default card
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 305685,
+				cardmarket: 793593,
+				tcgplayer: 587707,
+			},
+		},
+	],
+
+	trainerType: "Supporter",
+	regulationMark: "H",
+	rarity: "Ultra Rare",
+};
+
+export default card;

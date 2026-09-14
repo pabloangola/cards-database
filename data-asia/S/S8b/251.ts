@@ -1,23 +1,58 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Zamazenta V',
-		ja: 'Zamazenta V',
+		ja: "ザマゼンタV",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Illustration Rare',
+	illustrator: "Ryuta Fuse",
+	category: "Pokemon",
+	hp: 230,
+	types: ["Metal"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 233110
-		}
-	}],
-}
+	stage: "Basic",
 
-export default card
+	abilities: [
+		{
+			type: "Ability",
+			name: { ja: "ふくつのたて" },
+			effect: {
+				ja: "このポケモンは、相手の「ポケモンVMAX」からワザのダメージを受けない。",
+			},
+		},
+	],
+
+	attacks: [
+		{
+			name: { ja: "アサルトタックル" },
+			damage: 130,
+			cost: ["Metal", "Metal", "Colorless"],
+			effect: {
+				ja: "相手のバトルポケモンについている特殊エネルギーを1個選び、トラッシュする。",
+			},
+		},
+	],
+
+	weaknesses: [{ type: "Fire", value: "x2" }],
+	resistances: [{ type: "Grass", value: "-30" }],
+
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 233110,
+				cardmarket: 587049,
+				tcgplayer: 571503,
+			},
+		},
+	],
+
+	retreat: 2,
+	regulationMark: "D",
+	rarity: "Character Super Rare",
+	dexId: [889],
+};
+
+export default card;

@@ -1,23 +1,78 @@
-import { Card } from "../../../interfaces"
-import Set from "../SV8"
+import { Card } from "../../../interfaces";
+import Set from "../SV8";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Chien-Pao',
-		ja: 'Chien-Pao',
+		ja: "パオジアン",
+		'zh-tw': "古劍豹",
+		'zh-cn': "古劍豹",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Holo Rare',
+	illustrator: "Yuya Oka",
+	category: "Pokemon",
+	hp: 120,
+	types: ["Water"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 305433
-		}
-	}],
-}
+	description: {
+		ja: "大昔に 剣によって 露と消えた 者たちの 憎しみが 雪を まとい ポケモンになった。",
+		'zh-tw': "遙遠過去喪命於劍下者 的憎恨之情纏繞在雪上， 變成了寶可夢。",
+		'zh-cn': "遙遠過去喪命於劍下者 的憎恨之情纏繞在雪上， 變成了寶可夢。",
+	},
 
-export default card
+	stage: "Basic",
+
+	abilities: [
+		{
+			type: "Ability",
+			name: {
+				ja: "ゆきにしずめる",
+				'zh-tw': "‌‌沉雪",
+				'zh-cn': "‌‌沉雪",
+			},
+			effect: {
+				ja: "自分の番に、このカードを手札からベンチに出したとき、1回使える。場に出ているスタジアムをトラッシュする。",
+				'zh-tw': "在自己的回合，從手牌將這張卡放置於備戰區時，可使用1次。將場上的競技場卡丟棄。",
+				'zh-cn': "在自己的回合，從手牌將這張卡放置於備戰區時，可使用1次。將場上的競技場卡丟棄。",
+			},
+		},
+	],
+
+	attacks: [
+		{
+			name: {
+				ja: "アイシクルループ",
+				'zh-tw': "冰柱閉環",
+				'zh-cn': "冰柱閉環",
+			},
+			damage: 120,
+			cost: ["Water", "Water", "Colorless"],
+			effect: {
+				ja: "このポケモンについているエネルギーを1個選び、手札にもどす。",
+				'zh-tw': "選擇1個這隻寶可夢身上附加的能量，放回手牌。",
+				'zh-cn': "選擇1個這隻寶可夢身上附加的能量，放回手牌。",
+			},
+		},
+	],
+
+	weaknesses: [{ type: "Metal", value: "x2" }],
+	resistances: [],
+
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 305433,
+				cardmarket: 793466,
+				tcgplayer: 587612,
+			},
+		},
+	],
+
+	retreat: 1,
+	regulationMark: "H",
+	rarity: "Rare",
+	dexId: [1002],
+};
+
+export default card;

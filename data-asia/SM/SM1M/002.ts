@@ -1,28 +1,3 @@
-<<<<<<< HEAD
-import { Card } from "../../../interfaces"
-import Set from "../SM1M"
-
-const card: Card = {
-	set: Set,
-
-	name: {
-		en: 'Surskit',
-		ja: 'Surskit',
-	},
-
-	category: 'Pokemon',
-	rarity: 'Common',
-
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 136516
-		}
-	}],
-}
-
-export default card
-=======
 import { Card } from "../../../interfaces";
 import Set from "../SM1M";
 
@@ -61,6 +36,7 @@ const card: Card = {
 		{
 			type: "normal",
 			thirdParty: {
+				cardtrader: 136516,
 				cardmarket: 561603,
 			},
 		},
@@ -72,4 +48,3 @@ const card: Card = {
 };
 
 export default card;
->>>>>>> upstream/master

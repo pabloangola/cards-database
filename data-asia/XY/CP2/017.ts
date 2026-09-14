@@ -1,23 +1,52 @@
-import { Card } from "../../../interfaces"
-import Set from "../CP2"
+import { Card } from "../../../interfaces";
+import Set from "../CP2";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Dialga',
-		ja: 'Dialga',
+		ja: "ディアルガ",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Rare',
+	illustrator: "TOKIYA",
+	category: "Pokemon",
+	hp: 120,
+	types: ["Metal"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 283192
-		}
-	}],
-}
+	stage: "Basic",
 
-export default card
+	attacks: [
+		{
+			name: { ja: "メタルクロー" },
+			damage: 30,
+			cost: ["Metal", "Colorless"],
+		},
+		{
+			name: { ja: "じかんとうけつ" },
+			damage: 80,
+			cost: ["Metal", "Metal", "Colorless"],
+			effect: {
+				ja: "次の相手の番、このワザを受けたポケモンは、手札からポケモンを出して進化できない。",
+			},
+		},
+	],
+
+	weaknesses: [{ type: "Fire", value: "x2" }],
+	resistances: [{ type: "Psychic", value: "-20" }],
+
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 283192,
+				cardmarket: 563498,
+				tcgplayer: 605334,
+			},
+		},
+	],
+
+	retreat: 3,
+	rarity: "Rare",
+	dexId: [483],
+};
+
+export default card;

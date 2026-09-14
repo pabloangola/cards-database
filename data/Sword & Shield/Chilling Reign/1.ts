@@ -4,6 +4,7 @@ import Set from '../Chilling Reign'
 const card: Card = {
 	dexId: [13],
 	set: Set,
+	cameoDexIds: [214],
 
 	name: {
 		en: "Weedle",
@@ -46,7 +47,8 @@ const card: Card = {
 	stage: "Basic",
 
 	description: {
-		en: "Its poison stinger is very powerful. Its bright-colored body is intended to warn off its enemies."
+		en: "Its poison stinger is very powerful. Its bright-colored body is intended to warn off its enemies.",
+		de: "Sein Giftstachel ist gefährlich. Sein hellleuchtender Körper soll Feinde abschrecken."
 	},
 
 	variants: [

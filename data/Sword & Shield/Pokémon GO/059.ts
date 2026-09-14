@@ -57,9 +57,10 @@ const card: Card = {
 
 	description: {
 		en: "It constantly gnaws on logs and rocks to whittle down its front teeth. It nests alongside water.",
+		de: "Es knabbert ständig an Holz und Steinen, um seine Vorderzähne zu kürzen. Es nistet am Wasser."
 	},
 
-	
+
 
 	variants: [
 		{
@@ -74,6 +75,13 @@ const card: Card = {
 			thirdParty: {
 				cardmarket: 665282,
 				tcgplayer: 276982
+			}
+		},
+		{
+			type: 'reverse',
+			subtype: 'peelable-ditto',
+			thirdParty: {
+				tcgplayer: 277788
 			}
 		},
 	],

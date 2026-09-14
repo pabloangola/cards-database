@@ -1,23 +1,33 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Opal',
-		ja: 'Opal',
+		ja: "ポプラ",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Ultra Rare',
+	illustrator: "Taira Akitsu",
+	category: "Trainer",
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 233128
-		}
-	}],
-}
+	effect: {
+		ja: "コインを2回投げ、オモテの数ぶんまで、自分の山札から好きなカードを選び、手札に加える。そして山札を切る。",
+	},
 
-export default card
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 233128,
+				cardmarket: 587067,
+				tcgplayer: 571520,
+			},
+		},
+	],
+
+	trainerType: "Supporter",
+	regulationMark: "D",
+	rarity: "Ultra Rare",
+};
+
+export default card;

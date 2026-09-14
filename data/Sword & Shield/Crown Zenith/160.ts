@@ -4,6 +4,7 @@ import Set from "../Crown Zenith"
 const card: Card = {
 	dexId: [25],
 	set: Set,
+	cameoDexIds: [169, 571, 818, 888, 892, 897, 898],
 
 	name: {
 		en: "Pikachu",
@@ -57,6 +58,7 @@ const card: Card = {
 
 	description: {
 		en: "Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy.",
+		de: "Je stärker die Elektrizität ist, die Pikachu produziert, desto weicher und elastischer sind seine Backentaschen."
 	},
 
 	

@@ -15,6 +15,7 @@ const card: Card = {
 	rarity: "Rare",
 	category: "Pokemon",
 	set: Set,
+	cameoDexIds: [200],
 
 	dexId: [
 		429,
@@ -29,6 +30,7 @@ const card: Card = {
 	evolveFrom: {
 		en: "Misdreavus",
 		fr: "Feuforêve",
+		de: "Traunfugil"
 	},
 
 	stage: "Stage1",
@@ -102,6 +104,7 @@ const card: Card = {
 
 	description: {
 		en: "It appears as if from nowhere—muttering incantations, placing curses, and giving people terrifying visions.",
+		de: "Es erscheint aus dem Nichts, flüstert Beschwörungen, spricht Flüche aus und erzeugt furchteinflößende Trugbilder."
 	},
 
 	thirdParty: {

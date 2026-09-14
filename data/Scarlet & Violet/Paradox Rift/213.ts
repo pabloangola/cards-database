@@ -4,6 +4,7 @@ import Set from "../Paradox Rift"
 const card: Card = {
 	dexId: [333],
 	set: Set,
+	cameoDexIds: [278],
 
 	name: {
 		en: "Swablu",
@@ -72,6 +73,7 @@ const card: Card = {
 
 	description: {
 		en: "It can't relax if it or its surroundings are not clean. It wipes off dirt with its wings.",
+		de: "Es kann nicht entspannen, solange es selbst oder seine Umgebung dreckig sind. Wenn es Schmutz bemerkt, wischt es diesen mit seinen Flügeln weg."
 	},
 
 	variants: [

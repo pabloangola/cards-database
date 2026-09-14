@@ -4,6 +4,7 @@ import Set from "../Twilight Masquerade"
 const card: Card = {
 	dexId: [341],
 	set: Set,
+	cameoDexIds: [661],
 
 	name: {
 		en: "Corphish",
@@ -46,6 +47,7 @@ const card: Card = {
 
 	description: {
 		en: "It can live in impure water, where it doesn't need to compete with other water Pokémon for food, so its numbers have steadily increased.",
+		de: "Da ihm schmutziges Wasser nichts ausmacht, muss es nicht mit anderen Wasser-Pokémon ums Futter streiten. Deshalb konnte es sich rasch vermehren."
 	},
 
 	variants: [

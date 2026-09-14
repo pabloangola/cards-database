@@ -1,23 +1,57 @@
-import { Card } from "../../../interfaces"
-import Set from "../SV8"
+import { Card } from "../../../interfaces";
+import Set from "../SV8";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Shroodle',
-		ja: 'Shroodle',
+		ja: "シルシュルー",
+		'zh-tw': "滋汁鼴",
+		'zh-cn': "滋汁鼴",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Common',
+	illustrator: "Yukiko Baba",
+	category: "Pokemon",
+	hp: 60,
+	types: ["Darkness"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 305454
-		}
-	}],
-}
+	description: {
+		ja: "縄張りに 敵が 近づかないよう 刺激臭がする 毒液で 巣の まわりに 図形を 描く。",
+		'zh-tw': "為了不讓敵人靠近地盤， 會用有刺鼻臭味的毒液， 在巢的周圍描繪圖形。",
+		'zh-cn': "為了不讓敵人靠近地盤， 會用有刺鼻臭味的毒液， 在巢的周圍描繪圖形。",
+	},
 
-export default card
+	stage: "Basic",
+
+	attacks: [
+		{
+			name: {
+				ja: "しるをとばす",
+				'zh-tw': "噴汁",
+				'zh-cn': "噴汁",
+			},
+			damage: 20,
+			cost: ["Darkness"],
+		},
+	],
+
+	weaknesses: [{ type: "Fighting", value: "x2" }],
+	resistances: [],
+
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardtrader: 305454,
+				cardmarket: 793507,
+				tcgplayer: 587653,
+			},
+		},
+	],
+
+	retreat: 1,
+	regulationMark: "H",
+	rarity: "Common",
+	dexId: [944],
+};
+
+export default card;

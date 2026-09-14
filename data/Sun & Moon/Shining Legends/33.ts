@@ -15,6 +15,7 @@ const card: Card = {
 	rarity: "Common",
 	category: "Pokemon",
 	set: Set,
+	cameoDexIds: [312],
 
 	dexId: [
 		311,
@@ -72,6 +73,7 @@ const card: Card = {
 
 	description: {
 		en: "It cheers on friends with pom-poms made of sparks. It drains power from telephone poles.",
+		de: "Es feuert Freunde mit Pompons an, die aus Funken besteht. Es holt sich Energie aus Telegrafenmasten."
 	},
 
 	thirdParty: {

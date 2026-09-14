@@ -4,6 +4,7 @@ import Set from "../Paldea Evolved"
 const card: Card = {
 	dexId: [129],
 	set: Set,
+	cameoDexIds: [130],
 
 	name: {
 		fr: "Magicarpe",
@@ -68,6 +69,7 @@ const card: Card = {
 
 	description: {
 		en: "An underpowered, pathetic Pokémon. It may jump high on rare occasions but never more than seven feet.",
+		de: "Ein schwaches und jämmerliches Pokémon. Manchmal gelingen ihm hohe Sprünge, aber über 2 m kommt es selten hinaus."
 	},
 }
 

@@ -4,6 +4,7 @@ import Set from "../Paldea Evolved"
 const card: Card = {
 	dexId: [662],
 	set: Set,
+	cameoDexIds: [661, 667],
 
 	name: {
 		fr: "Braisillon",
@@ -82,6 +83,7 @@ const card: Card = {
 
 	description: {
 		en: "Fletchinder scatters embers in tall grass where bug Pokémon might be hiding and then catches them as they come leaping out.",
+		de: "Es versprüht Funken in hohem Gras, in dem es Käfer-Pokémon vermutet, und schnappt sich diese, sobald sie daraus hervorhuschen."
 	},
 }
 

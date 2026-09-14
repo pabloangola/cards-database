@@ -1,23 +1,33 @@
-import { Card } from "../../../interfaces"
-import Set from "../SV8"
+import { Card } from "../../../interfaces";
+import Set from "../SV8";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Gravity Mountain',
-		ja: 'Gravity Mountain',
+		ja: "グラビティーマウンテン",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Secret Rare',
+	illustrator: "AYUMI ODASHIMA",
+	category: "Trainer",
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 305684
-		}
-	}],
-}
+	effect: {
+		ja: "おたがいの場の2進化ポケモン全員の最大HPは、それぞれ「-30」される。",
+	},
 
-export default card
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 305684,
+				cardmarket: 793605,
+				tcgplayer: 587701,
+			},
+		},
+	],
+
+	trainerType: "Stadium",
+	regulationMark: "H",
+	rarity: "Secret Rare",
+};
+
+export default card;

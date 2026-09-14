@@ -1,23 +1,52 @@
-import { Card } from "../../../interfaces"
-import Set from "../SV8"
+import { Card } from "../../../interfaces";
+import Set from "../SV8";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Stunfisk',
-		ja: 'Stunfisk',
+		ja: "マッギョ",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Illustration Rare',
+	illustrator: "N-DESIGN Inc.",
+	category: "Pokemon",
+	hp: 110,
+	types: ["Lightning"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 305663
-		}
-	}],
-}
+	description: {
+		ja: "干潟が すみか。 泥に 棲む 細菌に よって 電気を つくる 器官が 発達した。",
+	},
 
-export default card
+	stage: "Basic",
+
+	attacks: [
+		{
+			name: { ja: "バチッとしびれる" },
+			damage: 50,
+			cost: ["Lightning", "Colorless"],
+			effect: {
+				ja: "コインを1回投げオモテなら、相手のバトルポケモンをマヒにする。さらに、そのポケモンについているエネルギーを1個選び、トラッシュする。",
+			},
+		},
+	],
+
+	weaknesses: [{ type: "Fighting", value: "x2" }],
+	resistances: [],
+
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 305663,
+				cardmarket: 793577,
+				tcgplayer: 587724,
+			},
+		},
+	],
+
+	retreat: 2,
+	regulationMark: "H",
+	rarity: "Illustration rare",
+	dexId: [618],
+};
+
+export default card;

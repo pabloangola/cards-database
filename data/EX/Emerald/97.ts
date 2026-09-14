@@ -5,7 +5,7 @@ const card: Card = {
 	name: {
 		en: "Raichu ex",
 		fr: "Raichu ex",
-		de: "Raichu ex"
+		de: "Raichu-ex"
 	},
 
 	illustrator: "Mitsuhiro Arita",
@@ -100,8 +100,12 @@ const card: Card = {
 	variants: [
 		{
 			type: "holo",
+			thirdParty: {
+				tcgplayer: 88526,
+				cardmarket: 276608
+			},
 		},
-	]
+	],
 }
 
 export default card

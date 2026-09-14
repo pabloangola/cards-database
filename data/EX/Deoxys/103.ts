@@ -5,7 +5,7 @@ const card: Card = {
 	name: {
 		en: "Salamence ex",
 		fr: "Drattak ex",
-		de: "Brutalanda ex"
+		de: "Brutalanda-ex"
 	},
 
 	illustrator: "Hikaru Koike",
@@ -107,16 +107,17 @@ const card: Card = {
 
 	retreat: 2,
 
-	thirdParty: {
-		tcgplayer: 88903,
-		cardmarket: 276506
-	},
 
 	variants: [
 		{
 			type: "holo",
-		}
-	]
+			thirdParty: {
+				tcgplayer: 88903,
+				cardmarket: 276506
+			},
+		},
+	],
+
 }
 
 export default card

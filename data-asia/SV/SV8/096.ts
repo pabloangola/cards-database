@@ -1,23 +1,37 @@
-import { Card } from "../../../interfaces"
-import Set from "../SV8"
+import { Card } from "../../../interfaces";
+import Set from "../SV8";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Chill Teaser Toy',
-		ja: 'Chill Teaser Toy',
+		ja: "のんびりじゃらし",
+		'zh-tw': "悠哉尾草棒",
+		'zh-cn': "悠哉尾草棒",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Uncommon',
+	illustrator: "AYUMI ODASHIMA",
+	category: "Trainer",
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 304673
-		}
-	}],
-}
+	effect: {
+		ja: "このカードは、後攻プレイヤーの最初の番しか使えない。相手の場のポケモンについているエネルギーを1個選び、相手の手札にもどす。",
+		'zh-tw': "這張卡只可在後攻玩家的最初回合使用。 選擇1個對手的場上寶可夢身上附加的能量，放回對手的手牌。",
+		'zh-cn': "這張卡只可在後攻玩家的最初回合使用。 選擇1個對手的場上寶可夢身上附加的能量，放回對手的手牌。",
+	},
 
-export default card
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardtrader: 304673,
+				cardmarket: 793530,
+				tcgplayer: 587676,
+			},
+		},
+	],
+
+	trainerType: "Item",
+	regulationMark: "H",
+	rarity: "Uncommon",
+};
+
+export default card;

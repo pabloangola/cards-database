@@ -1,23 +1,37 @@
-import { Card } from "../../../interfaces"
-import Set from "../SV8"
+import { Card } from "../../../interfaces";
+import Set from "../SV8";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Gravity Mountain',
-		ja: 'Gravity Mountain',
+		ja: "グラビティーマウンテン",
+		'zh-tw': "引力山岳",
+		'zh-cn': "引力山岳",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Uncommon',
+	illustrator: "AYUMI ODASHIMA",
+	category: "Trainer",
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 304683
-		}
-	}],
-}
+	effect: {
+		ja: "おたがいの場の2進化ポケモン全員の最大HPは、それぞれ「-30」される。",
+		'zh-tw': "雙方場上所有【2階進化】寶可夢的最大HP各「-30」。",
+		'zh-cn': "雙方場上所有【2階進化】寶可夢的最大HP各「-30」。",
+	},
 
-export default card
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardtrader: 304683,
+				cardmarket: 793540,
+				tcgplayer: 587686,
+			},
+		},
+	],
+
+	trainerType: "Stadium",
+	regulationMark: "H",
+	rarity: "Uncommon",
+};
+
+export default card;

@@ -3,6 +3,7 @@ import Set from "../MEP Black Star Promos"
 
 const card: Card = {
 	set: Set,
+	cameoDexIds: [25],
 
 	name: {
 		en: "Drifblim",
@@ -77,9 +78,20 @@ const card: Card = {
 	retreat: 1,
 	regulationMark: "I",
 
+	weaknesses: [{
+		type: "Darkness",
+		value: "x2"
+	}],
+
+	resistances: [{
+		type: "Fighting",
+		value: "-30"
+	}],
+
 	variants: [
 		{
 			type: "holo",
+			foil: "cosmos",
 			thirdParty: {
 				cardmarket: 851052,
 				tcgplayer: 656256

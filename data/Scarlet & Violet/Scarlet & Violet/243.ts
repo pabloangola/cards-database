@@ -4,6 +4,7 @@ import Set from "../Scarlet & Violet"
 const card: Card = {
 	dexId: [918],
 	set: Set,
+	cameoDexIds: [123],
 
 	name: {
 		en: "Spidops ex",
@@ -21,7 +22,8 @@ const card: Card = {
 
 	evolveFrom: {
 		en: "Tarountula",
-		fr: "Tissenboule"
+		fr: "Tissenboule",
+		de: "Tarundel"
 	},
 
 	stage: "Stage1",

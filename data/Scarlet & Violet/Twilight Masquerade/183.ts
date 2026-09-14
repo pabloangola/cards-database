@@ -4,6 +4,7 @@ import Set from "../Twilight Masquerade"
 const card: Card = {
 	dexId: [532],
 	set: Set,
+	cameoDexIds: [533],
 
 	name: {
 		en: "Timburr",
@@ -55,6 +56,7 @@ const card: Card = {
 
 	description: {
 		en: "It fights by swinging a piece of lumber around. It is close to evolving when it can handle heavy lumber without difficulty.",
+		de: "Es kämpft, indem es einen Holzbalken schwingt. Fällt es ihm leicht, den schweren Balken zu tragen, ist seine Entwicklung nah."
 	},
 
 	variants: [

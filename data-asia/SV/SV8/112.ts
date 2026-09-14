@@ -1,23 +1,63 @@
-import { Card } from "../../../interfaces"
-import Set from "../SV8"
+import { Card } from "../../../interfaces";
+import Set from "../SV8";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Magneton',
-		ja: 'Magneton',
+		ja: "レアコイル",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Illustration Rare',
+	illustrator: "Shinji Kanda",
+	category: "Pokemon",
+	hp: 100,
+	types: ["Lightning"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 305679
-		}
-	}],
-}
+	description: {
+		ja: "連結した タイプの コイルは 太陽の 黒点が 多いとき たくさん 現れると 言われる。",
+	},
 
-export default card
+	stage: "Stage1",
+
+	abilities: [
+		{
+			type: "Ability",
+			name: { ja: "かじょうほうでん" },
+			effect: {
+				ja: "自分の番に1回使えて、使ったなら、このポケモンをきぜつさせる。自分のトラッシュから基本エネルギーを3枚まで選び、自分の[L]ポケモンに好きなようにつける。",
+			},
+		},
+	],
+
+	attacks: [
+		{
+			name: { ja: "ライトニングボール" },
+			damage: 40,
+			cost: ["Lightning", "Colorless"],
+		},
+	],
+
+	weaknesses: [{ type: "Fighting", value: "x2" }],
+	resistances: [],
+
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 305679,
+				cardmarket: 793576,
+				tcgplayer: 587725,
+			},
+		},
+	],
+
+	evolveFrom: {
+		ja: "コイル",
+	},
+
+	retreat: 1,
+	regulationMark: "H",
+	rarity: "Illustration rare",
+	dexId: [82],
+};
+
+export default card;

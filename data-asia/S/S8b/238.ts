@@ -1,23 +1,55 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Single Strike Urshifu V',
-		ja: 'Single Strike Urshifu V',
+		ja: "いちげきウーラオスV",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Illustration Rare',
+	illustrator: "Yuu Nishida",
+	category: "Pokemon",
+	hp: 220,
+	types: ["Fighting"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 233097
-		}
-	}],
-}
+	stage: "Basic",
 
-export default card
+	attacks: [
+		{
+			name: { ja: "とぎすます" },
+			cost: ["Fighting"],
+			effect: {
+				ja: "自分の山札から[闘]エネルギーを2枚まで選び、このポケモンにつける。そして山札を切る。",
+			},
+		},
+		{
+			name: { ja: "インパクトブロー" },
+			damage: 180,
+			cost: ["Fighting", "Fighting", "Colorless"],
+			effect: {
+				ja: "次の自分の番、このポケモンは「インパクトブロー」が使えない。",
+			},
+		},
+	],
+
+	weaknesses: [{ type: "Psychic", value: "x2" }],
+	resistances: [],
+
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 233097,
+				cardmarket: 587036,
+				tcgplayer: 571490,
+			},
+		},
+	],
+
+	retreat: 2,
+	regulationMark: "E",
+	rarity: "Character Super Rare",
+	dexId: [892],
+};
+
+export default card;

@@ -1,23 +1,50 @@
-import { Card } from "../../../interfaces"
-import Set from "../CP2"
+import { Card } from "../../../interfaces";
+import Set from "../CP2";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Meowth',
-		ja: 'Meowth',
+		ja: "ニャース",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Common',
+	illustrator: "kirisAki",
+	category: "Pokemon",
+	hp: 60,
+	types: ["Colorless"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 283187
-		}
-	}],
-}
+	description: {
+		ja: "まるいものが 大好き。 夜な夜な 出かけては 落ちている コインを 拾い 集めて 帰ってくる。",
+	},
 
-export default card
+	stage: "Basic",
+
+	attacks: [
+		{
+			name: { ja: "へとへとタックル" },
+			cost: ["Colorless"],
+			effect: {
+				ja: "コインを1回投げオモテなら、相手のバトルポケモンに30ダメージ。ウラなら、このポケモンに30ダメージ。",
+			},
+		},
+	],
+
+	weaknesses: [{ type: "Fighting", value: "x2" }],
+	resistances: [],
+
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardtrader: 283187,
+				cardmarket: 563503,
+				tcgplayer: 605344,
+			},
+		},
+	],
+
+	retreat: 1,
+	rarity: "Common",
+	dexId: [52],
+};
+
+export default card;

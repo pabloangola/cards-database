@@ -1,23 +1,41 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Tool Scrapper',
-		ja: 'Tool Scrapper',
+		ja: "ツールスクラッパー",
+		'zh-tw': "道具拆除器",
 	},
 
-	category: 'Trainer',
-	rarity: 'Fixed',
+	illustrator: "Studio Bora Inc.",
+	category: "Trainer",
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 232893
-		}
-	}],
-}
+	effect: {
+		ja: "おたがいの場のポケモンについている「ポケモンのどうぐ」を2枚まで選び、トラッシュする。",
+		'zh-tw': "選擇最多2張雙方的場上寶可夢身上附加的「寶可夢道具」卡，將其丟棄。",
+	},
 
-export default card
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardtrader: 232893,
+				cardmarket: 586654,
+				tcgplayer: 571391,
+			},
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				tcgplayer: 578419,
+			},
+		},
+	],
+
+	trainerType: "Item",
+	regulationMark: "D",
+	rarity: "None",
+};
+
+export default card;

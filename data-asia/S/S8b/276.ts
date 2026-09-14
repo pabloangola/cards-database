@@ -1,23 +1,33 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Gloria',
-		ja: 'Gloria',
+		ja: "ユウリ",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Ultra Rare',
+	illustrator: "Naoki Saito",
+	category: "Trainer",
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 233135
-		}
-	}],
-}
+	effect: {
+		ja: "自分の山札からたねポケモン（「ルールを持つポケモン」をのぞく）を3枚まで選び、ベンチに出す。そして山札を切る。",
+	},
 
-export default card
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 233135,
+				cardmarket: 587074,
+				tcgplayer: 571527,
+			},
+		},
+	],
+
+	trainerType: "Supporter",
+	regulationMark: "E",
+	rarity: "Ultra Rare",
+};
+
+export default card;

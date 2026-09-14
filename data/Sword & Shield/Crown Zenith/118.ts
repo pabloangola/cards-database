@@ -4,6 +4,7 @@ import Set from "../Crown Zenith"
 const card: Card = {
 	dexId: [735],
 	set: Set,
+	cameoDexIds: [734],
 
 	name: {
 		en: "Gumshoos",
@@ -80,6 +81,7 @@ const card: Card = {
 
 	description: {
 		en: "Patient by nature, this Pokémon loses control of itself and pounces when it spots its favorite meal—Rattata!",
+		de: "Dieses Pokémon ist eigentlich sehr geduldig. Sieht es jedoch ein Rattfratz, seine Leibspeise, stürzt es sich völlig außer Kontrolle auf es."
 	},
 
 	

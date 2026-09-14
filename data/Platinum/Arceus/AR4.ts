@@ -4,7 +4,6 @@ import Set from '../Arceus'
 const card: Card = {
 	name: {
 		en: "Arceus",
-		fr: "Arceus",
 		de: "Arceus"
 	},
 
@@ -32,13 +31,11 @@ const card: Card = {
 			],
 			name: {
 				en: "Fastwave",
-				fr: "Lame de fond",
 				de: "Rasende Schallwelle"
 			},
 			effect: {
 				en: "This attack's damage isn't affected by Resistance, Poké-Powers, Poké-Bodies, or any other effects on the Defending Pokémon.",
-				fr: "Les dégâts de cette attaque ne sont pas affectés par la Résistance, les Poké-Powers, les Poké-Bodies ou tout autre effet sur le Pokémon Défenseur.",
-				de: "Resistenz, Poké-Power, Poké-Body und alle anderen Effekte auf den Verteidigenden Pokémon haben keine Auswirkungen auf die Schadenspunkte dieses Angriffs."
+				de: "Resistenz, Poké-Power, Poké-Body und alle anderen Effekte auf dem Verteidigenden Pokémon haben keine Auswirkungen auf die Schadenspunkte dieses Angriffs."
 			},
 			damage: 50,
 
@@ -55,7 +52,8 @@ const card: Card = {
 	retreat: 2,
 
 	description: {
-		en: "It is told in mythology that this Pokémon was born before the universe even existed."
+		en: "It is told in mythology that this Pokémon was born before the universe even existed.",
+		de: "Die Mythologie erzählt, dass dieses PKMN geboren wurde, bevor das Universum überhaupt existierte."
 	},
 
 	variants: [

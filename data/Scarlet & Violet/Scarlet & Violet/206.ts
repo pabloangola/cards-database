@@ -4,6 +4,7 @@ import Set from "../Scarlet & Violet"
 const card: Card = {
 	dexId: [960],
 	set: Set,
+	cameoDexIds: [54, 79, 90, 370, 690, 747],
 
 	name: {
 		en: "Wiglett",
@@ -63,6 +64,7 @@ const card: Card = {
 
 	description: {
 		en: "This Pokémon can pick up the scent of a Veluza just over 65 feet away and will hide itself in the sand.",
+		de: "Es kann den Geruch eines Agiluza auf 20 m Entfernung wahrnehmen und versteckt sich daraufhin flugs im Sand."
 	},
 
 	thirdParty: {

@@ -4,6 +4,7 @@ import Set from "../Scarlet & Violet"
 const card: Card = {
 	dexId: [551],
 	set: Set,
+	cameoDexIds: [331],
 
 	name: {
 		en: "Sandile",
@@ -67,6 +68,7 @@ const card: Card = {
 
 	description: {
 		en: "It submerges itself in sand and moves as if swimming. This wise behavior keeps its enemies from finding it and maintains its temperature.",
+		de: "Es bewegt sich verborgen im Sand mithilfe von Schwimmbewegungen fort. So versteckt es sich vor Gegnern und bleibt immer schön warm."
 	},
 
 	thirdParty: {

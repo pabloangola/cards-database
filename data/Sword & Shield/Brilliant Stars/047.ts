@@ -4,6 +4,7 @@ import Set from "../Brilliant Stars"
 const card: Card = {
 	dexId: [466],
 	set: Set,
+	cameoDexIds: [467],
 
 	name: {
 		en: "Electivire",
@@ -87,6 +88,7 @@ const card: Card = {
 
 	description: {
 		en: "The amount of electrical energy this Pokémon produces is proportional to the rate of its pulse. The voltage jumps while Electivire is battling.",
+		de: "Wie viel Strom es erzeugt, ist abhängig von seinem Puls. Im Kampf steigt Elevolteks elektrische Spannung schlagartig an."
 	},
 
 	variants: [

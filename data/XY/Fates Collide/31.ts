@@ -15,6 +15,7 @@ const card: Card = {
 	rarity: "Rare",
 	category: "Pokemon",
 	set: Set,
+	cameoDexIds: [40, 295, 572],
 
 	dexId: [
 		326,
@@ -97,6 +98,7 @@ const card: Card = {
 
 	description: {
 		en: "It uses black pearls to amplify its psychic power. It does an odd dance to gain control over foes.",
+		de: "Mit schwarzen Perlen verstärkt es seine Psycho-Kräfte. Mit einem Tanz kontrolliert es seine Gegner."
 	},
 
 	thirdParty: {

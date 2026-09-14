@@ -4,6 +4,7 @@ import Set from '../Shining Fates'
 const card: Card = {
 	dexId: [133],
 	set: Set,
+	cameoDexIds: [370, 746],
 
 	name: {
 		fr: "Évoli",
@@ -75,7 +76,8 @@ const card: Card = {
 	stage: "Basic",
 
 	description: {
-		en: "It has the ability to alter the composition of its body to suit its surrounding environment."
+		en: "It has the ability to alter the composition of its body to suit its surrounding environment.",
+		de: "Es ist imstande, seinen Körper perfekt an die jeweilige Umgebung anzupassen."
 	},
 
 	variants: [

@@ -1,23 +1,58 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Galarian Zapdos V',
-		ja: 'Galarian Zapdos V',
+		ja: "ガラル サンダーV",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Illustration Rare',
+	illustrator: "kirisAki",
+	category: "Pokemon",
+	hp: 200,
+	types: ["Fighting"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 233096
-		}
-	}],
-}
+	stage: "Basic",
 
-export default card
+	abilities: [
+		{
+			type: "Ability",
+			name: { ja: "とうそうほんのう" },
+			effect: {
+				ja: "相手の場の「ポケモンV」の数ぶん、このポケモンがワザを使うための【無】エネルギーは少なくなる。",
+			},
+		},
+	],
+
+	attacks: [
+		{
+			name: { ja: "らいめいげり" },
+			damage: 170,
+			cost: ["Fighting", "Colorless", "Colorless", "Colorless"],
+			effect: {
+				ja: "ダメージを与える前に、相手のバトルポケモンについている特殊エネルギーを1個選び、トラッシュする。",
+			},
+		},
+	],
+
+	weaknesses: [{ type: "Psychic", value: "x2" }],
+	resistances: [],
+
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 233096,
+				cardmarket: 587035,
+				tcgplayer: 571489,
+			},
+		},
+	],
+
+	retreat: 1,
+	regulationMark: "E",
+	rarity: "Character Super Rare",
+	dexId: [145],
+};
+
+export default card;

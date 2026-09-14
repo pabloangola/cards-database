@@ -1,23 +1,33 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Nessa',
-		ja: 'Nessa',
+		ja: "ルリナ",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Ultra Rare',
+	illustrator: "saino misaki",
+	category: "Trainer",
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 233136
-		}
-	}],
-}
+	effect: {
+		ja: "自分のトラッシュから[水]ポケモンと[水]エネルギーを合計4枚まで選び、相手に見せて、手札に加える。",
+	},
 
-export default card
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 233136,
+				cardmarket: 587075,
+				tcgplayer: 571528,
+			},
+		},
+	],
+
+	trainerType: "Supporter",
+	regulationMark: "D",
+	rarity: "Ultra Rare",
+};
+
+export default card;

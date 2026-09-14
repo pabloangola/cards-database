@@ -1,23 +1,41 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Korrina\'s Focus',
-		ja: 'Korrina\'s Focus',
+		ja: "コルニの気合い",
+		'zh-tw': "可爾妮的氣勢",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Fixed',
+	illustrator: "kirisAki",
+	category: "Trainer",
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 232907
-		}
-	}],
-}
+	effect: {
+		ja: "自分の手札が6枚になるように、山札を引く。",
+		'zh-tw': "從牌庫抽卡直到自己的手牌滿6張為止。",
+	},
 
-export default card
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardtrader: 232907,
+				cardmarket: 586668,
+				tcgplayer: 571405,
+			},
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				tcgplayer: 578433,
+			},
+		},
+	],
+
+	trainerType: "Supporter",
+	regulationMark: "E",
+	rarity: "None",
+};
+
+export default card;

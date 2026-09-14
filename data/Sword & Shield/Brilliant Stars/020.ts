@@ -4,6 +4,7 @@ import Set from "../Brilliant Stars"
 const card: Card = {
 	dexId: [467],
 	set: Set,
+	cameoDexIds: [466],
 
 	name: {
 		en: "Magmortar",
@@ -80,6 +81,7 @@ const card: Card = {
 
 	description: {
 		en: "When Magmortar inhales deeply, the fire burning in its belly intensifies, rising in temperature to over 3,600 degrees Fahrenheit.",
+		de: "Holt es tief Luft, werden die Flammen in seinem Bauch stärker und erreichen eine Temperatur von 2 000 ºC."
 	},
 
 	variants: [

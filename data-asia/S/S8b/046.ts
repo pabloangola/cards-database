@@ -1,23 +1,57 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Pikachu VMAX',
-		ja: 'Pikachu VMAX',
+		ja: "ピカチュウVMAX",
+		'zh-tw': "皮卡丘VMAX",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Ultra Rare',
+	illustrator: "aky CG Works",
+	category: "Pokemon",
+	hp: 310,
+	types: ["Lightning"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 232801
-		}
-	}],
-}
+	stage: "VMAX",
 
-export default card
+	attacks: [
+		{
+			name: {
+				ja: "キョダイボルテッカー",
+				'zh-tw': "超極巨伏特攻擊",
+			},
+			damage: "120+",
+			cost: ["Lightning", "Lightning", "Lightning"],
+			effect: {
+				ja: "のぞむなら、このポケモンについているエネルギーを、すべてトラッシュする。その場合、150ダメージ追加。",
+				'zh-tw': "若希望，將這隻寶可夢身上附加的能量全部丟棄。這個情況下，增加150點傷害。",
+			},
+		},
+	],
+
+	weaknesses: [{ type: "Fighting", value: "x2" }],
+	resistances: [],
+
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 232801,
+				cardmarket: 586562,
+				tcgplayer: 571299,
+			},
+		},
+	],
+
+	evolveFrom: {
+		ja: "ピカチュウV",
+	},
+
+	retreat: 2,
+	regulationMark: "D",
+	rarity: "Triple Rare",
+	dexId: [25],
+};
+
+export default card;

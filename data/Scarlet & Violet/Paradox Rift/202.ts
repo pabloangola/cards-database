@@ -4,6 +4,7 @@ import Set from "../Paradox Rift"
 const card: Card = {
 	dexId: [934],
 	set: Set,
+	cameoDexIds: [50, 52, 187, 280, 331, 333, 396, 590, 661, 702, 744, 753],
 
 	name: {
 		en: "Garganacl",
@@ -76,6 +77,7 @@ const card: Card = {
 
 	description: {
 		en: "Garganacl will rub its fingertips together and sprinkle injured Pokémon with salt. Even severe wounds will promptly heal afterward.",
+		de: "Es reibt seine Fingerspitzen aneinander, um Salz auf verwundete Pokémon zu streuen. Dieses heilt selbst schwere Verletzungen im Nu."
 	},
 
 	variants: [

@@ -15,6 +15,7 @@ const card: Card = {
 	rarity: "Rare",
 	category: "Pokemon",
 	set: Set,
+	cameoDexIds: [26],
 
 	dexId: [
 		115,
@@ -90,6 +91,7 @@ const card: Card = {
 
 	description: {
 		en: "Kangaskhan protects its child by keeping it in its pouch. It has zero forgiveness for those who harm its child and will beat them down.",
+		de: "Sein Junges beschützt es in seinem Beutel. Wer dieses verwundet, den erwarten Kangamas Groll und eine rücksichtslose Tracht Prügel."
 	},
 
 	thirdParty: {

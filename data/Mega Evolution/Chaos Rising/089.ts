@@ -3,9 +3,11 @@ import Set from "../Chaos Rising"
 
 const card: Card = {
 	set: Set,
+	cameoDexIds: [658],
 
 	description: {
 		en: "Its swiftness is unparalleled. It can scale a tower of more than 2,000 feet in a minute's time.",
+		de: "Seine Flinkheit sucht ihresgleichen. Es kann einen über 600 m hohen Turm innerhalb einer Minute erklimmen."
 	},
 
 
@@ -27,7 +29,9 @@ const card: Card = {
 	types: ["Water"],
 
 	evolveFrom: {
-		en: "Froakie"
+		en: "Froakie",
+		fr: "Grenousse",
+		de: "Froxy"
 	},
 
 	stage: "Stage1",

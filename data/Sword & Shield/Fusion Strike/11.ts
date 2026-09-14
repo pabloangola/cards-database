@@ -4,6 +4,7 @@ import Set from "../Fusion Strike"
 const card: Card = {
 	dexId: [542],
 	set: Set,
+	cameoDexIds: [540],
 
 	name: {
 		en: "Leavanny",
@@ -40,7 +41,8 @@ const card: Card = {
 	illustrator: "kodama",
 
 	description: {
-		en: "It keeps its eggs warm with heat from fermenting leaves. It also uses leaves to make warm wrappings for Sewaddle."
+		en: "It keeps its eggs warm with heat from fermenting leaves. It also uses leaves to make warm wrappings for Sewaddle.",
+		de: "Nutzt die Hitze kompostierenden Laubes zum Ausbrüten von Eiern. Es fertigt aus Blättern Kleidchen für Strawickl an."
 	},
 
 	attacks: [{

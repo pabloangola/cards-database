@@ -1,23 +1,37 @@
-import { Card } from "../../../interfaces"
-import Set from "../SV8"
+import { Card } from "../../../interfaces";
+import Set from "../SV8";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Miracle Headset',
-		ja: 'Miracle Headset',
+		ja: "ミラクルインカム",
+		'zh-tw': "奇跡耳麥",
+		'zh-cn': "奇跡耳麥",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Rare ACE',
+	illustrator: "inose yukie",
+	category: "Trainer",
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 304675
-		}
-	}],
-}
+	effect: {
+		ja: "自分のトラッシュからサポートを2枚まで選び、相手に見せて、手札に加える。",
+		'zh-tw': "從自己的棄牌區選擇最多2張支援者卡，在給對手看過後加入手牌。",
+		'zh-cn': "從自己的棄牌區選擇最多2張支援者卡，在給對手看過後加入手牌。",
+	},
 
-export default card
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 304675,
+				cardmarket: 793531,
+				tcgplayer: 587677,
+			},
+		},
+	],
+
+	trainerType: "Item",
+	regulationMark: "H",
+	rarity: "ACE SPEC Rare",
+};
+
+export default card;

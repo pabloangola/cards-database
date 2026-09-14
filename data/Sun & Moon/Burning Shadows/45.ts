@@ -15,6 +15,7 @@ const card: Card = {
 	rarity: "Uncommon",
 	category: "Pokemon",
 	set: Set,
+	cameoDexIds: [370, 456],
 
 	dexId: [
 		603,
@@ -29,6 +30,7 @@ const card: Card = {
 	evolveFrom: {
 		en: "Tynamo",
 		fr: "Anchwatt",
+		de: "Zapplardin"
 	},
 
 	stage: "Stage1",
@@ -78,6 +80,7 @@ const card: Card = {
 
 	description: {
 		en: "It wraps itself around its prey and paralyzes it with electricity from the round spots on its sides. Then it chomps.",
+		de: "Schlingt sich um Gegner, lähmt sie über die rund gemaserten Flächen an seinem Körper mit Strom und beißt beherzt zu."
 	},
 
 	thirdParty: {

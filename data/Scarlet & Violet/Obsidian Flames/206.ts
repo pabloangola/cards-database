@@ -4,6 +4,7 @@ import Set from "../Obsidian Flames"
 const card: Card = {
 	dexId: [965],
 	set: Set,
+	cameoDexIds: [333, 362, 704],
 
 	name: {
 		fr: "Vrombi",
@@ -61,6 +62,7 @@ const card: Card = {
 
 	description: {
 		en: "It is said that this Pokémon was born when an unknown poison Pokémon entered and inspirited an engine left at a scrap-processing factory.",
+		de: "Es soll entstanden sein, als ein unbekanntes Gift-Pokémon von einem Motor Besitz ergriff, der in einer Schrottfabrik zurückgelassen wurde."
 	},
 
 	variants: [

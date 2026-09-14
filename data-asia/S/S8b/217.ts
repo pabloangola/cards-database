@@ -1,23 +1,60 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Blaziken VMAX',
-		ja: 'Blaziken VMAX',
+		ja: "バシャーモVMAX",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Illustration Rare',
+	illustrator: "KIYOTAKA OSHIYAMA",
+	category: "Pokemon",
+	hp: 320,
+	types: ["Fire"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 233076
-		}
-	}],
-}
+	stage: "VMAX",
 
-export default card
+	attacks: [
+		{
+			name: { ja: "わしづかみ" },
+			damage: 60,
+			cost: ["Fire"],
+			effect: {
+				ja: "次の相手の番、このワザを受けたポケモンは、にげられない。",
+			},
+		},
+		{
+			name: { ja: "ダイブレイズ" },
+			damage: 130,
+			cost: ["Colorless", "Colorless"],
+			effect: {
+				ja: "自分のベンチの「れんげき」のポケモンを2匹まで選び、自分のトラッシュからエネルギーを1枚ずつつける。",
+			},
+		},
+	],
+
+	weaknesses: [{ type: "Water", value: "x2" }],
+	resistances: [],
+
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 233076,
+				cardmarket: 587015,
+				tcgplayer: 571469,
+			},
+		},
+	],
+
+	evolveFrom: {
+		ja: "バシャーモV",
+	},
+
+	retreat: 2,
+	regulationMark: "E",
+	rarity: "Character Super Rare",
+	dexId: [257],
+};
+
+export default card;

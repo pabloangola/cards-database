@@ -1,23 +1,61 @@
-import { Card } from "../../../interfaces"
-import Set from "../SV8"
+import { Card } from "../../../interfaces";
+import Set from "../SV8";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Palossand ex',
-		ja: 'Palossand ex',
+		ja: "シロデスナex",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Ultra Rare',
+	illustrator: "5ban Graphics",
+	category: "Pokemon",
+	hp: 280,
+	types: ["Psychic"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 305669
-		}
-	}],
-}
+	stage: "Stage1",
 
-export default card
+	attacks: [
+		{
+			name: { ja: "すなじごく" },
+			damage: 160,
+			cost: ["Colorless", "Colorless", "Colorless"],
+			effect: {
+				ja: "次の相手の番、このワザを受けたポケモンは、にげられない。",
+			},
+		},
+		{
+			name: { ja: "バライトジェイル" },
+			cost: ["Water", "Psychic", "Fighting"],
+			effect: {
+				ja: "相手のベンチポケモン全員に、それぞれ残りHPが「100」になるように、ダメカンをのせる。",
+			},
+		},
+	],
+
+	weaknesses: [{ type: "Darkness", value: "x2" }],
+	resistances: [{ type: "Fighting", value: "-30" }],
+
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 305669,
+				cardmarket: 793588,
+				tcgplayer: 587695,
+			},
+		},
+	],
+
+	evolveFrom: {
+		ja: "スナバァ",
+	},
+
+	retreat: 4,
+	regulationMark: "H",
+	rarity: "Ultra Rare",
+	dexId: [770],
+
+	suffix: "EX",
+};
+
+export default card;

@@ -1,23 +1,66 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Flapple',
-		ja: 'Flapple',
+		ja: "アップリュー",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Illustration Rare',
+	illustrator: "Misaki Hashimoto",
+	category: "Pokemon",
+	hp: 80,
+	types: ["Grass"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 232949
-		}
-	}],
-}
+	description: {
+		ja: "すっぱい りんごを 食べて 進化。 火傷する ほど 強酸性の 液体を 頬袋に 溜める。",
+	},
 
-export default card
+	stage: "Stage1",
+
+	abilities: [
+		{
+			type: "Ability",
+			name: { ja: "アップルドロップ" },
+			effect: {
+				ja: "自分の番に1回使える。相手のポケモン1匹に、ダメカンを2個のせる。その後、このポケモンと、ついているすべてのカードを、自分の山札にもどして切る。",
+			},
+		},
+	],
+
+	attacks: [
+		{
+			name: { ja: "アシッドボム" },
+			damage: 60,
+			cost: ["Colorless", "Colorless"],
+			effect: {
+				ja: "コインを1回投げオモテなら、相手のバトルポケモンについているエネルギーを1個選び、トラッシュする。",
+			},
+		},
+	],
+
+	weaknesses: [{ type: "Fire", value: "x2" }],
+	resistances: [],
+
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 232949,
+				cardmarket: 586925,
+				tcgplayer: 571438,
+			},
+		},
+	],
+
+	evolveFrom: {
+		ja: "カジッチュ",
+	},
+
+	retreat: 1,
+	regulationMark: "D",
+	rarity: "Character Rare",
+	dexId: [841],
+};
+
+export default card;

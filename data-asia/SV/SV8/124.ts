@@ -1,23 +1,62 @@
-import { Card } from "../../../interfaces"
-import Set from "../SV8"
+import { Card } from "../../../interfaces";
+import Set from "../SV8";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Hydreigon ex',
-		ja: 'Hydreigon ex',
+		ja: "サザンドラex",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Ultra Rare',
+	illustrator: "5ban Graphics",
+	category: "Pokemon",
+	hp: 330,
+	types: ["Darkness"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 305675
-		}
-	}],
-}
+	stage: "Stage2",
 
-export default card
+	attacks: [
+		{
+			name: { ja: "クラッシュヘッズ" },
+			damage: 200,
+			cost: ["Darkness", "Colorless"],
+			effect: {
+				ja: "相手の山札を上から3枚トラッシュする。",
+			},
+		},
+		{
+			name: { ja: "オブシディアン" },
+			damage: 130,
+			cost: ["Psychic", "Darkness", "Metal", "Colorless"],
+			effect: {
+				ja: "相手のベンチポケモン2匹にも、それぞれ130ダメージ。［ベンチは弱点・抵抗力を計算しない。］",
+			},
+		},
+	],
+
+	weaknesses: [{ type: "Grass", value: "x2" }],
+	resistances: [],
+
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 305675,
+				cardmarket: 793589,
+				tcgplayer: 587716,
+			},
+		},
+	],
+
+	evolveFrom: {
+		ja: "ジヘッド",
+	},
+
+	retreat: 3,
+	regulationMark: "H",
+	rarity: "Ultra Rare",
+	dexId: [635],
+
+	suffix: "EX",
+};
+
+export default card;

@@ -15,6 +15,7 @@ const card: Card = {
 	rarity: "Rare",
 	category: "Pokemon",
 	set: Set,
+	cameoDexIds: [198],
 
 	dexId: [
 		430,
@@ -29,6 +30,7 @@ const card: Card = {
 	evolveFrom: {
 		en: "Murkrow",
 		fr: "Cornèbre",
+		de: "Kramurx"
 	},
 
 	stage: "Stage1",
@@ -100,6 +102,7 @@ const card: Card = {
 
 	description: {
 		en: "A single cry from this nocturnal Pokémon, and more than a hundred of its Murkrow cronies will assemble.",
+		de: "Dieses nachtaktive Pokémon kann mit einem einzigen Ruf über 100 seiner untergebenen Kramurx versammeln."
 	},
 
 	thirdParty: {

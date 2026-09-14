@@ -1,0 +1,16 @@
+# CardTrader IDs not injected during tcgdex sync
+# generated 2026-09-14T02:51:24.435Z
+# format: path<TAB>reason<TAB>ours_en_name<TAB>optional_id
+data-asia/S/S8b/001.ts	PRODUCT	VMAX Climax Booster Box	cardtrader=201602
+data-asia/S/S8b/002.ts	PRODUCT	VMAX Climax Booster	cardtrader=201603
+data-asia/S/S8b/003.ts	PRODUCT	VMAX Climax: Red & Green Deck Box	cardtrader=201605
+data-asia/S/S8b/004.ts	PRODUCT	VMAX Climax: Crayon Mimikyu Sleeves	cardtrader=201606
+data-asia/S/S8b/005.ts	PRODUCT	VMAX Climax: Soft and Fluffy Sleeves	cardtrader=201607
+data-asia/S/S8b/006.ts	PRODUCT	VMAX Climax: Acerola Sleeves	cardtrader=201608
+data-asia/S/S8b/007.ts	PRODUCT	VMAX Climax: Red & Green Sleeves	cardtrader=201609
+data-asia/SV/SV8/001.ts	PRODUCT	Super Electric Breaker Booster Box	cardtrader=304618
+data-asia/SV/SV8/002.ts	PRODUCT	Super Electric Breaker Booster	cardtrader=304619
+data-asia/XY/CP2/001.ts	PRODUCT	Legendary Shine Collection Booster Box	cardtrader=182298
+data-asia/M/M2a/204.ts	PRODUCT	N & Reshiram & Zekrom Deck Box	cardtrader=359506
+data-asia/SM/SM11a/001.ts	PRODUCT	Remix Bout Booster Box	cardtrader=243499
+# note: data-asia/SV/SV8/031.ts Iron Bundle is a Pokemon; cardtrader=304633 was injected

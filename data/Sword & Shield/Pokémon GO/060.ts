@@ -4,6 +4,7 @@ import Set from "../Pokémon GO"
 const card: Card = {
 	dexId: [400],
 	set: Set,
+	cameoDexIds: [235],
 
 	name: {
 		en: "Bibarel",
@@ -80,6 +81,7 @@ const card: Card = {
 
 	description: {
 		en: "It makes its nest by damming streams with bark and mud. It is known as an industrious worker.",
+		de: "Es baut sein Nest, indem es in Flüssen Dämme aus Schlamm und Ästen baut. Ein fleißiger Arbeiter."
 	},
 
 	

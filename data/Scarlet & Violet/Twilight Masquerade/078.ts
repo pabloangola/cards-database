@@ -4,6 +4,7 @@ import Set from "../Twilight Masquerade"
 const card: Card = {
 	dexId: [35],
 	set: Set,
+	cameoDexIds: [1014, 1015, 1016],
 
 	name: {
 		en: "Clefairy",
@@ -46,6 +47,7 @@ const card: Card = {
 
 	description: {
 		en: "On nights with a full moon, they gather together and dance. The surrounding area is enveloped in an abnormal magnetic field.",
+		de: "Bei Vollmond versammeln sie sich und tanzen gemeinsam. Um sie herum entsteht dadurch ein ungewöhnliches Magnetfeld."
 	},
 
 	variants: [

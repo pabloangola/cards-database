@@ -1,23 +1,33 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Bea',
-		ja: 'Bea',
+		ja: "サイトウ",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Ultra Rare',
+	illustrator: "Souichirou Gunjima",
+	category: "Trainer",
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 233120
-		}
-	}],
-}
+	effect: {
+		ja: "自分の山札を上から5枚トラッシュし、その中にあるエネルギーをすべて、ベンチの[闘]ポケモンに好きなようにつける。",
+	},
 
-export default card
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 233120,
+				cardmarket: 587059,
+				tcgplayer: 571513,
+			},
+		},
+	],
+
+	trainerType: "Supporter",
+	regulationMark: "D",
+	rarity: "Ultra Rare",
+};
+
+export default card;

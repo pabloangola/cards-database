@@ -12,6 +12,7 @@ const card: Card = {
 	rarity: "Common",
 	category: "Pokemon",
 	set: Set,
+	cameoDexIds: [455],
 
 	dexId: [133],
 
@@ -53,7 +54,7 @@ const card: Card = {
 			effect: {
 				en: "Flip a coin. If heads, the Defending Pokémon is now Paralyzed.",
 				fr: "Lancez une pièce. Si c’est face, le Pokémon Défenseur est maintenant Paralysé.",
-				de: "Wirf eine Münze. Bei \"Kopf\" ist das Verteidigende Pokémon jetzt gelähmt."
+				de: "Wirf eine Münze. Bei „Kopf“ ist das Verteidigende Pokémon jetzt gelähmt."
 			},
 			damage: 10,
 
@@ -70,7 +71,8 @@ const card: Card = {
 	retreat: 1,
 
 	description: {
-		en: "Its irregularly configured DNA is affected by its surroundings. It evolves if its environment changes."
+		en: "Its irregularly configured DNA is affected by its surroundings. It evolves if its environment changes.",
+		de: "Seine anomale DNS-Struktur hängt von der Umgebung ab. Verändert sich diese, so entwickelt es sich."
 	},
 
 	variants: [

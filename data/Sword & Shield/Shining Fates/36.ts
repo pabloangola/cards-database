@@ -4,6 +4,7 @@ import Set from '../Shining Fates'
 const card: Card = {
 	dexId: [877],
 	set: Set,
+	cameoDexIds: [209, 821],
 
 	name: {
 		fr: "Morpeko",
@@ -75,7 +76,8 @@ const card: Card = {
 	stage: "Basic",
 
 	description: {
-		en: "As it eats the seeds stored up in its pocket-like pouches, this Pokémon is not just satisfying its constant hunger. It's also generating electricity."
+		en: "As it eats the seeds stored up in its pocket-like pouches, this Pokémon is not just satisfying its constant hunger. It's also generating electricity.",
+		de: "Dieses immerzu hungrige Pokémon frisst Samen, die es in seinen beutelartigen Taschen verwahrt, und produziert so Elektrizität."
 	},
 
 	variants: [

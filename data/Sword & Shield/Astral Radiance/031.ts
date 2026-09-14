@@ -4,6 +4,7 @@ import Set from "../Astral Radiance"
 const card: Card = {
 	dexId: [220],
 	set: Set,
+	cameoDexIds: [110],
 
 	name: {
 		en: "Swinub",
@@ -70,6 +71,7 @@ const card: Card = {
 
 	description: {
 		en: "Swinub excels at sniffing out mushrooms buried beneath grass or snow. Since ancient times, the people of Hisui have often relied upon this skill.",
+		de: "Dank seines ausgezeichneten Geruchssinns findet es problemlos im hohen Gras versteckte oder von Schnee bedeckte Pilze. Seit jeher nutzen die Menschen von Hisui diese Gabe."
 	},
 
 	variants: [

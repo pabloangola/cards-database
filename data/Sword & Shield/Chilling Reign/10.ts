@@ -4,6 +4,7 @@ import Set from '../Chilling Reign'
 const card: Card = {
 	dexId: [460],
 	set: Set,
+	cameoDexIds: [459],
 
 	name: {
 		en: "Abomasnow",
@@ -77,7 +78,8 @@ const card: Card = {
 	stage: "Stage1",
 
 	description: {
-		en: "This Pokémon is known to bring blizzards. A shake of its massive body is enough to cause whiteout conditions."
+		en: "This Pokémon is known to bring blizzards. A shake of its massive body is enough to cause whiteout conditions.",
+		de: "Dieses Pokémon löst Blizzards aus. Wenn es seinen großen Körper schüttelt, wird in seiner Umgebung alles sofort schneeweiß."
 	},
 
 	variants: [

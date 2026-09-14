@@ -1,23 +1,37 @@
-import { Card } from "../../../interfaces"
-import Set from "../SV8"
+import { Card } from "../../../interfaces";
+import Set from "../SV8";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Amulet of Hope',
-		ja: 'Amulet of Hope',
+		ja: "希望のアミュレット",
+		'zh-tw': "希望護身符",
+		'zh-cn': "希望護身符",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Rare ACE',
+	illustrator: "Toyste Beach",
+	category: "Trainer",
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 304676
-		}
-	}],
-}
+	effect: {
+		ja: "このカードをつけているポケモンが、相手のポケモンからワザのダメージを受けてきぜつしたとき、自分の山札から好きなカードを3枚まで選び、手札に加える。そして山札を切る。",
+		'zh-tw': "附有這張卡的寶可夢受到對手的寶可夢招式的傷害而【昏厥】時，從自己的牌庫任意選擇最多3張卡加入手牌。並且重洗牌庫。",
+		'zh-cn': "附有這張卡的寶可夢受到對手的寶可夢招式的傷害而【昏厥】時，從自己的牌庫任意選擇最多3張卡加入手牌。並且重洗牌庫。",
+	},
 
-export default card
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 304676,
+				cardmarket: 793532,
+				tcgplayer: 587678,
+			},
+		},
+	],
+
+	trainerType: "Tool",
+	regulationMark: "H",
+	rarity: "ACE SPEC Rare",
+};
+
+export default card;

@@ -1,23 +1,51 @@
-import { Card } from "../../../interfaces"
-import Set from "../CP2"
+import { Card } from "../../../interfaces";
+import Set from "../CP2";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Pancham',
-		ja: 'Pancham',
+		ja: "ヤンチャム",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Common',
+	illustrator: "Mizue",
+	category: "Pokemon",
+	hp: 60,
+	types: ["Fighting"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 283196
-		}
-	}],
-}
+	description: {
+		ja: "一生懸命 怖い 顔で 相手を にらみつけるが 頭を なでられると つい にやけてしまう。",
+	},
 
-export default card
+	stage: "Basic",
+
+	attacks: [
+		{
+			name: { ja: "えらぶる" },
+			damage: 10,
+			cost: ["Fighting", "Colorless"],
+			effect: {
+				ja: "相手の手札からオモテを見ないで1枚選び、トラッシュする。",
+			},
+		},
+	],
+
+	weaknesses: [{ type: "Psychic", value: "x2" }],
+	resistances: [],
+
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardtrader: 283196,
+				cardmarket: 563495,
+				tcgplayer: 605347,
+			},
+		},
+	],
+
+	retreat: 2,
+	rarity: "Common",
+	dexId: [674],
+};
+
+export default card;

@@ -15,6 +15,7 @@ const card: Card = {
 	rarity: "Rare",
 	category: "Pokemon",
 	set: Set,
+	cameoDexIds: [684],
 
 	dexId: [
 		685,
@@ -29,6 +30,7 @@ const card: Card = {
 	evolveFrom: {
 		en: "Swirlix",
 		fr: "Sucroquin",
+		de: "Flauschling"
 	},
 
 	stage: "Stage1",
@@ -99,6 +101,7 @@ const card: Card = {
 
 	description: {
 		en: "It can distinguish the faintest of scents. It puts its sensitive sense of smell to use by helping pastry chefs in their work.",
+		de: "Es verfügt über einen feinen Geruchssinn, mit dem es selbst die schwächsten Gerüche erkennen kann. Es hilft deshalb oft in Konditoreien aus."
 	},
 
 	thirdParty: {

@@ -1,23 +1,55 @@
-import { Card } from "../../../interfaces"
-import Set from "../CP2"
+import { Card } from "../../../interfaces";
+import Set from "../CP2";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Braixen',
-		ja: 'Braixen',
+		ja: "テールナー",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Uncommon',
+	illustrator: "kawayoo",
+	category: "Pokemon",
+	hp: 80,
+	types: ["Fire"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 283179
-		}
-	}],
-}
+	description: {
+		ja: "木の枝を 尻尾から 引き抜くとき 摩擦で 着火。 枝の 炎を 振って 仲間に 合図を 送る。",
+	},
 
-export default card
+	stage: "Stage1",
+
+	attacks: [
+		{
+			name: { ja: "かえんほうしゃ" },
+			damage: 70,
+			cost: ["Fire", "Colorless", "Colorless"],
+			effect: {
+				ja: "このポケモンについているエネルギーを1個選び、トラッシュする。",
+			},
+		},
+	],
+
+	weaknesses: [{ type: "Water", value: "x2" }],
+	resistances: [],
+
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardtrader: 283179,
+				cardmarket: 563485,
+				tcgplayer: 605330,
+			},
+		},
+	],
+
+	evolveFrom: {
+		ja: "フォッコ",
+	},
+
+	retreat: 1,
+	rarity: "Uncommon",
+	dexId: [654],
+};
+
+export default card;

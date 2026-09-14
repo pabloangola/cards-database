@@ -22,7 +22,9 @@ const card: Card = {
 	types: ["Colorless"],
 
 	evolveFrom: {
-		en: "Type: Null"
+		en: "Type: Null",
+		fr: "Type:0",
+		de: "Typ:Null"
 	},
 
 	stage: "Stage1",
@@ -93,6 +95,20 @@ const card: Card = {
 				tcgplayer: 704827
 			}
 		},
+		{
+			type: "reverse",
+			thirdParty: {
+				cardmarket: 895854,
+				tcgplayer: 704827
+			}
+		},
+		{
+			type: "normal",
+			thirdParty: {
+				cardmarket: 897298,
+				tcgplayer: 707027
+			}
+		}
 	],
 }
 

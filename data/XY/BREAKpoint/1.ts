@@ -15,6 +15,7 @@ const card: Card = {
 	rarity: "Common",
 	category: "Pokemon",
 	set: Set,
+	cameoDexIds: [653],
 
 	dexId: [
 		152,
@@ -82,6 +83,7 @@ const card: Card = {
 
 	description: {
 		en: "It uses the leaf on its head to determine the temperature and humidity. It loves to sunbathe.",
+		de: "Mit dem Blatt auf seinem Kopf bestimmt es die Temperatur und Feuchtigkeit. Es liebt Sonnenbäder."
 	},
 
 	thirdParty: {

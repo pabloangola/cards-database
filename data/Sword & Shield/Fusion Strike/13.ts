@@ -4,6 +4,7 @@ import Set from "../Fusion Strike"
 const card: Card = {
 	dexId: [616],
 	set: Set,
+	cameoDexIds: [132],
 
 	name: {
 		en: "Shelmet",
@@ -30,7 +31,8 @@ const card: Card = {
 	illustrator: "Shibuzoh.",
 
 	description: {
-		en: "It has a strange physiology that responds to electricity. When together with Karrablast, Shelmet evolves for some reason."
+		en: "It has a strange physiology that responds to electricity. When together with Karrablast, Shelmet evolves for some reason.",
+		de: "Sein Körper reagiert unerklärlicherweise auf Elektrizität. Es heißt, die Anwesenheit von Laukaps löse bei ihm die Entwicklung aus."
 	},
 
 	attacks: [{

@@ -17,26 +17,35 @@ const card: Card = {
 	effect: {
 		en: "Remove all Special Conditions from each of your Active Pokémon.",
 		fr: "Retirez à chacun de vos Pokémon Actifs ses États Spéciaux.",
-		de: "Alle speziellen Zuständen auf allen deinen Aktiven Pokémon verlieren ihre Wirkung."
+		de: "Alle Speziellen Zustände auf allen deinen Aktiven Pokémon verlieren ihre Wirkung."
 	},
 
-	thirdParty: {
-		cardmarket: 275863,
-		tcgplayer: 84887
-	},
 
 	variants: [
 		{
 			type: "normal",
+			thirdParty: {
+				cardmarket: 275863,
+				tcgplayer: 84887
+			}
 		},
 		{
 			type: "reverse",
+			thirdParty: {
+				cardmarket: 275863,
+				tcgplayer: 84887
+			}
 		},
 		{
 			type: "normal",
-			subtype: "no-e-reader"
+			subtype: "no-e-reader",
+			thirdParty: {
+				tcgplayer: 125128
+			}
 		},
-	]
+	],
+
+	retreat: 0
 }
 
 export default card

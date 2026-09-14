@@ -1,23 +1,55 @@
-import { Card } from "../../../interfaces"
-import Set from "../CP2"
+import { Card } from "../../../interfaces";
+import Set from "../CP2";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Wobbuffet',
-		ja: 'Wobbuffet',
+		ja: "ソーナンス",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Common',
+	illustrator: "Akira Komayama",
+	category: "Pokemon",
+	hp: 100,
+	types: ["Psychic"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 283200
-		}
-	}],
-}
+	description: {
+		ja: "真っ黒な 尻尾を 隠すため 暗闇で ひっそりと 生きている。 自分からは 攻撃しない。",
+	},
 
-export default card
+	stage: "Basic",
+
+	attacks: [
+		{
+			name: { ja: "ミラーバリア" },
+			cost: ["Colorless"],
+			effect: {
+				ja: "コインを1回投げオモテなら、次の相手の番、このポケモンはワザのダメージを受けない。",
+			},
+		},
+		{
+			name: { ja: "ころがりタックル" },
+			damage: 50,
+			cost: ["Psychic", "Psychic", "Colorless"],
+		},
+	],
+
+	weaknesses: [{ type: "Psychic", value: "x2" }],
+	resistances: [],
+
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardtrader: 283200,
+				cardmarket: 563492,
+				tcgplayer: 605353,
+			},
+		},
+	],
+
+	retreat: 3,
+	rarity: "Common",
+	dexId: [202],
+};
+
+export default card;

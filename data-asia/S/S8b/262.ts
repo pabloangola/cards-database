@@ -1,23 +1,33 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Judge',
-		ja: 'Judge',
+		ja: "ジャッジマン",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Ultra Rare',
+	illustrator: "Ryuta Fuse",
+	category: "Trainer",
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 233121
-		}
-	}],
-}
+	effect: {
+		ja: "おたがいのプレイヤーは、それぞれ、手札をすべて山札にもどし、山札を切る。その後、それぞれの山札を4枚引く。",
+	},
 
-export default card
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 233121,
+				cardmarket: 587060,
+				tcgplayer: 571514,
+			},
+		},
+	],
+
+	trainerType: "Supporter",
+	regulationMark: "E",
+	rarity: "Ultra Rare",
+};
+
+export default card;

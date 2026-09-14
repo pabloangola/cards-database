@@ -1,23 +1,51 @@
-import { Card } from "../../../interfaces"
-import Set from "../SV8"
+import { Card } from "../../../interfaces";
+import Set from "../SV8";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Slakoth',
-		ja: 'Slakoth',
+		ja: "ナマケロ",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Illustration Rare',
+	illustrator: "Mékayu",
+	category: "Pokemon",
+	hp: 60,
+	types: ["Colorless"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 305664
-		}
-	}],
-}
+	description: {
+		ja: "ナマケロの 怠けた 様子は 見ている 人の 怠け心を 存分に 刺激するのだ。",
+	},
 
-export default card
+	stage: "Basic",
+
+	attacks: [
+		{
+			name: { ja: "のんびりする" },
+			cost: ["Colorless"],
+			effect: {
+				ja: "このポケモンのHPを「60」回復する。次の自分の番、このポケモンはにげられない。",
+			},
+		},
+	],
+
+	weaknesses: [{ type: "Fighting", value: "x2" }],
+	resistances: [],
+
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 305664,
+				cardmarket: 793581,
+				tcgplayer: 587722,
+			},
+		},
+	],
+
+	retreat: 2,
+	regulationMark: "H",
+	rarity: "Illustration rare",
+	dexId: [287],
+};
+
+export default card;

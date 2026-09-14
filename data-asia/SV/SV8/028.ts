@@ -1,23 +1,70 @@
-import { Card } from "../../../interfaces"
-import Set from "../SV8"
+import { Card } from "../../../interfaces";
+import Set from "../SV8";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Sealeo',
-		ja: 'Sealeo',
+		ja: "トドグラー",
+		'zh-tw': "海魔獅",
+		'zh-cn': "海魔獅",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Common',
+	illustrator: "Mina Nakai",
+	category: "Pokemon",
+	hp: 100,
+	types: ["Water"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 305432
-		}
-	}],
-}
+	description: {
+		ja: "流氷の 上で 生活。 泳ぎながら 獲物の 匂いを 嗅ぎわけて 見つけだし 捕まえる。",
+		'zh-tw': "在浮冰上生活。能夠一邊 游泳一邊嗅出獵物的氣味， 把對方找出來獵捕。",
+		'zh-cn': "在浮冰上生活。能夠一邊 游泳一邊嗅出獵物的氣味， 把對方找出來獵捕。",
+	},
 
-export default card
+	stage: "Stage1",
+
+	attacks: [
+		{
+			name: {
+				ja: "つきたおし",
+				'zh-tw': "撞倒",
+				'zh-cn': "撞倒",
+			},
+			damage: 30,
+			cost: ["Water"],
+		},
+		{
+			name: {
+				ja: "アイスボール",
+				'zh-tw': "冰球",
+				'zh-cn': "冰球",
+			},
+			damage: 60,
+			cost: ["Water", "Water"],
+		},
+	],
+
+	weaknesses: [{ type: "Metal", value: "x2" }],
+	resistances: [],
+
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardtrader: 305432,
+				cardmarket: 793462,
+				tcgplayer: 587608,
+			},
+		},
+	],
+
+	evolveFrom: {
+		ja: "タマザラシ",
+	},
+
+	retreat: 3,
+	regulationMark: "H",
+	rarity: "Common",
+	dexId: [364],
+};
+
+export default card;

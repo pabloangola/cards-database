@@ -5,7 +5,7 @@ const card: Card = {
 	name: {
 		en: "Blissey ex",
 		fr: "Leuphorie ex",
-		de: "Heiteira ex"
+		de: "Heiteira-ex"
 	},
 
 	illustrator: "Ryo Ueda",
@@ -91,16 +91,16 @@ const card: Card = {
 	
 	retreat: 1,
 
-	thirdParty: {
-		cardmarket: 276747,
-		tcgplayer: 83926
-	},
 
 	variants: [
 		{
 			type: "holo",
+			thirdParty: {
+				tcgplayer: 83926,
+				cardmarket: 276747
+			},
 		},
-	]
+	],
 }
 
 export default card

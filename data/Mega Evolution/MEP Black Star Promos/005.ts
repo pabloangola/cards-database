@@ -3,6 +3,7 @@ import Set from "../MEP Black Star Promos"
 
 const card: Card = {
 	set: Set,
+	cameoDexIds: [25],
 
 	name: {
 		en: "Drifloon",
@@ -28,9 +29,10 @@ const card: Card = {
 			en: "Pull",
 			fr: "Tirer",
 			de: "Ziehen",
-			it: "Trascinamento",
-			es: "Jalar",
-			pt: "Puxar"
+			it: "Tira",
+			es: "Tirar",
+			pt: "Puxar",
+			'es-mx': "Jalar"
 		},
 
 		effect: {
@@ -46,9 +48,20 @@ const card: Card = {
 	retreat: 1,
 	regulationMark: "I",
 
+	weaknesses: [{
+		type: "Darkness",
+		value: "x2"
+	}],
+
+	resistances: [{
+		type: "Fighting",
+		value: "-30"
+	}],
+
 	variants: [
 		{
 			type: "holo",
+			foil: "cosmos",
 			thirdParty: {
 				cardmarket: 851051,
 				tcgplayer: 656255

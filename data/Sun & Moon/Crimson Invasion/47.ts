@@ -15,6 +15,7 @@ const card: Card = {
 	rarity: "Rare",
 	category: "Pokemon",
 	set: Set,
+	cameoDexIds: [757],
 
 	dexId: [
 		758,
@@ -29,6 +30,7 @@ const card: Card = {
 	evolveFrom: {
 		en: "Salandit",
 		fr: "Tritox",
+		de: "Molunk"
 	},
 
 	stage: "Stage1",
@@ -91,6 +93,7 @@ const card: Card = {
 
 	description: {
 		en: "For some reason, only females have been found. It creates a reverse harem of male Salandit that it lives with.",
+		de: "Bisher wurden nur Weibchen entdeckt. Sie werden von männlichen Molunk verehrt und leben mit einer Gruppe von ihnen zusammen."
 	},
 
 	thirdParty: {

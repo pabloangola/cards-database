@@ -1,23 +1,33 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Gordie',
-		ja: 'Gordie',
+		ja: "マクワ",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Ultra Rare',
+	illustrator: "Ryuta Fuse",
+	category: "Trainer",
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 233129
-		}
-	}],
-}
+	effect: {
+		ja: "自分の山札を上から7枚見る。その中からエネルギーを好きなだけ選び、相手に見せて、手札に加える。残りのカードは山札にもどして切る。",
+	},
 
-export default card
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 233129,
+				cardmarket: 587068,
+				tcgplayer: 571521,
+			},
+		},
+	],
+
+	trainerType: "Supporter",
+	regulationMark: "E",
+	rarity: "Ultra Rare",
+};
+
+export default card;

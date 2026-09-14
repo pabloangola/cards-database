@@ -1,23 +1,55 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Boltund V',
-		ja: 'Boltund V',
+		ja: "パルスワンV",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Illustration Rare',
+	illustrator: "GIDORA",
+	category: "Pokemon",
+	hp: 200,
+	types: ["Lightning"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 233084
-		}
-	}],
-}
+	stage: "Basic",
 
-export default card
+	attacks: [
+		{
+			name: { ja: "そうでん" },
+			cost: ["Lightning"],
+			effect: {
+				ja: "自分の山札から[雷]エネルギーを2枚まで選び、ベンチポケモンに好きなようにつける。そして山札を切る。",
+			},
+		},
+		{
+			name: { ja: "ライトニングストーム" },
+			damage: "10+",
+			cost: ["Lightning", "Colorless"],
+			effect: {
+				ja: "自分の場のポケモンについている[雷]エネルギーの数×30ダメージ追加。",
+			},
+		},
+	],
+
+	weaknesses: [{ type: "Fighting", value: "x2" }],
+	resistances: [],
+
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 233084,
+				cardmarket: 587023,
+				tcgplayer: 571477,
+			},
+		},
+	],
+
+	retreat: 2,
+	regulationMark: "D",
+	rarity: "Character Super Rare",
+	dexId: [836],
+};
+
+export default card;

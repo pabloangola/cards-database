@@ -1,23 +1,52 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Falinks',
-		ja: 'Falinks',
+		ja: "タイレーツ",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Illustration Rare',
+	illustrator: "Kinu Nishimura",
+	category: "Pokemon",
+	hp: 110,
+	types: ["Fighting"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 232967
-		}
-	}],
-}
+	description: {
+		ja: "６匹で １匹の ポケモン。 隊列を 組み替えながら チームワークで 戦うのだ。",
+	},
 
-export default card
+	stage: "Basic",
+
+	attacks: [
+		{
+			name: { ja: "れんげきのじん" },
+			damage: "20×",
+			cost: ["Fighting", "Colorless"],
+			effect: {
+				ja: "自分の場の「れんげき」のポケモンの数×20ダメージ。",
+			},
+		},
+	],
+
+	weaknesses: [{ type: "Psychic", value: "x2" }],
+	resistances: [],
+
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 232967,
+				cardmarket: 586942,
+				tcgplayer: 571456,
+			},
+		},
+	],
+
+	retreat: 2,
+	regulationMark: "E",
+	rarity: "Character Rare",
+	dexId: [870],
+};
+
+export default card;

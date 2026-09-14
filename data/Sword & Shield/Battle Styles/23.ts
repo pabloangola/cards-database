@@ -4,6 +4,7 @@ import Set from '../Battle Styles'
 const card: Card = {
 	dexId: [498],
 	set: Set,
+	cameoDexIds: [499],
 
 	name: {
 		en: "Tepig",
@@ -58,7 +59,8 @@ const card: Card = {
 	stage: "Basic",
 
 	description: {
-		en: "It loves to eat roasted berries, but sometimes it gets too excited and burns them to a crisp."
+		en: "It loves to eat roasted berries, but sometimes it gets too excited and burns them to a crisp.",
+		de: "Floink liebt es, selbst geröstete Nüsse zu verspeisen. Ab und zu verkohlt es sie jedoch ungewollt vor lauter Vorfreude."
 	},
 
 	variants: [

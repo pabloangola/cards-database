@@ -15,6 +15,7 @@ const card: Card = {
 	rarity: "Common",
 	category: "Pokemon",
 	set: Set,
+	cameoDexIds: [9],
 
 	dexId: [
 		296,
@@ -76,6 +77,7 @@ const card: Card = {
 
 	description: {
 		en: "It toughens up by slamming into thick trees over and over. It gains a sturdy body and dauntless spirit.",
+		de: "Indem es wieder und wieder Bäume rammt, erhält es einen zähen Körper und einen stahlharten Willen."
 	},
 
 	thirdParty: {

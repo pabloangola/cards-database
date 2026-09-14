@@ -1,23 +1,59 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Umbreon VMAX',
-		ja: 'Umbreon VMAX',
+		ja: "ブラッキーVMAX",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Illustration Rare',
+	illustrator: "kawayoo",
+	category: "Pokemon",
+	hp: 310,
+	types: ["Darkness"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 233104
-		}
-	}],
-}
+	stage: "VMAX",
 
-export default card
+	abilities: [
+		{
+			type: "Ability",
+			name: { ja: "ダークシグナル" },
+			effect: {
+				ja: "自分の番に、このカードを手札から出して進化させたとき、1回使える。相手のベンチポケモンを1匹選び、バトルポケモンと入れ替える。",
+			},
+		},
+	],
+
+	attacks: [
+		{
+			name: { ja: "ダイアーク" },
+			damage: 160,
+			cost: ["Darkness", "Colorless", "Colorless"],
+		},
+	],
+
+	weaknesses: [{ type: "Grass", value: "x2" }],
+	resistances: [],
+
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 233104,
+				cardmarket: 587043,
+				tcgplayer: 571497,
+			},
+		},
+	],
+
+	evolveFrom: {
+		ja: "ブラッキーV",
+	},
+
+	retreat: 2,
+	regulationMark: "E",
+	rarity: "Character Super Rare",
+	dexId: [197],
+};
+
+export default card;

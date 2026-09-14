@@ -1,23 +1,55 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Sylveon V',
-		ja: 'Sylveon V',
+		ja: "ニンフィアV",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Illustration Rare',
+	illustrator: "Megumi Mizutani",
+	category: "Pokemon",
+	hp: 200,
+	types: ["Psychic"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 233090
-		}
-	}],
-}
+	stage: "Basic",
 
-export default card
+	abilities: [
+		{
+			type: "Ability",
+			name: { ja: "ドリームギフト" },
+			effect: {
+				ja: "自分の番に1回使えて、使ったなら、自分の番は終わる。自分の山札からグッズを1枚選び、相手に見せて、手札に加える。そして山札を切る。",
+			},
+		},
+	],
+
+	attacks: [
+		{
+			name: { ja: "マジカルショット" },
+			damage: 60,
+			cost: ["Colorless", "Colorless"],
+		},
+	],
+
+	weaknesses: [{ type: "Metal", value: "x2" }],
+	resistances: [],
+
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 233090,
+				cardmarket: 587029,
+				tcgplayer: 571483,
+			},
+		},
+	],
+
+	retreat: 1,
+	regulationMark: "E",
+	rarity: "Character Super Rare",
+	dexId: [700],
+};
+
+export default card;

@@ -4,6 +4,7 @@ import Set from "../Paldea Evolved"
 const card: Card = {
 	dexId: [913],
 	set: Set,
+	cameoDexIds: [61],
 
 	name: {
 		fr: "Canarbello",
@@ -80,6 +81,7 @@ const card: Card = {
 
 	description: {
 		en: "These Pokémon constantly run through shallow waters to train their legs, then compete with each other to see which of them kicks most gracefully.",
+		de: "Es rennt eifrig durch seichte Gewässer, um seine Beine zu stärken, und konkurriert mit Artgenossen darum, wer die anmutigste Beinarbeit vorweist."
 	},
 }
 

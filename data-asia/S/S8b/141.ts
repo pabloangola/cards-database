@@ -1,23 +1,41 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Level Ball',
-		ja: 'Level Ball',
+		ja: "レベルボール",
+		'zh-tw': "等級球",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Fixed',
+	illustrator: "Ryo Ueda",
+	category: "Trainer",
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 232896
-		}
-	}],
-}
+	effect: {
+		ja: "自分の山札から、HPが「90」以下のポケモンを1枚選び、相手に見せてから、手札に加える。そして山札を切る。",
+		'zh-tw': "從自己的牌庫選擇1張HP為「90」以下的寶可夢卡，在給對手看過後加入手牌。並且重洗牌庫。",
+	},
 
-export default card
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardtrader: 232896,
+				cardmarket: 586657,
+				tcgplayer: 571394,
+			},
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				tcgplayer: 578422,
+			},
+		},
+	],
+
+	trainerType: "Item",
+	regulationMark: "E",
+	rarity: "None",
+};
+
+export default card;

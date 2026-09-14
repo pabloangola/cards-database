@@ -1,23 +1,33 @@
-import { Card } from "../../../interfaces"
-import Set from "../SV8"
+import { Card } from "../../../interfaces";
+import Set from "../SV8";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Jasmine\'s Gaze',
-		ja: 'Jasmine\'s Gaze',
+		ja: "ミカンのまなざし",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Special Illustration Rare',
+	illustrator: "Fujimoto Gold",
+	category: "Trainer",
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 305682
-		}
-	}],
-}
+	effect: {
+		ja: "次の相手の番、自分のポケモン全員が、相手のポケモンから受けるワザのダメージは「-30」される。（新しく場に出したポケモンもふくむ。）",
+	},
 
-export default card
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 305682,
+				cardmarket: 793600,
+				tcgplayer: 587697,
+			},
+		},
+	],
+
+	trainerType: "Supporter",
+	regulationMark: "H",
+	rarity: "Special illustration rare",
+};
+
+export default card;

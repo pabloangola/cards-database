@@ -1,23 +1,46 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Morpeko V-UNION',
-		ja: 'Morpeko V-UNION',
+		ja: "モルペコV-UNION",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Illustration Rare',
+	illustrator: "Yuu Nishida",
+	category: "Pokemon",
+	hp: 310,
+	types: ["Lightning"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 233086
-		}
-	}],
-}
+	stage: "Basic",
 
-export default card
+	attacks: [
+		{
+			name: { ja: "たべほうだい" },
+			cost: ["Colorless", "Colorless"],
+			effect: {
+				ja: "自分の手札が10枚になるように、山札を引く。",
+			},
+		},
+	],
+
+	weaknesses: [{ type: "Fighting", value: "x2" }],
+	resistances: [],
+
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 233086,
+				cardmarket: 587025,
+			},
+		},
+	],
+
+	retreat: 2,
+	regulationMark: "E",
+	rarity: "Character Super Rare",
+	dexId: [877],
+};
+
+export default card;

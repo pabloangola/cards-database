@@ -4,6 +4,7 @@ import Set from '../Battle Styles'
 const card: Card = {
 	dexId: [677],
 	set: Set,
+	cameoDexIds: [891],
 
 	name: {
 		en: "Espurr",
@@ -60,7 +61,8 @@ const card: Card = {
 	stage: "Basic",
 
 	description: {
-		en: "There's enough psychic power in Espurr to send a wrestler flying, but because this power can't be controlled, Espurr finds it troublesome."
+		en: "There's enough psychic power in Espurr to send a wrestler flying, but because this power can't be controlled, Espurr finds it troublesome.",
+		de: "Mit seinen Psycho-Kräften könnte es selbst Profi-Wrestler vom Platz fegen. Es fällt ihm aber schwer, diese Kräfte zu kontrollieren."
 	},
 
 	variants: [

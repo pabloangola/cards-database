@@ -17,6 +17,7 @@ const card: Card = {
 	rarity: "Common",
 	category: "Pokemon",
 	set: Set,
+	cameoDexIds: [520],
 
 	attacks: [
 		{
@@ -53,7 +54,8 @@ const card: Card = {
 	stage: "Basic",
 
 	description: {
-		en: "Its natural enemies, like Rookidee, may flee rather than risk getting caught in its large mandibles that can snap thick tree branches."
+		en: "Its natural enemies, like Rookidee, may flee rather than risk getting caught in its large mandibles that can snap thick tree branches.",
+		de: "Sein großer Kiefer ist stark genug, um selbst dicke Äste zu zerbrechen. Damit treibt es auch seinen natürlichen Feind Meikro in die Flucht."
 	},
 
 	variants: [

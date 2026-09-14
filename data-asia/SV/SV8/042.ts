@@ -1,23 +1,62 @@
-import { Card } from "../../../interfaces"
-import Set from "../SV8"
+import { Card } from "../../../interfaces";
+import Set from "../SV8";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Wattrel',
-		ja: 'Wattrel',
+		ja: "カイデン",
+		'zh-tw': "電海燕",
+		'zh-cn': "電海燕",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Common',
+	illustrator: "Pani Kobayashi",
+	category: "Pokemon",
+	hp: 60,
+	types: ["Lightning"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 305440
-		}
-	}],
-}
+	description: {
+		ja: "海岸の 崖に 巣を 作る。 巣は パチパチ 弾ける 不思議な 食感で 人気の 珍味。",
+		'zh-tw': "會在海岸的懸崖上築巢。 吃起來劈哩啪啦跳的神奇口感， 讓牠的巢成了受歡迎的珍奇美食。",
+		'zh-cn': "會在海岸的懸崖上築巢。 吃起來劈哩啪啦跳的神奇口感， 讓牠的巢成了受歡迎的珍奇美食。",
+	},
 
-export default card
+	stage: "Basic",
+
+	attacks: [
+		{
+			name: {
+				ja: "つばめがえし",
+				'zh-tw': "燕返",
+				'zh-cn': "燕返",
+			},
+			damage: "10+",
+			cost: ["Lightning"],
+			effect: {
+				ja: "コインを1回投げオモテなら、20ダメージ追加。",
+				'zh-tw': "擲1次硬幣若為正面，則增加20點傷害。",
+				'zh-cn': "擲1次硬幣若為正面，則增加20點傷害。",
+			},
+		},
+	],
+
+	weaknesses: [{ type: "Lightning", value: "x2" }],
+	resistances: [{ type: "Fighting", value: "-30" }],
+
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardtrader: 305440,
+				cardmarket: 793476,
+				tcgplayer: 587622,
+			},
+		},
+	],
+
+	retreat: 1,
+	regulationMark: "H",
+	rarity: "Common",
+	dexId: [940],
+};
+
+export default card;

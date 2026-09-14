@@ -4,6 +4,7 @@ import Set from "../Paradox Rift"
 const card: Card = {
 	dexId: [458],
 	set: Set,
+	cameoDexIds: [120],
 
 	name: {
 		en: "Mantyke",
@@ -51,6 +52,7 @@ const card: Card = {
 
 	description: {
 		en: "It swims along with a school of Remoraid, and they'll all fight together to repel attackers.",
+		de: "Es mischt sich unter Remoraid-Schwärme und schwimmt mit ihnen. Werden diese angegriffen, kämpft es gemeinsam an ihrer Seite."
 	},
 
 	variants: [

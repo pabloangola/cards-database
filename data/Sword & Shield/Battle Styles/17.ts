@@ -4,6 +4,7 @@ import Set from '../Battle Styles'
 const card: Card = {
 	dexId: [824],
 	set: Set,
+	cameoDexIds: [891],
 
 	name: {
 		en: "Blipbug",
@@ -46,7 +47,8 @@ const card: Card = {
 	stage: "Basic",
 
 	description: {
-		en: "Often found in gardens, this Pokémon has hairs on its body that it uses to assess its surroundings."
+		en: "Often found in gardens, this Pokémon has hairs on its body that it uses to assess its surroundings.",
+		de: "Dieses Pokémon trifft man oft auf Feldern an. Mit den Haaren, die an seinem Körper wachsen, spürt es, was in der Umgebung vor sich geht."
 	},
 
 	variants: [

@@ -1,23 +1,52 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Centiskorch VMAX',
-		ja: 'Centiskorch VMAX',
+		ja: "マルヤクデVMAX",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Illustration Rare',
+	illustrator: "Oswaldo KATO",
+	category: "Pokemon",
+	hp: 320,
+	types: ["Fire"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 233078
-		}
-	}],
-}
+	stage: "VMAX",
 
-export default card
+	attacks: [
+		{
+			name: { ja: "キョダイヒャッカ" },
+			damage: "40+",
+			cost: ["Colorless", "Colorless"],
+			effect: {
+				ja: "このポケモンについている[炎]エネルギーの数×40ダメージ追加。のぞむなら、ダメージを与えたあとに、自分のトラッシュから[炎]エネルギーを1枚選び、このポケモンにつける。",
+			},
+		},
+	],
+
+	weaknesses: [{ type: "Water", value: "x2" }],
+	resistances: [],
+
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 233078,
+				cardmarket: 587017,
+				tcgplayer: 571471,
+			},
+		},
+	],
+
+	evolveFrom: {
+		ja: "マルヤクデV",
+	},
+
+	retreat: 3,
+	regulationMark: "D",
+	rarity: "Character Super Rare",
+	dexId: [851],
+};
+
+export default card;

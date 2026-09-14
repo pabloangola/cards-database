@@ -1,23 +1,57 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Single Strike Urshifu VMAX',
-		ja: 'Single Strike Urshifu VMAX',
+		ja: "いちげきウーラオスVMAX",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Illustration Rare',
+	illustrator: "kodama",
+	category: "Pokemon",
+	hp: 330,
+	types: ["Fighting"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 233098
-		}
-	}],
-}
+	stage: "VMAX",
 
-export default card
+	attacks: [
+		{
+			name: { ja: "せいけんづき" },
+			damage: 100,
+			cost: ["Colorless", "Colorless", "Colorless"],
+		},
+		{
+			name: { ja: "キョダイイチゲキ" },
+			damage: 270,
+			cost: ["Fighting", "Fighting", "Fighting", "Colorless"],
+			effect: {
+				ja: "このポケモンについているエネルギーを、すべてトラッシュする。このワザのダメージは、相手のバトルポケモンにかかっている効果を計算しない。",
+			},
+		},
+	],
+
+	weaknesses: [{ type: "Psychic", value: "x2" }],
+	resistances: [],
+
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 233098,
+				cardmarket: 587037,
+				tcgplayer: 571491,
+			},
+		},
+	],
+
+	evolveFrom: {
+		ja: "いちげきウーラオスV",
+	},
+
+	retreat: 3,
+	regulationMark: "E",
+	rarity: "Character Super Rare",
+	dexId: [892],
+};
+
+export default card;

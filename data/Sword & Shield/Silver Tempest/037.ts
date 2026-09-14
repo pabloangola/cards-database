@@ -4,6 +4,7 @@ import Set from "../Silver Tempest"
 const card: Card = {
 	dexId: [320],
 	set: Set,
+	cameoDexIds: [278],
 
 	name: {
 		en: "Wailmer",
@@ -70,6 +71,7 @@ const card: Card = {
 
 	description: {
 		en: "It shows off by spraying jets of seawater from the nostrils above its eyes. It eats a solid ton of Wishiwashi every day.",
+		de: "Es prustet Meerwasser aus den Nasenlöchern, die über seinen Augen liegen. Außerdem frisst es täglich eine Tonne Lusardin."
 	},
 
 	variants: [

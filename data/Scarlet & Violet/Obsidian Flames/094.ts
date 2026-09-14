@@ -4,6 +4,7 @@ import Set from "../Obsidian Flames"
 const card: Card = {
 	dexId: [343],
 	set: Set,
+	cameoDexIds: [722],
 
 	name: {
 		fr: "Balbuto",
@@ -61,6 +62,7 @@ const card: Card = {
 
 	description: {
 		en: "It was discovered in ancient ruins. While moving, it constantly spins. It stands on one foot even when asleep.",
+		de: "Es wurde in antiken Ruinen entdeckt. Wenn es sich bewegt, dreht es sich. Auch im Schlaf steht es auf einem Bein."
 	},
 
 	variants: [

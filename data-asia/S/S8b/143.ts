@@ -1,23 +1,41 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Cape of Toughness',
-		ja: 'Cape of Toughness',
+		ja: "タフネスマント",
+		'zh-tw': "堅韌斗篷",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Fixed',
+	illustrator: "inose yukie",
+	category: "Trainer",
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 232898
-		}
-	}],
-}
+	effect: {
+		ja: "このカードをつけているたねポケモン（「ポケモンGX」をのぞく）の最大HPは「50」大きくなる。",
+		'zh-tw': "寶可夢道具卡，附於自己的寶可夢使用。1隻寶可夢只可附上1張寶可夢道具卡，並且保持附加狀態。",
+	},
 
-export default card
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardtrader: 232898,
+				cardmarket: 586659,
+				tcgplayer: 571396,
+			},
+		},
+		{
+			type: "reverse",
+			thirdParty: {
+				tcgplayer: 578424,
+			},
+		},
+	],
+
+	trainerType: "Tool",
+	regulationMark: "D",
+	rarity: "None",
+};
+
+export default card;

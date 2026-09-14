@@ -4,6 +4,7 @@ import Set from "../Fusion Strike"
 const card: Card = {
 	dexId: [885],
 	set: Set,
+	cameoDexIds: [821, 823, 861],
 
 	name: {
 		en: "Dreepy",
@@ -36,7 +37,8 @@ const card: Card = {
 	illustrator: "Teeziro",
 
 	description: {
-		en: "If this weak Pokémon is by itself, a mere child could defeat it. But if Dreepy has friends to help it train, it can evolve and become much stronger."
+		en: "If this weak Pokémon is by itself, a mere child could defeat it. But if Dreepy has friends to help it train, it can evolve and become much stronger.",
+		de: "Alleine ist es sogar gegen ein Kind machtlos, doch mit der Hilfe seiner Gefährten trainiert es, entwickelt sich und wird so stärker."
 	},
 
 	attacks: [{

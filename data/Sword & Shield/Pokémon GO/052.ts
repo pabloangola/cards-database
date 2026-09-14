@@ -4,6 +4,7 @@ import Set from "../Pokémon GO"
 const card: Card = {
 	dexId: [242],
 	set: Set,
+	cameoDexIds: [146],
 
 	name: {
 		en: "Blissey",
@@ -78,9 +79,10 @@ const card: Card = {
 
 	description: {
 		en: "Whenever a Blissey finds a weakened Pokémon, it will share its egg and offer its care until the other Pokémon is all better.",
+		de: "Stößt Heiteira auf geschwächte Pokémon, teilt es sein Ei mit ihnen und pflegt sie wieder gesund."
 	},
 
-	
+
 
 	variants: [
 		{
@@ -95,6 +97,14 @@ const card: Card = {
 			thirdParty: {
 				cardmarket: 665274,
 				tcgplayer: 276967
+			}
+		},
+		{
+			type: 'holo',
+			foil: 'cosmos',
+			thirdParty: {
+				cardmarket: 669498,
+				tcgplayer: 279929
 			}
 		},
 	],

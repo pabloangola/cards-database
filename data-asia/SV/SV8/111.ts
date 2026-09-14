@@ -1,23 +1,52 @@
-import { Card } from "../../../interfaces"
-import Set from "../SV8"
+import { Card } from "../../../interfaces";
+import Set from "../SV8";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Spheal',
-		ja: 'Spheal',
+		ja: "タマザラシ",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Illustration Rare',
+	illustrator: "miki kudo",
+	category: "Pokemon",
+	hp: 70,
+	types: ["Water"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 305473
-		}
-	}],
-}
+	description: {
+		ja: "ぶ厚い 脂肪に 包まれた 見事に まんまるな 体。 歩くより 転がるほうが 速い。",
+	},
 
-export default card
+	stage: "Basic",
+
+	attacks: [
+		{
+			name: { ja: "こなゆき" },
+			damage: 10,
+			cost: ["Water"],
+			effect: {
+				ja: "相手のバトルポケモンをねむりにする。",
+			},
+		},
+	],
+
+	weaknesses: [{ type: "Metal", value: "x2" }],
+	resistances: [],
+
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 305473,
+				cardmarket: 793575,
+				tcgplayer: 587690,
+			},
+		},
+	],
+
+	retreat: 2,
+	regulationMark: "H",
+	rarity: "Illustration rare",
+	dexId: [363],
+};
+
+export default card;

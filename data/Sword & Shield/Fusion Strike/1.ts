@@ -2,7 +2,7 @@ import { Card } from "../../../interfaces"
 import Set from "../Fusion Strike"
 
 const card: Card = {
-	dexId: [251],
+	dexId: [10],
 	set: Set,
 
 	name: {
@@ -30,7 +30,8 @@ const card: Card = {
 	illustrator: "Mitsuhiro Arita",
 
 	description: {
-		en: "Its short feet are tipped with suction pads that enable it to tirelessly climb slopes and walls."
+		en: "Its short feet are tipped with suction pads that enable it to tirelessly climb slopes and walls.",
+		de: "Es hat Saugnäpfe an den Beinchen, mit denen es mühelos Steigungen und Mauern erklimmen kann."
 	},
 
 	attacks: [{

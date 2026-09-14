@@ -4,6 +4,7 @@ import Set from "../Twilight Masquerade"
 const card: Card = {
 	dexId: [113],
 	set: Set,
+	cameoDexIds: [54, 69, 132, 143, 242],
 
 	name: {
 		en: "Chansey",
@@ -75,6 +76,7 @@ const card: Card = {
 
 	description: {
 		en: "It walks carefully to prevent its egg from breaking. However, it is extremely fast at running away.",
+		de: "Chaneira bewegt sich behutsam, damit sein Ei nicht zerbricht. Es kann jedoch sehr schnell davonlaufen."
 	},
 
 	variants: [

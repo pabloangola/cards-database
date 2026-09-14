@@ -15,6 +15,7 @@ const card: Card = {
 	rarity: "Uncommon",
 	category: "Pokemon",
 	set: Set,
+	cameoDexIds: [125],
 
 	dexId: [
 		237,
@@ -89,6 +90,7 @@ const card: Card = {
 
 	description: {
 		en: "It fights while spinning like a top. The centrifugal force boosts its destructive power by 10.",
+		de: "Es kämpft, während es sich wie ein Kreisel dreht. Die Zentrifugalkraft verzehnfacht seine Kampfkraft."
 	},
 
 	thirdParty: {

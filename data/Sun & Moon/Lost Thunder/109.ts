@@ -15,6 +15,7 @@ const card: Card = {
 	rarity: "Common",
 	category: "Pokemon",
 	set: Set,
+	cameoDexIds: [50],
 
 	dexId: [
 		95,
@@ -61,6 +62,7 @@ const card: Card = {
 
 	description: {
 		en: "It usually lives underground. It searches for food while boring its way through the ground at 50 miles per hour.",
+		de: "Es lebt gewöhnlich unter der Erde. Während es sich mit 80 km/h durchs Erdreich bohrt, sucht es nach Nahrung."
 	},
 
 	thirdParty: {

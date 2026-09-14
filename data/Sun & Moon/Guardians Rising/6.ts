@@ -15,6 +15,7 @@ const card: Card = {
 	rarity: "Common",
 	category: "Pokemon",
 	set: Set,
+	cameoDexIds: [778],
 
 	dexId: [
 		708,
@@ -81,6 +82,7 @@ const card: Card = {
 
 	description: {
 		en: "These Pokémon are stumps possessed by the spirits of children who died in the forest. Their cries sound like eerie screams.",
+		de: "Es ist die Seele eines im Wald gestorbenen Kindes, die von einem Baumstumpf Besitz ergriffen hat. Sein Ruf gleicht einem Schluchzen."
 	},
 
 	thirdParty: {

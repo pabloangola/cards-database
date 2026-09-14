@@ -1,23 +1,53 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Blaziken V',
-		ja: 'Blaziken V',
+		ja: "バシャーモV",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Illustration Rare',
+	illustrator: "nagimiso",
+	category: "Pokemon",
+	hp: 210,
+	types: ["Fire"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 233075
-		}
-	}],
-}
+	stage: "Basic",
 
-export default card
+	attacks: [
+		{
+			name: { ja: "とびひざげり" },
+			damage: 50,
+			cost: ["Colorless", "Colorless"],
+		},
+		{
+			name: { ja: "ほのおのうず" },
+			damage: 210,
+			cost: ["Fire", "Fire", "Colorless", "Colorless"],
+			effect: {
+				ja: "このポケモンについているエネルギーを2個選び、トラッシュする。",
+			},
+		},
+	],
+
+	weaknesses: [{ type: "Water", value: "x2" }],
+	resistances: [],
+
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 233075,
+				cardmarket: 587014,
+				tcgplayer: 571468,
+			},
+		},
+	],
+
+	retreat: 2,
+	regulationMark: "E",
+	rarity: "Character Super Rare",
+	dexId: [257],
+};
+
+export default card;

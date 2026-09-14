@@ -4,7 +4,7 @@ import Set from '../Team Rocket Returns'
 const card: Card = {
 	name: {
 		en: "Rocket's Scizor ex",
-		de: "Rockets Scherox ex"
+		de: "Rockets Scherox-ex"
 	},
 
 	illustrator: "Hikaru Koike",
@@ -79,16 +79,17 @@ const card: Card = {
 	
 	retreat: 1,
 
-	thirdParty: {
-		cardmarket: 276393,
-		tcgplayer: 88787
-	},
 
 	variants: [
 		{
-			type: "holo"
+			type: "holo",
+			thirdParty: {
+				cardmarket: 276393,
+				tcgplayer: 88787
+			},
 		},
-	]
+	],
+
 }
 
 export default card

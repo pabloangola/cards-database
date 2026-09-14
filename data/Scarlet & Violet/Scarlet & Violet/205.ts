@@ -4,6 +4,7 @@ import Set from "../Scarlet & Violet"
 const card: Card = {
 	dexId: [692],
 	set: Set,
+	cameoDexIds: [690],
 
 	name: {
 		en: "Clauncher",
@@ -54,6 +55,7 @@ const card: Card = {
 
 	description: {
 		en: "Clauncher's claws will regrow if they fall off. The meat inside the claws is edible, but it has a distinct flavor that doesn't appeal to all tastes.",
+		de: "Verliert es eine Schere, wächst diese wieder nach. Das Fleisch darin ist zwar essbar, doch an seinem speziellen Geschmack scheiden sich die Geister."
 	},
 
 	thirdParty: {

@@ -3,6 +3,7 @@ import Set from "../Ascended Heroes"
 
 const card: Card = {
 	set: Set,
+	cameoDexIds: [179, 278, 337, 749],
 
 	name: {
 		en: "Banette",
@@ -87,6 +88,7 @@ const card: Card = {
 
 	description: {
 		en: "This Pokémon developed from an abandoned doll that amassed a grudge. It is seen in dark alleys.",
+		de: "Es war einst eine weggeworfene Plüschpuppe, die durch einen tiefen Groll zu einem Pokémon wurde. Man findet es in dunklen Gassen."
 	},
 
 	variants: [

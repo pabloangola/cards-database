@@ -4,6 +4,7 @@ import Set from "../Scarlet & Violet"
 const card: Card = {
 	dexId: [917],
 	set: Set,
+	cameoDexIds: [123],
 
 	name: {
 		en: "Tarountula",
@@ -63,6 +64,7 @@ const card: Card = {
 
 	description: {
 		en: "The thread it secretes from its rear is as strong as wire. The secret behind the thread's strength is the topic of ongoing research.",
+		de: "Der Faden, den Tarundel über seinen Hinterleib absondert, ist so stark wie Draht. Das Geheimnis dieser Stärke wird noch erforscht."
 	},
 
 	thirdParty: {

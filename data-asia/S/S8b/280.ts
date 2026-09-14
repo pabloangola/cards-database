@@ -1,23 +1,59 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Mew VMAX',
-		ja: 'Mew VMAX',
+		ja: "ミュウVMAX",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Secret Rare',
+	illustrator: "5ban Graphics",
+	category: "Pokemon",
+	hp: 310,
+	types: ["Psychic"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 233139
-		}
-	}],
-}
+	stage: "VMAX",
 
-export default card
+	attacks: [
+		{
+			name: { ja: "クロスフュージョン" },
+			cost: ["Colorless", "Colorless"],
+			effect: {
+				ja: "自分のベンチの「フュージョン」のポケモンが持っているワザを1つ選び、このワザとして使う。",
+			},
+		},
+		{
+			name: { ja: "ダイミラクル" },
+			damage: 130,
+			cost: ["Psychic", "Psychic"],
+			effect: {
+				ja: "このワザのダメージは、相手のバトルポケモンにかかっている効果を計算しない。",
+			},
+		},
+	],
+
+	weaknesses: [{ type: "Darkness", value: "x2" }],
+	resistances: [{ type: "Fighting", value: "-30" }],
+
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 233139,
+				cardmarket: 587078,
+				tcgplayer: 571531,
+			},
+		},
+	],
+
+	evolveFrom: {
+		ja: "ミュウV",
+	},
+
+	retreat: 0,
+	regulationMark: "E",
+	rarity: "Secret Rare",
+	dexId: [151],
+};
+
+export default card;

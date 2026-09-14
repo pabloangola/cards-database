@@ -1,23 +1,33 @@
-import { Card } from "../../../interfaces"
-import Set from "../SV8"
+import { Card } from "../../../interfaces";
+import Set from "../SV8";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Night Stretcher',
-		ja: 'Night Stretcher',
+		ja: "夜のタンカ",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Secret Rare',
+	illustrator: "Toyste Beach",
+	category: "Trainer",
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 305667
-		}
-	}],
-}
+	effect: {
+		ja: "自分のトラッシュからポケモンまたは基本エネルギーを1枚選び、相手に見せて、手札に加える。",
+	},
 
-export default card
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 305667,
+				cardmarket: 793604,
+				tcgplayer: 587702,
+			},
+		},
+	],
+
+	trainerType: "Item",
+	regulationMark: "H",
+	rarity: "Mega Hyper Rare",
+};
+
+export default card;

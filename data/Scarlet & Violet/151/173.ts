@@ -4,6 +4,7 @@ import Set from "../151"
 const card: Card = {
 	dexId: [25],
 	set: Set,
+	cameoDexIds: [9, 10, 12, 16, 29, 32, 37, 39, 54, 58, 79, 94, 104, 122],
 
 	name: {
 		fr: "Pikachu",
@@ -66,6 +67,7 @@ const card: Card = {
 
 	description: {
 		en: "When it is angered, it immediately discharges the energy stored in the pouches in its cheeks.",
+		de: "Ist es wütend, entlädt sich augenblicklich die Elektrizität, die es in seinen Backentaschen gespeichert hat."
 	},
 
 	variants: [

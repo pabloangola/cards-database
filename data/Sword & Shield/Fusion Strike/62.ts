@@ -4,6 +4,7 @@ import Set from "../Fusion Strike"
 const card: Card = {
 	dexId: [258],
 	set: Set,
+	cameoDexIds: [769],
 
 	name: {
 		en: "Mudkip",
@@ -30,7 +31,8 @@ const card: Card = {
 	illustrator: "KIYOTAKA OSHIYAMA",
 
 	description: {
-		en: "To alert it, the fin on its head senses the flow of water. It has the strength to heft boulders."
+		en: "To alert it, the fin on its head senses the flow of water. It has the strength to heft boulders.",
+		de: "Die Flosse auf seinem Kopf prüft die Strömung des Wassers. Dieses Pokémon kann Felsen heben."
 	},
 
 	attacks: [{

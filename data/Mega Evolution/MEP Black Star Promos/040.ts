@@ -3,6 +3,7 @@ import Set from "../MEP Black Star Promos"
 
 const card: Card = {
 	set: Set,
+	cameoDexIds: [399, 408, 410, 425],
 
 	name: {
 		en: "Turtwig",
@@ -41,7 +42,10 @@ const card: Card = {
 	retreat: 3,
 	regulationMark: "J",
 
-	
+	weaknesses: [{
+		type: "Fire",
+		value: "x2"
+	}],
 
 	variants: [
 		{

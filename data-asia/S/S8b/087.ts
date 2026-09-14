@@ -1,23 +1,62 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Lycanroc',
-		ja: 'Lycanroc',
+		ja: "ルガルガン",
+		'zh-tw': "鬃岩狼人",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Fixed',
+	illustrator: "Teeziro",
+	category: "Pokemon",
+	hp: 120,
+	types: ["Fighting"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 232842
-		}
-	}],
-}
+	description: {
+		ja: "群れを 作らず １匹で 暮らす。 自分の 力を 引き出してくれる トレーナーの いうことしか 聞かない。",
+		'zh-tw': "不集結成群，而是單獨生活。只會聽命於能夠引出 自己力量的訓練家。",
+	},
 
-export default card
+	stage: "Stage1",
+
+	attacks: [
+		{
+			name: {
+				ja: "ローグファング",
+				'zh-tw': "惡棍獠牙",
+			},
+			damage: "80+",
+			cost: ["Fighting", "Fighting"],
+			effect: {
+				ja: "自分のトラッシュにある「いちげき」のポケモンの枚数×10ダメージ追加。",
+				'zh-tw': "增加自己的棄牌區的「一擊」寶可夢的張數×10點傷害。",
+			},
+		},
+	],
+
+	weaknesses: [{ type: "Grass", value: "x2" }],
+	resistances: [],
+
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardtrader: 232842,
+				cardmarket: 586603,
+				tcgplayer: 571340,
+			},
+		},
+	],
+
+	evolveFrom: {
+		ja: "イワンコ",
+	},
+
+	retreat: 2,
+	regulationMark: "E",
+	rarity: "None",
+	dexId: [745],
+};
+
+export default card;

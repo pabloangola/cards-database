@@ -5,7 +5,7 @@ const card: Card = {
 	name: {
 		en: "Crobat ex",
 		fr: "Nostenfer ex",
-		de: "Iksbat ex"
+		de: "Iksbat-ex"
 	},
 
 	illustrator: "Ryo Ueda",
@@ -103,16 +103,17 @@ const card: Card = {
 
 	retreat: 0,
 
-	thirdParty: {
-		tcgplayer: 84493,
-		cardmarket: 276499
-	},
 
 	variants: [
 		{
 			type: "holo",
-		}
-	]
+			thirdParty: {
+				tcgplayer: 84493,
+				cardmarket: 276499
+			},
+		},
+	],
+
 }
 
 export default card

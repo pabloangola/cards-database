@@ -15,6 +15,7 @@ const card: Card = {
 	rarity: "Common",
 	category: "Pokemon",
 	set: Set,
+	cameoDexIds: [90],
 
 	dexId: [
 		577,
@@ -66,6 +67,7 @@ const card: Card = {
 
 	description: {
 		en: "They drive away attackers by unleashing psychic power. They can use telepathy to talk with others.",
+		de: "Es wehrt Angreifer ab, indem es Psycho-Kräfte auf sie ansetzt. Es kommuniziert telepathisch mit Artgenossen."
 	},
 
 	thirdParty: {

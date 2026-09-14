@@ -4,6 +4,7 @@ import Set from "../Scarlet & Violet"
 const card: Card = {
 	dexId: [971],
 	set: Set,
+	cameoDexIds: [92, 94, 132, 353, 354, 425],
 
 	name: {
 		en: "Greavard",
@@ -69,6 +70,7 @@ const card: Card = {
 
 	description: {
 		en: "This friendly Pokémon doesn't like being alone. Pay it even the slightest bit of attention, and it will follow you forever.",
+		de: "Dieses anhängliche Pokémon ist nicht gern allein. Auch wenn man sich nur kurz um es kümmert, läuft es einem auf ewig nach."
 	},
 
 	thirdParty: {

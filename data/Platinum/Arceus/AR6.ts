@@ -4,7 +4,6 @@ import Set from '../Arceus'
 const card: Card = {
 	name: {
 		en: "Arceus",
-		fr: "Arceus",
 		de: "Arceus"
 	},
 
@@ -31,12 +30,10 @@ const card: Card = {
 			],
 			name: {
 				en: "Lightning Turn",
-				fr: "Tour éclair",
 				de: "Blitzartige Drehung"
 			},
 			effect: {
 				en: "Switch Arceus with 1 of your Benched Pokémon.",
-				fr: "Échangez Arceus avec 1 des Pokémon de votre Banc.",
 				de: "Tausche Arceus gegen 1 Pokémon auf deiner Bank aus."
 			},
 			damage: 30,
@@ -61,7 +58,8 @@ const card: Card = {
 	retreat: 1,
 
 	description: {
-		en: "It is described in mythology as the Pokémon that shaped the universe with its 1,000 arms."
+		en: "It is described in mythology as the Pokémon that shaped the universe with its 1,000 arms.",
+		de: "Die Mythologie nennt dieses PKMN als Former des Universums, wobei es seine tausend Arme eingesetzt hat."
 	},
 
 	variants: [

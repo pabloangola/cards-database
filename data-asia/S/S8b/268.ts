@@ -1,23 +1,33 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Boss\'s Orders - Lysandre',
-		ja: 'Boss\'s Orders - Lysandre',
+		ja: "ボスの指令",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Ultra Rare',
+	illustrator: "NC Empire",
+	category: "Trainer",
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 233127
-		}
-	}],
-}
+	effect: {
+		ja: "相手のベンチポケモンを1匹選び、バトルポケモンと入れ替える。",
+	},
 
-export default card
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 233127,
+				cardmarket: 587066,
+				tcgplayer: 571519,
+			},
+		},
+	],
+
+	trainerType: "Supporter",
+	regulationMark: "D",
+	rarity: "Ultra Rare",
+};
+
+export default card;

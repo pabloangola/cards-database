@@ -3,6 +3,7 @@ import Set from "../Phantasmal Flames"
 
 const card: Card = {
 	set: Set,
+	cameoDexIds: [25, 335, 336],
 
 	name: {
 		en: "Toxtricity",
@@ -83,6 +84,7 @@ const card: Card = {
 
 	description: {
 		en: "As it scatters toxic sweat and emits electricity, a melody that sounds like it came from a guitar reverberates through the surrounding area.",
+		de: "Wenn es Elektrizität absondert und dabei giftigen Schweiß verspritzt, so erklingt in der Umgebung eine Melodie wie von einer Gitarre."
 	},
 
 	illustrator: "Terada Tera",

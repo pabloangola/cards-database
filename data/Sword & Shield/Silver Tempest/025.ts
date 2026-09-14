@@ -4,6 +4,7 @@ import Set from "../Silver Tempest"
 const card: Card = {
 	dexId: [653],
 	set: Set,
+	cameoDexIds: [868],
 
 	name: {
 		en: "Fennekin",
@@ -68,6 +69,7 @@ const card: Card = {
 
 	description: {
 		en: "As it walks, it munches on a twig in place of a snack. It intimidates opponents by puffing hot air out of its ears.",
+		de: "Anstelle eines Snacks kaut es unterwegs auf einem Zweig herum. Es schreckt Gegner ab, indem es über seine Ohren heiße Luft ausstößt."
 	},
 
 	variants: [

@@ -4,6 +4,7 @@ import Set from "../Astral Radiance"
 const card: Card = {
 	dexId: [436],
 	set: Set,
+	cameoDexIds: [493, 903],
 
 	name: {
 		en: "Bronzor",
@@ -63,6 +64,7 @@ const card: Card = {
 
 	description: {
 		en: "Floats using a mysterious energy. The pattern engraved upon its back is held as sacred and can sometimes be found in imagery from ancient cemeteries and other such timeworn places.",
+		de: "Es schwebt mithilfe einer rätselhaften Energie. Das Muster auf seinem Rücken gilt als heilig und ist mitunter auf alten Gräbern und an anderen Orten vergangener Zeiten wiederzufinden."
 	},
 
 	variants: [

@@ -15,6 +15,7 @@ const card: Card = {
 	rarity: "Common",
 	category: "Pokemon",
 	set: Set,
+	cameoDexIds: [806],
 
 	dexId: [
 		187,
@@ -65,6 +66,7 @@ const card: Card = {
 
 	description: {
 		en: "It drifts on winds. It is said that when Hoppip gather in fields and mountains, spring is on the way.",
+		de: "Es reitet auf dem Wind. Man sagt, wenn sich Hoppspross versammeln, kommt der Frühling bald."
 	},
 
 	thirdParty: {

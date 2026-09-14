@@ -3,6 +3,7 @@ import Set from "../MEP Black Star Promos"
 
 const card: Card = {
 	set: Set,
+	cameoDexIds: [68, 128],
 
 	name: {
 		en: "Litten",
@@ -51,7 +52,10 @@ const card: Card = {
 	retreat: 1,
 	regulationMark: "J",
 
-	
+	weaknesses: [{
+		type: "Water",
+		value: "x2"
+	}],
 
 	variants: [
 		{

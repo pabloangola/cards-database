@@ -4,6 +4,7 @@ import Set from "../Obsidian Flames"
 const card: Card = {
 	dexId: [44],
 	set: Set,
+	cameoDexIds: [13],
 
 	name: {
 		fr: "Ortide",
@@ -74,6 +75,7 @@ const card: Card = {
 
 	description: {
 		en: "What appears to be drool is actually sweet honey. It is very sticky and clings stubbornly if touched.",
+		de: "Was wie Speichel aussieht, ist eigentlich Honig. Er ist sehr klebrig und wenn man ihn berührt, bekommt man ihn nicht mehr ab."
 	},
 
 	variants: [

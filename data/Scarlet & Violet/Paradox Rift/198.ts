@@ -4,6 +4,7 @@ import Set from "../Paradox Rift"
 const card: Card = {
 	dexId: [999],
 	set: Set,
+	cameoDexIds: [1000],
 
 	name: {
 		en: "Gimmighoul",
@@ -61,6 +62,7 @@ const card: Card = {
 
 	description: {
 		en: "This Pokémon was born inside a treasure chest about 1,500 years ago. It sucks the life-force out of scoundrels who try to steal the treasure.",
+		de: "Es entstand vor etwa 1500 Jahren in einer Schatztruhe. Wenn Diebe versuchen, den Schatz zu stehlen, saugt es ihnen die Lebensenergie aus."
 	},
 
 	variants: [

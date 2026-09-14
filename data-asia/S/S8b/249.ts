@@ -1,23 +1,62 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Corviknight VMAX',
-		ja: 'Corviknight VMAX',
+		ja: "アーマーガアVMAX",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Illustration Rare',
+	illustrator: "Shigenori Negishi",
+	category: "Pokemon",
+	hp: 320,
+	types: ["Metal"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 233108
-		}
-	}],
-}
+	stage: "VMAX",
 
-export default card
+	abilities: [
+		{
+			type: "Ability",
+			name: { ja: "ラスターボディ" },
+			effect: {
+				ja: "このポケモンは、相手のポケモンから特性の効果を受けない。",
+			},
+		},
+	],
+
+	attacks: [
+		{
+			name: { ja: "キョダイハリケーン" },
+			damage: 240,
+			cost: ["Metal", "Metal", "Colorless"],
+			effect: {
+				ja: "次の自分の番、このポケモンは「キョダイハリケーン」が使えない。",
+			},
+		},
+	],
+
+	weaknesses: [{ type: "Fire", value: "x2" }],
+	resistances: [{ type: "Grass", value: "-30" }],
+
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 233108,
+				cardmarket: 587047,
+				tcgplayer: 571501,
+			},
+		},
+	],
+
+	evolveFrom: {
+		ja: "アーマーガアV",
+	},
+
+	retreat: 0,
+	regulationMark: "E",
+	rarity: "Character Super Rare",
+	dexId: [823],
+};
+
+export default card;

@@ -1,23 +1,37 @@
-import { Card } from "../../../interfaces"
-import Set from "../SV8"
+import { Card } from "../../../interfaces";
+import Set from "../SV8";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Deduction Kit',
-		ja: 'Deduction Kit',
+		ja: "推理セット",
+		'zh-tw': "推理組合",
+		'zh-cn': "推理組合",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Uncommon',
+	illustrator: "AYUMI ODASHIMA",
+	category: "Trainer",
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 305469
-		}
-	}],
-}
+	effect: {
+		ja: "自分の山札を上から3枚見て、好きな順番に入れ替えて、山札の上にもどす。または、そのカードをすべてウラにして切り、山札の下にもどす。",
+		'zh-tw': "查看自己的牌庫上方3張卡，以任意順序排列，放回牌庫上方。或者將那些卡全部翻回反面並重洗，放回牌庫下方。",
+		'zh-cn': "查看自己的牌庫上方3張卡，以任意順序排列，放回牌庫上方。或者將那些卡全部翻回反面並重洗，放回牌庫下方。",
+	},
 
-export default card
+	variants: [
+		{
+			type: "normal",
+			thirdParty: {
+				cardtrader: 305469,
+				cardmarket: 793528,
+				tcgplayer: 587674,
+			},
+		},
+	],
+
+	trainerType: "Item",
+	regulationMark: "H",
+	rarity: "Uncommon",
+};
+
+export default card;

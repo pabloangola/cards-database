@@ -15,6 +15,7 @@ const card: Card = {
 	rarity: "Common",
 	category: "Pokemon",
 	set: Set,
+	cameoDexIds: [103],
 
 	dexId: [
 		102,
@@ -80,6 +81,7 @@ const card: Card = {
 
 	description: {
 		en: "Its six eggs use telepathy to communicate among themselves. It is believed to carry plant genes and the genes of other species.",
+		de: "Die sechs Eier kommunizieren telepathisch miteinander. Sie tragen das Erbgut von Pflanzen sowie Pokémon eines bestimmten Typs in sich."
 	},
 
 	thirdParty: {

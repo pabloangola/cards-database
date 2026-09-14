@@ -4,6 +4,7 @@ import Set from "../Twilight Masquerade"
 const card: Card = {
 	dexId: [133],
 	set: Set,
+	cameoDexIds: [635],
 
 	name: {
 		en: "Eevee",
@@ -75,6 +76,7 @@ const card: Card = {
 
 	description: {
 		en: "Its genetic code is irregular. It may mutate if it is exposed to radiation from element stones.",
+		de: "Das Erbmaterial von Evoli ist anomal. Die Strahlung von besonderen Steinen lässt es mutieren."
 	},
 
 	variants: [

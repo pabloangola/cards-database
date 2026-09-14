@@ -1,23 +1,55 @@
-import { Card } from "../../../interfaces"
-import Set from "../CP2"
+import { Card } from "../../../interfaces";
+import Set from "../CP2";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Black Kyurem',
-		ja: 'Black Kyurem',
+		ja: "ブラックキュレム",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Rare',
+	illustrator: "Mitsuhiro Arita",
+	category: "Pokemon",
+	hp: 120,
+	types: ["Dragon"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 283182
-		}
-	}],
-}
+	stage: "Basic",
 
-export default card
+	attacks: [
+		{
+			name: { ja: "サンダーネイル" },
+			damage: 40,
+			cost: ["Lightning", "Colorless", "Colorless"],
+			effect: {
+				ja: "コインを1回投げオモテなら、相手のバトルポケモンをマヒにする。",
+			},
+		},
+		{
+			name: { ja: "ひょうけつざん" },
+			damage: 120,
+			cost: ["Water", "Lightning", "Lightning", "Colorless"],
+			effect: {
+				ja: "このポケモンにも20ダメージ。",
+			},
+		},
+	],
+
+	weaknesses: [{ type: "Fairy", value: "x2" }],
+	resistances: [],
+
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 283182,
+				cardmarket: 563501,
+				tcgplayer: 605329,
+			},
+		},
+	],
+
+	retreat: 3,
+	rarity: "Rare",
+	dexId: [646],
+};
+
+export default card;

@@ -1,23 +1,33 @@
-import { Card } from "../../../interfaces"
-import Set from "../S8b"
+import { Card } from "../../../interfaces";
+import Set from "../S8b";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Café Master',
-		ja: 'Café Master',
+		ja: "マスター",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Ultra Rare',
+	illustrator: "Sanosuke Sakuma",
+	category: "Trainer",
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 233130
-		}
-	}],
-}
+	effect: {
+		ja: "このカードを使ったら、自分の番は終わる。自分のベンチポケモンを3匹まで選び、山札から、それぞれちがうタイプの基本エネルギーを1枚ずつつける。そして山札を切る。",
+	},
 
-export default card
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 233130,
+				cardmarket: 587069,
+				tcgplayer: 571522,
+			},
+		},
+	],
+
+	trainerType: "Supporter",
+	regulationMark: "E",
+	rarity: "Ultra Rare",
+};
+
+export default card;

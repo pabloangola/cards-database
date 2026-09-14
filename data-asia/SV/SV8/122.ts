@@ -1,23 +1,60 @@
-import { Card } from "../../../interfaces"
-import Set from "../SV8"
+import { Card } from "../../../interfaces";
+import Set from "../SV8";
 
 const card: Card = {
 	set: Set,
-
 	name: {
-		en: 'Pikachu ex',
-		ja: 'Pikachu ex',
+		ja: "ピカチュウex",
 	},
 
-	category: 'Pokemon',
-	rarity: 'Ultra Rare',
+	illustrator: "aky CG Works",
+	category: "Pokemon",
+	hp: 200,
+	types: ["Lightning"],
 
-	variants: [{
-		type: 'normal',
-		thirdParty: {
-			cardtrader: 304689
-		}
-	}],
-}
+	stage: "Basic",
 
-export default card
+	abilities: [
+		{
+			type: "Ability",
+			name: { ja: "がんばりハート" },
+			effect: {
+				ja: "このポケモンのHPがまんたんの状態で、このポケモンがワザのダメージを受けてきぜつするとき、きぜつせず、残りHPが「10」の状態で場に残る。",
+			},
+		},
+	],
+
+	attacks: [
+		{
+			name: { ja: "トパーズボルト" },
+			damage: 300,
+			cost: ["Grass", "Lightning", "Metal"],
+			effect: {
+				ja: "このポケモンについているエネルギーを3個選び、トラッシュする。",
+			},
+		},
+	],
+
+	weaknesses: [{ type: "Fighting", value: "x2" }],
+	resistances: [],
+
+	variants: [
+		{
+			type: "holo",
+			thirdParty: {
+				cardtrader: 304689,
+				cardmarket: 793587,
+				tcgplayer: 587694,
+			},
+		},
+	],
+
+	retreat: 1,
+	regulationMark: "H",
+	rarity: "Ultra Rare",
+	dexId: [25],
+
+	suffix: "EX",
+};
+
+export default card;
